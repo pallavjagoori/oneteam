@@ -5,6 +5,8 @@ backend.
 
 - [Conversion plan](docs/plan.md): goals, ground rules and the four steps.
 - [Feature inventory](docs/inventory/README.md): every part of Chatwoot, grouped by feature.
+- [Running Chatwoot's own tests](docs/upstream-tests.md): Docker setup, results and known failures.
+- [Coverage by feature](docs/coverage/README.md): how much of each feature Chatwoot's tests cover today.
 - [`CHATWOOT_VERSION`](CHATWOOT_VERSION): the Chatwoot release being converted.
 
 ## Rebuilding the feature inventory

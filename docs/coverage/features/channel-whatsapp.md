@@ -1,0 +1,82 @@
+# WhatsApp: coverage gaps
+
+## Frontend: 71.2% (4390 of 6168 lines)
+
+| File | Coverage | Uncovered lines |
+| --- | ---: | ---: |
+| `app/javascript/dashboard/components-next/template-preview/templates/whatsapp-templates.js` | 0.0% | 407 |
+| `app/javascript/dashboard/composables/useWhatsappCallSession.js` | 18.6% | 368 |
+| `app/javascript/dashboard/routes/dashboard/campaigns/pages/WhatsAppCampaignFormPage.vue` | 20.2% | 323 |
+| `app/javascript/dashboard/components-next/whatsapp/WhatsAppTemplateParser.vue` | 12.8% | 232 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/settingsPage/WhatsappCallingPage.vue` | 58.4% | 74 |
+| `app/javascript/dashboard/components/widgets/conversation/WhatsappTemplates/Modal.vue` | 21.7% | 72 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/whatsapp/utils.js` | 43.3% | 72 |
+| `app/javascript/dashboard/routes/dashboard/campaigns/pages/WhatsAppCampaignAnalyticsContent.vue` | 84.1% | 61 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/CloudWhatsapp.vue` | 71.8% | 49 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/360DialogWhatsapp.vue` | 68.6% | 37 |
+| `app/javascript/dashboard/api/channel/whatsapp/whatsappCallsAPI.js` | 37.5% | 25 |
+| `app/javascript/dashboard/api/channel/whatsappChannel.js` | 39.5% | 23 |
+| `app/javascript/dashboard/components-next/Campaigns/WhatsAppCampaign/AccountInformationCard.vue` | 91.6% | 9 |
+| `app/javascript/dashboard/components-next/Campaigns/EmptyState/WhatsAppCampaignEmptyState.vue` | 95.0% | 1 |
+| `app/javascript/dashboard/components-next/Campaigns/WhatsAppCampaign/AudienceFields.vue` | 99.2% | 1 |
+| `app/javascript/dashboard/components-next/Campaigns/WhatsAppCampaign/AudienceLabelContacts.vue` | 99.6% | 1 |
+| `app/javascript/dashboard/components-next/Campaigns/WhatsAppCampaign/BasicSettingsFields.vue` | 96.8% | 1 |
+| `app/javascript/dashboard/components-next/Campaigns/WhatsAppCampaign/MessagePreviewCard.vue` | 96.9% | 1 |
+| `app/javascript/dashboard/components-next/Campaigns/WhatsAppCampaign/SchedulePopover.vue` | 98.2% | 1 |
+| `app/javascript/dashboard/components-next/Campaigns/WhatsAppCampaign/SectionCard.vue` | 97.7% | 1 |
+| `app/javascript/dashboard/components-next/NewConversation/components/WhatsAppOptions.vue` | 99.0% | 1 |
+| `app/javascript/dashboard/components-next/NewConversation/components/WhatsappTemplate.vue` | 97.3% | 1 |
+| `app/javascript/dashboard/components-next/message/bubbles/WhatsappFlowResponse.vue` | 96.7% | 1 |
+| `app/javascript/dashboard/components-next/message/bubbles/Text/WhatsappReferral.vue` | 99.1% | 1 |
+| `app/javascript/dashboard/components-next/template-preview/WhatsAppTextTemplate.vue` | 92.3% | 1 |
+| `app/javascript/dashboard/components/widgets/conversation/WhatsappTemplates/TemplatesPicker.vue` | 99.4% | 1 |
+| `app/javascript/dashboard/components/widgets/conversation/WhatsappTemplates/WhatsAppTemplateReply.vue` | 97.1% | 1 |
+| `app/javascript/dashboard/composables/useWhatsappEmbeddedSignup.js` | 99.0% | 1 |
+| `app/javascript/dashboard/routes/dashboard/campaigns/pages/WhatsAppCampaignsPage.vue` | 98.5% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Whatsapp.vue` | 99.6% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/WhatsappCall.vue` | 85.7% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/WhatsappEmbeddedSignup.vue` | 99.4% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/WhatsappManualSetup.vue` | 99.8% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/whatsapp/ManualSetupVideo.vue` | 94.1% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/whatsapp/Reauthorize.vue` | 99.6% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/components/WhatsappAccessRequestDialog.vue` | 98.2% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/components/WhatsappManualMigrationBanner.vue` | 97.3% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/components/WhatsappManualMigrationDialog.vue` | 99.8% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/settingsPage/WhatsappBusinessManagementToken.vue` | 99.1% | 1 |
+
+## Backend: 85.0% (2598 of 3055 lines)
+
+| File | Coverage | Uncovered lines |
+| --- | ---: | ---: |
+| `app/services/whatsapp/manual_setup_validation_service.rb` | 0.0% | 84 |
+| `app/controllers/api/v1/accounts/whatsapp/manual_setup_controller.rb` | 0.0% | 66 |
+| `app/services/whatsapp/manual_setup_service.rb` | 0.0% | 52 |
+| `app/services/whatsapp/providers/whatsapp_cloud_contact_info_request_service.rb` | 0.0% | 35 |
+| `app/services/whatsapp/manual_webhook_status_service.rb` | 0.0% | 32 |
+| `app/services/whatsapp/facebook_api_client.rb` | 66.2% | 26 |
+| `app/services/whatsapp/oneoff_campaign_service.rb` | 69.4% | 26 |
+| `app/services/whatsapp/contact_info_request_service.rb` | 0.0% | 22 |
+| `app/models/channel/whatsapp.rb` | 84.0% | 13 |
+| `enterprise/app/services/whatsapp/incoming_call_service.rb` | 89.4% | 13 |
+| `enterprise/app/jobs/enterprise/webhooks/whatsapp_events_job.rb` | 57.1% | 12 |
+| `enterprise/app/services/enterprise/whatsapp/providers/whatsapp_cloud_service.rb` | 82.8% | 10 |
+| `app/services/whatsapp/providers/whatsapp_360_dialog_service.rb` | 79.5% | 9 |
+| `app/services/whatsapp/providers/base_service.rb` | 89.4% | 7 |
+| `app/services/whatsapp/webhook_teardown_service.rb` | 82.1% | 7 |
+| `app/services/whatsapp/send_on_whatsapp_service.rb` | 84.6% | 6 |
+| `app/services/whatsapp/populate_template_parameters_service.rb` | 92.8% | 5 |
+| `app/services/whatsapp/providers/whatsapp_cloud_service.rb` | 95.0% | 5 |
+| `app/services/whatsapp/contact_info_response_service.rb` | 94.2% | 4 |
+| `enterprise/app/controllers/api/v1/accounts/whatsapp_calls_controller.rb` | 96.1% | 4 |
+| `app/services/whatsapp/user_id_rotation_service.rb` | 97.0% | 3 |
+| `app/controllers/api/v1/accounts/whatsapp/authorizations_controller.rb` | 95.2% | 2 |
+| `app/services/whatsapp/contact_info_request_eligibility_service.rb` | 96.2% | 2 |
+| `app/services/whatsapp/phone_normalizers/base_phone_normalizer.rb` | 83.3% | 2 |
+| `app/services/whatsapp/webhook_setup_service.rb` | 97.1% | 2 |
+| `enterprise/app/services/enterprise/whatsapp/oneoff_campaign_service.rb` | 97.2% | 2 |
+| `app/services/whatsapp/embedded_signup_service.rb` | 97.9% | 1 |
+| `app/services/whatsapp/incoming_message_base_service.rb` | 99.0% | 1 |
+| `app/services/whatsapp/incoming_message_service_helpers.rb` | 98.1% | 1 |
+| `app/services/whatsapp/media_upload_service.rb` | 97.5% | 1 |
+| `app/services/whatsapp/reauthorization_service.rb` | 95.7% | 1 |
+| `lib/custom_exceptions/whatsapp_contact_info_request_error.rb` | 80.0% | 1 |

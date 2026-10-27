@@ -1,0 +1,32 @@
+# Test image for the pinned Chatwoot release.
+#
+# Chatwoot's official images leave out the test gems, so this image installs
+# the full bundle (development and test groups) and Node for the Vue tests.
+# It mirrors the CircleCI setup in Chatwoot's .circleci/config.yml.
+FROM ruby:3.4.4-bookworm
+
+# Optional extra CA certificates (for builds behind a TLS-inspecting proxy).
+# run-tests.sh copies $EXTRA_CA_CERT here; the folder is otherwise empty.
+COPY certs/ /usr/local/share/ca-certificates/extra/
+RUN update-ca-certificates
+ENV NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt
+
+# The ruby:*-bookworm base already ships build tools, libpq and ImageMagick
+# libraries, so no apt packages are installed. That keeps the build working on
+# networks that only allow the Ruby and npm registries.
+
+# Node 24 and pnpm 10, as Chatwoot's package.json requires.
+COPY --from=node:24-bookworm /usr/local/bin/node /usr/local/bin/node
+COPY --from=node:24-bookworm /usr/local/lib/node_modules /usr/local/lib/node_modules
+RUN ln -s ../lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm \
+    && ln -s ../lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx \
+    && npm install -g pnpm@10.2.0
+
+WORKDIR /chatwoot
+COPY chatwoot/Gemfile chatwoot/Gemfile.lock chatwoot/.ruby-version ./
+RUN gem install bundler -v 2.5.16 && bundle install --jobs 4
+
+COPY chatwoot/package.json chatwoot/pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
+
+COPY chatwoot/ ./
