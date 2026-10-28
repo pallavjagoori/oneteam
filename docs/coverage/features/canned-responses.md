@@ -1,14 +1,14 @@
 # Canned responses: coverage gaps
 
-## Frontend: 76.1% (472 of 620 lines)
+## Frontend: 16.5% (32 of 194 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/store/modules/cannedResponse.js` | 47.5% | 62 |
-| `app/javascript/dashboard/routes/dashboard/settings/canned/EditCanned.vue` | 69.3% | 42 |
-| `app/javascript/dashboard/routes/dashboard/settings/canned/AddCanned.vue` | 72.7% | 36 |
-| `app/javascript/dashboard/api/cannedResponse.js` | 65.0% | 7 |
-| `app/javascript/dashboard/routes/dashboard/settings/canned/Index.vue` | 99.5% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/canned/Index.vue` | 6.9% | 81 |
+| `app/javascript/dashboard/store/modules/cannedResponse.js` | 23.4% | 36 |
+| `app/javascript/dashboard/routes/dashboard/settings/canned/EditCanned.vue` | 23.3% | 23 |
+| `app/javascript/dashboard/routes/dashboard/settings/canned/AddCanned.vue` | 26.9% | 19 |
+| `app/javascript/dashboard/api/cannedResponse.js` | 25.0% | 3 |
 
 ## Backend: 100.0% (38 of 38 lines)
 

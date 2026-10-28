@@ -37,8 +37,10 @@ docker build --network "${BUILD_NETWORK:-default}" \
   -f Dockerfile.test -t "oneteam-chatwoot-tests:$VERSION" .
 
 if [ "$SUITE" = "frontend" ] || [ "$SUITE" = "all" ]; then
-  docker compose run --rm --no-deps tests sh -c '
-    pnpm run test:coverage > /results/frontend-run.txt 2>&1; status=$?
+  # The Vue tests need no services, so they run in a plain container.
+  docker run --rm -v "$HERE/results:/results" "oneteam-chatwoot-tests:$VERSION" sh -c '
+    TZ=UTC npx vitest --no-watch --no-cache --coverage --coverage.experimentalAstAwareRemapping \
+      > /results/frontend-run.txt 2>&1; status=$?
     mkdir -p /results/frontend && cp -r coverage/. /results/frontend/
     exit $status'
 fi

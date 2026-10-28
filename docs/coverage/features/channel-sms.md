@@ -1,19 +1,19 @@
 # SMS and Twilio: coverage gaps
 
-## Frontend: 74.0% (942 of 1273 lines)
+## Frontend: 46.9% (107 of 228 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/template-preview/templates/twilio-templates.js` | 0.0% | 209 |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Twilio.vue` | 67.8% | 74 |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/BandwidthSms.vue` | 77.1% | 38 |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Sms.vue` | 89.2% | 4 |
-| `app/javascript/dashboard/api/channel/twilioChannel.js` | 85.7% | 1 |
-| `app/javascript/dashboard/components-next/Campaigns/CampaignCard/SMSCampaignDetails.vue` | 95.0% | 1 |
-| `app/javascript/dashboard/components-next/Campaigns/EmptyState/SMSCampaignEmptyState.vue` | 95.0% | 1 |
-| `app/javascript/dashboard/components-next/Campaigns/Pages/CampaignPage/SMSCampaign/SMSCampaignDialog.vue` | 97.2% | 1 |
-| `app/javascript/dashboard/components-next/Campaigns/Pages/CampaignPage/SMSCampaign/SMSCampaignForm.vue` | 99.4% | 1 |
-| `app/javascript/dashboard/routes/dashboard/campaigns/pages/SMSCampaignsPage.vue` | 98.2% | 1 |
+| `app/javascript/dashboard/components-next/Campaigns/Pages/CampaignPage/SMSCampaign/SMSCampaignForm.vue` | 7.3% | 38 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Twilio.vue` | 30.6% | 25 |
+| `app/javascript/dashboard/routes/dashboard/campaigns/pages/SMSCampaignsPage.vue` | 0.0% | 19 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/BandwidthSms.vue` | 38.5% | 16 |
+| `app/javascript/dashboard/components-next/Campaigns/Pages/CampaignPage/SMSCampaign/SMSCampaignDialog.vue` | 12.5% | 14 |
+| `app/javascript/dashboard/components-next/Campaigns/EmptyState/SMSCampaignEmptyState.vue` | 25.0% | 3 |
+| `app/javascript/dashboard/components-next/Campaigns/CampaignCard/SMSCampaignDetails.vue` | 71.4% | 2 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Sms.vue` | 71.4% | 2 |
+| `app/javascript/dashboard/components-next/template-preview/templates/twilio-templates.js` | 0.0% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/components/TwilioHealth.vue` | 98.6% | 1 |
 
 ## Backend: 74.2% (788 of 1062 lines)
 

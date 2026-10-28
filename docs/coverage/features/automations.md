@@ -1,26 +1,24 @@
 # Automation rules: coverage gaps
 
-## Frontend: 85.2% (3148 of 3696 lines)
+## Frontend: 64.4% (602 of 935 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/automation/AutomationRuleForm.vue` | 6.3% | 414 |
-| `app/javascript/dashboard/routes/dashboard/settings/automation/components/AutomationInstantTrigger.vue` | 20.2% | 71 |
-| `app/javascript/dashboard/helper/automationHelper.js` | 94.2% | 22 |
-| `app/javascript/dashboard/composables/useEditableAutomation.js` | 87.2% | 17 |
-| `app/javascript/dashboard/store/modules/automations.js` | 91.7% | 8 |
-| `app/javascript/dashboard/composables/useAutomation.js` | 97.9% | 4 |
-| `app/javascript/dashboard/api/automation.js` | 85.7% | 2 |
-| `app/javascript/dashboard/composables/useAutomationValues.js` | 99.3% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/automation/AddAutomationRule.vue` | 98.8% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/automation/AutomationRuleRow.vue` | 99.2% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/automation/EditAutomationRule.vue` | 98.5% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/automation/Index.vue` | 99.7% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/automation/constants.js` | 99.9% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/automation/components/AutomationActions.vue` | 97.6% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/automation/components/AutomationMonitorSelect.vue` | 98.7% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/automation/components/AutomationRunTypeSelector.vue` | 96.2% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/automation/components/AutomationWaitCondition.vue` | 99.7% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/automation/Index.vue` | 1.2% | 167 |
+| `app/javascript/dashboard/routes/dashboard/settings/automation/AutomationRuleRow.vue` | 14.3% | 30 |
+| `app/javascript/dashboard/routes/dashboard/settings/automation/AutomationRuleForm.vue` | 84.2% | 29 |
+| `app/javascript/dashboard/routes/dashboard/settings/automation/AddAutomationRule.vue` | 0.0% | 26 |
+| `app/javascript/dashboard/routes/dashboard/settings/automation/EditAutomationRule.vue` | 0.0% | 20 |
+| `app/javascript/dashboard/routes/dashboard/settings/automation/components/AutomationMonitorSelect.vue` | 13.3% | 13 |
+| `app/javascript/dashboard/routes/dashboard/settings/automation/components/AutomationActions.vue` | 10.0% | 9 |
+| `app/javascript/dashboard/helper/automationHelper.js` | 93.1% | 8 |
+| `app/javascript/dashboard/composables/useEditableAutomation.js` | 81.6% | 7 |
+| `app/javascript/dashboard/routes/dashboard/settings/automation/components/AutomationWaitCondition.vue` | 96.2% | 6 |
+| `app/javascript/dashboard/routes/dashboard/settings/automation/components/AutomationInstantTrigger.vue` | 76.2% | 5 |
+| `app/javascript/dashboard/routes/dashboard/settings/automation/components/AutomationRunTypeSelector.vue` | 37.5% | 5 |
+| `app/javascript/dashboard/store/modules/automations.js` | 88.6% | 4 |
+| `app/javascript/dashboard/composables/useAutomation.js` | 93.5% | 3 |
+| `app/javascript/dashboard/api/automation.js` | 66.7% | 1 |
 
 ## Backend: 96.2% (680 of 707 lines)
 

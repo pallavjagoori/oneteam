@@ -1,30 +1,23 @@
 # Installation and onboarding: coverage gaps
 
-## Frontend: 92.3% (1512 of 1639 lines)
+## Frontend: 42.0% (181 of 431 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/useChannelConnect.js` | 28.6% | 50 |
-| `app/javascript/v3/views/onboarding/OnboardingStep.vue` | 0.0% | 35 |
-| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/InboxChannelsDialog.vue` | 88.8% | 21 |
-| `app/javascript/dashboard/api/onboarding.js` | 71.4% | 4 |
-| `app/javascript/dashboard/components/app/versionCheckHelper.js` | 85.7% | 1 |
-| `app/javascript/dashboard/routes/dashboard/noAccounts/Index.vue` | 96.8% | 1 |
-| `app/javascript/dashboard/routes/dashboard/onboarding/InboxSetup.vue` | 99.4% | 1 |
-| `app/javascript/dashboard/routes/dashboard/onboarding/Index.vue` | 99.7% | 1 |
-| `app/javascript/dashboard/routes/dashboard/onboarding/account-details/OnboardingFormRow.vue` | 88.9% | 1 |
-| `app/javascript/dashboard/routes/dashboard/onboarding/account-details/OnboardingFormSelect.vue` | 95.0% | 1 |
-| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/ChannelRow.vue` | 97.8% | 1 |
-| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/CreationStatusRow.vue` | 95.5% | 1 |
-| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/InboxChannelForm.vue` | 99.2% | 1 |
-| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/InboxChannelsFooter.vue` | 98.2% | 1 |
-| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/WebWidgetCreationStatus.vue` | 96.7% | 1 |
-| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/channelMatchers.js` | 93.3% | 1 |
-| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/constants.js` | 99.3% | 1 |
-| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/useChannelConfig.js` | 97.7% | 1 |
-| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/useDetectedChannels.js` | 99.1% | 1 |
-| `app/javascript/dashboard/routes/dashboard/onboarding/shared/OnboardingLayout.vue` | 98.8% | 1 |
-| `app/javascript/dashboard/routes/dashboard/onboarding/shared/OnboardingSection.vue` | 97.4% | 1 |
+| `app/javascript/dashboard/routes/dashboard/onboarding/Index.vue` | 9.5% | 86 |
+| `app/javascript/dashboard/routes/dashboard/onboarding/InboxSetup.vue` | 7.8% | 47 |
+| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/useChannelConnect.js` | 3.3% | 29 |
+| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/InboxChannelForm.vue` | 11.5% | 23 |
+| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/InboxChannelsDialog.vue` | 70.0% | 18 |
+| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/InboxChannelsFooter.vue` | 33.3% | 10 |
+| `app/javascript/dashboard/routes/dashboard/noAccounts/Index.vue` | 10.0% | 9 |
+| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/WebWidgetCreationStatus.vue` | 11.1% | 8 |
+| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/ChannelRow.vue` | 50.0% | 6 |
+| `app/javascript/dashboard/routes/dashboard/onboarding/shared/OnboardingLayout.vue` | 57.1% | 6 |
+| `app/javascript/dashboard/api/onboarding.js` | 33.3% | 2 |
+| `app/javascript/dashboard/routes/dashboard/onboarding/account-details/OnboardingFormSelect.vue` | 50.0% | 2 |
+| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/useChannelConfig.js` | 85.7% | 2 |
+| `app/javascript/v3/views/onboarding/OnboardingStep.vue` | 0.0% | 2 |
 
 ## Backend: 38.9% (312 of 803 lines)
 

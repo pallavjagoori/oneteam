@@ -1,26 +1,22 @@
 # SLA policies: coverage gaps
 
-## Frontend: 81.6% (1107 of 1357 lines)
+## Frontend: 21.4% (76 of 355 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/sla/SlaForm.vue` | 55.2% | 94 |
-| `app/javascript/dashboard/routes/dashboard/settings/sla/Index.vue` | 78.2% | 58 |
-| `app/javascript/dashboard/routes/dashboard/settings/sla/SlaTimeInput.vue` | 70.9% | 32 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/helpers/SLAFilterHelpers.js` | 11.4% | 31 |
-| `app/javascript/dashboard/routes/dashboard/settings/sla/AddSLA.vue` | 69.4% | 11 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/SLATable.vue` | 91.9% | 8 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/SLAViewDetails.vue` | 87.0% | 6 |
-| `app/javascript/dashboard/api/sla.js` | 85.7% | 1 |
-| `app/javascript/dashboard/components-next/Conversation/Sla/SLACardLabel.vue` | 97.6% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/SLAFilter.vue` | 99.5% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/SLAMetricCard.vue` | 97.6% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/SLAMetrics.vue` | 96.0% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/SLAReportFilters.vue` | 98.7% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/SLAReportItem.vue` | 98.0% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/sla/SLAPaywallEnterprise.vue` | 93.3% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/sla/validations.js` | 90.9% | 1 |
-| `app/javascript/dashboard/store/modules/sla.js` | 98.7% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/SLAFilter.vue` | 2.4% | 83 |
+| `app/javascript/dashboard/routes/dashboard/settings/sla/Index.vue` | 23.1% | 50 |
+| `app/javascript/dashboard/routes/dashboard/settings/sla/SlaForm.vue` | 9.1% | 40 |
+| `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/SLAReportFilters.vue` | 2.6% | 38 |
+| `app/javascript/dashboard/routes/dashboard/settings/sla/SlaTimeInput.vue` | 18.2% | 18 |
+| `app/javascript/dashboard/components-next/Conversation/Sla/SLACardLabel.vue` | 0.0% | 15 |
+| `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/SLAReportItem.vue` | 46.2% | 7 |
+| `app/javascript/dashboard/routes/dashboard/settings/sla/AddSLA.vue` | 22.2% | 7 |
+| `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/SLATable.vue` | 40.0% | 6 |
+| `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/SLAViewDetails.vue` | 37.5% | 5 |
+| `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/helpers/SLAFilterHelpers.js` | 37.5% | 5 |
+| `app/javascript/dashboard/routes/dashboard/settings/sla/SLAPaywallEnterprise.vue` | 20.0% | 4 |
+| `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/SLAMetrics.vue` | 50.0% | 1 |
 
 ## Backend: 86.5% (360 of 416 lines)
 

@@ -1,15 +1,14 @@
 # Super admin console: coverage gaps
 
-## Frontend: 15.6% (113 of 723 lines)
+## Frontend: 19.0% (76 of 399 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/entrypoints/superadmin.js` | 0.0% | 384 |
-| `app/javascript/superadmin_pages/views/dashboard/Index.vue` | 0.0% | 171 |
-| `app/javascript/entrypoints/superadmin_pages.js` | 0.0% | 25 |
-| `app/javascript/dashboard/components/app/ImpersonationBanner.vue` | 0.0% | 21 |
-| `app/javascript/superadmin/commandBar.js` | 92.9% | 8 |
-| `app/javascript/dashboard/composables/useImpersonation.js` | 88.9% | 1 |
+| `app/javascript/entrypoints/superadmin.js` | 0.0% | 249 |
+| `app/javascript/superadmin_pages/views/dashboard/Index.vue` | 0.0% | 48 |
+| `app/javascript/entrypoints/superadmin_pages.js` | 0.0% | 12 |
+| `app/javascript/superadmin/commandBar.js` | 90.1% | 8 |
+| `app/javascript/dashboard/components/app/ImpersonationBanner.vue` | 0.0% | 6 |
 
 ## Backend: 86.8% (735 of 847 lines)
 

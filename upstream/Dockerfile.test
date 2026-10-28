@@ -30,3 +30,9 @@ COPY chatwoot/package.json chatwoot/pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 
 COPY chatwoot/ ./
+
+# Vitest 3.0's V8 coverage maps Vue single-file components loosely: a component
+# that is only imported, never rendered, can show as mostly covered. Vitest 3.2
+# adds AST-aware remapping, which counts real statements. Upgrade only the test
+# runner; the Chatwoot code itself is unchanged.
+RUN pnpm add -D vitest@3.2.4 @vitest/coverage-v8@3.2.4

@@ -1,32 +1,31 @@
 # Voice calls: coverage gaps
 
-## Frontend: 62.3% (1824 of 2927 lines)
+## Frontend: 9.1% (84 of 928 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/call/FloatingCallWidget.vue` | 0.0% | 241 |
-| `app/javascript/dashboard/components-next/call/CallCard.vue` | 0.0% | 172 |
-| `app/javascript/dashboard/components-next/call/CallCard.story.vue` | 0.0% | 159 |
-| `app/javascript/dashboard/helper/voice.js` | 29.7% | 156 |
-| `app/javascript/dashboard/components-next/Calls/CallRecordingPlayer.vue` | 0.0% | 125 |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/settingsPage/VoiceConfigurationPage.vue` | 62.6% | 83 |
-| `app/javascript/dashboard/api/channel/voice/twilioVoiceClient.js` | 24.4% | 62 |
-| `app/javascript/dashboard/stores/calls.js` | 34.4% | 59 |
-| `app/javascript/dashboard/components-next/Calls/constants.js` | 57.8% | 19 |
-| `app/javascript/dashboard/api/channel/voice/voiceAPIClient.js` | 62.9% | 13 |
-| `app/javascript/dashboard/api/calls.js` | 81.8% | 2 |
-| `app/javascript/dashboard/components-next/Calls/CallListItem.vue` | 99.5% | 1 |
-| `app/javascript/dashboard/components-next/Calls/CallStatusBadge.vue` | 97.7% | 1 |
-| `app/javascript/dashboard/components-next/Calls/CallsEmptyState.vue` | 96.2% | 1 |
-| `app/javascript/dashboard/components-next/Calls/CallsFilterBar.vue` | 99.5% | 1 |
-| `app/javascript/dashboard/components-next/Contacts/VoiceCallButton.vue` | 99.5% | 1 |
-| `app/javascript/dashboard/components-next/Conversation/ConversationCard/VoiceCallStatus.vue` | 98.3% | 1 |
-| `app/javascript/dashboard/components-next/message/bubbles/VoiceCall.vue` | 99.7% | 1 |
-| `app/javascript/dashboard/components/widgets/conversation/VoiceCallStatus.vue` | 98.4% | 1 |
-| `app/javascript/dashboard/routes/dashboard/calls/routes.js` | 94.4% | 1 |
-| `app/javascript/dashboard/routes/dashboard/calls/pages/CallsIndex.vue` | 99.3% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Voice.vue` | 99.3% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/settingsPage/CallRecordingSettings.vue` | 98.4% | 1 |
+| `app/javascript/dashboard/components-next/message/bubbles/VoiceCall.vue` | 3.1% | 125 |
+| `app/javascript/dashboard/components-next/call/FloatingCallWidget.vue` | 0.0% | 91 |
+| `app/javascript/dashboard/components-next/Contacts/VoiceCallButton.vue` | 6.3% | 74 |
+| `app/javascript/dashboard/components-next/Calls/CallsFilterBar.vue` | 6.5% | 58 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/settingsPage/VoiceConfigurationPage.vue` | 6.6% | 57 |
+| `app/javascript/dashboard/components-next/Calls/CallRecordingPlayer.vue` | 0.0% | 50 |
+| `app/javascript/dashboard/routes/dashboard/calls/pages/CallsIndex.vue` | 13.0% | 47 |
+| `app/javascript/dashboard/components-next/call/CallCard.story.vue` | 0.0% | 44 |
+| `app/javascript/dashboard/components-next/call/CallCard.vue` | 0.0% | 42 |
+| `app/javascript/dashboard/api/channel/voice/twilioVoiceClient.js` | 12.8% | 41 |
+| `app/javascript/dashboard/helper/voice.js` | 36.1% | 39 |
+| `app/javascript/dashboard/stores/calls.js` | 5.3% | 36 |
+| `app/javascript/dashboard/components-next/Calls/CallListItem.vue` | 37.3% | 32 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/settingsPage/CallRecordingSettings.vue` | 0.0% | 26 |
+| `app/javascript/dashboard/components/widgets/conversation/VoiceCallStatus.vue` | 0.0% | 19 |
+| `app/javascript/dashboard/components-next/Conversation/ConversationCard/VoiceCallStatus.vue` | 5.3% | 18 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Voice.vue` | 5.3% | 18 |
+| `app/javascript/dashboard/components-next/Calls/constants.js` | 27.3% | 8 |
+| `app/javascript/dashboard/components-next/Calls/CallsEmptyState.vue` | 0.0% | 7 |
+| `app/javascript/dashboard/api/channel/voice/voiceAPIClient.js` | 33.3% | 6 |
+| `app/javascript/dashboard/components-next/Calls/CallStatusBadge.vue` | 16.7% | 5 |
+| `app/javascript/dashboard/api/calls.js` | 50.0% | 1 |
 
 ## Backend: 93.9% (1329 of 1415 lines)
 

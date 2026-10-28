@@ -1,20 +1,18 @@
 # Billing and plans: coverage gaps
 
-## Frontend: 96.6% (901 of 933 lines)
+## Frontend: 20.7% (67 of 324 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/composables/useTranslationPlan.js` | 21.1% | 15 |
-| `app/javascript/dashboard/constants/billing.js` | 73.3% | 8 |
-| `app/javascript/dashboard/routes/dashboard/settings/billing/Index.vue` | 99.7% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/billing/components/BillingCard.vue` | 88.9% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/billing/components/BillingHeader.vue` | 91.7% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/billing/components/BillingMeter.vue` | 96.2% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/billing/components/CreditPackageCard.vue` | 98.2% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/billing/components/DetailItem.vue` | 88.9% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/billing/components/PurchaseCreditsModal.vue` | 99.5% | 1 |
-| `app/javascript/dashboard/routes/dashboard/suspended/Index.vue` | 98.0% | 1 |
-| `app/javascript/dashboard/routes/dashboard/upgrade/UpgradePage.vue` | 99.2% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/billing/Index.vue` | 3.3% | 87 |
+| `app/javascript/dashboard/routes/dashboard/settings/billing/components/PurchaseCreditsModal.vue` | 16.3% | 72 |
+| `app/javascript/dashboard/routes/dashboard/upgrade/UpgradePage.vue` | 12.3% | 50 |
+| `app/javascript/dashboard/routes/dashboard/suspended/Index.vue` | 10.0% | 18 |
+| `app/javascript/dashboard/routes/dashboard/settings/billing/components/BillingMeter.vue` | 28.6% | 10 |
+| `app/javascript/dashboard/composables/useTranslationPlan.js` | 11.1% | 8 |
+| `app/javascript/dashboard/routes/dashboard/settings/billing/components/CreditPackageCard.vue` | 41.7% | 7 |
+| `app/javascript/dashboard/constants/billing.js` | 62.5% | 3 |
+| `app/javascript/dashboard/routes/dashboard/settings/billing/components/BillingCard.vue` | 33.3% | 2 |
 
 ## Backend: 95.4% (699 of 733 lines)
 

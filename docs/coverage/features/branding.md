@@ -1,11 +1,11 @@
 # Branding and email templates: coverage gaps
 
-## Frontend: 34.3% (36 of 105 lines)
+## Frontend: 25.8% (8 of 31 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/shared/components/Branding.vue` | 0.0% | 68 |
-| `app/javascript/dashboard/components/CustomBrandPolicyWrapper.vue` | 92.9% | 1 |
+| `app/javascript/shared/components/Branding.vue` | 0.0% | 17 |
+| `app/javascript/dashboard/components/CustomBrandPolicyWrapper.vue` | 14.3% | 6 |
 
 ## Backend: 94.8% (386 of 407 lines)
 

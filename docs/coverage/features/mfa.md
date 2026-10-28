@@ -1,19 +1,19 @@
 # Two-factor authentication: coverage gaps
 
-## Frontend: 82.5% (1035 of 1254 lines)
+## Frontend: 36.2% (154 of 425 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components/auth/MfaVerification.vue` | 30.2% | 199 |
-| `app/javascript/dashboard/api/mfa.js` | 54.5% | 10 |
-| `app/javascript/dashboard/components/auth/MfaEnforcedSetup.vue` | 94.7% | 3 |
-| `app/javascript/dashboard/routes/dashboard/settings/profile/MfaManagementActions.vue` | 99.6% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/profile/MfaSettings.vue` | 99.4% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/profile/MfaSettingsCard.vue` | 97.5% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/profile/MfaSetupWizard.vue` | 99.6% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/profile/MfaStatusCard.vue` | 97.7% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/security/Index.vue` | 98.5% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/security/components/EnforceMfa.vue` | 97.6% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/profile/MfaSetupWizard.vue` | 26.5% | 72 |
+| `app/javascript/dashboard/routes/dashboard/settings/profile/MfaSettings.vue` | 2.9% | 67 |
+| `app/javascript/dashboard/routes/dashboard/settings/profile/MfaManagementActions.vue` | 28.8% | 52 |
+| `app/javascript/dashboard/components/auth/MfaVerification.vue` | 67.7% | 32 |
+| `app/javascript/dashboard/routes/dashboard/settings/security/components/EnforceMfa.vue` | 0.0% | 18 |
+| `app/javascript/dashboard/routes/dashboard/settings/security/Index.vue` | 5.9% | 16 |
+| `app/javascript/dashboard/api/mfa.js` | 20.0% | 4 |
+| `app/javascript/dashboard/routes/dashboard/settings/profile/MfaSettingsCard.vue` | 60.0% | 4 |
+| `app/javascript/dashboard/routes/dashboard/settings/profile/MfaStatusCard.vue` | 66.7% | 4 |
+| `app/javascript/dashboard/components/auth/MfaEnforcedSetup.vue` | 91.7% | 2 |
 
 ## Backend: 56.0% (269 of 480 lines)
 

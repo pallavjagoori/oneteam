@@ -1,19 +1,17 @@
 # Conversation monitors: coverage gaps
 
-## Frontend: 98.2% (1604 of 1633 lines)
+## Frontend: 75.3% (440 of 584 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/api/monitors.js` | 44.1% | 19 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/monitors/MonitorShow.vue` | 99.6% | 2 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/monitors/MonitorChartFilters.vue` | 97.6% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/monitors/MonitorDrilldown.vue` | 98.4% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/monitors/MonitorIconPicker.vue` | 98.0% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/monitors/MonitorListItem.vue` | 99.0% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/monitors/MonitorTemplateCard.vue` | 97.4% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/monitors/MonitorUsageWarning.vue` | 96.4% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/monitors/MonitorsIndex.vue` | 99.6% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/monitors/useMonitorRefresh.js` | 97.7% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/reports/monitors/MonitorsIndex.vue` | 6.8% | 82 |
+| `app/javascript/dashboard/routes/dashboard/settings/reports/monitors/MonitorShow.vue` | 90.6% | 17 |
+| `app/javascript/dashboard/routes/dashboard/settings/reports/monitors/MonitorDrilldown.vue` | 0.0% | 16 |
+| `app/javascript/dashboard/routes/dashboard/settings/reports/monitors/MonitorIconPicker.vue` | 6.3% | 15 |
+| `app/javascript/dashboard/api/monitors.js` | 12.5% | 7 |
+| `app/javascript/dashboard/routes/dashboard/settings/reports/monitors/MonitorTemplateCard.vue` | 63.6% | 4 |
+| `app/javascript/dashboard/routes/dashboard/settings/reports/monitors/MonitorForm.vue` | 98.3% | 2 |
+| `app/javascript/dashboard/routes/dashboard/settings/reports/monitors/MonitorListItem.vue` | 96.6% | 1 |
 
 ## Backend: 97.4% (980 of 1006 lines)
 

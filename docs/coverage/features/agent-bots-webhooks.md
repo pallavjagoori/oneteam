@@ -1,15 +1,14 @@
 # Agent bots and webhooks: coverage gaps
 
-## Frontend: 94.7% (820 of 866 lines)
+## Frontend: 38.9% (128 of 329 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/store/modules/agentBots.js` | 83.9% | 34 |
-| `app/javascript/dashboard/store/modules/webhooks.js` | 94.3% | 5 |
-| `app/javascript/dashboard/api/agentBots.js` | 85.2% | 4 |
-| `app/javascript/dashboard/api/webhooks.js` | 85.7% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/agentBots/Index.vue` | 99.4% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/agentBots/components/AgentBotModal.vue` | 99.7% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/agentBots/components/AgentBotModal.vue` | 4.9% | 117 |
+| `app/javascript/dashboard/routes/dashboard/settings/agentBots/Index.vue` | 12.3% | 57 |
+| `app/javascript/dashboard/store/modules/agentBots.js` | 75.8% | 24 |
+| `app/javascript/dashboard/api/agentBots.js` | 66.7% | 2 |
+| `app/javascript/dashboard/store/modules/webhooks.js` | 97.1% | 1 |
 
 ## Backend: 91.7% (451 of 492 lines)
 

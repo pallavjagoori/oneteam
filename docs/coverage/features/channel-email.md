@@ -1,17 +1,17 @@
 # Email: coverage gaps
 
-## Frontend: 64.4% (478 of 742 lines)
+## Frontend: 40.8% (64 of 157 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/ImapSettings.vue` | 12.4% | 155 |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/SmtpSettings.vue` | 59.6% | 97 |
-| `app/javascript/dashboard/components-next/message/bubbles/Email/Index.vue` | 96.2% | 6 |
-| `app/javascript/dashboard/api/channel/microsoftClient.js` | 81.8% | 2 |
-| `app/javascript/dashboard/components-next/message/bubbles/Email/EmailMeta.vue` | 98.9% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/emailChannels/Microsoft.vue` | 88.9% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/google/Reauthorize.vue` | 97.0% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/microsoft/Reauthorize.vue` | 96.3% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/SmtpSettings.vue` | 5.7% | 33 |
+| `app/javascript/dashboard/components-next/message/bubbles/Email/EmailMeta.vue` | 4.0% | 24 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/google/Reauthorize.vue` | 0.0% | 15 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/microsoft/Reauthorize.vue` | 0.0% | 11 |
+| `app/javascript/dashboard/components-next/message/bubbles/Email/Index.vue` | 90.2% | 4 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/ImapSettings.vue` | 85.2% | 4 |
+| `app/javascript/dashboard/api/channel/microsoftClient.js` | 50.0% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/emailChannels/Microsoft.vue` | 0.0% | 1 |
 
 ## Backend: 92.4% (1209 of 1308 lines)
 

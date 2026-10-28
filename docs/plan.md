@@ -25,7 +25,7 @@ The upstream release we are converting is recorded in [`CHATWOOT_VERSION`](../CH
 2. **Run Chatwoot locally.** Commit a Docker Compose setup and script so anyone can bring up the pinned release with
    Postgres, Redis and OpenSearch. *Done: see [upstream-tests.md](upstream-tests.md).*
 3. **Measure coverage.** Run Chatwoot's RSpec suite (SimpleCov) and Vitest suite (v8 coverage), and record the
-   coverage per feature from the inventory. *Done for v4.19.1: 73.6% of frontend lines and 86.9% of backend lines
+   coverage per feature from the inventory. *Done for v4.19.1: 37.3% of frontend lines and 86.9% of backend lines
    are covered, per feature in [coverage](coverage/README.md).*
 4. **Reach 100% coverage.** Fill the gaps, Vue first (those tests carry over to OneTeam unchanged), then Ruby (those
    tests are discarded later, but writing them surfaces behaviour we would otherwise miss).

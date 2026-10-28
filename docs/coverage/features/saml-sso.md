@@ -1,15 +1,15 @@
 # SAML single sign-on: coverage gaps
 
-## Frontend: 97.5% (590 of 605 lines)
+## Frontend: 12.0% (23 of 192 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/api/samlSettings.js` | 56.5% | 10 |
-| `app/javascript/dashboard/routes/dashboard/settings/security/components/SamlAttributeMap.vue` | 97.5% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/security/components/SamlInfoSection.vue` | 98.8% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/security/components/SamlPaywall.vue` | 96.9% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/security/components/SamlSettings.vue` | 99.7% | 1 |
-| `app/javascript/v3/views/login/Saml.vue` | 99.2% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/security/components/SamlSettings.vue` | 2.6% | 112 |
+| `app/javascript/v3/views/login/Saml.vue` | 17.9% | 23 |
+| `app/javascript/dashboard/routes/dashboard/settings/security/components/SamlInfoSection.vue` | 39.1% | 14 |
+| `app/javascript/dashboard/routes/dashboard/settings/security/components/SamlPaywall.vue` | 9.1% | 10 |
+| `app/javascript/dashboard/api/samlSettings.js` | 16.7% | 5 |
+| `app/javascript/dashboard/routes/dashboard/settings/security/components/SamlAttributeMap.vue` | 44.4% | 5 |
 
 ## Backend: 95.1% (583 of 613 lines)
 

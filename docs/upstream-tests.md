@@ -8,7 +8,7 @@ already pin down, feature by feature.
 
 ```sh
 upstream/run-tests.sh            # both suites
-upstream/run-tests.sh frontend   # Vitest only (about 5 minutes)
+upstream/run-tests.sh frontend   # Vitest only (about 6 minutes)
 upstream/run-tests.sh backend    # RSpec only (about 40 minutes)
 php tools/coverage/coverage-by-feature.php   # writes docs/coverage/
 ```
@@ -41,11 +41,28 @@ image installs no apt packages, so the build only needs Docker Hub, rubygems.org
 
 Without these two adjustments, 97 specs fail for environment reasons alone.
 
+## How frontend coverage is measured
+
+Chatwoot pins Vitest 3.0, whose V8 coverage maps Vue single-file components loosely. A component that a test only
+imports, without rendering it, shows as almost fully covered. With Chatwoot's own setup the suite reports 73.6% of
+lines covered. For example, `SearchTabs.vue` shows as 97% covered, although no test renders it.
+
+The test image therefore upgrades the test runner, and nothing else, to Vitest 3.2.4. It also turns on
+`experimentalAstAwareRemapping`, which counts real statements. All 5,251 tests still pass, and coverage drops to
+**37.3%** of 54,172 executable lines. That is the honest baseline. 401 files are never loaded by any test.
+
+We also tried the Istanbul provider. It aborts, because it compiles every file, and two Chatwoot files fail to
+compile in tests:
+
+- `settings/integrations/ShowIntegration.vue` imports `./IntegrationHelpText.vue`, which doesn't exist. Nothing
+  imports `ShowIntegration.vue`, so it is dead code.
+- `entrypoints/dashboard.js` imports `vuex-router-sync`, which isn't installed in the test setup.
+
 ## Results for v4.19.1
 
 | Suite | Tests | Failures | Line coverage |
 | --- | ---: | ---: | ---: |
-| Vitest (Vue and JS) | 5,251 in 513 files | 0 | 73.6% |
+| Vitest (Vue and JS) | 5,251 in 513 files | 0 | 37.3% |
 | RSpec (Ruby) | 11,114 examples (131 pending) | 14 | 86.9% |
 
 Coverage per feature, with every file below 100%, is in [`docs/coverage`](coverage/README.md).

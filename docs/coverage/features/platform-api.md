@@ -1,6 +1,6 @@
 # Platform API: coverage gaps
 
-## Frontend: 100.0% (43 of 43 lines)
+## Frontend: 100.0% (17 of 17 lines)
 
 Every file is fully covered.
 

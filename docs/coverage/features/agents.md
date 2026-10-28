@@ -1,17 +1,15 @@
 # Agents and availability: coverage gaps
 
-## Frontend: 90.6% (1121 of 1237 lines)
+## Frontend: 33.4% (121 of 362 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/components/WeeklyAvailability.vue` | 68.6% | 64 |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/AddAgents.vue` | 68.0% | 41 |
-| `app/javascript/dashboard/store/modules/agents.js` | 95.3% | 6 |
-| `app/javascript/dashboard/composables/useAgentsList.js` | 98.6% | 1 |
-| `app/javascript/dashboard/composables/spec/fixtures/agentFixtures.js` | 98.4% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/agents/AddAgent.vue` | 99.3% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/agents/EditAgent.vue` | 99.4% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/agents/Index.vue` | 99.6% | 1 |
+| `app/javascript/dashboard/routes/dashboard/settings/agents/Index.vue` | 9.7% | 93 |
+| `app/javascript/dashboard/routes/dashboard/settings/agents/EditAgent.vue` | 13.8% | 50 |
+| `app/javascript/dashboard/routes/dashboard/settings/agents/AddAgent.vue` | 13.3% | 39 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/components/WeeklyAvailability.vue` | 28.3% | 33 |
+| `app/javascript/dashboard/routes/dashboard/settings/inbox/AddAgents.vue` | 20.0% | 20 |
+| `app/javascript/dashboard/store/modules/agents.js` | 87.5% | 6 |
 
 ## Backend: 97.0% (259 of 267 lines)
 

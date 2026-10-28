@@ -1,32 +1,30 @@
 # Companies: coverage gaps
 
-## Frontend: 89.5% (2480 of 2770 lines)
+## Frontend: 26.3% (261 of 991 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/stores/companies.js` | 47.5% | 246 |
-| `app/javascript/dashboard/api/companies.js` | 78.7% | 13 |
-| `app/javascript/dashboard/composables/useCompaniesPaywall.js` | 35.7% | 9 |
-| `app/javascript/dashboard/routes/dashboard/onboarding/account-details/useAccountEnrichment.js` | 97.5% | 3 |
-| `app/javascript/dashboard/components-next/Companies/CompaniesListLayout.vue` | 97.3% | 1 |
-| `app/javascript/dashboard/components-next/Companies/CompanyCreateDialog.vue` | 98.9% | 1 |
-| `app/javascript/dashboard/components-next/Companies/CompanySearchInput.vue` | 94.4% | 1 |
-| `app/javascript/dashboard/components-next/Companies/CompanySelector.vue` | 99.2% | 1 |
-| `app/javascript/dashboard/components-next/Companies/CompaniesCard/CompaniesCard.vue` | 99.0% | 1 |
-| `app/javascript/dashboard/components-next/Companies/CompaniesHeader/CompanyHeader.vue` | 96.7% | 1 |
-| `app/javascript/dashboard/components-next/Companies/CompaniesHeader/components/CompanyMoreActions.vue` | 97.2% | 1 |
-| `app/javascript/dashboard/components-next/Companies/CompaniesHeader/components/CompanySortMenu.vue` | 99.0% | 1 |
-| `app/javascript/dashboard/components-next/Companies/CompanyDetail/CompanyConversationList.vue` | 98.8% | 1 |
-| `app/javascript/dashboard/components-next/Companies/CompanyDetail/CompanyDetailHeader.vue` | 99.6% | 1 |
-| `app/javascript/dashboard/components-next/Companies/CompanyDetail/CompanyEditPanel.vue` | 99.6% | 1 |
-| `app/javascript/dashboard/components-next/Companies/CompanyDetail/CompanyFacts.vue` | 99.0% | 1 |
-| `app/javascript/dashboard/components-next/Companies/CompanyDetail/CompanyNotesFeed.vue` | 99.2% | 1 |
-| `app/javascript/dashboard/components-next/Companies/CompanyDetail/CompanyPeopleList.vue` | 99.3% | 1 |
-| `app/javascript/dashboard/components-next/Companies/CompanyDetail/ConfirmCompanyDeleteDialog.vue` | 96.2% | 1 |
-| `app/javascript/dashboard/components-next/Companies/helpers/companyHelper.js` | 97.4% | 1 |
-| `app/javascript/dashboard/routes/dashboard/companies/routes.js` | 97.2% | 1 |
-| `app/javascript/dashboard/routes/dashboard/companies/pages/CompaniesIndex.vue` | 99.5% | 1 |
-| `app/javascript/dashboard/routes/dashboard/companies/pages/CompanyDetailView.vue` | 99.7% | 1 |
+| `app/javascript/dashboard/stores/companies.js` | 38.5% | 142 |
+| `app/javascript/dashboard/routes/dashboard/companies/pages/CompanyDetailView.vue` | 3.8% | 102 |
+| `app/javascript/dashboard/routes/dashboard/companies/pages/CompaniesIndex.vue` | 6.3% | 75 |
+| `app/javascript/dashboard/components-next/Companies/CompanyDetail/CompanyDetailHeader.vue` | 12.2% | 72 |
+| `app/javascript/dashboard/components-next/Companies/CompanyDetail/CompanyEditPanel.vue` | 20.3% | 59 |
+| `app/javascript/dashboard/components-next/Companies/CompanySelector.vue` | 1.9% | 53 |
+| `app/javascript/dashboard/components-next/Companies/CompanyDetail/CompanyPeopleList.vue` | 17.4% | 38 |
+| `app/javascript/dashboard/components-next/Companies/CompanyDetail/CompanyNotesFeed.vue` | 25.0% | 33 |
+| `app/javascript/dashboard/components-next/Companies/CompanyCreateDialog.vue` | 15.6% | 27 |
+| `app/javascript/dashboard/components-next/Companies/CompanyDetail/CompanyConversationList.vue` | 7.7% | 24 |
+| `app/javascript/dashboard/components-next/Companies/CompanyDetail/CompanyFacts.vue` | 17.9% | 23 |
+| `app/javascript/dashboard/components-next/Companies/CompaniesHeader/components/CompanySortMenu.vue` | 19.2% | 21 |
+| `app/javascript/dashboard/components-next/Companies/CompaniesCard/CompaniesCard.vue` | 28.6% | 15 |
+| `app/javascript/dashboard/components-next/Companies/CompaniesHeader/components/CompanyMoreActions.vue` | 10.0% | 9 |
+| `app/javascript/dashboard/components-next/Companies/CompanyDetail/ConfirmCompanyDeleteDialog.vue` | 0.0% | 9 |
+| `app/javascript/dashboard/components-next/Companies/CompaniesListLayout.vue` | 36.4% | 7 |
+| `app/javascript/dashboard/composables/useCompaniesPaywall.js` | 0.0% | 6 |
+| `app/javascript/dashboard/api/companies.js` | 80.0% | 4 |
+| `app/javascript/dashboard/components-next/Companies/CompanySearchInput.vue` | 0.0% | 4 |
+| `app/javascript/dashboard/components-next/Companies/CompaniesHeader/CompanyHeader.vue` | 55.6% | 4 |
+| `app/javascript/dashboard/routes/dashboard/onboarding/account-details/useAccountEnrichment.js` | 94.5% | 3 |
 
 ## Backend: 76.7% (263 of 343 lines)
 
