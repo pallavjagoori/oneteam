@@ -33,6 +33,7 @@ release can be tested with the same files.
 | `app/javascript/dashboard/helper` | Done: 100% of functions, 99.8% of lines, 98.5% of branches. The rest is listed in UNREACHABLE.md |
 | `app/javascript/dashboard/store` (Vuex modules, Captain, factory, utils) | Done: 99.97% of lines, 99.6% of branches. The rest is listed in UNREACHABLE.md |
 | `app/javascript/dashboard/stores` | 100% statements, branches, functions and lines |
+| `app/javascript/dashboard/composables` | Done: 100% of functions, 99.95% of lines, 99.5% of branches. The rest is listed in UNREACHABLE.md |
 
 With the overlay (api and helper done), the full Vitest run has 5,877 passing tests and 38.5% line coverage
-(37.3% without it). The store work is not in that figure yet.
+(37.3% without it). The store and composables work is not in that figure yet.
