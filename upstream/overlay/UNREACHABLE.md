@@ -22,3 +22,6 @@ need porting: the Laravel/Vue version can leave them out.
 | `app/javascript/dashboard/helper/snoozeDateParser/parser.js` | 353, 389, 399, 409, 430, 440, 457 (`!fn`) | Weekday indexes come from `WEEKDAY_MAP`, and `NEXT_WEEKDAY_FN` has all seven. |
 | `app/javascript/dashboard/helper/snoozeDateParser/parser.js` | 582, 617 (`!isValid`) | `new Date(year, month, day)` with these numbers is always a valid date. |
 | `app/javascript/dashboard/helper/snoozeDateParser/parser.js` | 693, 707, 722 (fall-through) | Each regex only captures the units the `if` chain already handles. |
+| `app/javascript/dashboard/store/modules/conversations/helpers/filterHelpers.js` | 135 (`filterValue === 'all'`) | This line is inside `Array.isArray(filterValue)`, so an array never equals the string `'all'`. |
+| `app/javascript/dashboard/store/modules/conversations/helpers/filterHelpers.js` | 143 (`!Array.isArray`) | The array case already returned on line 140, so this check is always true. |
+| `app/javascript/dashboard/store/modules/conversations/helpers/filterHelpers.js` | 463 (`currentAndGroup.length > 0`) | The group always starts with one item and is reset to one item, so it is never empty. |
