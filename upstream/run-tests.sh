@@ -22,10 +22,11 @@ if [ ! -d "$HERE/chatwoot" ]; then
     https://github.com/chatwoot/chatwoot.git "$HERE/chatwoot"
 fi
 
-# Add OneTeam's own Chatwoot specs (see overlay/README.md). OVERLAY=0 measures
-# Chatwoot's tests alone, as released.
+# Add OneTeam's own Chatwoot specs and the fixes for Chatwoot's broken specs
+# (see apply-overlay.sh). OVERLAY=0 skips this, to measure Chatwoot's tests as
+# released; use it on a fresh clone, since files copied by earlier runs stay.
 if [ "${OVERLAY:-1}" != "0" ]; then
-  cp -r "$HERE/overlay/." "$HERE/chatwoot/"
+  "$HERE/apply-overlay.sh"
 fi
 
 mkdir -p "$HERE/results" "$HERE/certs"

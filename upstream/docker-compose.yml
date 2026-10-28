@@ -49,6 +49,9 @@ services:
       discovery.type: single-node
       plugins.security.disabled: 'true'
       OPENSEARCH_JAVA_OPTS: -Xms512m -Xmx512m
+      # Test data is tiny. Without this, OpenSearch makes its indexes read-only
+      # when the host disk passes 95% full, and search specs fail for no reason.
+      cluster.routing.allocation.disk.threshold_enabled: 'false'
     # Some specs check that a public host resolves before WebMock stubs the
     # request. Pin it, so the suite also passes where outbound DNS is blocked.
     # The tests service shares this container's network, and so its hosts file.
