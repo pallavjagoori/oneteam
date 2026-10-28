@@ -30,6 +30,9 @@ release can be tested with the same files.
 | Folder | Coverage |
 | --- | --- |
 | `app/javascript/dashboard/api` | 100% statements, branches, functions and lines |
-| `app/javascript/dashboard/helper` | In progress: 95.8% of lines, 93.5% of branches (was 87% of lines) |
+| `app/javascript/dashboard/helper` | Done: 100% of functions, 99.8% of lines, 98.5% of branches. The rest is listed in UNREACHABLE.md |
+| `app/javascript/dashboard/store/captain` | 100% statements, branches, functions and lines |
+| `app/javascript/dashboard/stores` | 100% statements, branches, functions and lines |
 
-With the overlay, the full Vitest run has 5,541 passing tests and 37.8% line coverage (37.3% without it).
+With the overlay (api and helper done), the full Vitest run has 5,877 passing tests and 38.5% line coverage
+(37.3% without it). The store work is not in that figure yet.

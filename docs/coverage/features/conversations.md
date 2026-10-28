@@ -1,6 +1,6 @@
 # Conversations: coverage gaps
 
-## Frontend: 49.4% (1720 of 3482 lines)
+## Frontend: 50.3% (1753 of 3482 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -31,11 +31,9 @@
 | `app/javascript/dashboard/components-next/Conversation/SidepanelSwitch.vue` | 0.0% | 18 |
 | `app/javascript/dashboard/composables/chatlist/useChatListKeyboardEvents.js` | 0.0% | 18 |
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/ConversationCard.story.vue` | 0.0% | 16 |
-| `app/javascript/dashboard/helper/snoozeDateParser/parser.js` | 95.9% | 16 |
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/CardPriorityIcon.vue` | 0.0% | 15 |
 | `app/javascript/dashboard/store/modules/conversations/index.js` | 90.6% | 15 |
 | `app/javascript/dashboard/composables/commands/useConversationHotKeys.js` | 86.9% | 13 |
-| `app/javascript/dashboard/helper/snoozeDateParser/localization.js` | 89.1% | 13 |
 | `app/javascript/dashboard/components/CustomSnoozeModal.vue` | 21.4% | 11 |
 | `app/javascript/dashboard/routes/dashboard/settings/conversationWorkflow/index.vue` | 8.3% | 11 |
 | `app/javascript/dashboard/components/ChatListHeader.vue` | 66.7% | 10 |
@@ -48,10 +46,8 @@
 | `app/javascript/dashboard/store/modules/conversations/helpers.js` | 93.9% | 5 |
 | `app/javascript/dashboard/components-next/NewConversation/components/story/fixtures.js` | 0.0% | 4 |
 | `app/javascript/dashboard/components-next/NewConversation/components/InboxSelector.vue` | 76.9% | 3 |
-| `app/javascript/dashboard/helper/snoozeHelpers.js` | 94.0% | 3 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/components/LockToSingleConversationPreview.vue` | 25.0% | 3 |
 | `app/javascript/dashboard/components-next/NewConversation/components/InboxEmptyState.vue` | 50.0% | 2 |
-| `app/javascript/dashboard/helper/snoozeDateParser/tokenMaps.js` | 97.9% | 2 |
 | `app/javascript/dashboard/store/modules/conversationTypingStatus.js` | 89.5% | 2 |
 | `app/javascript/dashboard/store/modules/conversations/helpers/actionHelpers.js` | 93.3% | 2 |
 | `app/javascript/dashboard/components-next/Conversation/ConversationRequiredEmpty.vue` | 75.0% | 1 |
@@ -59,6 +55,7 @@
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/CardContent.vue` | 0.0% | 1 |
 | `app/javascript/dashboard/components-next/NewConversation/components/EmailOptions.vue` | 96.4% | 1 |
 | `app/javascript/dashboard/components-next/NewConversation/helpers/composeConversationHelper.js` | 98.7% | 1 |
+| `app/javascript/dashboard/helper/snoozeDateParser/parser.js` | 99.7% | 1 |
 
 ## Backend: 90.1% (1379 of 1531 lines)
 

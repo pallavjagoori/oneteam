@@ -1,6 +1,6 @@
 # Custom filters and saved views: coverage gaps
 
-## Frontend: 45.2% (573 of 1268 lines)
+## Frontend: 45.4% (576 of 1268 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -33,9 +33,7 @@
 | `app/javascript/dashboard/components-next/filter/provider.js` | 78.6% | 6 |
 | `app/javascript/dashboard/store/modules/customViews.js` | 95.9% | 3 |
 | `app/javascript/dashboard/components-next/filter/fixtures/filterTypes.js` | 0.0% | 2 |
-| `app/javascript/dashboard/helper/customViewsHelper.js` | 96.5% | 2 |
 | `app/javascript/dashboard/store/modules/conversations/helpers/filterHelpers.js` | 98.5% | 2 |
-| `app/javascript/dashboard/helper/filterQueryGenerator.js` | 95.5% | 1 |
 | `app/javascript/dashboard/routes/dashboard/settings/auditlogs/components/AuditLogFilters.vue` | 98.2% | 1 |
 
 ## Backend: 96.9% (925 of 955 lines)

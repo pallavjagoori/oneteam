@@ -1,6 +1,6 @@
 # Inboxes: coverage gaps
 
-## Frontend: 36.6% (844 of 2304 lines)
+## Frontend: 37.4% (862 of 2304 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -21,7 +21,6 @@
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/settingsPage/components/HmacSecretKey.vue` | 15.4% | 22 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/InboxChannels.vue` | 12.5% | 21 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/ChannelList.vue` | 4.8% | 20 |
-| `app/javascript/dashboard/helper/inbox.js` | 77.5% | 18 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/components/ChannelName.vue` | 0.0% | 18 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/FinishSetup.vue` | 82.2% | 16 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Email.vue` | 6.3% | 15 |

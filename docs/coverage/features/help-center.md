@@ -1,6 +1,6 @@
 # Help center: coverage gaps
 
-## Frontend: 20.2% (699 of 3462 lines)
+## Frontend: 20.5% (708 of 3462 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -70,7 +70,6 @@
 | `app/javascript/dashboard/store/modules/helpCenterCategories/getters.js` | 75.0% | 7 |
 | `app/javascript/dashboard/components-next/HelpCenter/ArticleCard/ArticleCard.story.vue` | 0.0% | 6 |
 | `app/javascript/dashboard/components-next/HelpCenter/LocaleCard/LocaleCard.story.vue` | 0.0% | 6 |
-| `app/javascript/dashboard/helper/portalHelper.js` | 84.2% | 6 |
 | `app/javascript/dashboard/routes/dashboard/helpcenter/components/ArticleSearch/SearchResults.vue` | 33.3% | 6 |
 | `app/javascript/dashboard/store/modules/helpCenterPortals/mutations.js` | 78.6% | 6 |
 | `app/javascript/dashboard/components-next/HelpCenter/CategoryCard/CategoryCard.story.vue` | 0.0% | 5 |
@@ -85,7 +84,6 @@
 | `app/javascript/dashboard/components-next/HelpCenter/Pages/PortalSettingsPage/PortalSettings.story.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/modules/search/components/SearchResultArticlesList.vue` | 0.0% | 4 |
 | `app/javascript/portal/components/SearchSuggestions.vue` | 81.8% | 4 |
-| `app/javascript/dashboard/helper/articleDiffHelper.js` | 96.9% | 3 |
 | `app/javascript/entrypoints/portal.js` | 0.0% | 3 |
 | `app/javascript/portal/portalThemeHelper.js` | 95.7% | 3 |
 | `app/javascript/portal/api/article.js` | 33.3% | 2 |

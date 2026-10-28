@@ -1,0 +1,62 @@
+import { parseDateFromText } from '../parser';
+
+// Inputs that reach the parser's less common branches. Times are UTC (the
+// test runner sets TZ=UTC). 2026-03-04 is a Wednesday, 03-06 a Friday,
+// 03-07 a Saturday and 03-08 a Sunday.
+describe('parseDateFromText edge cases (OneTeam)', () => {
+  it.each([
+    ['april 0th day', '2026-03-04T10:00:00Z', null],
+    ['2 days at 25', '2026-03-04T10:00:00Z', null],
+    ['tomorrow morning 13', '2026-03-04T10:00:00Z', null],
+    ['tomorrow pm', '2026-03-04T10:00:00Z', '2026-03-05T14:00:00.000Z'],
+    ['tomorrow am', '2026-03-04T10:00:00Z', '2026-03-05T09:00:00.000Z'],
+    ['next minute', '2026-03-04T10:00:00Z', '2026-03-04T10:01:00.000Z'],
+    ['next january', '2026-03-04T10:00:00Z', '2027-01-01T09:00:00.000Z'],
+    ['next june 3pm', '2026-03-04T10:00:00Z', '2026-06-01T15:00:00.000Z'],
+    ['monday morning 13', '2026-03-04T10:00:00Z', null],
+    ['wednesday morning 9', '2026-03-04T10:00:00Z', '2026-03-11T09:00:00.000Z'],
+    ['25:00', '2026-03-04T10:00:00Z', null],
+    ['evening 13pm', '2026-03-04T10:00:00Z', null],
+    ['midnight 12am', '2026-03-04T10:00:00Z', '2026-03-05T00:00:00.000Z'],
+    ['evening 3am', '2026-03-04T10:00:00Z', null],
+    ['evening 13', '2026-03-04T10:00:00Z', null],
+    ['january 2020', '2026-03-04T10:00:00Z', null],
+    ['march 32nd day', '2026-03-04T10:00:00Z', null],
+    ['sixth week of april', '2026-03-04T10:00:00Z', null],
+    ['april first week at 25', '2026-03-04T10:00:00Z', null],
+    ['march first week', '2026-03-01T10:00:00Z', null],
+    ['february fifth week', '2026-01-04T10:00:00Z', null],
+    ['first week of april', '2026-03-04T10:00:00Z', '2026-04-01T09:00:00.000Z'],
+    ['2026-02-30', '2026-01-04T10:00:00Z', null],
+    ['end of week', '2026-03-06T10:00:00Z', '2026-03-06T17:00:00.000Z'],
+    ['end of week', '2026-03-06T18:00:00Z', '2026-03-13T17:00:00.000Z'],
+    ['end of month', '2026-03-31T18:00:00Z', '2026-04-30T17:00:00.000Z'],
+    ['end of month', '2026-03-04T10:00:00Z', '2026-03-31T17:00:00.000Z'],
+    ['end of next month', '2026-03-04T10:00:00Z', '2026-04-30T17:00:00.000Z'],
+    ['start of next month', '2026-03-04T10:00:00Z', '2026-04-01T09:00:00.000Z'],
+    ['this weekend', '2026-03-07T08:00:00Z', '2026-03-07T10:00:00.000Z'],
+    ['this weekend', '2026-03-07T12:00:00Z', '2026-03-07T14:00:00.000Z'],
+    ['this weekend', '2026-03-07T19:00:00Z', '2026-03-08T10:00:00.000Z'],
+    ['this weekend 8pm', '2026-03-07T12:00:00Z', '2026-03-07T20:00:00.000Z'],
+    ['this weekend 9am', '2026-03-07T12:00:00Z', '2026-03-08T09:00:00.000Z'],
+    ['this weekend', '2026-03-08T08:00:00Z', '2026-03-08T10:00:00.000Z'],
+    ['this weekend', '2026-03-08T12:00:00Z', '2026-03-08T14:00:00.000Z'],
+    ['this weekend 8pm', '2026-03-08T12:00:00Z', '2026-03-08T20:00:00.000Z'],
+    ['this weekend 9am', '2026-03-08T12:00:00Z', '2026-03-14T09:00:00.000Z'],
+    ['next weekend', '2026-03-07T12:00:00Z', '2026-03-14T09:00:00.000Z'],
+    ['please', '2026-03-04T10:00:00Z', null],
+    ['!!!', '2026-03-04T10:00:00Z', null],
+    ['tomorrow same time', '2026-03-04T10:00:00Z', '2026-03-05T10:00:00.000Z'],
+    ['same time today', '2026-03-04T10:00:00Z', null],
+    ['tonight 25', '2026-03-04T10:00:00Z', null],
+    ['15 march next year', '2026-03-04T10:00:00Z', '2027-03-15T09:00:00.000Z'],
+    ['march 2 2020', '2026-03-04T10:00:00Z', null],
+    ['february 30 2027', '2026-03-04T10:00:00Z', null],
+    ['march 5 2027 at 25', '2026-03-04T10:00:00Z', null],
+    ['13/01/2027', '2026-03-04T10:00:00Z', '2027-01-13T09:00:00.000Z'],
+    ['01/13/2027', '2026-03-04T10:00:00Z', '2027-01-13T09:00:00.000Z'],
+  ])('parses %j at %s as %s', (text, now, expected) => {
+    const result = parseDateFromText(text, new Date(now));
+    expect(result ? result.date.toISOString() : null).toBe(expected);
+  });
+});

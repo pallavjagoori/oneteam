@@ -39,11 +39,16 @@ docker run --rm -v "$HERE/chatwoot/app:/chatwoot/app" -v "$OUT:/out" \
 # List every file still below 100%, with full paths and the uncovered lines
 # and branch lines, read from lcov (the text table cuts long names short).
 echo
-echo "Files below 100% (uncovered lines | lines with an uncovered branch):"
+echo "Files below 100% (uncovered lines | lines with an uncovered branch | functions never run):"
 awk -F'[:,]' '
-  /^SF:/ { file = $2; lines = ""; branches = "" }
+  /^SF:/ { file = $2; lines = ""; branches = ""; fns = "" }
+  /^FN:/ { fnline[$3] = $2 }
+  /^FNDA:0,/ { fns = fns " " fnline[$3] }
   /^DA:/ && $3 == 0 { lines = lines " " $2 }
   /^BRDA:/ && ($5 == "-" || $5 == 0) && !(($2) in seen) { seen[$2]; branches = branches " " $2 }
-  /^end_of_record/ { if (lines != "" || branches != "") printf "  %s |%s |%s\n", file, lines, branches; delete seen }
+  /^end_of_record/ {
+    if (lines != "" || branches != "" || fns != "") printf "  %s |%s |%s |%s\n", file, lines, branches, fns
+    delete seen; delete fnline
+  }
 ' "$OUT/coverage/lcov.info"
 exit $status

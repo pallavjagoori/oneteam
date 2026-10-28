@@ -3,6 +3,7 @@ import {
   generateAutomationPayload,
   generateCustomAttributeTypes,
   generateCustomAttributes,
+  generateTeamOptions,
   getActionIcon,
   getConditionOptions,
   getDefaultConditions,
@@ -33,6 +34,15 @@ describe('automationHelper (OneTeam)', () => {
       attributeDisplayType: 'list',
       customAttributeType: 'conversation_attribute',
     });
+  });
+
+  it('turns teams into options with their emoji and colour', () => {
+    expect(
+      generateTeamOptions([
+        { id: 1, name: 'Sales', icon: '💼', icon_color: 'blue' },
+      ])
+    ).toEqual([{ id: 1, name: 'Sales', emoji: '💼', iconColor: 'blue' }]);
+    expect(generateTeamOptions(null)).toEqual([]);
   });
 
   it('uses a default icon for unknown actions', () => {
