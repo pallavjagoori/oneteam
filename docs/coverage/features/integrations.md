@@ -1,6 +1,6 @@
 # Integrations: coverage gaps
 
-## Frontend: 36.9% (378 of 1025 lines)
+## Frontend: 39.4% (404 of 1025 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -16,7 +16,6 @@
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Slack/SelectChannelWarning.vue` | 20.6% | 27 |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Integration.vue` | 19.4% | 25 |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Notion.vue` | 0.0% | 22 |
-| `app/javascript/dashboard/store/modules/integrations.js` | 71.8% | 20 |
 | `app/javascript/dashboard/components-next/message/bubbles/Dyte.vue` | 5.3% | 18 |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Index.vue` | 5.3% | 18 |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Webhooks/NewWebHook.vue` | 26.1% | 17 |
@@ -33,7 +32,6 @@
 | `app/javascript/dashboard/components-next/integration-card/IntegrationCard.vue` | 0.0% | 6 |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/SingleIntegrationHooks.vue` | 57.1% | 6 |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Webhooks/EditWebHook.vue` | 25.0% | 6 |
-| `app/javascript/dashboard/store/modules/conversations/actions/messageTranslateActions.js` | 73.9% | 6 |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Webhooks/WebhookPaywall.vue` | 20.0% | 4 |
 | `app/javascript/shared/helpers/IntegrationHelper.js` | 50.0% | 2 |
 

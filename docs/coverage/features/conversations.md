@@ -1,6 +1,6 @@
 # Conversations: coverage gaps
 
-## Frontend: 50.3% (1753 of 3482 lines)
+## Frontend: 57.8% (2011 of 3482 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -9,17 +9,13 @@
 | `app/javascript/dashboard/components-next/NewConversation/ComposeConversation.vue` | 0.0% | 105 |
 | `app/javascript/dashboard/routes/dashboard/conversation/ConversationAction.vue` | 3.8% | 100 |
 | `app/javascript/dashboard/components/ConversationItem.vue` | 0.0% | 95 |
-| `app/javascript/dashboard/composables/chatlist/useBulkActions.js` | 0.0% | 83 |
 | `app/javascript/dashboard/components-next/ConversationWorkflow/ConversationResolveAttributesModal.vue` | 3.9% | 73 |
 | `app/javascript/dashboard/components-next/NewConversation/components/ActionButtons.vue` | 4.2% | 69 |
 | `app/javascript/dashboard/components-next/ConversationWorkflow/ConversationRequiredAttributes.vue` | 8.5% | 54 |
-| `app/javascript/dashboard/store/modules/conversations/actions.js` | 74.9% | 54 |
 | `app/javascript/dashboard/routes/dashboard/conversation/ConversationView.vue` | 3.9% | 49 |
 | `app/javascript/dashboard/routes/dashboard/conversation/ConversationParticipant.vue` | 13.7% | 44 |
-| `app/javascript/dashboard/composables/useConversationSuggestions.js` | 2.8% | 35 |
 | `app/javascript/dashboard/components-next/NewConversation/components/ContentTemplateSelector.vue` | 13.9% | 31 |
 | `app/javascript/dashboard/components-next/year-in-review/slides/ConversationsSlide.vue` | 0.0% | 31 |
-| `app/javascript/dashboard/store/modules/conversations/getters.js` | 71.6% | 31 |
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/ConversationCard.vue` | 16.7% | 30 |
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/ConversationCardExpanded.vue` | 3.6% | 27 |
 | `app/javascript/dashboard/routes/dashboard/commands/CmdBarConversationSnooze.vue` | 0.0% | 27 |
@@ -29,11 +25,8 @@
 | `app/javascript/dashboard/components/ConversationList.vue` | 0.0% | 20 |
 | `app/javascript/dashboard/routes/dashboard/conversation/SharedFiles.vue` | 13.0% | 20 |
 | `app/javascript/dashboard/components-next/Conversation/SidepanelSwitch.vue` | 0.0% | 18 |
-| `app/javascript/dashboard/composables/chatlist/useChatListKeyboardEvents.js` | 0.0% | 18 |
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/ConversationCard.story.vue` | 0.0% | 16 |
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/CardPriorityIcon.vue` | 0.0% | 15 |
-| `app/javascript/dashboard/store/modules/conversations/index.js` | 90.6% | 15 |
-| `app/javascript/dashboard/composables/commands/useConversationHotKeys.js` | 86.9% | 13 |
 | `app/javascript/dashboard/components/CustomSnoozeModal.vue` | 21.4% | 11 |
 | `app/javascript/dashboard/routes/dashboard/settings/conversationWorkflow/index.vue` | 8.3% | 11 |
 | `app/javascript/dashboard/components/ChatListHeader.vue` | 66.7% | 10 |
@@ -43,13 +36,10 @@
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/CardStatusIcon.vue` | 0.0% | 7 |
 | `app/javascript/dashboard/components-next/NewConversation/components/ContentTemplateForm.vue` | 30.0% | 7 |
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/UnreadBadge.vue` | 16.7% | 5 |
-| `app/javascript/dashboard/store/modules/conversations/helpers.js` | 93.9% | 5 |
 | `app/javascript/dashboard/components-next/NewConversation/components/story/fixtures.js` | 0.0% | 4 |
 | `app/javascript/dashboard/components-next/NewConversation/components/InboxSelector.vue` | 76.9% | 3 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/components/LockToSingleConversationPreview.vue` | 25.0% | 3 |
 | `app/javascript/dashboard/components-next/NewConversation/components/InboxEmptyState.vue` | 50.0% | 2 |
-| `app/javascript/dashboard/store/modules/conversationTypingStatus.js` | 89.5% | 2 |
-| `app/javascript/dashboard/store/modules/conversations/helpers/actionHelpers.js` | 93.3% | 2 |
 | `app/javascript/dashboard/components-next/Conversation/ConversationRequiredEmpty.vue` | 75.0% | 1 |
 | `app/javascript/dashboard/components-next/Conversation/InboxName.vue` | 66.7% | 1 |
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/CardContent.vue` | 0.0% | 1 |

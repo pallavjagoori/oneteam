@@ -35,5 +35,6 @@ release can be tested with the same files.
 | `app/javascript/dashboard/stores` | 100% statements, branches, functions and lines |
 | `app/javascript/dashboard/composables` | Done: 100% of functions, 99.95% of lines, 99.5% of branches. The rest is listed in UNREACHABLE.md |
 
-With the overlay (api and helper done), the full Vitest run has 5,877 passing tests and 38.5% line coverage
-(37.3% without it). The store and composables work is not in that figure yet.
+With the overlay (api, helper, store, stores and composables done), the full Vitest run has 6,442 passing
+tests and 41.9% line coverage (37.3% without it). Nearly all of what is left is in Vue components:
+`components-next`, `routes` and `components`.

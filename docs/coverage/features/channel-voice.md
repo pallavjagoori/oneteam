@@ -1,6 +1,6 @@
 # Voice calls: coverage gaps
 
-## Frontend: 18.4% (171 of 928 lines)
+## Frontend: 22.3% (207 of 928 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -13,7 +13,6 @@
 | `app/javascript/dashboard/routes/dashboard/calls/pages/CallsIndex.vue` | 13.0% | 47 |
 | `app/javascript/dashboard/components-next/call/CallCard.story.vue` | 0.0% | 44 |
 | `app/javascript/dashboard/components-next/call/CallCard.vue` | 0.0% | 42 |
-| `app/javascript/dashboard/stores/calls.js` | 5.3% | 36 |
 | `app/javascript/dashboard/components-next/Calls/CallListItem.vue` | 37.3% | 32 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/settingsPage/CallRecordingSettings.vue` | 0.0% | 26 |
 | `app/javascript/dashboard/components/widgets/conversation/VoiceCallStatus.vue` | 0.0% | 19 |

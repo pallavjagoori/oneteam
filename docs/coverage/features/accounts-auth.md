@@ -1,10 +1,9 @@
 # Accounts, users and sign-in: coverage gaps
 
-## Frontend: 33.9% (521 of 1538 lines)
+## Frontend: 47.0% (723 of 1538 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/composables/useCallSession.js` | 9.8% | 129 |
 | `app/javascript/v3/views/login/Index.vue` | 25.0% | 105 |
 | `app/javascript/dashboard/routes/dashboard/settings/profile/Index.vue` | 7.6% | 73 |
 | `app/javascript/dashboard/routes/dashboard/settings/account/components/AutoResolve.vue` | 16.9% | 54 |
@@ -12,14 +11,12 @@
 | `app/javascript/v3/views/auth/signup/components/Signup/Form.vue` | 7.4% | 50 |
 | `app/javascript/dashboard/routes/dashboard/settings/account/components/AccountDelete.vue` | 4.3% | 45 |
 | `app/javascript/dashboard/routes/dashboard/settings/profile/ActiveSessions.vue` | 10.0% | 45 |
-| `app/javascript/dashboard/store/modules/accounts.js` | 51.6% | 44 |
 | `app/javascript/dashboard/components-next/sidebar/SidebarProfileMenuStatus.vue` | 15.0% | 34 |
 | `app/javascript/dashboard/components/auth/SessionLimitOverlay.vue` | 26.7% | 33 |
 | `app/javascript/v3/views/auth/verify-email/Index.vue` | 15.4% | 33 |
 | `app/javascript/v3/api/auth.js` | 38.0% | 31 |
 | `app/javascript/dashboard/components-next/sidebar/SidebarAccountSwitcher.vue` | 3.6% | 27 |
 | `app/javascript/dashboard/routes/dashboard/settings/profile/UserLanguageSelect.vue` | 12.9% | 27 |
-| `app/javascript/dashboard/store/modules/auth.js` | 75.7% | 27 |
 | `app/javascript/dashboard/components-next/sidebar/SidebarProfileMenu.vue` | 10.3% | 26 |
 | `app/javascript/v3/views/auth/reset/password/Index.vue` | 21.4% | 22 |
 | `app/javascript/dashboard/routes/dashboard/settings/profile/ChangePassword.vue` | 10.5% | 17 |
@@ -39,7 +36,6 @@
 | `app/javascript/dashboard/routes/dashboard/settings/profile/UserProfilePicture.vue` | 28.6% | 5 |
 | `app/javascript/dashboard/routes/dashboard/settings/account/components/SectionLayout.vue` | 33.3% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/profile/Wrapper.vue` | 0.0% | 3 |
-| `app/javascript/dashboard/composables/useAccount.js` | 90.5% | 2 |
 | `app/javascript/v3/views/auth/signup/Index.vue` | 96.2% | 1 |
 
 ## Backend: 95.9% (1628 of 1697 lines)

@@ -1,12 +1,11 @@
 # Reports and analytics: coverage gaps
 
-## Frontend: 47.8% (593 of 1241 lines)
+## Frontend: 53.9% (669 of 1241 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/components/heatmaps/BaseHeatmapContainer.vue` | 1.8% | 112 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/components/heatmaps/HeatmapDateRangeSelector.vue` | 2.5% | 77 |
-| `app/javascript/dashboard/store/modules/reports.js` | 26.3% | 73 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/components/SummaryReports.vue` | 1.9% | 53 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/components/StatsLiveReportsContainer.vue` | 15.8% | 48 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/components/WootReports.vue` | 2.6% | 37 |
@@ -34,8 +33,6 @@
 | `app/javascript/dashboard/routes/dashboard/settings/reports/components/heatmaps/ConversationHeatmapContainer.vue` | 0.0% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/components/heatmaps/ResolutionHeatmapContainer.vue` | 0.0% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/components/overview/MetricCard.vue` | 80.0% | 2 |
-| `app/javascript/dashboard/store/modules/SLAReports.js` | 92.3% | 2 |
-| `app/javascript/dashboard/composables/useReportMetrics.js` | 92.3% | 1 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/AgentReports.vue` | 0.0% | 1 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/InboxReports.vue` | 0.0% | 1 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/LiveReports.vue` | 50.0% | 1 |

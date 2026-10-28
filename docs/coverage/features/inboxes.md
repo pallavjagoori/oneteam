@@ -1,6 +1,6 @@
 # Inboxes: coverage gaps
 
-## Frontend: 37.4% (862 of 2304 lines)
+## Frontend: 41.0% (945 of 2304 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -9,7 +9,6 @@
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/settingsPage/CollaboratorsPage.vue` | 20.5% | 182 |
 | `app/javascript/dashboard/routes/dashboard/inbox/InboxList.vue` | 1.0% | 99 |
 | `app/javascript/dashboard/routes/dashboard/inbox/InboxView.vue` | 1.3% | 78 |
-| `app/javascript/dashboard/store/modules/inboxes.js` | 56.6% | 75 |
 | `app/javascript/dashboard/components-next/Inbox/InboxCard.vue` | 9.2% | 59 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/settingsPage/ConfigurationPage.vue` | 35.9% | 59 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/Index.vue` | 12.1% | 51 |
@@ -38,7 +37,6 @@
 | `app/javascript/dashboard/routes/dashboard/inbox/components/PaginationButton.vue` | 45.5% | 6 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/components/SingleSelectDropdown.vue` | 25.0% | 6 |
 | `app/javascript/dashboard/routes/dashboard/inbox/components/InboxOptionMenu.vue` | 37.5% | 5 |
-| `app/javascript/dashboard/store/modules/inboxes/channelActions.js` | 80.8% | 5 |
 | `app/javascript/dashboard/routes/dashboard/inbox/InboxEmptyState.vue` | 42.9% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/components/InboxReconnectionRequired.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/components/InputRadioGroup.vue` | 55.6% | 4 |
@@ -46,8 +44,6 @@
 | `app/javascript/dashboard/components/ChannelSelector.vue` | 77.8% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/ChannelFactory.vue` | 50.0% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/settingsPage/CallBusinessHoursSettings.vue` | 95.0% | 2 |
-| `app/javascript/dashboard/store/modules/inboxMembers.js` | 33.3% | 2 |
-| `app/javascript/dashboard/composables/commands/useInboxHotKeys.js` | 92.3% | 1 |
 | `app/javascript/dashboard/routes/dashboard/inbox/components/MenuItem.vue` | 50.0% | 1 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/emailChannels/Google.vue` | 0.0% | 1 |
 
