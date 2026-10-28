@@ -59,10 +59,12 @@ For each new Chatwoot release: re-run `tools/inventory/update.sh <new tag>`, dif
 against the previous release, turn every change into a porting task, and re-run the contract tests. New releases
 cannot be converted fully automatically, but this turns each one into a checklist.
 
-## Open questions
+## Decisions
 
-- **Enterprise features.** Code in Chatwoot's `enterprise/` folder is under the Chatwoot Enterprise License, not MIT.
-  It allows changes for development and testing, but says Chatwoot owns any modifications and forbids publishing or
-  distributing them without a Chatwoot subscription. A direct port of that code is therefore unlikely to be
-  publishable as open source. The inventory marks every enterprise file with (EE) so these features can be handled
-  separately. How to handle them is still to be decided.
+- **Laravel, not Node** (2026-10-28). Rails maps almost 1:1 onto Laravel (Eloquent, queues, Reverb, Fortify,
+  mailers, policies, migrations), which keeps porting each new Chatwoot release mechanical.
+- **Enterprise features are ported too** (2026-10-28). Code in Chatwoot's `enterprise/` folder is under the Chatwoot
+  Enterprise License, not MIT. That license says Chatwoot owns modifications and forbids distributing them without a
+  Chatwoot subscription, so the ported enterprise code is kept in its own `ee/` folder under that same license,
+  separate from the MIT code. That way the MIT part stays clean, and the enterprise part can be dropped or replaced
+  later if needed. The inventory marks every enterprise file with (EE).
