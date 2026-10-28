@@ -27,7 +27,23 @@ for path in "$@"; do
   fi
 done
 
-docker run --rm -v "$HERE/chatwoot/app:/chatwoot/app" "oneteam-chatwoot-tests:$VERSION" \
+OUT="$HERE/results/vitest-sh"
+rm -rf "$OUT" && mkdir -p "$OUT"
+status=0
+docker run --rm -v "$HERE/chatwoot/app:/chatwoot/app" -v "$OUT:/out" \
+  "oneteam-chatwoot-tests:$VERSION" \
   sh -c 'TZ=UTC npx vitest --no-watch --no-cache --coverage --coverage.experimentalAstAwareRemapping \
-    --coverage.reporter=text "$@"' vitest "${includes[@]}" \
-    "--coverage.exclude=**/*.spec.js" "--coverage.exclude=**/specs/**" "$@"
+    --coverage.reporter=text-summary --coverage.reporter=lcovonly --coverage.reportsDirectory=/out/coverage "$@"' vitest "${includes[@]}" \
+    "--coverage.exclude=**/*.spec.js" "--coverage.exclude=**/specs/**" "$@" || status=$?
+
+# List every file still below 100%, with full paths and the uncovered lines
+# and branch lines, read from lcov (the text table cuts long names short).
+echo
+echo "Files below 100% (uncovered lines | lines with an uncovered branch):"
+awk -F'[:,]' '
+  /^SF:/ { file = $2; lines = ""; branches = "" }
+  /^DA:/ && $3 == 0 { lines = lines " " $2 }
+  /^BRDA:/ && ($5 == "-" || $5 == 0) && !(($2) in seen) { seen[$2]; branches = branches " " $2 }
+  /^end_of_record/ { if (lines != "" || branches != "") printf "  %s |%s |%s\n", file, lines, branches; delete seen }
+' "$OUT/coverage/lcov.info"
+exit $status
