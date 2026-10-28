@@ -25,3 +25,6 @@ need porting: the Laravel/Vue version can leave them out.
 | `app/javascript/dashboard/store/modules/conversations/helpers/filterHelpers.js` | 135 (`filterValue === 'all'`) | This line is inside `Array.isArray(filterValue)`, so an array never equals the string `'all'`. |
 | `app/javascript/dashboard/store/modules/conversations/helpers/filterHelpers.js` | 143 (`!Array.isArray`) | The array case already returned on line 140, so this check is always true. |
 | `app/javascript/dashboard/store/modules/conversations/helpers/filterHelpers.js` | 463 (`currentAndGroup.length > 0`) | The group always starts with one item and is reset to one item, so it is never empty. |
+| `app/javascript/dashboard/store/modules/agentBots.js` | 76 (`return null`) | The `catch` calls `throwErrorMessage`, which always throws, so the code after the `try` only runs after `return response.data`. |
+| `app/javascript/dashboard/store/modules/auth.js` | 93 (`currentAccount \|\| {}`) | `currentAccount` already defaults to `{}` in the destructuring above, so it is never falsy. |
+| `app/javascript/dashboard/store/modules/summaryReports.js` | 29 (`if (!config) return`) | `fetchSummaryReports` is private and only called with `inbox`, `agent`, `team` or `label`, which all have a config. |
