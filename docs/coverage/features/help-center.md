@@ -1,6 +1,6 @@
 # Help center: coverage gaps
 
-## Frontend: 20.0% (693 of 3462 lines)
+## Frontend: 20.2% (699 of 3462 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -85,8 +85,6 @@
 | `app/javascript/dashboard/components-next/HelpCenter/Pages/PortalSettingsPage/PortalSettings.story.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/modules/search/components/SearchResultArticlesList.vue` | 0.0% | 4 |
 | `app/javascript/portal/components/SearchSuggestions.vue` | 81.8% | 4 |
-| `app/javascript/dashboard/api/helpCenter/articles.js` | 80.0% | 3 |
-| `app/javascript/dashboard/api/helpCenter/portals.js` | 57.1% | 3 |
 | `app/javascript/dashboard/helper/articleDiffHelper.js` | 96.9% | 3 |
 | `app/javascript/entrypoints/portal.js` | 0.0% | 3 |
 | `app/javascript/portal/portalThemeHelper.js` | 95.7% | 3 |

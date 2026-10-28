@@ -1,6 +1,6 @@
 # Integrations: coverage gaps
 
-## Frontend: 36.2% (371 of 1025 lines)
+## Frontend: 36.9% (378 of 1025 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -35,10 +35,7 @@
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Webhooks/EditWebHook.vue` | 25.0% | 6 |
 | `app/javascript/dashboard/store/modules/conversations/actions/messageTranslateActions.js` | 73.9% | 6 |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Webhooks/WebhookPaywall.vue` | 20.0% | 4 |
-| `app/javascript/dashboard/api/integrations/shopify.js` | 25.0% | 3 |
-| `app/javascript/dashboard/api/integrations/stripe.js` | 25.0% | 3 |
 | `app/javascript/shared/helpers/IntegrationHelper.js` | 50.0% | 2 |
-| `app/javascript/dashboard/api/notion_auth.js` | 50.0% | 1 |
 
 ## Backend: 94.7% (2676 of 2827 lines)
 

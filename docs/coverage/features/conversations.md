@@ -1,6 +1,6 @@
 # Conversations: coverage gaps
 
-## Frontend: 49.3% (1715 of 3482 lines)
+## Frontend: 49.4% (1720 of 3482 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -47,11 +47,9 @@
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/UnreadBadge.vue` | 16.7% | 5 |
 | `app/javascript/dashboard/store/modules/conversations/helpers.js` | 93.9% | 5 |
 | `app/javascript/dashboard/components-next/NewConversation/components/story/fixtures.js` | 0.0% | 4 |
-| `app/javascript/dashboard/api/inbox/conversation.js` | 87.5% | 3 |
 | `app/javascript/dashboard/components-next/NewConversation/components/InboxSelector.vue` | 76.9% | 3 |
 | `app/javascript/dashboard/helper/snoozeHelpers.js` | 94.0% | 3 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/components/LockToSingleConversationPreview.vue` | 25.0% | 3 |
-| `app/javascript/dashboard/api/conversations.js` | 66.7% | 2 |
 | `app/javascript/dashboard/components-next/NewConversation/components/InboxEmptyState.vue` | 50.0% | 2 |
 | `app/javascript/dashboard/helper/snoozeDateParser/tokenMaps.js` | 97.9% | 2 |
 | `app/javascript/dashboard/store/modules/conversationTypingStatus.js` | 89.5% | 2 |

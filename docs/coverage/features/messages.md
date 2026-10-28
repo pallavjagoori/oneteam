@@ -1,6 +1,6 @@
 # Messages and attachments: coverage gaps
 
-## Frontend: 36.1% (715 of 1980 lines)
+## Frontend: 36.3% (718 of 1980 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -55,7 +55,6 @@
 | `app/javascript/dashboard/routes/dashboard/settings/profile/AudioAlertCondition.vue` | 37.5% | 5 |
 | `app/javascript/shared/helpers/MessageFormatter.js` | 90.0% | 5 |
 | `app/javascript/dashboard/components-next/message/provider.js` | 63.6% | 4 |
-| `app/javascript/dashboard/api/inbox/message.js` | 91.4% | 3 |
 | `app/javascript/dashboard/components-next/NewConversation/components/MessageEditor.vue` | 72.7% | 3 |
 | `app/javascript/dashboard/constants/editor.js` | 72.7% | 3 |
 | `app/javascript/dashboard/helper/uploadHelper.js` | 85.7% | 2 |

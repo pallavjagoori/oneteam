@@ -10,12 +10,16 @@ already pin down, feature by feature.
 upstream/run-tests.sh            # both suites
 upstream/run-tests.sh frontend   # Vitest only (about 6 minutes)
 upstream/run-tests.sh backend    # RSpec only (about 40 minutes)
+upstream/vitest.sh app/javascript/dashboard/api   # one folder's Vue specs and coverage
 php tools/coverage/coverage-by-feature.php   # writes docs/coverage/
 ```
 
 You need Docker. The script clones the pinned Chatwoot tag into `upstream/chatwoot/`, builds a test image
 (`upstream/Dockerfile.test`: Ruby 3.4.4, Node 24, pnpm 10 and the full gem bundle) and starts Postgres with pgvector,
 Redis and OpenSearch, which is the same set of services Chatwoot's CircleCI uses.
+
+The script adds OneTeam's own Chatwoot tests from [`upstream/overlay`](../upstream/overlay/README.md) before it
+runs. Set `OVERLAY=0` to run Chatwoot's tests exactly as released.
 
 Results land in `upstream/results/`, which git ignores:
 

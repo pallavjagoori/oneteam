@@ -1,6 +1,6 @@
 # Email: coverage gaps
 
-## Frontend: 40.8% (64 of 157 lines)
+## Frontend: 41.4% (65 of 157 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -10,7 +10,6 @@
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/microsoft/Reauthorize.vue` | 0.0% | 11 |
 | `app/javascript/dashboard/components-next/message/bubbles/Email/Index.vue` | 90.2% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/ImapSettings.vue` | 85.2% | 4 |
-| `app/javascript/dashboard/api/channel/microsoftClient.js` | 50.0% | 1 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/emailChannels/Microsoft.vue` | 0.0% | 1 |
 
 ## Backend: 92.4% (1209 of 1308 lines)

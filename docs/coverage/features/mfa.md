@@ -1,6 +1,6 @@
 # Two-factor authentication: coverage gaps
 
-## Frontend: 36.2% (154 of 425 lines)
+## Frontend: 37.2% (158 of 425 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -10,7 +10,6 @@
 | `app/javascript/dashboard/components/auth/MfaVerification.vue` | 67.7% | 32 |
 | `app/javascript/dashboard/routes/dashboard/settings/security/components/EnforceMfa.vue` | 0.0% | 18 |
 | `app/javascript/dashboard/routes/dashboard/settings/security/Index.vue` | 5.9% | 16 |
-| `app/javascript/dashboard/api/mfa.js` | 20.0% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/profile/MfaSettingsCard.vue` | 60.0% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/profile/MfaStatusCard.vue` | 66.7% | 4 |
 | `app/javascript/dashboard/components/auth/MfaEnforcedSetup.vue` | 91.7% | 2 |

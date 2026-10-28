@@ -1,6 +1,6 @@
 # Instagram: coverage gaps
 
-## Frontend: 9.5% (11 of 116 lines)
+## Frontend: 10.3% (12 of 116 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -10,7 +10,6 @@
 | `app/javascript/dashboard/components-next/message/stories/InstagramMessages.story.vue` | 0.0% | 18 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/instagram/Reauthorize.vue` | 0.0% | 10 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/instagram/DuplicateInboxBanner.vue` | 33.3% | 2 |
-| `app/javascript/dashboard/api/channel/instagramClient.js` | 50.0% | 1 |
 
 ## Backend: 90.2% (652 of 723 lines)
 

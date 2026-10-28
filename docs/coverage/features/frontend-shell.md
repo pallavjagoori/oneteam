@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 49.0% (3928 of 8018 lines)
+## Frontend: 49.1% (3933 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -221,7 +221,6 @@
 | `app/javascript/shared/components/PhoneInput/helper.js` | 50.0% | 3 |
 | `app/javascript/shared/components/ui/dropdown/DropdownHeader.vue` | 0.0% | 3 |
 | `app/javascript/shared/components/ui/dropdown/DropdownSubMenu.vue` | 0.0% | 3 |
-| `app/javascript/dashboard/api/yearInReview.js` | 0.0% | 2 |
 | `app/javascript/dashboard/components-next/EmptyStateLayout.vue` | 66.7% | 2 |
 | `app/javascript/dashboard/components-next/button/Button.vue` | 96.4% | 2 |
 | `app/javascript/dashboard/components-next/combobox/ReorderableMultiSelect.vue` | 96.9% | 2 |
@@ -242,9 +241,6 @@
 | `app/javascript/shared/components/ui/dropdown/DropdownDivider.vue` | 0.0% | 2 |
 | `app/javascript/shared/composables/useExpandableContent.js` | 88.9% | 2 |
 | `app/javascript/shared/helpers/documentHelper.js` | 93.1% | 2 |
-| `app/javascript/dashboard/api/CacheEnabledApiClient.js` | 97.1% | 1 |
-| `app/javascript/dashboard/api/changelog.js` | 50.0% | 1 |
-| `app/javascript/dashboard/api/endPoints.js` | 66.7% | 1 |
 | `app/javascript/dashboard/components-next/Settings/SettingsToggleSection.vue` | 90.0% | 1 |
 | `app/javascript/dashboard/components-next/buttonGroup/ButtonGroup.vue` | 0.0% | 1 |
 | `app/javascript/dashboard/components-next/emoji-icon-picker/icons.js` | 0.0% | 1 |

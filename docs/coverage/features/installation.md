@@ -1,6 +1,6 @@
 # Installation and onboarding: coverage gaps
 
-## Frontend: 42.0% (181 of 431 lines)
+## Frontend: 42.5% (183 of 431 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -14,7 +14,6 @@
 | `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/WebWidgetCreationStatus.vue` | 11.1% | 8 |
 | `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/ChannelRow.vue` | 50.0% | 6 |
 | `app/javascript/dashboard/routes/dashboard/onboarding/shared/OnboardingLayout.vue` | 57.1% | 6 |
-| `app/javascript/dashboard/api/onboarding.js` | 33.3% | 2 |
 | `app/javascript/dashboard/routes/dashboard/onboarding/account-details/OnboardingFormSelect.vue` | 50.0% | 2 |
 | `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/useChannelConfig.js` | 85.7% | 2 |
 | `app/javascript/v3/views/onboarding/OnboardingStep.vue` | 0.0% | 2 |

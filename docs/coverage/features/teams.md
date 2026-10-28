@@ -1,6 +1,6 @@
 # Teams: coverage gaps
 
-## Frontend: 41.8% (138 of 330 lines)
+## Frontend: 42.1% (139 of 330 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -16,7 +16,6 @@
 | `app/javascript/dashboard/routes/dashboard/settings/teams/Edit/Index.vue` | 42.9% | 4 |
 | `app/javascript/dashboard/store/modules/teams/getters.js` | 75.0% | 3 |
 | `app/javascript/dashboard/routes/dashboard/settings/teams/FinishSetup.vue` | 60.0% | 2 |
-| `app/javascript/dashboard/api/teams.js` | 85.7% | 1 |
 | `app/javascript/dashboard/store/modules/teamMembers.js` | 96.6% | 1 |
 | `app/javascript/dashboard/store/modules/teams/mutations.js` | 90.9% | 1 |
 

@@ -1,6 +1,6 @@
 # Accounts, users and sign-in: coverage gaps
 
-## Frontend: 32.2% (495 of 1538 lines)
+## Frontend: 33.9% (521 of 1538 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -22,7 +22,6 @@
 | `app/javascript/dashboard/store/modules/auth.js` | 75.7% | 27 |
 | `app/javascript/dashboard/components-next/sidebar/SidebarProfileMenu.vue` | 10.3% | 26 |
 | `app/javascript/v3/views/auth/reset/password/Index.vue` | 21.4% | 22 |
-| `app/javascript/dashboard/api/auth.js` | 46.2% | 21 |
 | `app/javascript/dashboard/routes/dashboard/settings/profile/ChangePassword.vue` | 10.5% | 17 |
 | `app/javascript/v3/views/auth/password/Edit.vue` | 19.0% | 17 |
 | `app/javascript/dashboard/components/app/AddAccountModal.vue` | 30.4% | 16 |
@@ -39,9 +38,7 @@
 | `app/javascript/dashboard/routes/dashboard/settings/account/components/AccountId.vue` | 0.0% | 5 |
 | `app/javascript/dashboard/routes/dashboard/settings/profile/UserProfilePicture.vue` | 28.6% | 5 |
 | `app/javascript/dashboard/routes/dashboard/settings/account/components/SectionLayout.vue` | 33.3% | 4 |
-| `app/javascript/dashboard/api/enterprise/account.js` | 70.0% | 3 |
 | `app/javascript/dashboard/routes/dashboard/settings/profile/Wrapper.vue` | 0.0% | 3 |
-| `app/javascript/dashboard/api/account.js` | 60.0% | 2 |
 | `app/javascript/dashboard/composables/useAccount.js` | 90.5% | 2 |
 | `app/javascript/v3/views/auth/signup/Index.vue` | 96.2% | 1 |
 

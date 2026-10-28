@@ -1,6 +1,6 @@
 # Contacts: coverage gaps
 
-## Frontend: 27.4% (756 of 2763 lines)
+## Frontend: 27.7% (764 of 2763 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -61,7 +61,6 @@
 | `app/javascript/dashboard/components-next/Contacts/ContactsSidebar/components/story/ContactNoteItem.story.vue` | 0.0% | 8 |
 | `app/javascript/dashboard/store/modules/contactConversations.js` | 89.0% | 8 |
 | `app/javascript/dashboard/store/modules/contacts/getters.js` | 50.0% | 8 |
-| `app/javascript/dashboard/api/dataImports.js` | 12.5% | 7 |
 | `app/javascript/dashboard/components-next/Contacts/ContactsForm/ContactMergeForm.vue` | 73.7% | 5 |
 | `app/javascript/dashboard/store/modules/contactNotes.js` | 86.5% | 5 |
 | `app/javascript/dashboard/components-next/Contacts/EmptyState/ContactEmptyState.story.vue` | 0.0% | 4 |
@@ -72,7 +71,6 @@
 | `app/javascript/dashboard/components-next/Contacts/ContactsForm/story/fixtures.js` | 0.0% | 2 |
 | `app/javascript/dashboard/routes/dashboard/conversation/ContactDetailsItem.vue` | 60.0% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/data/components/ImportDetailHeader.vue` | 91.3% | 2 |
-| `app/javascript/dashboard/api/contacts.js` | 95.7% | 1 |
 | `app/javascript/dashboard/composables/useContactConversationNavigation.js` | 98.2% | 1 |
 | `app/javascript/dashboard/modules/contact/components/MergeContactSummary.vue` | 75.0% | 1 |
 

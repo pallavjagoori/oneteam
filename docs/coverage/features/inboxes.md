@@ -1,6 +1,6 @@
 # Inboxes: coverage gaps
 
-## Frontend: 35.9% (827 of 2304 lines)
+## Frontend: 36.6% (844 of 2304 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -30,7 +30,6 @@
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Api.vue` | 38.1% | 13 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/emailChannels/OAuthChannel.vue` | 7.1% | 13 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/components/SenderNameExamplePreview.vue` | 27.8% | 13 |
-| `app/javascript/dashboard/api/inboxes.js` | 47.4% | 10 |
 | `app/javascript/dashboard/components-next/icon/ChannelIcon.story.vue` | 0.0% | 10 |
 | `app/javascript/dashboard/routes/dashboard/inbox/components/InboxContextMenu.vue` | 9.1% | 10 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/settingsPage/components/ConfirmTemplateUpdateDialog.vue` | 0.0% | 10 |
@@ -45,14 +44,10 @@
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/components/InboxReconnectionRequired.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/components/InputRadioGroup.vue` | 55.6% | 4 |
 | `app/javascript/shared/mixins/inboxMixin.js` | 90.9% | 4 |
-| `app/javascript/dashboard/api/channels.js` | 0.0% | 3 |
-| `app/javascript/dashboard/api/inboxHealth.js` | 33.3% | 2 |
 | `app/javascript/dashboard/components/ChannelSelector.vue` | 77.8% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/ChannelFactory.vue` | 50.0% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/settingsPage/CallBusinessHoursSettings.vue` | 95.0% | 2 |
 | `app/javascript/dashboard/store/modules/inboxMembers.js` | 33.3% | 2 |
-| `app/javascript/dashboard/api/inboxMembers.js` | 50.0% | 1 |
-| `app/javascript/dashboard/api/channel/googleClient.js` | 50.0% | 1 |
 | `app/javascript/dashboard/composables/commands/useInboxHotKeys.js` | 92.3% | 1 |
 | `app/javascript/dashboard/routes/dashboard/inbox/components/MenuItem.vue` | 50.0% | 1 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/emailChannels/Google.vue` | 0.0% | 1 |

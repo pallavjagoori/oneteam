@@ -22,6 +22,12 @@ if [ ! -d "$HERE/chatwoot" ]; then
     https://github.com/chatwoot/chatwoot.git "$HERE/chatwoot"
 fi
 
+# Add OneTeam's own Chatwoot specs (see overlay/README.md). OVERLAY=0 measures
+# Chatwoot's tests alone, as released.
+if [ "${OVERLAY:-1}" != "0" ]; then
+  cp -r "$HERE/overlay/." "$HERE/chatwoot/"
+fi
+
 mkdir -p "$HERE/results" "$HERE/certs"
 rm -f "$HERE/certs/"*.crt
 if [ -n "${EXTRA_CA_CERT:-}" ]; then
