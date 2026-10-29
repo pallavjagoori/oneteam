@@ -44,8 +44,11 @@ RSpec.shared_context 'with a fake OpenAI-compatible model' do
       .to_return(*replies.map { |reply| { status: 200, body: reply.to_json, headers: { 'Content-Type' => 'application/json' } } })
   end
 
-  # The JSON bodies Captain sent to the model, oldest first.
+  # The JSON bodies Captain sent to the model, oldest first. Requests to other
+  # faked services are left out.
   def model_requests
-    WebMock::RequestRegistry.instance.requested_signatures.hash.keys.map { |request| JSON.parse(request.body) }
+    WebMock::RequestRegistry.instance.requested_signatures.hash.keys
+                            .select { |request| request.uri.host == 'llm.example.com' }
+                            .map { |request| JSON.parse(request.body) }
   end
 end

@@ -42,3 +42,4 @@ need porting: the Laravel/Vue version can leave them out.
 | `lib/integrations/captain/processor_service.rb` | All | Dead code: nothing calls it and no integration app named `captain` exists. The old external Captain bot was replaced by the built-in Captain assistants. |
 | `lib/integrations/slack/hook_builder.rb` | 28–30 (`hook_type`) | A private method that nothing calls; the hook type comes from the Slack app's config. |
 | `lib/integrations/llm_instrumentation_spans.rb` | 12–35, 85–110 (`start_llm_turn_span`, `end_llm_turn_span` and their attribute helpers) | Nothing calls the LLM turn span methods; Captain records generations with `record_llm_generation` and `record_generation` instead. |
+| `enterprise/app/services/captain/tools/base_service.rb` | All | Dead code: no class inherits from it. Captain's tools inherit from `Captain::Tools::BaseTool` (a `RubyLLM::Tool`) instead. |
