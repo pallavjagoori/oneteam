@@ -21,8 +21,9 @@ RSpec.describe Captain::OverviewSummaryService do
     allow(account).to receive(:feature_enabled?).with('captain_tasks').and_return(true)
   end
 
+  # RubyLLM sends the system prompt with the `developer` role.
   def system_prompt
-    model_requests.last['messages'].find { |message| %w[system developer].include?(message['role']) }['content']
+    model_requests.last['messages'].find { |message| message['role'] == 'developer' }['content']
   end
 
   it 'returns the model’s Markdown' do
