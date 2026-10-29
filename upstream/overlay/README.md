@@ -58,11 +58,13 @@ reconnect, the Stripe app and Twitter webhooks, help center search and custom do
 Captain Copilot workflows (the `copilot_workflows` flag: turns, saved collections, reviews, approvals and their
 jobs) had almost no specs. They are now at 100% of their 1,409 lines.
 
-Two shared helpers in `spec/support/`:
+Shared helpers in `spec/support/`:
 
 - `oneteam_copilot_helpers.rb` builds Copilot state the way the tools do: a running turn, a saved collection, a
   review and a change awaiting approval.
 - `oneteam_fake_llm.rb` (`include_context 'with a fake OpenAI-compatible model'`) points RubyLLM at a fake
   endpoint through WebMock and queues the model's replies. Specs using it run Captain's real request building and
   response parsing, so they double as contract tests for the port.
+- `oneteam_langfuse_tracing.rb` (`include_context 'with Langfuse tracing'`) turns on Langfuse tracing and keeps
+  the OpenTelemetry spans in memory, so specs can check the span names and attributes Langfuse receives.
 

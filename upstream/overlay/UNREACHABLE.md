@@ -33,3 +33,12 @@ need porting: the Laravel/Vue version can leave them out.
 | `app/javascript/dashboard/composables/usePolicy.js` | 60 (`if (!featureFlag) return true`) | `isPremiumFeature` is only reached with a flag: `shouldShow` checks `isFeatureFlagEnabled` first, which already returns true for a missing flag, and `shouldShowPaywall` returns early without one. |
 | `app/javascript/dashboard/composables/usePolicy.js` | 65, 67 (`hasPremiumEnterprise` outside enterprise) | `hasPremiumEnterprise` is only read inside `if (isEnterprise)` branches, so its non-enterprise `return true` never runs. |
 | `app/javascript/dashboard/composables/useDropdownPosition.js` | 38 (`if (!unref(enabled)) return 'top-full mt-2'`) | `verticalClass` is private and only read by `position` after `position` has already returned for a disabled dropdown. |
+
+## Backend
+
+| File | Lines | Why it can't run |
+| --- | --- | --- |
+| `app/services/twilio/csat_template_service.rb` | 121–126 (`template_exists_in_config?`) | A private method that nothing calls. |
+| `lib/integrations/captain/processor_service.rb` | All | Dead code: nothing calls it and no integration app named `captain` exists. The old external Captain bot was replaced by the built-in Captain assistants. |
+| `lib/integrations/slack/hook_builder.rb` | 28–30 (`hook_type`) | A private method that nothing calls; the hook type comes from the Slack app's config. |
+| `lib/integrations/llm_instrumentation_spans.rb` | 12–35, 85–110 (`start_llm_turn_span`, `end_llm_turn_span` and their attribute helpers) | Nothing calls the LLM turn span methods; Captain records generations with `record_llm_generation` and `record_generation` instead. |
