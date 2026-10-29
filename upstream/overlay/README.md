@@ -53,6 +53,16 @@ Chatwoot's RSpec suite reaches 86.9% of lines once its broken specs are patched 
 
 New specs so far cover every controller that had no spec at all, including WhatsApp manual setup, Captain
 tasks, company conversations, notes and enrichment, the Captain Overview report and drilldowns, Shopify
-reconnect, the Stripe app and Twitter webhooks, help center search and custom domain verification, plus the
-Copilot `get_data` resources and actions.
+reconnect, the Stripe app and Twitter webhooks, help center search and custom domain verification.
+
+Captain Copilot workflows (the `copilot_workflows` flag: turns, saved collections, reviews, approvals and their
+jobs) had almost no specs. They are now at 100% of their 1,409 lines.
+
+Two shared helpers in `spec/support/`:
+
+- `oneteam_copilot_helpers.rb` builds Copilot state the way the tools do: a running turn, a saved collection, a
+  review and a change awaiting approval.
+- `oneteam_fake_llm.rb` (`include_context 'with a fake OpenAI-compatible model'`) points RubyLLM at a fake
+  endpoint through WebMock and queues the model's replies. Specs using it run Captain's real request building and
+  response parsing, so they double as contract tests for the port.
 
