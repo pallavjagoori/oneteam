@@ -1,0 +1,60 @@
+# Runs the pinned Chatwoot release's own test suites, with the services its
+# RSpec suite needs (Postgres with pgvector, Redis and OpenSearch).
+#
+# Use upstream/run-tests.sh rather than calling this file directly.
+services:
+  tests:
+    image: oneteam-chatwoot-tests:${CHATWOOT_VERSION:-latest}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      opensearch:
+        condition: service_healthy
+    environment:
+      RAILS_ENV: test
+      COVERAGE: 'true'
+      LOG_LEVEL: warn
+      RAILS_LOG_TO_STDOUT: 'false'
+      POSTGRES_HOST: postgres
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: postgres
+      REDIS_URL: redis://redis:6379
+      OPENSEARCH_URL: http://localhost:9200
+      INSTALLATION_ENV: circleci
+      TZ: UTC
+    volumes:
+      - ./results:/results
+    # Share OpenSearch's network so specs reach it on localhost: WebMock only
+    # lets specs open real connections to localhost, as on Chatwoot's CI.
+    network_mode: service:opensearch
+
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    healthcheck:
+      test: ['CMD', 'pg_isready', '-U', 'postgres']
+      interval: 2s
+      retries: 30
+
+  redis:
+    image: redis:7-alpine
+
+  opensearch:
+    image: opensearchproject/opensearch:2.11.0
+    environment:
+      discovery.type: single-node
+      plugins.security.disabled: 'true'
+      OPENSEARCH_JAVA_OPTS: -Xms512m -Xmx512m
+    # Some specs check that a public host resolves before WebMock stubs the
+    # request. Pin it, so the suite also passes where outbound DNS is blocked.
+    # The tests service shares this container's network, and so its hosts file.
+    extra_hosts:
+      - example.com:93.184.215.14
+    healthcheck:
+      test: ['CMD-SHELL', 'curl -s localhost:9200/_cluster/health | grep -q status']
+      interval: 5s
+      retries: 60
