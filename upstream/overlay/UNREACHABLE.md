@@ -39,6 +39,7 @@ need porting: the Laravel/Vue version can leave them out.
 | File | Lines | Why it can't run |
 | --- | --- | --- |
 | `app/services/twilio/csat_template_service.rb` | 121–126 (`template_exists_in_config?`) | A private method that nothing calls. |
+| `app/services/reporting_events/metric_registry.rb` | All | Dead code: nothing references `ReportingEvents::MetricRegistry`. Reports use `ReportingEvents::EventMetricRegistry` and `Reports::ReportMetricRegistry`, which hold the same tables. |
 | `lib/integrations/captain/processor_service.rb` | All | Dead code: nothing calls it and no integration app named `captain` exists. The old external Captain bot was replaced by the built-in Captain assistants. |
 | `lib/integrations/slack/hook_builder.rb` | 28–30 (`hook_type`) | A private method that nothing calls; the hook type comes from the Slack app's config. |
 | `lib/integrations/llm_instrumentation_spans.rb` | 12–35, 85–110 (`start_llm_turn_span`, `end_llm_turn_span` and their attribute helpers) | Nothing calls the LLM turn span methods; Captain records generations with `record_llm_generation` and `record_generation` instead. |
@@ -54,3 +55,4 @@ need porting: the Laravel/Vue version can leave them out.
 | `enterprise/lib/captain/assistant_action_schema.rb`, `assistant_false_promise_schema.rb` | All | Dead code: nothing refers to `Captain::AssistantActionSchema` or `Captain::AssistantFalsePromiseSchema`, so Zeitwerk never loads them. |
 | `app/models/channel/sms.rb` | 91–98 (`validate_provider_config`) | Its `before_save` callback is commented out and nothing else calls it. |
 | `app/controllers/api/v1/accounts/portals_controller.rb` | 45 (`head :ok` in `archive`) | The line before always raises, because `archive` is not a portal attribute (see FINDINGS.md). |
+| `lib/integrations/llm_base_service.rb` | All | Dead code: no class inherits from `Integrations::LlmBaseService` and nothing calls it. The AI features moved to Captain's own services. |
