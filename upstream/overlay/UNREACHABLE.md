@@ -33,6 +33,7 @@ need porting: the Laravel/Vue version can leave them out.
 | `app/javascript/dashboard/composables/usePolicy.js` | 60 (`if (!featureFlag) return true`) | `isPremiumFeature` is only reached with a flag: `shouldShow` checks `isFeatureFlagEnabled` first, which already returns true for a missing flag, and `shouldShowPaywall` returns early without one. |
 | `app/javascript/dashboard/composables/usePolicy.js` | 65, 67 (`hasPremiumEnterprise` outside enterprise) | `hasPremiumEnterprise` is only read inside `if (isEnterprise)` branches, so its non-enterprise `return true` never runs. |
 | `app/javascript/dashboard/composables/useDropdownPosition.js` | 38 (`if (!unref(enabled)) return 'top-full mt-2'`) | `verticalClass` is private and only read by `position` after `position` has already returned for a disabled dropdown. |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/ShowIntegration.vue` | All | Dead code: no route or component imports it, and it imports `./IntegrationHelpText.vue`, which Chatwoot has deleted, so it cannot even be compiled. The render smoke tests leave it out. |
 
 ## Backend
 
