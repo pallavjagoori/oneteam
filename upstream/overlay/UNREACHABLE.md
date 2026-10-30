@@ -67,3 +67,5 @@ need porting: the Laravel/Vue version can leave them out.
 | `app/models/channel/sms.rb` | 91–98 (`validate_provider_config`) | Its `before_save` callback is commented out and nothing else calls it. |
 | `app/controllers/api/v1/accounts/portals_controller.rb` | 45 (`head :ok` in `archive`) | The line before always raises, because `archive` is not a portal attribute (see FINDINGS.md). |
 | `lib/integrations/llm_base_service.rb` | All | Dead code: no class inherits from `Integrations::LlmBaseService` and nothing calls it. The AI features moved to Captain's own services. |
+| `app/services/tiktok/message_service.rb` | 22 (`contact`), 111 (`sticker_message?`) | Private helpers that nothing calls: stickers are stored as unsupported messages through `supported_message?`, and the contact is read through `contact_inbox`. |
+| `app/models/message.rb` | 425–428 (`mark_pending_conversation_as_open_for_human_response`) | In the community edition `captain_pending_conversation?` always returns false, so the method returns on its first line. The enterprise edition replaces both methods. |
