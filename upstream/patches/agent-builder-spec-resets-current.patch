@@ -1,0 +1,15 @@
+diff --git a/spec/builders/agent_builder_spec.rb b/spec/builders/agent_builder_spec.rb
+index 3bde0ed..a52599a 100644
+--- a/spec/builders/agent_builder_spec.rb
++++ b/spec/builders/agent_builder_spec.rb
+@@ -3,6 +3,10 @@ require 'rails_helper'
+ RSpec.describe AgentBuilder, type: :model do
+   subject(:agent_builder) { described_class.new(params) }
+ 
++  # OneTeam patch: AccountBuilder sets Current.account and nothing resets it
++  # between examples, so a stale account can leak into the invitation mail.
++  before { Current.reset }
++
+   let(:account) { create(:account) }
+   let!(:current_user) { create(:user, account: account) }
+   let(:email) { 'test@example.com' }

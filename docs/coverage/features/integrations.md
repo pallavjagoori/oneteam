@@ -1,0 +1,79 @@
+# Integrations: coverage gaps
+
+## Frontend: 39.4% (404 of 1025 lines)
+
+| File | Coverage | Uncovered lines |
+| --- | ---: | ---: |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/Shopify.vue` | 6.7% | 70 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/Slack.vue` | 2.3% | 43 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/NewHook.vue` | 7.3% | 38 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/MultipleIntegrationHooks.vue` | 14.0% | 37 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/Webhooks/Index.vue` | 5.1% | 37 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/GoogleTranslate.vue` | 31.4% | 35 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/DashboardApps/Index.vue` | 5.6% | 34 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/IntegrationHooks.vue` | 6.7% | 28 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/DashboardApps/DashboardAppModal.vue` | 9.7% | 28 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/Slack/SelectChannelWarning.vue` | 20.6% | 27 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/Integration.vue` | 19.4% | 25 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/Notion.vue` | 0.0% | 22 |
+| `app/javascript/dashboard/components-next/message/bubbles/Dyte.vue` | 5.3% | 18 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/Index.vue` | 5.3% | 18 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/Webhooks/NewWebHook.vue` | 26.1% | 17 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/Linear.vue` | 0.0% | 16 |
+| `app/javascript/dashboard/routes/dashboard/shopify/SelectAccount.vue` | 20.0% | 16 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/IntegrationItem.vue` | 34.8% | 15 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/Webhooks/WebhookForm.vue` | 34.8% | 15 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/Webhooks/WebhookRow.vue` | 27.8% | 13 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/Slack/SlackMessageMode.vue` | 26.7% | 11 |
+| `app/javascript/dashboard/routes/dashboard/settings/billing/ShopifyBilling.vue` | 89.2% | 10 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/Stripe.vue` | 89.0% | 9 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/Slack/SlackIntegrationHelpText.vue` | 33.3% | 8 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/DashboardApps/DashboardAppsRow.vue` | 22.2% | 7 |
+| `app/javascript/dashboard/components-next/integration-card/IntegrationCard.vue` | 0.0% | 6 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/SingleIntegrationHooks.vue` | 57.1% | 6 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/Webhooks/EditWebHook.vue` | 25.0% | 6 |
+| `app/javascript/dashboard/routes/dashboard/settings/integrations/Webhooks/WebhookPaywall.vue` | 20.0% | 4 |
+| `app/javascript/shared/helpers/IntegrationHelper.js` | 50.0% | 2 |
+
+## Backend: 94.7% (2676 of 2827 lines)
+
+| File | Coverage | Uncovered lines |
+| --- | ---: | ---: |
+| `lib/integrations/slack/channel_builder.rb` | 34.3% | 23 |
+| `lib/integrations/slack/slack_link_unfurl_service.rb` | 57.5% | 17 |
+| `app/controllers/api/v1/accounts/integrations/shopify_controller.rb` | 77.0% | 14 |
+| `app/controllers/webhooks/stripe_app_controller.rb` | 0.0% | 14 |
+| `app/controllers/api/v1/accounts/integrations/notion_controller.rb` | 0.0% | 12 |
+| `app/services/shopify/pending_installation.rb` | 94.1% | 8 |
+| `app/services/shopify/installation_service.rb` | 79.3% | 6 |
+| `lib/integrations/slack/slack_message_helper.rb` | 89.1% | 6 |
+| `app/controllers/api/v1/accounts/integrations/stripe_controller.rb` | 86.1% | 5 |
+| `lib/integrations/slack/hook_builder.rb` | 77.8% | 4 |
+| `app/controllers/shopify/callbacks_controller.rb` | 97.3% | 3 |
+| `app/services/crm/leadsquared/setup_service.rb` | 94.3% | 3 |
+| `app/services/shopify/signup_service.rb` | 96.5% | 3 |
+| `app/controllers/api/v1/accounts/integrations/hooks_controller.rb` | 93.8% | 2 |
+| `app/controllers/stripe/callbacks_controller.rb` | 95.2% | 2 |
+| `app/jobs/slack_unfurl_job.rb` | 92.3% | 2 |
+| `app/models/integrations/app.rb` | 97.1% | 2 |
+| `app/models/integrations/hook.rb` | 98.1% | 2 |
+| `enterprise/app/services/enterprise/billing/shopify_subscription_sync_service.rb` | 97.6% | 2 |
+| `lib/integrations/linear/access_token_service.rb` | 96.2% | 2 |
+| `lib/integrations/slack/update_slack_message_service.rb` | 97.5% | 2 |
+| `app/controllers/api/v1/accounts/integrations/linear_controller.rb` | 98.6% | 1 |
+| `app/controllers/api/v1/accounts/integrations/slack_controller.rb` | 95.8% | 1 |
+| `app/controllers/api/v1/accounts/notion/authorizations_controller.rb` | 85.7% | 1 |
+| `app/controllers/concerns/notion_concern.rb` | 88.9% | 1 |
+| `app/controllers/linear/callbacks_controller.rb` | 97.7% | 1 |
+| `app/controllers/notion/callbacks_controller.rb` | 92.3% | 1 |
+| `app/controllers/slack_uploads_controller.rb` | 94.1% | 1 |
+| `app/jobs/hook_job.rb` | 97.7% | 1 |
+| `app/policies/hook_policy.rb` | 92.3% | 1 |
+| `app/services/crm/leadsquared/api/activity_client.rb` | 93.8% | 1 |
+| `app/services/crm/leadsquared/api/lead_client.rb` | 96.9% | 1 |
+| `app/services/integrations/stripe/oauth.rb` | 97.6% | 1 |
+| `app/services/shopify/partner_client.rb` | 97.2% | 1 |
+| `app/services/shopify/partner_configuration.rb` | 97.1% | 1 |
+| `enterprise/app/services/enterprise/billing/shopify_app_pricing_url.rb` | 96.2% | 1 |
+| `enterprise/app/services/enterprise/billing/shopify_plan_configuration.rb` | 97.6% | 1 |
+| `lib/integrations/slack/incoming_message_builder.rb` | 98.0% | 1 |

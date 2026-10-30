@@ -1,0 +1,10 @@
+diff --git a/spec/coverage_helper.rb b/spec/coverage_helper.rb
+index 288ab87..ea6cf4f 100644
+--- a/spec/coverage_helper.rb
++++ b/spec/coverage_helper.rb
+@@ -5,4 +5,5 @@ require 'simplecov_json_formatter'
+ SimpleCov.formatter = SimpleCov::Formatter::JSONFormatter
+ SimpleCov.start 'rails' do
+   SimpleCov.coverage_dir 'coverage'
++  track_files '{app,lib,enterprise/app,enterprise/lib}/**/*.rb'
+ end

@@ -1,0 +1,22 @@
+diff --git a/spec/enterprise/models/conversation_monitors/message_tracking_spec.rb b/spec/enterprise/models/conversation_monitors/message_tracking_spec.rb
+index 059d703..c23faf2 100644
+--- a/spec/enterprise/models/conversation_monitors/message_tracking_spec.rb
++++ b/spec/enterprise/models/conversation_monitors/message_tracking_spec.rb
+@@ -10,6 +10,9 @@ RSpec.describe ConversationMonitors::MessageTracking do
+   let(:conversation) { create(:conversation, account: account, created_at: 1.day.ago) }
+ 
+   before do
++    # OneTeam patch: remember where the audit log stood, so the cleanup below
++    # can remove the audits these committed records leave behind.
++    @last_audit_id = Audited::Audit.maximum(:id).to_i
+     account.enable_features!('reports', 'conversation_monitors')
+     monitor.initial_scan.update!(enumerated_at: 2.hours.ago)
+     conversation
+@@ -24,6 +27,7 @@ RSpec.describe ConversationMonitors::MessageTracking do
+       account.destroy!
+       users.each(&:destroy!)
+     end
++    Audited::Audit.where('id > ?', @last_audit_id).delete_all
+   end
+ 
+   %w[catch_up from_now].product(%i[incoming outgoing]).each do |mode, message_type|

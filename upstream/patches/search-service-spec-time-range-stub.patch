@@ -1,0 +1,13 @@
+diff --git a/spec/services/search_service_spec.rb b/spec/services/search_service_spec.rb
+index f3bda55..53b874d 100644
+--- a/spec/services/search_service_spec.rb
++++ b/spec/services/search_service_spec.rb
+@@ -636,7 +636,7 @@ describe SearchService do
+               created_at: hash_including(gte: Time.zone.at(since_timestamp))
+             )
+           )
+-        ).and_return([])
++        ).and_return(search_results)
+ 
+         with_modified_env SEARCH_TIME_RANGE_LIMIT_DAYS: '180' do
+           search_service.perform
