@@ -44,6 +44,10 @@ need porting: the Laravel/Vue version can leave them out.
 | `lib/tasks/reporting_events_rollup_timezone_setup.rake` | 92 (`rescue ArgumentError` in `utc_offset_in_seconds`) | The regex check just before it only lets digits through to `Integer(..., 10)`, so the conversion can never raise. |
 | `lib/tasks/asset_clean.rake` | 19 (`define_task` fallback) | Only runs when no `assets:clean` task exists, but the asset pipeline always defines one. |
 | `lib/test_data/database_optimizer.rb` | 27–30 (rest of `setup`) | Never reached: the UNLOGGED step before them fails on the current schema (see FINDINGS.md). |
+| `app/jobs/webhooks/instagram_events_job.rb` | 114 (`sender_id`) | A private method that nothing calls; the lock key uses `contact_instagram_id`. |
+| `lib/microsoft_graph_auth.rb` | 32, 38, 42–44, 53 (`extra`, `raw_info`, `authorize_params`, `callback_url`) | The OmniAuth strategy is never mounted as middleware; Chatwoot only instantiates it in `Microsoft::RefreshOauthTokenService` to reuse its OAuth2 client for token refresh, so the sign-in callbacks never run. |
+| `app/helpers/api/v2/accounts/reports_helper.rb` | 69 (`report_builder`) | A private helper that nothing calls; each report builds its own summary builder. |
+| `app/dashboards/account_dashboard.rb` | 25, 65, 89 (`else []`/`{}` branches) | Evaluated once when the class loads, and only on a community build; the test suite always loads the enterprise build. |
 | `lib/integrations/captain/processor_service.rb` | All | Dead code: nothing calls it and no integration app named `captain` exists. The old external Captain bot was replaced by the built-in Captain assistants. |
 | `lib/integrations/slack/hook_builder.rb` | 28–30 (`hook_type`) | A private method that nothing calls; the hook type comes from the Slack app's config. |
 | `lib/integrations/llm_instrumentation_spans.rb` | 12–35, 85–110 (`start_llm_turn_span`, `end_llm_turn_span` and their attribute helpers) | Nothing calls the LLM turn span methods; Captain records generations with `record_llm_generation` and `record_generation` instead. |
