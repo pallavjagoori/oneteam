@@ -1,0 +1,1086 @@
+{
+  "ignore": [
+    "\\.gitkeep$",
+    "\\.DS_Store$"
+  ],
+  "features": [
+    {
+      "id": "captain-ai",
+      "area": "AI",
+      "name": "Captain AI assistant and copilot",
+      "description": "AI assistants that answer customers from documents and FAQs, agent copilot, scenarios, custom tools and AI reply suggestions.",
+      "paths": [
+        "captain",
+        "copilot",
+        "(^|/)llm",
+        "embedding",
+        "firecrawl",
+        "faq_suggestion",
+        "assistant",
+        "(^|/)ai[_/]",
+        "/ai\\.",
+        "openai",
+        "label_suggestion",
+        "reply_suggestion",
+        "article_embedding",
+        "page_crawler",
+        "toolable",
+        "jev_quota"
+      ],
+      "tables": [
+        "^captain_",
+        "^copilot_",
+        "embeddings?$",
+        "^agent_sessions$"
+      ],
+      "flags": [
+        "captain",
+        "copilot",
+        "embedding",
+        "^chatwoot_v4$",
+        "custom_tools"
+      ]
+    },
+    {
+      "id": "channel-whatsapp",
+      "area": "Channels",
+      "name": "WhatsApp",
+      "description": "WhatsApp Cloud API and 360dialog inboxes: embedded signup, templates, incoming webhooks, sending, and WhatsApp calling.",
+      "paths": [
+        "whatsapp",
+        "360dialog",
+        "dialog360"
+      ],
+      "tables": [
+        "whatsapp"
+      ],
+      "flags": [
+        "whatsapp"
+      ]
+    },
+    {
+      "id": "channel-instagram",
+      "area": "Channels",
+      "name": "Instagram",
+      "description": "Instagram direct messages through the Instagram API and through linked Facebook pages.",
+      "paths": [
+        "instagram"
+      ],
+      "tables": [
+        "instagram"
+      ],
+      "flags": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "channel-facebook",
+      "area": "Channels",
+      "name": "Facebook Messenger",
+      "description": "Facebook page inboxes: page linking, Messenger webhooks, sending and message echoes.",
+      "paths": [
+        "facebook",
+        "messenger",
+        "(^|/)fb_",
+        "/fb/",
+        "meta_token"
+      ],
+      "tables": [
+        "facebook"
+      ],
+      "flags": [
+        "facebook"
+      ]
+    },
+    {
+      "id": "channel-tiktok",
+      "area": "Channels",
+      "name": "TikTok",
+      "description": "TikTok business messaging inboxes.",
+      "paths": [
+        "tiktok"
+      ],
+      "tables": [
+        "tiktok"
+      ],
+      "flags": [
+        "tiktok"
+      ]
+    },
+    {
+      "id": "channel-twitter",
+      "area": "Channels",
+      "name": "Twitter / X",
+      "description": "Twitter direct messages and tweets (legacy channel).",
+      "paths": [
+        "twitter",
+        "tweet"
+      ],
+      "tables": [
+        "twitter"
+      ],
+      "flags": [
+        "twitter"
+      ]
+    },
+    {
+      "id": "channel-telegram",
+      "area": "Channels",
+      "name": "Telegram",
+      "description": "Telegram bot inboxes.",
+      "paths": [
+        "telegram"
+      ],
+      "tables": [
+        "telegram"
+      ],
+      "flags": [
+        "telegram"
+      ]
+    },
+    {
+      "id": "channel-line",
+      "area": "Channels",
+      "name": "LINE",
+      "description": "LINE messaging inboxes.",
+      "paths": [
+        "(^|/)line(/|_controller|\\.rb|\\.vue|\\.js|_channel|_spec)",
+        "channel/line",
+        "line_bot"
+      ],
+      "tables": [
+        "_line$"
+      ],
+      "flags": [
+        "^channel_line$"
+      ]
+    },
+    {
+      "id": "channel-voice",
+      "area": "Channels",
+      "name": "Voice calls",
+      "description": "Voice inboxes and in-app calling: Twilio voice, conferences, call records, ringing timeouts and call business hours.",
+      "paths": [
+        "voice",
+        "(^|/)calls?(/|_|\\.)",
+        "conference",
+        "ringing",
+        "call_business_hours",
+        "/calls/",
+        "callrecord",
+        "call_",
+        "_call\\."
+      ],
+      "tables": [
+        "^calls$",
+        "voice",
+        "call_"
+      ],
+      "flags": [
+        "voice",
+        "call"
+      ]
+    },
+    {
+      "id": "channel-sms",
+      "area": "Channels",
+      "name": "SMS and Twilio",
+      "description": "Twilio SMS and Twilio WhatsApp inboxes, and Bandwidth SMS inboxes.",
+      "paths": [
+        "twilio",
+        "(^|/)sms",
+        "bandwidth"
+      ],
+      "tables": [
+        "twilio",
+        "_sms$"
+      ],
+      "flags": [
+        "sms",
+        "twilio"
+      ]
+    },
+    {
+      "id": "channel-email",
+      "area": "Channels",
+      "name": "Email",
+      "description": "Email inboxes: forwarding, IMAP polling, SMTP sending, Microsoft and Google OAuth mailboxes, inbound mail processing and email reply threading.",
+      "paths": [
+        "(^|/)email(/|_channel|_inbox|\\.rb)",
+        "channel/email",
+        "imap",
+        "smtp",
+        "mailbox",
+        "microsoft",
+        "(^|/)google/",
+        "google_",
+        "gmail",
+        "inbound_email",
+        "action_mailbox",
+        "references_header",
+        "conversation_reply_mailer",
+        "email_continuity",
+        "mail_presenter",
+        "html_parser",
+        "email_helper",
+        "email_address_parseable",
+        "email_delivery",
+        "actionmailbox"
+      ],
+      "tables": [
+        "channel_email",
+        "action_mailbox",
+        "inbound"
+      ],
+      "flags": [
+        "email",
+        "inbound",
+        "reply_mailer"
+      ]
+    },
+    {
+      "id": "channel-api",
+      "area": "Channels",
+      "name": "API channel",
+      "description": "API inboxes that let other systems push and pull conversations, plus the public client API used by them.",
+      "paths": [
+        "channel/api",
+        "api_channel",
+        "public/api/v1/inboxes",
+        "channel_api",
+        "/api_inbox"
+      ],
+      "tables": [
+        "channel_api"
+      ],
+      "flags": []
+    },
+    {
+      "id": "channel-website",
+      "area": "Channels",
+      "name": "Website live chat widget",
+      "description": "The embeddable live chat widget, its SDK, widget API, pre-chat forms, widget campaigns and widget settings.",
+      "paths": [
+        "web_widget",
+        "(^|/)widgets?(/|_|\\.)",
+        "app/javascript/widget",
+        "app/javascript/sdk",
+        "/sdk/",
+        "prechat",
+        "pre_chat",
+        "website_token"
+      ],
+      "tables": [
+        "web_widget"
+      ],
+      "flags": [
+        "website"
+      ]
+    },
+    {
+      "id": "help-center",
+      "area": "Knowledge",
+      "name": "Help center",
+      "description": "Help center portals, categories and articles, the public portal pages, custom domains and article search.",
+      "paths": [
+        "portal",
+        "article",
+        "categor",
+        "help_?center",
+        "helpcenter",
+        "custom_domain",
+        "related_categor",
+        "cloudflare",
+        "(^|/)folder",
+        "kbase",
+        "/hc/"
+      ],
+      "tables": [
+        "portals",
+        "articles",
+        "categories",
+        "related_categories",
+        "folders"
+      ],
+      "flags": [
+        "help_center"
+      ]
+    },
+    {
+      "id": "csat",
+      "area": "Customer feedback",
+      "name": "CSAT surveys",
+      "description": "Customer satisfaction surveys after resolution, the public survey page, CSAT templates and CSAT reports.",
+      "paths": [
+        "csat",
+        "survey",
+        "service/responses"
+      ],
+      "tables": [
+        "csat"
+      ],
+      "flags": [
+        "csat"
+      ]
+    },
+    {
+      "id": "campaigns",
+      "area": "Engagement",
+      "name": "Campaigns",
+      "description": "Ongoing website campaigns and one-off SMS and WhatsApp broadcast campaigns, with analytics.",
+      "paths": [
+        "campaign"
+      ],
+      "tables": [
+        "campaign"
+      ],
+      "flags": [
+        "campaign"
+      ]
+    },
+    {
+      "id": "sla",
+      "area": "Operations",
+      "name": "SLA policies",
+      "description": "Service level agreements: policies, applied SLAs, breach events and SLA reports.",
+      "paths": [
+        "(^|/|_)slas?(/|_|\\.)",
+        "sla_"
+      ],
+      "tables": [
+        "sla"
+      ],
+      "flags": [
+        "^sla$"
+      ]
+    },
+    {
+      "id": "auto-assignment",
+      "area": "Operations",
+      "name": "Auto-assignment and capacity",
+      "description": "Automatic conversation assignment, assignment policies, round robin and agent capacity limits.",
+      "paths": [
+        "assignment",
+        "capacity",
+        "round_robin",
+        "inbox_limit",
+        "assignable"
+      ],
+      "tables": [
+        "assignment",
+        "capacity",
+        "inbox_capacity"
+      ],
+      "flags": [
+        "assignment",
+        "capacity"
+      ]
+    },
+    {
+      "id": "automations",
+      "area": "Operations",
+      "name": "Automation rules",
+      "description": "Event-driven automation rules with conditions and actions.",
+      "paths": [
+        "automation"
+      ],
+      "tables": [
+        "automation"
+      ],
+      "flags": [
+        "automation"
+      ]
+    },
+    {
+      "id": "macros",
+      "area": "Operations",
+      "name": "Macros",
+      "description": "Saved sequences of conversation actions that agents run in one click.",
+      "paths": [
+        "macro"
+      ],
+      "tables": [
+        "macros"
+      ],
+      "flags": [
+        "macro"
+      ]
+    },
+    {
+      "id": "monitors",
+      "area": "Operations",
+      "name": "Conversation monitors",
+      "description": "Scheduled monitors that watch conversations and trigger actions.",
+      "paths": [
+        "(^|/|_)monitors?(/|_|\\.|$)"
+      ],
+      "tables": [
+        "monitor"
+      ],
+      "flags": [
+        "monitor"
+      ]
+    },
+    {
+      "id": "canned-responses",
+      "area": "Operations",
+      "name": "Canned responses",
+      "description": "Saved reply snippets agents insert with a short code.",
+      "paths": [
+        "canned"
+      ],
+      "tables": [
+        "canned"
+      ],
+      "flags": [
+        "canned"
+      ]
+    },
+    {
+      "id": "labels",
+      "area": "Operations",
+      "name": "Labels",
+      "description": "Labels for conversations and contacts, label management and label filters.",
+      "paths": [
+        "label"
+      ],
+      "tables": [
+        "labels",
+        "tags",
+        "taggings"
+      ],
+      "flags": [
+        "^labels$"
+      ]
+    },
+    {
+      "id": "custom-attributes",
+      "area": "Operations",
+      "name": "Custom attributes",
+      "description": "Custom attribute definitions for conversations and contacts.",
+      "paths": [
+        "custom_attribute",
+        "customattribute",
+        "attribute_definition",
+        "settings/attributes"
+      ],
+      "tables": [
+        "custom_attribute"
+      ],
+      "flags": [
+        "custom_attribute"
+      ]
+    },
+    {
+      "id": "custom-views",
+      "area": "Operations",
+      "name": "Custom filters and saved views",
+      "description": "Advanced filters and saved folders and segments for conversations and contacts.",
+      "paths": [
+        "custom_filter",
+        "customviews",
+        "custom_view",
+        "filter_service",
+        "/filters/",
+        "filter"
+      ],
+      "tables": [
+        "custom_filters"
+      ],
+      "flags": []
+    },
+    {
+      "id": "data-import",
+      "area": "CRM",
+      "name": "Data import from other help desks",
+      "description": "Importing contacts and conversation history from Intercom, Freshdesk and CSV files, with mappings, progress and error logs.",
+      "paths": [
+        "data_import",
+        "freshdesk",
+        "intercom"
+      ],
+      "tables": [
+        "^data_import"
+      ],
+      "flags": [
+        "data_import"
+      ]
+    },
+    {
+      "id": "contacts",
+      "area": "CRM",
+      "name": "Contacts",
+      "description": "Contact records, import and export, merge, notes, avatars, contact inboxes and identity verification.",
+      "paths": [
+        "contact",
+        "(^|/)notes?(/|_|\\.)",
+        "avatar",
+        "import",
+        "export",
+        "identity",
+        "_note\\."
+      ],
+      "tables": [
+        "contact",
+        "notes",
+        "data_imports"
+      ],
+      "flags": [
+        "crm"
+      ]
+    },
+    {
+      "id": "companies",
+      "area": "CRM",
+      "name": "Companies",
+      "description": "Company records linked to contacts, with enrichment.",
+      "paths": [
+        "compan",
+        "enrichment",
+        "clearbit"
+      ],
+      "tables": [
+        "compan"
+      ],
+      "flags": [
+        "compan"
+      ]
+    },
+    {
+      "id": "reports",
+      "area": "Analytics",
+      "name": "Reports and analytics",
+      "description": "Conversation, agent, inbox, label and team reports, live reports, summary reports, report rollups, reporting events and year in review.",
+      "paths": [
+        "report",
+        "rollup",
+        "year_in_review",
+        "metric",
+        "analytics",
+        "stats",
+        "heatmap",
+        "timeseries",
+        "insight"
+      ],
+      "tables": [
+        "report",
+        "rollup"
+      ],
+      "flags": [
+        "report"
+      ]
+    },
+    {
+      "id": "audit-logs",
+      "area": "Security",
+      "name": "Audit logs",
+      "description": "Audit trail of account changes (enterprise).",
+      "paths": [
+        "audit"
+      ],
+      "tables": [
+        "audit"
+      ],
+      "flags": [
+        "audit"
+      ]
+    },
+    {
+      "id": "custom-roles",
+      "area": "Security",
+      "name": "Custom roles and permissions",
+      "description": "Custom agent roles with fine-grained permissions.",
+      "paths": [
+        "custom_role",
+        "customroles",
+        "permission"
+      ],
+      "tables": [
+        "custom_roles"
+      ],
+      "flags": [
+        "custom_role"
+      ]
+    },
+    {
+      "id": "saml-sso",
+      "area": "Security",
+      "name": "SAML single sign-on",
+      "description": "SAML SSO settings and sign-in.",
+      "paths": [
+        "saml",
+        "sso"
+      ],
+      "tables": [
+        "saml"
+      ],
+      "flags": [
+        "saml"
+      ]
+    },
+    {
+      "id": "mfa",
+      "area": "Security",
+      "name": "Two-factor authentication",
+      "description": "Multi-factor authentication, trusted devices and session management for user profiles.",
+      "paths": [
+        "mfa",
+        "two_factor",
+        "otp",
+        "trusted_device",
+        "profile/sessions",
+        "security",
+        "device_verification"
+      ],
+      "tables": [
+        "trusted_devices",
+        "otp",
+        "^user_sessions$"
+      ],
+      "flags": [
+        "mfa"
+      ]
+    },
+    {
+      "id": "integrations",
+      "area": "Integrations",
+      "name": "Integrations",
+      "description": "Third-party apps: Slack, Linear, Notion, Shopify, Stripe app, Dyte video calls, Dialogflow, Google Translate, LeadSquared, dashboard apps and integration hooks.",
+      "paths": [
+        "integration",
+        "slack",
+        "linear",
+        "notion",
+        "shopify",
+        "(^|/)stripe/callbacks",
+        "stripe_app",
+        "dyte",
+        "dialogflow",
+        "translate",
+        "leadsquared",
+        "dashboard_app",
+        "integrations?/hook|(^|/)hooks?(_|/|\\.)",
+        "_app\\.json",
+        "_hook\\.",
+        "(^|/)crm/"
+      ],
+      "tables": [
+        "integrations_",
+        "dashboard_apps",
+        "shopify"
+      ],
+      "flags": [
+        "integration",
+        "linear",
+        "notion",
+        "shopify",
+        "slack"
+      ]
+    },
+    {
+      "id": "agent-bots-webhooks",
+      "area": "Integrations",
+      "name": "Agent bots and webhooks",
+      "description": "Agent bots that act on conversations and outgoing account webhooks.",
+      "paths": [
+        "agent_bot",
+        "agentbot",
+        "webhook",
+        "(^|/)bots?(/|_|\\.)"
+      ],
+      "tables": [
+        "agent_bot",
+        "webhooks"
+      ],
+      "flags": [
+        "agent_bot",
+        "api_and_webhooks"
+      ]
+    },
+    {
+      "id": "platform-api",
+      "area": "Integrations",
+      "name": "Platform API",
+      "description": "Platform apps that create and manage accounts, users and bots from outside an installation.",
+      "paths": [
+        "platform"
+      ],
+      "tables": [
+        "platform"
+      ],
+      "flags": []
+    },
+    {
+      "id": "billing",
+      "area": "Administration",
+      "name": "Billing and plans",
+      "description": "Stripe subscriptions, plan limits and usage for cloud installations (enterprise).",
+      "paths": [
+        "billing",
+        "stripe",
+        "/limits",
+        "plan",
+        "pricing",
+        "upgrade",
+        "suspended",
+        "enterprise/api/v1/accounts(_controller|_settings|/partials/_account| )",
+        "cloud_subscription"
+      ],
+      "tables": [],
+      "flags": [
+        "billing"
+      ]
+    },
+    {
+      "id": "super-admin",
+      "area": "Administration",
+      "name": "Super admin console",
+      "description": "Installation-wide admin console: accounts, users, platform apps, app configs, installation configs, instance status and diagnostics.",
+      "paths": [
+        "super_?admin",
+        "superadmin",
+        "app_config",
+        "installation_config",
+        "instance_status",
+        "/dashboards/",
+        "/fields/",
+        "access_token",
+        "platform_banner",
+        "impersonation"
+      ],
+      "tables": [
+        "installation_configs",
+        "access_tokens"
+      ],
+      "flags": []
+    },
+    {
+      "id": "installation",
+      "area": "Administration",
+      "name": "Installation and onboarding",
+      "description": "First-run installation onboarding, account onboarding, version checks, seed data and health checks.",
+      "paths": [
+        "installation",
+        "onboarding",
+        "seed",
+        "version",
+        "chatwoot_hub",
+        "test_data",
+        "noaccounts",
+        "health_controller|(^|/)health(/|\\.| )"
+      ],
+      "tables": [],
+      "flags": []
+    },
+    {
+      "id": "branding",
+      "area": "Administration",
+      "name": "Branding and email templates",
+      "description": "Branded email layouts, custom reply domains, branding removal and email templates.",
+      "paths": [
+        "brand",
+        "email_template",
+        "drops/",
+        "email_layout",
+        "layouts/mailer",
+        "liquid\\.rb",
+        "liquidable"
+      ],
+      "tables": [
+        "email_templates",
+        "branded"
+      ],
+      "flags": [
+        "brand",
+        "custom_reply"
+      ]
+    },
+    {
+      "id": "notifications",
+      "area": "Collaboration",
+      "name": "Notifications",
+      "description": "In-app, email and push notifications for agents, notification settings and subscriptions.",
+      "paths": [
+        "notif",
+        "push",
+        "vapid",
+        "fcm",
+        "/mailers/agent_notifications",
+        "/mailers/team_notifications",
+        "/mailers/administrator_notifications"
+      ],
+      "tables": [
+        "notification"
+      ],
+      "flags": [
+        "notification"
+      ]
+    },
+    {
+      "id": "teams",
+      "area": "Collaboration",
+      "name": "Teams",
+      "description": "Teams of agents, team membership and team assignment.",
+      "paths": [
+        "team"
+      ],
+      "tables": [
+        "team"
+      ],
+      "flags": [
+        "team"
+      ]
+    },
+    {
+      "id": "agents",
+      "area": "Collaboration",
+      "name": "Agents and availability",
+      "description": "Agent management, invitations, roles, availability and online presence.",
+      "paths": [
+        "agent",
+        "online_status",
+        "presence",
+        "availability"
+      ],
+      "tables": [
+        "^leaves$"
+      ],
+      "flags": [
+        "agent"
+      ]
+    },
+    {
+      "id": "search",
+      "area": "Conversations",
+      "name": "Search",
+      "description": "Search across conversations, messages, contacts and articles.",
+      "paths": [
+        "search"
+      ],
+      "tables": [
+        "search"
+      ],
+      "flags": [
+        "search"
+      ]
+    },
+    {
+      "id": "messages",
+      "area": "Conversations",
+      "name": "Messages and attachments",
+      "description": "Sending and receiving messages, attachments and uploads, message templates, reply-to, translations, markdown rendering and content safety.",
+      "paths": [
+        "message",
+        "attachment",
+        "upload",
+        "markdown",
+        "(^|/)drafts?(/|_)",
+        "draft_message",
+        "active_storage",
+        "safe_fetch",
+        "sanitiz",
+        "content_attribute",
+        "translation",
+        "voice_recorder",
+        "audio",
+        "editor",
+        "send_reply"
+      ],
+      "tables": [
+        "messages",
+        "attachments",
+        "active_storage"
+      ],
+      "flags": [
+        "message",
+        "voice_recorder",
+        "auto_translate"
+      ]
+    },
+    {
+      "id": "conversations",
+      "area": "Conversations",
+      "name": "Conversations",
+      "description": "The conversation inbox: list, status changes, assignment, priority, snooze, mute, participants, unread counts, transcripts, bulk actions and auto-resolve.",
+      "paths": [
+        "conversation",
+        "bulk_action",
+        "participant",
+        "resolution",
+        "transcript",
+        "inbox_view",
+        "unread",
+        "snooze",
+        "chat_list",
+        "chatlist",
+        "mention"
+      ],
+      "tables": [
+        "conversation",
+        "^mentions$"
+      ],
+      "flags": [
+        "conversation",
+        "auto_resolve",
+        "inbox_view",
+        "unread_count"
+      ]
+    },
+    {
+      "id": "inboxes",
+      "area": "Conversations",
+      "name": "Inboxes",
+      "description": "Inbox setup and settings shared by every channel: members, business hours, working hours, channel base classes and inbox management.",
+      "paths": [
+        "inbox",
+        "^(?!(enterprise/)?app/channels/).*(?<!app/)channel",
+        "working_hour",
+        "business_hour",
+        "out_of_office",
+        "out_of_offi"
+      ],
+      "tables": [
+        "inbox",
+        "working_hours",
+        "channel"
+      ],
+      "flags": [
+        "inbox",
+        "channel"
+      ]
+    },
+    {
+      "id": "accounts-auth",
+      "area": "Accounts",
+      "name": "Accounts, users and sign-in",
+      "description": "Sign-up, sign-in, password reset, email confirmation, OAuth sign-in, API tokens, user profiles and account settings.",
+      "paths": [
+        "account",
+        "(^|/)users?(/|_|\\.)",
+        "profile",
+        "devise",
+        "(^|/)auth",
+        "session",
+        "password",
+        "confirmation",
+        "registration",
+        "omniauth",
+        "token",
+        "current\\.rb",
+        "sign_?in",
+        "sign_?up",
+        "login",
+        "signup",
+        "_user\\.json"
+      ],
+      "tables": [
+        "accounts",
+        "account_users",
+        "users"
+      ],
+      "flags": [
+        "account"
+      ]
+    },
+    {
+      "id": "realtime-events",
+      "area": "Platform internals",
+      "name": "Real-time updates and events",
+      "description": "The internal event bus, listeners that react to events, and ActionCable broadcasts to the dashboard and widget.",
+      "paths": [
+        "^(enterprise/)?app/channels/",
+        "/channels/",
+        "cable",
+        "listener",
+        "dispatcher",
+        "(^|/)events/",
+        "event"
+      ],
+      "tables": [],
+      "flags": []
+    },
+    {
+      "id": "background-jobs",
+      "area": "Platform internals",
+      "name": "Scheduled and maintenance jobs",
+      "description": "Cron jobs and internal maintenance jobs: cleanups, scheduled triggers and data migrations.",
+      "paths": [
+        "/jobs/",
+        "/tasks/",
+        "\\.rake$",
+        "migration",
+        "scheduled",
+        "cleanup",
+        "stale",
+        "orphan",
+        "configs/schedule",
+        "sidekiq"
+      ],
+      "tables": [],
+      "flags": []
+    },
+    {
+      "id": "frontend-shell",
+      "area": "Platform internals",
+      "name": "Frontend shell and shared UI",
+      "description": "The dashboard app shell, router, store setup, design system, shared components and helpers used by every screen.",
+      "paths": [
+        "^app/javascript/",
+        "dashboard_controller",
+        "views/dashboard/",
+        "views/icons/",
+        "^app/assets/",
+        "^lib/assets/",
+        "robots",
+        "apple_app",
+        "android_app",
+        "assetlinks",
+        "frontend_urls",
+        "vueapp"
+      ],
+      "tables": [],
+      "flags": []
+    },
+    {
+      "id": "shared-backend",
+      "area": "Platform internals",
+      "name": "Shared backend foundations",
+      "description": "Base controllers, concerns, helpers, configuration loaders, Redis helpers, rate limiting, exception handling, API docs and other code every feature depends on.",
+      "paths": [
+        "application_",
+        "base_controller",
+        "api_controller",
+        "public_controller",
+        "oauth_callback",
+        "redirect\\(",
+        "swagger",
+        "openapi",
+        "/concerns/",
+        "/helpers/",
+        "^lib/",
+        "^enterprise/lib/enterprise\\.rb",
+        "action_service",
+        "geocoder",
+        "ip_lookup",
+        "request_device_info",
+        "social_link",
+        "jsonb_attributes",
+        "json_schema",
+        "featurable",
+        "cache_keys",
+        "pubsubable",
+        "reauthorizable",
+        "sort_handler",
+        "rack_attack",
+        "switch_locale",
+        "api_bearer"
+      ],
+      "tables": [
+        "__none__"
+      ],
+      "flags": [
+        "ip_lookup"
+      ]
+    }
+  ]
+}
