@@ -61,3 +61,6 @@ if [ "$SUITE" = "backend" ] || [ "$SUITE" = "all" ]; then
     exit $status'
 fi
 
+
+# Refresh the README coverage badges; commit badges/ to publish the new numbers.
+"$HERE/../tools/coverage/update-badges.sh"

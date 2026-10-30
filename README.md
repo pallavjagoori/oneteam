@@ -1,5 +1,8 @@
 # OneTeam
 
+![Chatwoot frontend coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/pallavjagoori/oneteam/main/badges/chatwoot-frontend-coverage.json)
+![Chatwoot backend coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/pallavjagoori/oneteam/main/badges/chatwoot-backend-coverage.json)
+
 An open PHP version of [Chatwoot](https://github.com/chatwoot/chatwoot): Chatwoot's Vue frontend on a Laravel
 backend.
 
@@ -8,6 +11,14 @@ backend.
 - [Running Chatwoot's own tests](docs/upstream-tests.md): Docker setup, results and known failures.
 - [Coverage by feature](docs/coverage/README.md): how much of each feature Chatwoot's tests cover today.
 - [`CHATWOOT_VERSION`](CHATWOOT_VERSION): the Chatwoot release being converted.
+
+## Coverage badges
+
+The badges above show the line coverage of Chatwoot's own frontend (Vitest) and backend (RSpec) tests, with
+OneTeam's added tests, from the latest full run. Step 1 of the [plan](docs/plan.md) takes both to 100%.
+`upstream/run-tests.sh` rewrites the files in [`badges/`](badges) after a successful run, or run
+`tools/coverage/update-badges.sh` on existing results; the badges change once those files reach `main`. Badges for
+the Laravel port's own coverage will be added when that code exists.
 
 ## Rebuilding the feature inventory
 
