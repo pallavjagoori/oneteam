@@ -14,8 +14,8 @@ HERE="$(cd "$(dirname "$0")" && pwd)"
 VERSION="$(cat "$HERE/../CHATWOOT_VERSION")"
 [ $# -gt 0 ] || { echo "Give at least one path under app/javascript" >&2; exit 2; }
 
-# Apply the overlay: OneTeam's added specs live beside Chatwoot's own.
-cp -r "$HERE/overlay/." "$HERE/chatwoot/"
+# Apply the overlay and patches (see apply-overlay.sh).
+"$HERE/apply-overlay.sh"
 
 includes=()
 for path in "$@"; do

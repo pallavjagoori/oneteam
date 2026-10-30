@@ -33,3 +33,19 @@ need porting: the Laravel/Vue version can leave them out.
 | `app/javascript/dashboard/composables/usePolicy.js` | 60 (`if (!featureFlag) return true`) | `isPremiumFeature` is only reached with a flag: `shouldShow` checks `isFeatureFlagEnabled` first, which already returns true for a missing flag, and `shouldShowPaywall` returns early without one. |
 | `app/javascript/dashboard/composables/usePolicy.js` | 65, 67 (`hasPremiumEnterprise` outside enterprise) | `hasPremiumEnterprise` is only read inside `if (isEnterprise)` branches, so its non-enterprise `return true` never runs. |
 | `app/javascript/dashboard/composables/useDropdownPosition.js` | 38 (`if (!unref(enabled)) return 'top-full mt-2'`) | `verticalClass` is private and only read by `position` after `position` has already returned for a disabled dropdown. |
+
+## Backend
+
+| File | Lines | Why it can't run |
+| --- | --- | --- |
+| `app/services/twilio/csat_template_service.rb` | 121–126 (`template_exists_in_config?`) | A private method that nothing calls. |
+| `lib/integrations/captain/processor_service.rb` | All | Dead code: nothing calls it and no integration app named `captain` exists. The old external Captain bot was replaced by the built-in Captain assistants. |
+| `lib/integrations/slack/hook_builder.rb` | 28–30 (`hook_type`) | A private method that nothing calls; the hook type comes from the Slack app's config. |
+| `lib/integrations/llm_instrumentation_spans.rb` | 12–35, 85–110 (`start_llm_turn_span`, `end_llm_turn_span` and their attribute helpers) | Nothing calls the LLM turn span methods; Captain records generations with `record_llm_generation` and `record_generation` instead. |
+| `enterprise/app/services/captain/tools/base_service.rb` | All | Dead code: no class inherits from it. Captain's tools inherit from `Captain::Tools::BaseTool` (a `RubyLLM::Tool`) instead. |
+| `enterprise/app/services/internal/account_analysis/threat_analyser_service.rb` | 39–41 (`rescue` in `extract_domain_from_email`) | The email is a non-blank string from the users table, and `String#split` cannot raise. |
+| `enterprise/app/controllers/twilio/voice_controller.rb` | 79–81 (`twilio_to`) | A private method that nothing calls. |
+| `enterprise/app/models/concerns/safe_endpoint_validatable.rb` | 79–82 (`validate_no_unicode_chars` adding its error) | `URI.parse` already rejects a non-ASCII host with `URI::InvalidURIError`, so such URLs fail as "must be a valid URL" before this check runs. |
+| `enterprise/app/jobs/conversation_monitors/process_automation_delivery_job.rb` | 86–87 (`rescue ActiveRecord::RecordNotFound` in `eligible?`) | `eligible?` runs inside `delivery.with_lock`, which reloads the delivery and so reloads its rule and monitor; a deleted rule or monitor is then `nil` and returns `false` earlier. Only a deletion in the few microseconds between those queries reaches the rescue. |
+| `enterprise/app/builders/captain/assistant_drilldown_builder.rb` | 62–63 (`raise ArgumentError` for an unsupported metric) | The only caller, `AssistantsController#drilldown`, returns 422 for unsupported metrics before building. |
+| `enterprise/app/controllers/api/v1/accounts/whatsapp_calls_controller.rb` | 175–177 (`rescue ActiveRecord::RecordNotUnique` in `create_call_record`) | Only reachable when a webhook inserts the same call between the `find_by` and the `create!` a few lines apart; a race no request spec can schedule. |
