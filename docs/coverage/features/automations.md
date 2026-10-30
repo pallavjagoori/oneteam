@@ -1,6 +1,6 @@
 # Automation rules: coverage gaps
 
-## Frontend: 64.4% (602 of 935 lines)
+## Frontend: 66.8% (625 of 935 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -11,14 +11,9 @@
 | `app/javascript/dashboard/routes/dashboard/settings/automation/EditAutomationRule.vue` | 0.0% | 20 |
 | `app/javascript/dashboard/routes/dashboard/settings/automation/components/AutomationMonitorSelect.vue` | 13.3% | 13 |
 | `app/javascript/dashboard/routes/dashboard/settings/automation/components/AutomationActions.vue` | 10.0% | 9 |
-| `app/javascript/dashboard/helper/automationHelper.js` | 93.1% | 8 |
-| `app/javascript/dashboard/composables/useEditableAutomation.js` | 81.6% | 7 |
 | `app/javascript/dashboard/routes/dashboard/settings/automation/components/AutomationWaitCondition.vue` | 96.2% | 6 |
 | `app/javascript/dashboard/routes/dashboard/settings/automation/components/AutomationInstantTrigger.vue` | 76.2% | 5 |
 | `app/javascript/dashboard/routes/dashboard/settings/automation/components/AutomationRunTypeSelector.vue` | 37.5% | 5 |
-| `app/javascript/dashboard/store/modules/automations.js` | 88.6% | 4 |
-| `app/javascript/dashboard/composables/useAutomation.js` | 93.5% | 3 |
-| `app/javascript/dashboard/api/automation.js` | 66.7% | 1 |
 
 ## Backend: 96.2% (680 of 707 lines)
 

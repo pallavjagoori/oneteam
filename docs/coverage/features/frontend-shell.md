@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 49.0% (3928 of 8018 lines)
+## Frontend: 52.0% (4173 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -17,7 +17,6 @@
 | `app/javascript/dashboard/components-next/content-templates/ContentTemplateParser.vue` | 16.7% | 60 |
 | `app/javascript/dashboard/components-next/preview-picker/CaretAnchoredPicker.vue` | 11.9% | 59 |
 | `app/javascript/dashboard/components-next/emoji-icon-picker/EmojiIconPicker.vue` | 0.0% | 55 |
-| `app/javascript/dashboard/composables/usePolicy.js` | 0.0% | 55 |
 | `app/javascript/dashboard/components-next/dropdown-menu/DropdownMenu.vue` | 5.5% | 52 |
 | `app/javascript/shared/components/emoji/pickerHelper.js` | 0.0% | 48 |
 | `app/javascript/entrypoints/sdk.js` | 32.4% | 46 |
@@ -37,7 +36,6 @@
 | `app/javascript/dashboard/components/ui/DatePicker/components/CalendarWeek.vue` | 5.9% | 32 |
 | `app/javascript/dashboard/components-next/dialog/Dialog.vue` | 3.2% | 30 |
 | `app/javascript/dashboard/components/Modal.vue` | 0.0% | 29 |
-| `app/javascript/dashboard/composables/loadWithRetry.js` | 3.3% | 29 |
 | `app/javascript/dashboard/components-next/button/Button.story.vue` | 0.0% | 28 |
 | `app/javascript/entrypoints/dashboard.js` | 0.0% | 28 |
 | `app/javascript/dashboard/components/ui/Dropdown/DropdownList.vue` | 0.0% | 27 |
@@ -78,7 +76,6 @@
 | `app/javascript/dashboard/components-next/combobox/ComboBoxDropdown.vue` | 15.0% | 17 |
 | `app/javascript/dashboard/components-next/dropdown-menu/DropdownMenu.story.vue` | 0.0% | 17 |
 | `app/javascript/dashboard/components-next/textarea/TextArea.story.vue` | 0.0% | 17 |
-| `app/javascript/dashboard/store/utils/api.js` | 70.7% | 17 |
 | `app/javascript/dashboard/components-next/dropdown-menu/base/DropdownItem.vue` | 5.9% | 16 |
 | `app/javascript/dashboard/components-next/template-preview/MediaTemplate.vue` | 11.1% | 16 |
 | `app/javascript/dashboard/components/app/UpdateBanner.vue` | 0.0% | 16 |
@@ -93,7 +90,6 @@
 | `app/javascript/dashboard/components-next/dropdown-menu/base/DropdownContainer.vue` | 0.0% | 14 |
 | `app/javascript/dashboard/components-next/input/Input.story.vue` | 0.0% | 14 |
 | `app/javascript/dashboard/components-next/tabbar/TabBar.story.vue` | 0.0% | 14 |
-| `app/javascript/dashboard/helper/scriptHelpers.js` | 17.6% | 14 |
 | `app/javascript/dashboard/routes/index.js` | 81.3% | 14 |
 | `app/javascript/dashboard/routes/dashboard/settings/templates/templateUtils.js` | 65.9% | 14 |
 | `app/javascript/v3/components/SnackBar/Container.vue` | 0.0% | 14 |
@@ -110,12 +106,10 @@
 | `app/javascript/dashboard/components-next/radioCard/RadioCard.story.vue` | 0.0% | 12 |
 | `app/javascript/dashboard/components-next/selectmenu/SelectMenu.story.vue` | 0.0% | 12 |
 | `app/javascript/dashboard/components/ui/DatePicker/components/CalendarAction.vue` | 14.3% | 12 |
-| `app/javascript/dashboard/composables/useLiveRefresh.js` | 7.7% | 12 |
 | `app/javascript/dashboard/routes/dashboard/Dashboard.vue` | 66.7% | 12 |
 | `app/javascript/dashboard/routes/dashboard/settings/templates/TemplateCard.vue` | 36.8% | 12 |
 | `app/javascript/shared/helpers/emoji.js` | 25.0% | 12 |
 | `app/javascript/dashboard/components/ui/Tabs/TabsItem.vue` | 0.0% | 11 |
-| `app/javascript/dashboard/helper/emailQuoteExtractor.js` | 76.1% | 11 |
 | `app/javascript/dashboard/services/TemplateNormalizer.js` | 72.5% | 11 |
 | `app/javascript/shared/helpers/timeHelper.js` | 76.6% | 11 |
 | `app/javascript/dashboard/components-next/DetailsPageLayout.vue` | 33.3% | 10 |
@@ -123,14 +117,11 @@
 | `app/javascript/dashboard/components-next/icon/provider.js` | 64.3% | 10 |
 | `app/javascript/dashboard/components-next/sidebar/SidebarChangelogButton.vue` | 16.7% | 10 |
 | `app/javascript/dashboard/components/table/Table.vue` | 23.1% | 10 |
-| `app/javascript/dashboard/helper/APIHelper.js` | 0.0% | 10 |
 | `app/javascript/dashboard/components/SettingsSection.vue` | 0.0% | 9 |
 | `app/javascript/dashboard/components-next/button/ConfirmButton.story.vue` | 0.0% | 9 |
 | `app/javascript/dashboard/components-next/feature-spotlight/FeatureSpotlight.vue` | 35.7% | 9 |
 | `app/javascript/dashboard/components-next/sidebar/MobileSidebarLauncher.vue` | 0.0% | 9 |
 | `app/javascript/dashboard/components/ui/Banner.vue` | 30.8% | 9 |
-| `app/javascript/dashboard/composables/useTransformKeys.js` | 25.0% | 9 |
-| `app/javascript/dashboard/helper/actionQueryGenerator.js` | 67.9% | 9 |
 | `app/javascript/dashboard/routes/dashboard/settings/components/BaseSettingsHeader.vue` | 18.2% | 9 |
 | `app/javascript/dashboard/routes/dashboard/settings/components/BaseSettingsListItem.vue` | 0.0% | 9 |
 | `app/javascript/dashboard/components/index.js` | 0.0% | 8 |
@@ -144,9 +135,6 @@
 | `app/javascript/dashboard/components-next/switch/Switch.vue` | 22.2% | 7 |
 | `app/javascript/dashboard/components-next/year-in-review/slides/ThankYouSlide.vue` | 0.0% | 7 |
 | `app/javascript/dashboard/components/app/PendingEmailVerificationBanner.vue` | 0.0% | 7 |
-| `app/javascript/dashboard/composables/useImageZoom.js` | 88.7% | 7 |
-| `app/javascript/dashboard/helper/commons.js` | 81.6% | 7 |
-| `app/javascript/dashboard/helper/quotedEmailHelper.js` | 96.1% | 7 |
 | `app/javascript/dashboard/modules/widget-preview/components/WidgetFooter.vue` | 46.2% | 7 |
 | `app/javascript/shared/components/CardButton.vue` | 22.2% | 7 |
 | `app/javascript/shared/components/ChatOptions.vue` | 36.4% | 7 |
@@ -163,9 +151,6 @@
 | `app/javascript/dashboard/components-next/table/BaseTable.vue` | 40.0% | 6 |
 | `app/javascript/dashboard/components-next/template-preview/TemplatePreview.vue` | 79.3% | 6 |
 | `app/javascript/dashboard/components-next/year-in-review/slides/IntroSlide.vue` | 0.0% | 6 |
-| `app/javascript/dashboard/helper/DOMHelpers.js` | 84.6% | 6 |
-| `app/javascript/dashboard/helper/states.js` | 0.0% | 6 |
-| `app/javascript/dashboard/helper/commandbar/actions.js` | 60.0% | 6 |
 | `app/javascript/dashboard/routes/dashboard/settings/components/BasePaywallModal.vue` | 57.1% | 6 |
 | `app/javascript/shared/store/globalConfig.js` | 45.5% | 6 |
 | `app/javascript/v3/components/Form/CheckBox.vue` | 14.3% | 6 |
@@ -182,13 +167,10 @@
 | `app/javascript/dashboard/components/ui/DatePicker/components/CalendarDateRange.vue` | 37.5% | 5 |
 | `app/javascript/dashboard/components/ui/DatePicker/components/CalendarFooter.vue` | 16.7% | 5 |
 | `app/javascript/dashboard/components/ui/DatePicker/components/DatePickerButton.vue` | 75.0% | 5 |
-| `app/javascript/dashboard/composables/usePaymentStatus.js` | 0.0% | 5 |
-| `app/javascript/dashboard/composables/useUISettings.js` | 89.6% | 5 |
 | `app/javascript/dashboard/modules/widget-preview/components/WidgetHead.vue` | 61.5% | 5 |
 | `app/javascript/dashboard/routes/dashboard/settings/SettingsWrapper.vue` | 28.6% | 5 |
 | `app/javascript/dashboard/routes/dashboard/settings/Wrapper.vue` | 16.7% | 5 |
 | `app/javascript/dashboard/services/TemplateTypeDetector.js` | 81.5% | 5 |
-| `app/javascript/dashboard/store/modules/attributes.js` | 87.8% | 5 |
 | `app/javascript/shared/components/TextArea.vue` | 0.0% | 5 |
 | `app/javascript/dashboard/components-next/CardLayout.vue` | 20.0% | 4 |
 | `app/javascript/dashboard/components-next/SidebarActionsHeader.story.vue` | 0.0% | 4 |
@@ -198,9 +180,7 @@
 | `app/javascript/dashboard/components-next/taginput/helper/tagInputHelper.js` | 90.7% | 4 |
 | `app/javascript/dashboard/components-next/vertical-tabs/VerticalTabs.vue` | 50.0% | 4 |
 | `app/javascript/dashboard/components/ui/DateRangePicker.vue` | 0.0% | 4 |
-| `app/javascript/dashboard/helper/sidebarSort.js` | 93.2% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/SettingsHeader.vue` | 50.0% | 4 |
-| `app/javascript/dashboard/store/storeFactoryHelper.js` | 96.0% | 4 |
 | `app/javascript/shared/helpers/localStorage.js` | 89.5% | 4 |
 | `app/javascript/v3/views/routes.js` | 42.9% | 4 |
 | `app/javascript/dashboard/components/ModalHeader.vue` | 0.0% | 3 |
@@ -212,7 +192,6 @@
 | `app/javascript/dashboard/components-next/spinner/Spinner.story.vue` | 0.0% | 3 |
 | `app/javascript/dashboard/components/Accordion/AccordionItem.vue` | 62.5% | 3 |
 | `app/javascript/dashboard/components/table/BaseCell.vue` | 0.0% | 3 |
-| `app/javascript/dashboard/composables/useDropdownPosition.js` | 95.2% | 3 |
 | `app/javascript/dashboard/routes/dashboard/commands/commandbar.vue` | 96.8% | 3 |
 | `app/javascript/shared/components/ChatCard.vue` | 66.7% | 3 |
 | `app/javascript/shared/components/ChatOption.vue` | 25.0% | 3 |
@@ -221,7 +200,6 @@
 | `app/javascript/shared/components/PhoneInput/helper.js` | 50.0% | 3 |
 | `app/javascript/shared/components/ui/dropdown/DropdownHeader.vue` | 0.0% | 3 |
 | `app/javascript/shared/components/ui/dropdown/DropdownSubMenu.vue` | 0.0% | 3 |
-| `app/javascript/dashboard/api/yearInReview.js` | 0.0% | 2 |
 | `app/javascript/dashboard/components-next/EmptyStateLayout.vue` | 66.7% | 2 |
 | `app/javascript/dashboard/components-next/button/Button.vue` | 96.4% | 2 |
 | `app/javascript/dashboard/components-next/combobox/ReorderableMultiSelect.vue` | 96.9% | 2 |
@@ -233,18 +211,11 @@
 | `app/javascript/dashboard/components-next/template-preview/TextTemplate.vue` | 0.0% | 2 |
 | `app/javascript/dashboard/components/table/SortButton.vue` | 0.0% | 2 |
 | `app/javascript/dashboard/components/ui/ContextMenu.vue` | 94.6% | 2 |
-| `app/javascript/dashboard/composables/store.js` | 88.2% | 2 |
-| `app/javascript/dashboard/composables/useDetectKeyboardLayout.js` | 93.5% | 2 |
-| `app/javascript/dashboard/composables/utils/useKbd.js` | 75.0% | 2 |
-| `app/javascript/dashboard/helper/routeHelpers.js` | 96.4% | 2 |
-| `app/javascript/dashboard/helper/slaHelper.js` | 97.3% | 2 |
+| `app/javascript/dashboard/helper/quotedEmailHelper.js` | 98.9% | 2 |
 | `app/javascript/shared/components/FluentIcon/Index.vue` | 33.3% | 2 |
 | `app/javascript/shared/components/ui/dropdown/DropdownDivider.vue` | 0.0% | 2 |
 | `app/javascript/shared/composables/useExpandableContent.js` | 88.9% | 2 |
 | `app/javascript/shared/helpers/documentHelper.js` | 93.1% | 2 |
-| `app/javascript/dashboard/api/CacheEnabledApiClient.js` | 97.1% | 1 |
-| `app/javascript/dashboard/api/changelog.js` | 50.0% | 1 |
-| `app/javascript/dashboard/api/endPoints.js` | 66.7% | 1 |
 | `app/javascript/dashboard/components-next/Settings/SettingsToggleSection.vue` | 90.0% | 1 |
 | `app/javascript/dashboard/components-next/buttonGroup/ButtonGroup.vue` | 0.0% | 1 |
 | `app/javascript/dashboard/components-next/emoji-icon-picker/icons.js` | 0.0% | 1 |
@@ -257,14 +228,13 @@
 | `app/javascript/dashboard/components/base/Hotkey.vue` | 50.0% | 1 |
 | `app/javascript/dashboard/components/ui/Dropdown/DropdownButton.vue` | 50.0% | 1 |
 | `app/javascript/dashboard/components/ui/Dropdown/DropdownListItemButton.vue` | 75.0% | 1 |
-| `app/javascript/dashboard/composables/index.js` | 83.3% | 1 |
-| `app/javascript/dashboard/composables/useSlaStatus.js` | 96.7% | 1 |
-| `app/javascript/dashboard/helper/featureHelper.js` | 0.0% | 1 |
+| `app/javascript/dashboard/composables/usePolicy.js` | 98.2% | 1 |
+| `app/javascript/dashboard/helper/emailQuoteExtractor.js` | 97.8% | 1 |
+| `app/javascript/dashboard/helper/slaHelper.js` | 98.6% | 1 |
 | `app/javascript/dashboard/routes/dashboard/settings/SettingsLayout.vue` | 50.0% | 1 |
 | `app/javascript/shared/components/ui/dropdown/DropdownItem.vue` | 66.7% | 1 |
 | `app/javascript/shared/composables/useLocale.js` | 92.3% | 1 |
 | `app/javascript/shared/constants/contentType.js` | 0.0% | 1 |
-| `app/javascript/shared/helpers/CustomErrors.js` | 87.5% | 1 |
 | `app/javascript/shared/helpers/DateHelper.js` | 95.0% | 1 |
 | `app/javascript/shared/helpers/Validators.js` | 97.0% | 1 |
 | `app/javascript/shared/helpers/colorHelper.js` | 94.4% | 1 |

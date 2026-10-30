@@ -1,6 +1,6 @@
 # Help center: coverage gaps
 
-## Frontend: 20.0% (693 of 3462 lines)
+## Frontend: 22.5% (778 of 3462 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -56,43 +56,30 @@
 | `app/javascript/dashboard/components-next/HelpCenter/Pages/PortalSettingsPage/PortalGeneralSettings.vue` | 0.0% | 17 |
 | `app/javascript/dashboard/routes/dashboard/helpcenter/components/ArticleSearch/ArticleSearchResultItem.vue` | 22.2% | 14 |
 | `app/javascript/dashboard/routes/dashboard/helpcenter/components/ArticleSearch/Header.vue` | 30.0% | 14 |
-| `app/javascript/dashboard/store/modules/helpCenterArticles/actions.js` | 84.6% | 12 |
-| `app/javascript/dashboard/store/modules/helpCenterCategories/mutations.js` | 58.6% | 12 |
 | `app/javascript/dashboard/components-next/HelpCenter/EmptyState/Portal/PortalEmptyState.vue` | 21.4% | 11 |
 | `app/javascript/dashboard/routes/dashboard/helpcenter/pages/PortalsLocalesIndexPage.vue` | 0.0% | 10 |
-| `app/javascript/dashboard/store/modules/helpCenterArticles/mutations.js` | 67.7% | 10 |
-| `app/javascript/dashboard/store/modules/helpCenterPortals/actions.js` | 81.5% | 10 |
 | `app/javascript/dashboard/components-next/HelpCenter/EmptyState/Article/ArticleEmptyState.vue` | 0.0% | 9 |
 | `app/javascript/dashboard/routes/dashboard/helpcenter/components/ArticleSearch/ArticleView.vue` | 38.5% | 8 |
 | `app/javascript/dashboard/components-next/HelpCenter/EmptyState/Category/CategoryEmptyState.vue` | 0.0% | 7 |
 | `app/javascript/dashboard/components-next/HelpCenter/Pages/PortalSettingsPage/ConfirmDeletePortalDialog.vue` | 0.0% | 7 |
-| `app/javascript/dashboard/store/modules/helpCenterArticles/getters.js` | 75.0% | 7 |
-| `app/javascript/dashboard/store/modules/helpCenterCategories/getters.js` | 75.0% | 7 |
 | `app/javascript/dashboard/components-next/HelpCenter/ArticleCard/ArticleCard.story.vue` | 0.0% | 6 |
 | `app/javascript/dashboard/components-next/HelpCenter/LocaleCard/LocaleCard.story.vue` | 0.0% | 6 |
-| `app/javascript/dashboard/helper/portalHelper.js` | 84.2% | 6 |
 | `app/javascript/dashboard/routes/dashboard/helpcenter/components/ArticleSearch/SearchResults.vue` | 33.3% | 6 |
-| `app/javascript/dashboard/store/modules/helpCenterPortals/mutations.js` | 78.6% | 6 |
 | `app/javascript/dashboard/components-next/HelpCenter/CategoryCard/CategoryCard.story.vue` | 0.0% | 5 |
 | `app/javascript/dashboard/components-next/HelpCenter/Pages/ArticlePage/ArticlesPage.story.vue` | 0.0% | 5 |
 | `app/javascript/dashboard/components-next/HelpCenter/Pages/CategoryPage/CategoriesPage.story.vue` | 0.0% | 5 |
 | `app/javascript/dashboard/components-next/HelpCenter/Pages/LocalePage/LocalesPage.story.vue` | 0.0% | 5 |
 | `app/javascript/dashboard/components-next/HelpCenter/PortalSwitcher/PortalSwitcher.story.vue` | 0.0% | 5 |
 | `app/javascript/dashboard/routes/dashboard/helpcenter/components/UpgradePage.vue` | 66.7% | 5 |
-| `app/javascript/dashboard/store/modules/helpCenterPortals/getters.js` | 75.0% | 5 |
 | `app/javascript/dashboard/components-next/HelpCenter/EmptyState/Article/ArticleEmptyState.story.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/components-next/HelpCenter/EmptyState/Portal/PortalEmptyState.story.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/components-next/HelpCenter/Pages/PortalSettingsPage/PortalSettings.story.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/modules/search/components/SearchResultArticlesList.vue` | 0.0% | 4 |
 | `app/javascript/portal/components/SearchSuggestions.vue` | 81.8% | 4 |
-| `app/javascript/dashboard/api/helpCenter/articles.js` | 80.0% | 3 |
-| `app/javascript/dashboard/api/helpCenter/portals.js` | 57.1% | 3 |
-| `app/javascript/dashboard/helper/articleDiffHelper.js` | 96.9% | 3 |
 | `app/javascript/entrypoints/portal.js` | 0.0% | 3 |
 | `app/javascript/portal/portalThemeHelper.js` | 95.7% | 3 |
 | `app/javascript/portal/api/article.js` | 33.3% | 2 |
 | `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/HelpCenterCreationStatus.vue` | 97.5% | 1 |
-| `app/javascript/dashboard/store/modules/helpCenterCategories/actions.js` | 97.8% | 1 |
 
 ## Backend: 91.3% (1207 of 1322 lines)
 

@@ -1,6 +1,6 @@
 # Messages and attachments: coverage gaps
 
-## Frontend: 36.1% (715 of 1980 lines)
+## Frontend: 38.4% (761 of 1980 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -33,13 +33,10 @@
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/CardMessagePreviewWithMeta.vue` | 18.8% | 13 |
 | `app/javascript/dashboard/components-next/message/bubbles/File.vue` | 0.0% | 13 |
 | `app/javascript/dashboard/components-next/message/bubbles/Location.vue` | 0.0% | 13 |
-| `app/javascript/dashboard/composables/useTranslations.js` | 31.6% | 13 |
-| `app/javascript/dashboard/helper/editorHelper.js` | 92.7% | 13 |
 | `app/javascript/dashboard/components-next/message/bubbles/Unsupported.vue` | 20.0% | 12 |
 | `app/javascript/dashboard/components-next/message/chips/File.vue` | 14.3% | 12 |
 | `app/javascript/dashboard/components-next/message/stories/EmailMessages.story.vue` | 0.0% | 11 |
 | `app/javascript/dashboard/mixins/fileUploadMixin.js` | 66.7% | 11 |
-| `app/javascript/dashboard/helper/AudioAlerts/faviconHelper.js` | 16.7% | 10 |
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/CardMessagePreview.vue` | 25.0% | 9 |
 | `app/javascript/dashboard/components-next/message/bubbles/BaseAttachment.vue` | 30.8% | 9 |
 | `app/javascript/dashboard/components-next/message/MessageError.vue` | 33.3% | 8 |
@@ -48,17 +45,15 @@
 | `app/javascript/dashboard/components-next/message/forward/ForwardEmailPanel.vue` | 91.6% | 7 |
 | `app/javascript/dashboard/components-next/message/bubbles/Embed.vue` | 25.0% | 6 |
 | `app/javascript/dashboard/components-next/message/bubbles/Text/FormattedContent.vue` | 14.3% | 6 |
-| `app/javascript/dashboard/composables/useFileUpload.js` | 86.4% | 6 |
 | `app/javascript/shared/components/GreetingsEditor.vue` | 14.3% | 6 |
 | `app/javascript/dashboard/components-next/message/bubbles/Audio.vue` | 0.0% | 5 |
 | `app/javascript/dashboard/components-next/message/chips/Video.vue` | 28.6% | 5 |
 | `app/javascript/dashboard/routes/dashboard/settings/profile/AudioAlertCondition.vue` | 37.5% | 5 |
 | `app/javascript/shared/helpers/MessageFormatter.js` | 90.0% | 5 |
 | `app/javascript/dashboard/components-next/message/provider.js` | 63.6% | 4 |
-| `app/javascript/dashboard/api/inbox/message.js` | 91.4% | 3 |
 | `app/javascript/dashboard/components-next/NewConversation/components/MessageEditor.vue` | 72.7% | 3 |
 | `app/javascript/dashboard/constants/editor.js` | 72.7% | 3 |
-| `app/javascript/dashboard/helper/uploadHelper.js` | 85.7% | 2 |
+| `app/javascript/dashboard/helper/editorHelper.js` | 99.4% | 1 |
 | `app/javascript/shared/helpers/markdownIt/link.js` | 97.2% | 1 |
 
 ## Backend: 93.2% (1623 of 1741 lines)

@@ -1,6 +1,6 @@
 # Captain AI assistant and copilot: coverage gaps
 
-## Frontend: 35.1% (1990 of 5672 lines)
+## Frontend: 41.7% (2368 of 5672 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -10,7 +10,6 @@
 | `app/javascript/dashboard/components-next/captain/pageComponents/customTool/CustomToolForm.vue` | 12.4% | 106 |
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/scenarios/Index.vue` | 9.3% | 97 |
 | `app/javascript/dashboard/components-next/message/CaptainGenerationDetails.vue` | 13.1% | 93 |
-| `app/javascript/dashboard/composables/useCopilotReply.js` | 23.7% | 90 |
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/guidelines/Index.vue` | 6.7% | 83 |
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/guardrails/Index.vue` | 6.9% | 81 |
 | `app/javascript/dashboard/routes/dashboard/captain/tools/Explore.vue` | 4.8% | 60 |
@@ -34,7 +33,6 @@
 | `app/javascript/dashboard/components-next/captain/pageComponents/assistant/settings/AssistantAudienceForm.vue` | 54.8% | 33 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/customTool/CreateCustomToolDialog.vue` | 2.9% | 33 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/AssistantDrilldownDrawer.vue` | 0.0% | 33 |
-| `app/javascript/dashboard/store/captain/preferences.js` | 2.9% | 33 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/assistant/settings/audience/AudienceGroup.vue` | 15.8% | 32 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/v2/OverviewSummaryCard.vue` | 23.8% | 32 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/switcher/AssistantSwitcher.vue` | 20.0% | 32 |
@@ -50,11 +48,9 @@
 | `app/javascript/dashboard/components-next/captain/pageComponents/response/CreateResponseDialog.vue` | 0.0% | 29 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/response/ResponseForm.vue` | 3.3% | 29 |
 | `app/javascript/dashboard/components-next/copilot/Copilot.vue` | 55.6% | 28 |
-| `app/javascript/dashboard/store/captain/faqSuggestions.js` | 9.7% | 28 |
 | `app/javascript/dashboard/components-next/captain/assistant/BulkSelectBar.vue` | 18.2% | 27 |
 | `app/javascript/dashboard/components/copilot/CopilotContainer.vue` | 81.4% | 27 |
 | `app/javascript/dashboard/components/widgets/WootWriter/CopilotEditor.vue` | 63.0% | 27 |
-| `app/javascript/dashboard/composables/useCaptain.js` | 64.0% | 27 |
 | `app/javascript/dashboard/components-next/captain/assistant/AddNewScenariosDialog.vue` | 13.3% | 26 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/assistant/settings/AssistantBasicSettingsForm.vue` | 23.5% | 26 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/inbox/ConnectInboxForm.vue` | 7.1% | 26 |
@@ -70,7 +66,6 @@
 | `app/javascript/dashboard/components-next/captain/pageComponents/inbox/ConnectInboxDialog.vue` | 4.8% | 20 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/v2/CsatCard.vue` | 4.8% | 20 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/v2/UsageCard.vue` | 9.1% | 20 |
-| `app/javascript/dashboard/store/captain/copilotMessages.js` | 9.1% | 20 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/DeleteDialog.vue` | 0.0% | 19 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/response/FaqSuggestionReviewDialog.vue` | 77.5% | 18 |
 | `app/javascript/dashboard/components/widgets/conversation/CopilotEditorSection.vue` | 18.2% | 18 |
@@ -81,13 +76,7 @@
 | `app/javascript/dashboard/components-next/captain/pageComponents/customTool/AssistantToolsBanner.vue` | 20.0% | 16 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/CoverageBanner.vue` | 30.4% | 16 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/InboxBanner.vue` | 20.0% | 16 |
-| `app/javascript/dashboard/store/captain/agentSessions.js` | 15.8% | 16 |
-| `app/javascript/dashboard/store/captain/bulkActions.js` | 5.9% | 16 |
-| `app/javascript/dashboard/store/captain/customTools.js` | 5.9% | 16 |
-| `app/javascript/dashboard/store/captain/document.js` | 15.8% | 16 |
-| `app/javascript/dashboard/store/captain/scenarios.js` | 5.9% | 16 |
 | `app/javascript/dashboard/components-next/captain/assistant/FaqSuggestionCard.vue` | 44.4% | 15 |
-| `app/javascript/dashboard/api/captain/assistant.js` | 12.5% | 14 |
 | `app/javascript/dashboard/components-next/captain/assistant/AddNewRulesDialog.vue` | 12.5% | 14 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/assistant/settings/AssistantScheduleForm.vue` | 17.6% | 14 |
 | `app/javascript/dashboard/components-next/copilot/CopilotLauncher.vue` | 0.0% | 14 |
@@ -99,7 +88,6 @@
 | `app/javascript/dashboard/components-next/captain/assistant/usePlaygroundSession.js` | 93.5% | 12 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/document/LimitBanner.vue` | 0.0% | 12 |
 | `app/javascript/dashboard/components-next/copilot/Copilot.story.vue` | 0.0% | 12 |
-| `app/javascript/dashboard/store/captain/tools.js` | 20.0% | 12 |
 | `app/javascript/dashboard/components-next/captain/assistant/AssistantPlayground.vue` | 90.2% | 11 |
 | `app/javascript/dashboard/components-next/captain/assistant/RuleCard.story.vue` | 0.0% | 11 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/QuickLinks.vue` | 26.7% | 11 |
@@ -114,34 +102,23 @@
 | `app/javascript/dashboard/components-next/captain/pageComponents/emptyStates/DocumentPageEmptyState.vue` | 10.0% | 9 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/emptyStates/ResponsePageEmptyState.vue` | 18.2% | 9 |
 | `app/javascript/dashboard/components/widgets/WootWriter/CopilotReplyBottomPanel.vue` | 10.0% | 9 |
-| `app/javascript/dashboard/api/captain/assistantStats.js` | 20.0% | 8 |
 | `app/javascript/dashboard/components-next/captain/assistant/SuggestedRules.vue` | 38.5% | 8 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/customTool/CustomToolCard.vue` | 78.4% | 8 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/emptyStates/AssistantPageEmptyState.vue` | 11.1% | 8 |
-| `app/javascript/dashboard/store/captain/inboxes.js` | 11.1% | 8 |
-| `app/javascript/dashboard/api/captain/toolsCatalog.js` | 36.4% | 7 |
 | `app/javascript/dashboard/components-next/captain/assistant/SuggestedRules.story.vue` | 0.0% | 7 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/customTool/AuthConfig.vue` | 12.5% | 7 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/emptyStates/CustomToolsPageEmptyState.vue` | 0.0% | 7 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/emptyStates/InboxPageEmptyState.vue` | 12.5% | 7 |
-| `app/javascript/dashboard/api/captain/customTools.js` | 14.3% | 6 |
 | `app/javascript/dashboard/components-next/captain/assistant/ToolsDropdown.story.vue` | 0.0% | 6 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/customTool/InstallManifestDialog.vue` | 94.4% | 6 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/settings/SettingsHeader.story.vue` | 0.0% | 6 |
 | `app/javascript/dashboard/routes/dashboard/captain/pages/CaptainPageRouteView.vue` | 25.0% | 6 |
-| `app/javascript/dashboard/store/captain/response.js` | 14.3% | 6 |
-| `app/javascript/dashboard/api/captain/document.js` | 16.7% | 5 |
-| `app/javascript/dashboard/api/captain/faqSuggestions.js` | 16.7% | 5 |
-| `app/javascript/dashboard/api/captain/inboxes.js` | 16.7% | 5 |
-| `app/javascript/dashboard/api/captain/scenarios.js` | 16.7% | 5 |
 | `app/javascript/dashboard/components-next/captain/AnimatingImg/Guardrails.vue` | 0.0% | 5 |
 | `app/javascript/dashboard/components-next/captain/AnimatingImg/ResponseGuidelines.vue` | 0.0% | 5 |
 | `app/javascript/dashboard/components-next/captain/AnimatingImg/Scenarios.vue` | 0.0% | 5 |
 | `app/javascript/dashboard/components-next/captain/assistant/ScenariosCard.story.vue` | 0.0% | 5 |
 | `app/javascript/dashboard/components-next/captain/classifier/SuggestionChip.vue` | 28.6% | 5 |
 | `app/javascript/dashboard/components-next/copilot/CopilotThinkingGroup.story.vue` | 0.0% | 5 |
-| `app/javascript/dashboard/api/captain/response.js` | 20.0% | 4 |
-| `app/javascript/dashboard/api/captain/tasks.js` | 20.0% | 4 |
 | `app/javascript/dashboard/components-next/captain/assistant/AddNewRulesDialog.story.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/components-next/captain/assistant/AddNewRulesInput.story.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/components-next/captain/assistant/AssistantCard.story.vue` | 0.0% | 4 |
@@ -155,20 +132,14 @@
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/settings/Schedule.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/settings/System.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/captain/components/ModelSelector.vue` | 42.9% | 4 |
-| `app/javascript/dashboard/api/captain/toolsManifest.js` | 25.0% | 3 |
 | `app/javascript/dashboard/components-next/captain/classifier/SuggestButton.vue` | 0.0% | 3 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/MetricHint.vue` | 50.0% | 3 |
 | `app/javascript/dashboard/components-next/copilot/CopilotEmptyState.vue` | 90.0% | 3 |
 | `app/javascript/dashboard/components-next/copilot/CopilotInput.vue` | 89.3% | 3 |
-| `app/javascript/dashboard/api/captain/copilotMessages.js` | 33.3% | 2 |
-| `app/javascript/dashboard/api/captain/copilotRuns.js` | 33.3% | 2 |
-| `app/javascript/dashboard/api/captain/preferences.js` | 33.3% | 2 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/customTool/ToolsetInstallBadge.vue` | 0.0% | 2 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/v2/ProgressMetric.vue` | 71.4% | 2 |
 | `app/javascript/dashboard/components-next/copilot/CopilotAssistantMessage.vue` | 92.0% | 2 |
 | `app/javascript/dashboard/components-next/copilot/CopilotLoader.story.vue` | 0.0% | 2 |
-| `app/javascript/dashboard/api/captain/copilotThreads.js` | 50.0% | 1 |
-| `app/javascript/dashboard/api/captain/tools.js` | 50.0% | 1 |
 | `app/javascript/dashboard/components-next/captain/AnimatingImg/Settings.vue` | 0.0% | 1 |
 | `app/javascript/dashboard/components-next/captain/assistant/PlaygroundRunDetails.vue` | 95.0% | 1 |
 | `app/javascript/dashboard/components-next/captain/classifier/SuggestionSkeleton.vue` | 50.0% | 1 |

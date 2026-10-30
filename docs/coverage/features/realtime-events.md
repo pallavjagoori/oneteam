@@ -1,11 +1,10 @@
 # Real-time updates and events: coverage gaps
 
-## Frontend: 63.2% (192 of 304 lines)
+## Frontend: 92.8% (282 of 304 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/helper/actionCable.js` | 58.0% | 87 |
-| `app/javascript/shared/helpers/BaseActionCableConnector.js` | 43.9% | 23 |
+| `app/javascript/shared/helpers/BaseActionCableConnector.js` | 51.2% | 20 |
 | `app/javascript/shared/helpers/CustomEventHelper.js` | 77.8% | 2 |
 
 ## Backend: 97.2% (312 of 321 lines)

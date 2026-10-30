@@ -1,6 +1,6 @@
 # Voice calls: coverage gaps
 
-## Frontend: 9.1% (84 of 928 lines)
+## Frontend: 22.3% (207 of 928 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -13,9 +13,6 @@
 | `app/javascript/dashboard/routes/dashboard/calls/pages/CallsIndex.vue` | 13.0% | 47 |
 | `app/javascript/dashboard/components-next/call/CallCard.story.vue` | 0.0% | 44 |
 | `app/javascript/dashboard/components-next/call/CallCard.vue` | 0.0% | 42 |
-| `app/javascript/dashboard/api/channel/voice/twilioVoiceClient.js` | 12.8% | 41 |
-| `app/javascript/dashboard/helper/voice.js` | 36.1% | 39 |
-| `app/javascript/dashboard/stores/calls.js` | 5.3% | 36 |
 | `app/javascript/dashboard/components-next/Calls/CallListItem.vue` | 37.3% | 32 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/settingsPage/CallRecordingSettings.vue` | 0.0% | 26 |
 | `app/javascript/dashboard/components/widgets/conversation/VoiceCallStatus.vue` | 0.0% | 19 |
@@ -23,9 +20,7 @@
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Voice.vue` | 5.3% | 18 |
 | `app/javascript/dashboard/components-next/Calls/constants.js` | 27.3% | 8 |
 | `app/javascript/dashboard/components-next/Calls/CallsEmptyState.vue` | 0.0% | 7 |
-| `app/javascript/dashboard/api/channel/voice/voiceAPIClient.js` | 33.3% | 6 |
 | `app/javascript/dashboard/components-next/Calls/CallStatusBadge.vue` | 16.7% | 5 |
-| `app/javascript/dashboard/api/calls.js` | 50.0% | 1 |
 
 ## Backend: 93.9% (1329 of 1415 lines)
 

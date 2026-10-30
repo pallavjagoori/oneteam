@@ -1,6 +1,6 @@
 # Contacts: coverage gaps
 
-## Frontend: 27.4% (756 of 2763 lines)
+## Frontend: 30.7% (849 of 2763 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -19,7 +19,6 @@
 | `app/javascript/dashboard/components-next/Contacts/Pages/ContactsList.vue` | 2.3% | 42 |
 | `app/javascript/dashboard/components-next/Contacts/ContactsSidebar/ContactMerge.vue` | 10.9% | 41 |
 | `app/javascript/dashboard/components-next/message/bubbles/Contact.vue` | 0.0% | 40 |
-| `app/javascript/dashboard/store/modules/contacts/actions.js` | 75.3% | 39 |
 | `app/javascript/dashboard/components-next/Companies/CompanyDetail/CompanyAddContact.vue` | 24.0% | 38 |
 | `app/javascript/dashboard/modules/contact/ContactMergeModal.vue` | 11.1% | 32 |
 | `app/javascript/dashboard/components-next/Contacts/ContactsSidebar/ContactMedia.vue` | 8.8% | 31 |
@@ -32,7 +31,6 @@
 | `app/javascript/dashboard/components-next/Contacts/ContactsListLayout.vue` | 12.9% | 27 |
 | `app/javascript/dashboard/modules/contact/ContactDeleteModal.vue` | 15.6% | 27 |
 | `app/javascript/dashboard/components-next/Contacts/ContactsForm/ContactExportDialog.vue` | 0.0% | 24 |
-| `app/javascript/dashboard/store/modules/contacts/mutations.js` | 36.8% | 24 |
 | `app/javascript/dashboard/modules/search/components/SearchResultContactItem.vue` | 20.7% | 23 |
 | `app/javascript/dashboard/components-next/NewConversation/components/ContactSelector.vue` | 21.4% | 22 |
 | `app/javascript/dashboard/components-next/Contacts/ContactsForm/CreateNewContactDialog.vue` | 4.5% | 21 |
@@ -59,11 +57,7 @@
 | `app/javascript/dashboard/components-next/Contacts/ContactsCard/ContactDeleteSection.vue` | 25.0% | 9 |
 | `app/javascript/dashboard/components-next/Contacts/ContactsForm/DeleteSegmentDialog.vue` | 10.0% | 9 |
 | `app/javascript/dashboard/components-next/Contacts/ContactsSidebar/components/story/ContactNoteItem.story.vue` | 0.0% | 8 |
-| `app/javascript/dashboard/store/modules/contactConversations.js` | 89.0% | 8 |
-| `app/javascript/dashboard/store/modules/contacts/getters.js` | 50.0% | 8 |
-| `app/javascript/dashboard/api/dataImports.js` | 12.5% | 7 |
 | `app/javascript/dashboard/components-next/Contacts/ContactsForm/ContactMergeForm.vue` | 73.7% | 5 |
-| `app/javascript/dashboard/store/modules/contactNotes.js` | 86.5% | 5 |
 | `app/javascript/dashboard/components-next/Contacts/EmptyState/ContactEmptyState.story.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/modules/search/components/SearchResultContactsList.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/data/importStatus.js` | 90.7% | 4 |
@@ -72,8 +66,6 @@
 | `app/javascript/dashboard/components-next/Contacts/ContactsForm/story/fixtures.js` | 0.0% | 2 |
 | `app/javascript/dashboard/routes/dashboard/conversation/ContactDetailsItem.vue` | 60.0% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/data/components/ImportDetailHeader.vue` | 91.3% | 2 |
-| `app/javascript/dashboard/api/contacts.js` | 95.7% | 1 |
-| `app/javascript/dashboard/composables/useContactConversationNavigation.js` | 98.2% | 1 |
 | `app/javascript/dashboard/modules/contact/components/MergeContactSummary.vue` | 75.0% | 1 |
 
 ## Backend: 86.9% (1152 of 1325 lines)
