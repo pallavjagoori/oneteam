@@ -40,6 +40,10 @@ need porting: the Laravel/Vue version can leave them out.
 | --- | --- | --- |
 | `app/services/twilio/csat_template_service.rb` | 121–126 (`template_exists_in_config?`) | A private method that nothing calls. |
 | `app/services/reporting_events/metric_registry.rb` | All | Dead code: nothing references `ReportingEvents::MetricRegistry`. Reports use `ReportingEvents::EventMetricRegistry` and `Reports::ReportMetricRegistry`, which hold the same tables. |
+| `lib/tasks/annotate_rb.rake` | 5–7 | Loads the annotate_rb gem's tasks only in development, so it never runs under the test suite. A developer convenience that the port does not need. |
+| `lib/tasks/reporting_events_rollup_timezone_setup.rake` | 92 (`rescue ArgumentError` in `utc_offset_in_seconds`) | The regex check just before it only lets digits through to `Integer(..., 10)`, so the conversion can never raise. |
+| `lib/tasks/asset_clean.rake` | 19 (`define_task` fallback) | Only runs when no `assets:clean` task exists, but the asset pipeline always defines one. |
+| `lib/test_data/database_optimizer.rb` | 27–30 (rest of `setup`) | Never reached: the UNLOGGED step before them fails on the current schema (see FINDINGS.md). |
 | `lib/integrations/captain/processor_service.rb` | All | Dead code: nothing calls it and no integration app named `captain` exists. The old external Captain bot was replaced by the built-in Captain assistants. |
 | `lib/integrations/slack/hook_builder.rb` | 28–30 (`hook_type`) | A private method that nothing calls; the hook type comes from the Slack app's config. |
 | `lib/integrations/llm_instrumentation_spans.rb` | 12–35, 85–110 (`start_llm_turn_span`, `end_llm_turn_span` and their attribute helpers) | Nothing calls the LLM turn span methods; Captain records generations with `record_llm_generation` and `record_generation` instead. |
