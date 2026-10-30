@@ -20,6 +20,26 @@ release can be tested with the same files.
 - `app/javascript/dashboard/api/specs/oneteamAxiosMock.js`: `useAxiosMock()` swaps `window.axios` for a mock
   for each test and puts the browser on an account page, so API clients build `/api/v1/accounts/1/...` URLs.
 
+- `app/javascript/specs/oneteam/renderHarness.js`: the render smoke harness (see below).
+
+## Render smoke tests (Vue components)
+
+`app/javascript/specs/oneteam/*Smoke.oneteam.spec.js` mount every Vue component in the dashboard, widget,
+survey, v3 login, portal, super admin and shared folders, one test per component. Each component is mounted
+the way its app would mount it: with the app's real Vuex store in its empty state, Pinia, a memory router on
+account 1, i18n and FloatingVue. Child components are stubbed, and network calls never answer, so each
+component renders its loading or empty state. Required props get a value of their declared type. Object props
+get a "lenient" object that tolerates any property access.
+
+A smoke test fails when the component throws while rendering or mounting. It proves the component and
+everything it imports load and render. It does **not** check behaviour; behaviour specs sit next to the
+components, and those are still needed for real coverage of what a component does.
+
+Components that cannot render without realistic data, such as a message bubble that needs an attachment or a
+calendar that needs dates, are listed in each spec's `needsDedicatedSpec` with the reason. They show up as
+`todo` tests in every run until they get their own spec. New Chatwoot components are picked up automatically
+on the next release.
+
 ## Two lists kept alongside the tests
 
 - [UNREACHABLE.md](UNREACHABLE.md): lines that no input can reach. They count against 100% but can't be tested,
@@ -37,9 +57,10 @@ release can be tested with the same files.
 | `app/javascript/dashboard/stores` | 100% statements, branches, functions and lines |
 | `app/javascript/dashboard/composables` | Done: 100% of functions, 99.95% of lines, 99.5% of branches. The rest is listed in UNREACHABLE.md |
 
-With the overlay (api, helper, store, stores and composables done), the full Vitest run has 6,442 passing
-tests and 41.9% line coverage (37.3% without it). Nearly all of what is left is in Vue components:
-`components-next`, `routes` and `components`.
+With the overlay (api, helper, store, stores and composables done, plus the render smoke tests), the full
+Vitest run has 7,535 passing tests, 56 todo, and 62.4% line coverage (37.3% without the overlay; 41.9% before
+the smoke tests). What is left is the behaviour of Vue components: event handlers, watchers and the branches
+that only run with real data, mostly in `components-next`, `routes` and `components`.
 
 ### Backend
 
