@@ -238,7 +238,7 @@ describe('Captain responses page', () => {
     expect(env.state.uiFlags.fetchingList).toBe(false);
 
     env.api = async () => {
-      throw {};
+      throw new Error('');
     };
     await mountPage();
     expect(useAlert).toHaveBeenLastCalledWith('CAPTAIN.RESPONSES.ERRORS.LOAD');
