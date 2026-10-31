@@ -90,6 +90,8 @@ const mountPage = async () => {
         ImportSummaryTiles: true,
       },
       mocks: { $t: key => key },
+      // A failed skip log type change rejects its event handler; keep it out of the run.
+      config: { errorHandler: () => {} },
     },
   });
   wrappers.push(wrapper);
