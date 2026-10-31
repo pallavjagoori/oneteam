@@ -136,3 +136,4 @@ need porting: the Laravel/Vue version can leave them out.
 | `app/javascript/dashboard/routes/dashboard/inbox/InboxList.vue` | 206 (branch) | `inboxFilters` is a computed that builds a new object on every change, so the watcher's `newVal !== oldVal` check is always true. |
 | `app/javascript/dashboard/routes/dashboard/inbox/InboxView.vue` | 180 (branch) | Vue only calls the `conversationId` watcher when the value changes (by `Object.is`, so even `NaN` to `NaN` does not fire), so `newVal !== oldVal` is always true. |
 | `app/javascript/widget/components/ChatAttachment.vue` | 163 (branch) | `isUploading` is a boolean, so `isUploading.image` is always undefined and the attach icon always renders (see FINDINGS.md). |
+| `app/javascript/dashboard/components/ConversationItem.vue` | 79 (branch) | `showAssigneeForExpandedCard` is only read by the expanded card, which renders only when `showExpanded` is true, so the `\|\| props.showAssignee` side never runs. |
