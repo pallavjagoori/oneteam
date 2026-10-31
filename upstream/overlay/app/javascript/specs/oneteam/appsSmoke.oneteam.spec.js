@@ -6,6 +6,17 @@
  */
 import { defineSmokeSuite, loadStore } from './renderHarness';
 
+// A widget message as the API returns it: 0 is the visitor, 1 an agent.
+const widgetMessage = messageType => ({
+  id: messageType + 1,
+  content: 'Hello there',
+  message_type: messageType,
+  created_at: 1767261600,
+  attachments: [],
+  content_attributes: {},
+  sender: { name: 'Ada', thumbnail: '' },
+});
+
 defineSmokeSuite({
   title: 'widget render smoke',
   modules: import.meta.glob(['../../widget/**/*.vue', '!**/*.story.vue']),
@@ -16,16 +27,24 @@ defineSmokeSuite({
       websiteToken: 'smoke-token',
       locale: 'en',
       enabledLanguages: [{ name: 'English', iso_639_1_code: 'en' }],
+      portal: { slug: 'help', config: { allowed_locales: ['en'] } },
     };
     window.chatwootPubsubToken = '';
     window.authToken = '';
   },
-  needsDedicatedSpec: {
-    'widget/components/AgentMessage.vue': 'needs a message',
-    'widget/components/FooterReplyTo.vue': 'needs the message being replied to',
-    'widget/components/ReplyToChip.vue': 'needs the message being replied to',
-    'widget/components/UserMessage.vue': 'needs a message',
-    'Home/Article/ArticleContainer.vue': 'needs a help center portal',
+  propsFor: {
+    'widget/components/AgentMessage.vue': () => ({
+      message: widgetMessage(1),
+      replyTo: widgetMessage(0),
+    }),
+    'widget/components/FooterReplyTo.vue': () => ({
+      inReplyTo: widgetMessage(0),
+    }),
+    'widget/components/ReplyToChip.vue': () => ({ replyTo: widgetMessage(1) }),
+    'widget/components/UserMessage.vue': () => ({
+      message: widgetMessage(0),
+      replyTo: widgetMessage(1),
+    }),
   },
 });
 
@@ -39,8 +58,13 @@ defineSmokeSuite({
   title: 'v3 render smoke',
   modules: import.meta.glob(['../../v3/**/*.vue', '!**/*.story.vue']),
   loadStore: () => import('v3/store').then(module => module.default),
-  needsDedicatedSpec: {
-    'signup/components/Signup/Form.vue': 'needs the global login config',
+  // The login page defines the install's sign-in options.
+  before: () => {
+    window.chatwootConfig = {
+      hostURL: 'https://app.example.test',
+      allowedLoginMethods: ['email'],
+      googleOAuthClientId: '',
+    };
   },
 });
 

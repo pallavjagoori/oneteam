@@ -9,6 +9,7 @@
  * A smoke test proves a component renders its empty state without throwing.
  * It does not check behaviour: behaviour specs live next to the components.
  */
+/* eslint-disable vue/one-component-per-file */
 import { describe, it, beforeAll } from 'vitest';
 import { mount, flushPromises } from '@vue/test-utils';
 import { defineComponent, h, ref } from 'vue';
@@ -156,15 +157,33 @@ export function buildRouter() {
   router.push = navigate;
   router.replace = navigate;
   router.hasRoute = () => true;
+  // Links to those routes resolve to an empty location rather than throwing.
+  const resolve = router.resolve.bind(router);
+  router.resolve = (target, current) => {
+    try {
+      return resolve(target, current);
+    } catch {
+      return { ...resolve('/'), name: target?.name, href: '/', meta: {} };
+    }
+  };
   return router;
 }
+
+// A stubbed <SidePanel /> that still answers open() and close().
+const sidePanelStub = defineComponent({
+  name: 'SidePanel',
+  setup(_props, { expose }) {
+    expose({ open: () => {}, close: () => {} });
+    return () => null;
+  },
+});
 
 /**
  * Mounts component and returns { wrapper, errors }. Errors thrown while
  * rendering or in lifecycle hooks are collected instead of failing the
  * mount, so the caller decides what counts as a failure.
  */
-export async function smokeMount(component, store, { setup } = {}) {
+export async function smokeMount(component, store, { setup, props = {} } = {}) {
   const errors = [];
   const router = buildRouter();
   await router.start('/app/accounts/1/dashboard');
@@ -176,7 +195,7 @@ export async function smokeMount(component, store, { setup } = {}) {
     const Parent = defineComponent({
       setup() {
         setup?.();
-        return () => h(component, requiredProps(component));
+        return () => h(component, { ...requiredProps(component), ...props });
       },
     });
     wrapper = mount(Parent, {
@@ -190,6 +209,8 @@ export async function smokeMount(component, store, { setup } = {}) {
         stubs: {
           teleport: true,
           transition: false,
+          // Drawers open their side panel on mount through a template ref.
+          SidePanel: sidePanelStub,
           // eslint-disable-next-line no-underscore-dangle
           [component.__name || component.name]: false,
         },
@@ -211,6 +232,8 @@ export async function smokeMount(component, store, { setup } = {}) {
  * modules: an import.meta.glob result (path -> loader).
  * loadStore: returns the Vuex store the components expect.
  * setupFor(path): optional parent context for components that need one.
+ * propsFor: { 'path/fragment.vue': props } for components that need
+ *   realistic props (a valid enum value, a record with the fields they read).
  * before(): optional setup that runs once before the suite, such as the
  *   window globals an app's server-rendered page would define.
  * needsDedicatedSpec: { 'path/fragment.vue': 'why' } for components that
@@ -222,6 +245,7 @@ export function defineSmokeSuite({
   modules,
   loadStore: getStore,
   setupFor = () => undefined,
+  propsFor = {},
   before = () => {},
   needsDedicatedSpec = {},
 }) {
@@ -246,8 +270,12 @@ export function defineSmokeSuite({
       // Some pages load large dependency trees on first import.
       it(`renders ${name}`, { timeout: 30000 }, async () => {
         const component = (await load()).default;
+        const props = Object.entries(propsFor).find(([fragment]) =>
+          name.endsWith(fragment)
+        )?.[1];
         const { errors } = await smokeMount(component, store, {
           setup: setupFor(name),
+          props: typeof props === 'function' ? props() : props,
         });
         if (errors.length) {
           const where = errors[0].stack
