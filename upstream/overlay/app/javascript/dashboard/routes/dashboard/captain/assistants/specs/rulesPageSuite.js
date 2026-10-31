@@ -7,6 +7,7 @@
  * composables onto the `env` object it passes in, then calls
  * `defineRulesPageSuite`.
  */
+import { beforeEach, expect, it, vi } from 'vitest';
 import { ref } from 'vue';
 import { mount, flushPromises } from '@vue/test-utils';
 
