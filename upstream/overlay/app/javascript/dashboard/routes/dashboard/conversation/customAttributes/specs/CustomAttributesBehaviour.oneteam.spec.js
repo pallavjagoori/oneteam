@@ -25,7 +25,12 @@ vi.mock('@vueuse/core', async importOriginal => {
     ...(await importOriginal()),
     useToggle: initial => {
       const state = vue.ref(initial);
-      return [state, () => (state.value = !state.value)];
+      return [
+        state,
+        () => {
+          state.value = !state.value;
+        },
+      ];
     },
   };
 });
@@ -56,7 +61,7 @@ const Attribute = {
   name: 'CustomAttribute',
   props: ['attributeKey', 'value', 'label'],
   emits: ['update', 'delete', 'copy'],
-  template: '<div class="attr">{{ attributeKey }}={{ value }}</div>',
+  template: '<div class="attr">{{ [attributeKey, value].join(`=`) }}</div>',
 };
 const NextButton = {
   name: 'NextButton',
