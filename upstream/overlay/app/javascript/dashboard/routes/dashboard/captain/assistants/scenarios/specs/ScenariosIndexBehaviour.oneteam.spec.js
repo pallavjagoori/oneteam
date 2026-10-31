@@ -286,7 +286,11 @@ describe('Captain scenarios page behaviour', () => {
   ])('alerts when %s fails', async (_, key, act) => {
     const wrapper = await mountPage();
     env.dispatch = vi.fn(() =>
-      Promise.reject({ response: { message: 'Server says no' } })
+      Promise.reject(
+        Object.assign(new Error('x'), {
+          response: { message: 'Server says no' },
+        })
+      )
     );
     act(cards(wrapper)[0]);
     await flushPromises();
@@ -362,7 +366,11 @@ describe('Captain scenarios page behaviour', () => {
       tools: ['ping'],
     });
     env.dispatch = vi.fn(() =>
-      Promise.reject({ response: { message: 'Limit reached' } })
+      Promise.reject(
+        Object.assign(new Error('x'), {
+          response: { message: 'Limit reached' },
+        })
+      )
     );
     dialog.vm.$emit('add', { title: 'Again' });
     await flushPromises();
