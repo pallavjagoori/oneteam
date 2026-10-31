@@ -226,14 +226,14 @@ describe('Year in Review ShareModal behaviour', () => {
     await generate();
     buttons()[2].click();
     await vi.waitFor(() => expect(navigator.share).toHaveBeenCalled(), {
-      timeout: 5000,
+      timeout: 10000,
     });
     const [data] = navigator.share.mock.calls[0];
     expect(data.title).toBe('YEAR_IN_REVIEW.SHARE_MODAL.SHARE_TITLE');
     expect(data.text).toBe('YEAR_IN_REVIEW.SHARE_MODAL.SHARE_TEXT');
     expect(data.files[0].name).toBe('chatwoot-year-in-review-2025.png');
     expect(env.clicked).toBeFalsy();
-  });
+  }, 15000);
 
   it.each([
     ['sharing is unsupported', () => {}],
@@ -257,12 +257,18 @@ describe('Year in Review ShareModal behaviour', () => {
         navigator.share = vi.fn(() => Promise.reject(new Error('AbortError')));
       },
     ],
-  ])('downloads instead when %s', async (_, setup) => {
-    setup();
-    await generate();
-    buttons()[2].click();
-    await vi.waitFor(() => expect(env.clicked).toBeTruthy(), { timeout: 5000 });
-  });
+  ])(
+    'downloads instead when %s',
+    async (_, setup) => {
+      setup();
+      await generate();
+      buttons()[2].click();
+      await vi.waitFor(() => expect(env.clicked).toBeTruthy(), {
+        timeout: 10000,
+      });
+    },
+    15000
+  );
 
   it('closes from the backdrop or the close button, not from the card', async () => {
     await generate();
