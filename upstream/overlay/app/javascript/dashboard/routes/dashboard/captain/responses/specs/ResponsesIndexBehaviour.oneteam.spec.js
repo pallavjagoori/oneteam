@@ -448,8 +448,6 @@ describe('Captain responses page', () => {
   it('labels select all for an empty list', async () => {
     env.api = async () => respond([]);
     const wrapper = await mountPage();
-    env.state.records = null;
-    await flushPromises();
     expect(wrapper.findComponent(Bulk).props('selectAllLabel')).toBe(
       'CAPTAIN.RESPONSES.SELECT_ALL:{"count":0}'
     );
