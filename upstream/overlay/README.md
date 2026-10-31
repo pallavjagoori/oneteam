@@ -35,10 +35,12 @@ A smoke test fails when the component throws while rendering or mounting. It pro
 everything it imports load and render. It does **not** check behaviour; behaviour specs sit next to the
 components, and those are still needed for real coverage of what a component does.
 
-Components that cannot render without realistic data, such as a message bubble that needs an attachment or a
-calendar that needs dates, are listed in each spec's `needsDedicatedSpec` with the reason. They show up as
-`todo` tests in every run until they get their own spec. New Chatwoot components are picked up automatically
-on the next release.
+Components that cannot render without realistic data get it from the spec: `propsFor` gives a message bubble
+its attachment or a calendar its dates, and `setupFor` provides the parent context a component reads (the
+sidebar, a dropdown, the tabs, the open conversation, the signed-in administrator). A component that still
+can't render can be listed in `needsDedicatedSpec` with the reason, and shows up as a `todo` test until it gets
+its own spec; today that list is empty. New Chatwoot components are picked up automatically on the next
+release.
 
 ## Two lists kept alongside the tests
 
@@ -58,7 +60,7 @@ on the next release.
 | `app/javascript/dashboard/composables` | Done: 100% of functions, 99.95% of lines, 99.5% of branches. The rest is listed in UNREACHABLE.md |
 
 With the overlay (api, helper, store, stores and composables done, plus the render smoke tests), the full
-Vitest run has 7,535 passing tests, 56 todo, and 62.4% line coverage (37.3% without the overlay; 41.9% before
+Vitest run has 7,704 passing tests, none todo, and 65.5% line coverage (37.3% without the overlay; 41.9% before
 the smoke tests). What is left is the behaviour of Vue components: event handlers, watchers and the branches
 that only run with real data, mostly in `components-next`, `routes` and `components`.
 
