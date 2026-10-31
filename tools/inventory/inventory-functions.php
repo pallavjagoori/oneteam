@@ -15,7 +15,10 @@ const FRONTEND_ROOT = 'app/javascript';
 /**
  * Lists files under $root (relative to $source), as relative paths.
  *
- * @return list<string>
+ * @param string $source Path to the Chatwoot checkout.
+ * @param string $root   Directory inside the checkout, e.g. "app".
+ *
+ * @return list<string> Sorted paths relative to $source; empty when $root is missing.
  */
 function listFiles(string $source, string $root): array
 {
@@ -41,7 +44,11 @@ function listFiles(string $source, string $root): array
  * Patterns are case-insensitive regular expressions without delimiters.
  * Features are tried in file order, so specific features must come first.
  *
- * @param list<array<string, mixed>> $features
+ * @param string                     $subject    Path, route subject, table or flag to classify.
+ * @param list<array<string, mixed>> $features   Features from features.json.
+ * @param string                     $patternKey Which pattern list to use, e.g. "paths" or "tables".
+ *
+ * @return string|null The matching feature id, or null when none matches.
  */
 function classify(string $subject, array $features, string $patternKey = 'paths'): ?string
 {
@@ -59,7 +66,10 @@ function classify(string $subject, array $features, string $patternKey = 'paths'
 /**
  * Tells whether $path matches any of the ignore patterns.
  *
- * @param list<string> $patterns
+ * @param string       $path     Path relative to the Chatwoot checkout.
+ * @param list<string> $patterns Case-insensitive regular expressions without delimiters.
+ *
+ * @return bool True when the path should be left out of the inventory.
  */
 function isIgnored(string $path, array $patterns): bool
 {
@@ -75,7 +85,9 @@ function isIgnored(string $path, array $patterns): bool
 /**
  * Parses `rails routes` output into verb, path and controller#action rows.
  *
- * @return list<array{verb: string, path: string, target: string}>
+ * @param string $file Path to the saved `rails routes` output.
+ *
+ * @return list<array{verb: string, path: string, target: string}> One row per route.
  */
 function parseRoutes(string $file): array
 {
@@ -100,7 +112,9 @@ function parseRoutes(string $file): array
  * in, so routes match the same path patterns as files, followed by its URL,
  * which names the feature when one controller serves several.
  *
- * @param array{verb: string, path: string, target: string} $route
+ * @param array{verb: string, path: string, target: string} $route A row from parseRoutes().
+ *
+ * @return string For example "app/controllers/api/v1/accounts_controller.rb /api/v1/accounts".
  */
 function routeSubject(array $route): string
 {
@@ -114,7 +128,9 @@ function routeSubject(array $route): string
 /**
  * Reads table names from db/schema.rb.
  *
- * @return list<string>
+ * @param string $source Path to the Chatwoot checkout.
+ *
+ * @return list<string> Table names in schema order.
  */
 function parseTables(string $source): array
 {
@@ -126,7 +142,9 @@ function parseTables(string $source): array
 /**
  * Reads feature flag names from config/features.yml.
  *
- * @return list<string>
+ * @param string $source Path to the Chatwoot checkout.
+ *
+ * @return list<string> Feature flag names in file order.
  */
 function parseFlags(string $source): array
 {
@@ -137,6 +155,10 @@ function parseFlags(string $source): array
 
 /**
  * Names the kind of a backend file from its directory, e.g. "controllers".
+ *
+ * @param string $path Path relative to the Chatwoot checkout.
+ *
+ * @return string The app/ subdirectory name, or "lib" for anything else.
  */
 function fileKind(string $path): string
 {
@@ -147,7 +169,13 @@ function fileKind(string $path): string
     return 'lib';
 }
 
-/** Marks a path as part of Chatwoot's enterprise edition. */
+/**
+ * Marks a path as part of Chatwoot's enterprise edition.
+ *
+ * @param string $path Path relative to the Chatwoot checkout.
+ *
+ * @return bool True for enterprise code and enterprise specs.
+ */
 function isEnterprise(string $path): bool
 {
     return str_starts_with($path, 'enterprise/') || str_starts_with($path, 'spec/enterprise/');
@@ -156,8 +184,10 @@ function isEnterprise(string $path): bool
 /**
  * Renders one feature's page.
  *
- * @param array<string, mixed> $feature
- * @param array<string, list<mixed>> $data
+ * @param array<string, mixed>       $feature The feature from features.json.
+ * @param array<string, list<mixed>> $data    Its flags, routes, tables, files and specs.
+ *
+ * @return string The page as Markdown.
  */
 function renderFeature(array $feature, array $data): string
 {
