@@ -10,6 +10,7 @@ backend.
 - [Feature inventory](docs/inventory/README.md): every part of Chatwoot, grouped by feature.
 - [Running Chatwoot's own tests](docs/upstream-tests.md): Docker setup, results and known failures.
 - [Coverage by feature](docs/coverage/README.md): how much of each feature Chatwoot's tests cover today.
+- [Coding standards](docs/coding-standards.md): PSR-12, required PHPDoc on all OneTeam PHP, and `composer lint`.
 - [`CHATWOOT_VERSION`](CHATWOOT_VERSION): the Chatwoot release being converted.
 
 ## Coverage badges

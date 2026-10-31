@@ -11,7 +11,9 @@ declare(strict_types=1);
 /**
  * Reads an lcov file into [path => [covered lines, total lines]].
  *
- * @return array<string, array{int, int}>
+ * @param string $file Path to the lcov.info file written by Vitest.
+ *
+ * @return array<string, array{int, int}> Covered and total lines per file.
  */
 function parseLcov(string $file): array
 {
@@ -37,7 +39,11 @@ function parseLcov(string $file): array
  * A line counts when SimpleCov tracks it (its hit count is not null), and is
  * covered when it was hit at least once. Results from several runs are merged.
  *
- * @return array<string, array{int, int}>
+ * @param string $file Path to SimpleCov's .resultset.json.
+ *
+ * @return array<string, array{int, int}> Covered and total lines per file.
+ *
+ * @throws JsonException When the file is not valid JSON.
  */
 function parseSimpleCov(string $file): array
 {
@@ -64,13 +70,26 @@ function parseSimpleCov(string $file): array
     return $files;
 }
 
-/** Makes a path relative to the Chatwoot checkout. */
+/**
+ * Makes a path relative to the Chatwoot checkout.
+ *
+ * @param string $path Absolute or container path of a covered file.
+ *
+ * @return string The path relative to the chatwoot/ directory.
+ */
 function normalisePath(string $path): string
 {
     return (string) preg_replace('#^.*?/chatwoot/#', '', $path);
 }
 
-/** Formats covered/total as a percentage, or a dash when nothing is tracked. */
+/**
+ * Formats covered/total as a percentage, or a dash when nothing is tracked.
+ *
+ * @param int $covered Number of covered lines.
+ * @param int $total   Number of tracked lines.
+ *
+ * @return string For example "72.0%", or "–" when $total is 0.
+ */
 function percent(int $covered, int $total): string
 {
     return $total === 0 ? '–' : number_format(100 * $covered / $total, 1) . '%';
@@ -79,8 +98,9 @@ function percent(int $covered, int $total): string
 /**
  * Sums [covered, total] over a list of [path, covered, total] rows.
  *
- * @param list<array{string, int, int}> $rows
- * @return array{int, int}
+ * @param list<array{string, int, int}> $rows Per-file coverage rows.
+ *
+ * @return array{int, int} Total covered lines and total tracked lines.
  */
 function sumRows(array $rows): array
 {
@@ -90,10 +110,15 @@ function sumRows(array $rows): array
 /**
  * Writes docs/coverage/README.md and one gap page per feature.
  *
- * @param list<array<string, mixed>> $features
- * @param array<string, array<string, list<array{string, int, int}>>> $byFeature
- * @param list<string> $suiteNames
- * @param array<string, array<string, array{int, int}>> $suites
+ * Stale feature pages are deleted first, so renamed features leave no orphans.
+ *
+ * @param string                                                     $outDir     Directory to write into.
+ * @param list<array<string, mixed>>                                 $features   Features from features.json.
+ * @param array<string, array<string, list<array{string, int, int}>>> $byFeature  Rows per feature and suite.
+ * @param list<string>                                               $suiteNames Suites to report, in order.
+ * @param array<string, array<string, array{int, int}>>              $suites     Per-file coverage per suite.
+ *
+ * @return void
  */
 function writeCoverageReport(string $outDir, array $features, array $byFeature, array $suiteNames, array $suites): void
 {

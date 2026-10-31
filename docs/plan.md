@@ -11,7 +11,8 @@ The upstream release we are converting is recorded in [`CHATWOOT_VERSION`](../CH
   then build each feature test first (TDD).
 - **100% coverage** on Chatwoot's own Vue and Ruby code before porting, and on all new Laravel and Vue code. CI
   fails below 100%.
-- **PSR-12** for PHP, plus standard Laravel and Vue conventions.
+- **PSR-12** for PHP, plus standard Laravel and Vue conventions, and a PHPDoc block on every class, property and
+  function. `composer lint` enforces both; see [coding standards](coding-standards.md).
 - **Documentation in Markdown** for every feature and decision, and comments in the code. A product manager drives
   the project without a dedicated dev, QA or architect, so the docs and tests have to carry that knowledge.
 
