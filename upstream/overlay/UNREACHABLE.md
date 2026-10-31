@@ -92,3 +92,4 @@ need porting: the Laravel/Vue version can leave them out.
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/whatsapp/Reauthorize.vue` | 106 (branch) | The final `ERROR` check's false branch: ignorable events are filtered out before this handler, so every other result is FINISH, UNSUPPORTED, CANCEL or ERROR. |
 | `app/javascript/dashboard/routes/dashboard/conversation/contact/ContactForm.vue` | 108 (branch) | The inner `phoneNumber !== '' ? … : false` re-checks a condition the enclosing `if` already guarantees. |
 | `app/javascript/dashboard/routes/dashboard/conversation/contact/ContactForm.vue` | 155 | `countryNameWithCode` returns '' for no name and no id, but the line before already returned for any missing id. |
+| `app/javascript/dashboard/routes/dashboard/captain/documents/Index.vue` | 168 (branch) | `(documents.value || [])`: the template reads `documents.length` directly, so the page cannot render with missing records. |
