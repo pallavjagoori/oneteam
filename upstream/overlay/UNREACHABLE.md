@@ -95,3 +95,4 @@ need porting: the Laravel/Vue version can leave them out.
 | `app/javascript/dashboard/routes/dashboard/captain/documents/Index.vue` | 168 (branch) | `(documents.value || [])`: the template reads `documents.length` directly, so the page cannot render with missing records. |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/WhatsappManualSetup.vue` | 241 (branch) | `refreshWebhookStatus` is only called by the poll with `showError: false`, so the error-surfacing branch never runs. |
 | `app/javascript/dashboard/components-next/HelpCenter/Pages/ArticlePage/ArticlesPage.vue` | 101 (branch) | `selectAllLabel` is only read by the bulk bar, which renders only when the article list is non-empty, so the empty-list early return never runs. |
+| `app/javascript/dashboard/modules/search/components/SearchView.vue` | 505 (branch) | The load-more button's `v-if="!isSelectedTabAll"` sits inside `v-if="showLoadMore"`, which is already false on the all tab. |
