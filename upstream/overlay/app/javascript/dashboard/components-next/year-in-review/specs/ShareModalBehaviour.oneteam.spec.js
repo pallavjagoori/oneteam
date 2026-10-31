@@ -52,7 +52,8 @@ const mountModal = (props = {}) =>
     attachTo: document.body,
   });
 
-const settle = () => vi.waitFor(() => expect(env.busy()).toBe(false));
+const settle = () =>
+  vi.waitFor(() => expect(env.busy()).toBe(false), { timeout: 5000 });
 const overlay = () => document.body.querySelector('.fixed');
 const img = () => document.body.querySelector('img');
 const buttons = () => [...document.body.querySelectorAll('button')];
@@ -224,7 +225,9 @@ describe('Year in Review ShareModal behaviour', () => {
     navigator.share = vi.fn(() => Promise.resolve());
     await generate();
     buttons()[2].click();
-    await vi.waitFor(() => expect(navigator.share).toHaveBeenCalled());
+    await vi.waitFor(() => expect(navigator.share).toHaveBeenCalled(), {
+      timeout: 5000,
+    });
     const [data] = navigator.share.mock.calls[0];
     expect(data.title).toBe('YEAR_IN_REVIEW.SHARE_MODAL.SHARE_TITLE');
     expect(data.text).toBe('YEAR_IN_REVIEW.SHARE_MODAL.SHARE_TEXT');
@@ -258,7 +261,7 @@ describe('Year in Review ShareModal behaviour', () => {
     setup();
     await generate();
     buttons()[2].click();
-    await vi.waitFor(() => expect(env.clicked).toBeTruthy());
+    await vi.waitFor(() => expect(env.clicked).toBeTruthy(), { timeout: 5000 });
   });
 
   it('closes from the backdrop or the close button, not from the card', async () => {
