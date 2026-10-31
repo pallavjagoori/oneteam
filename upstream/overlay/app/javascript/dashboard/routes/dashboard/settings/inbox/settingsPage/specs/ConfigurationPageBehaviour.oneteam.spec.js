@@ -78,7 +78,6 @@ const mountPage = async (inbox, { cloud = false } = {}) => {
   return wrapper;
 };
 
-const section = (wrapper, key) => wrapper.find(`[data-name="${key}"]`);
 const codes = wrapper =>
   wrapper.findAllComponents({ name: 'WootCode' }).map(c => c.props('script'));
 const toggles = wrapper =>
