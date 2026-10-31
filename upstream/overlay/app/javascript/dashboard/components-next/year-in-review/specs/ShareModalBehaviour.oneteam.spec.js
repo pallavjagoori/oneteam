@@ -6,6 +6,7 @@
  * background colours, failures), the loading state, downloading,
  * sharing with a download fallback, and closing.
  */
+/* eslint-disable no-console -- the modal reports failures with console.error */
 import { mount, flushPromises } from '@vue/test-utils';
 import ShareModal from '../ShareModal.vue';
 
