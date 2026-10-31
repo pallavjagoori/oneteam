@@ -52,10 +52,6 @@ const mountModal = () =>
   });
 
 const dialog = wrapper => wrapper.findComponent(Dialog);
-const fieldFor = (wrapper, index) =>
-  wrapper
-    .findAll('.flex.flex-col.gap-2')
-    [index].findComponent({ props: ['modelValue'] });
 const setValue = async (wrapper, component, value) => {
   await component.vm.$emit('update:modelValue', value);
   await flushPromises();
