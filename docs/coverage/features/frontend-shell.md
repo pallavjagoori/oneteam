@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 84.7% (6790 of 8018 lines)
+## Frontend: 85.8% (6881 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -19,14 +19,8 @@
 | `app/javascript/dashboard/components-next/dropdown-menu/DropdownMenu.story.vue` | 0.0% | 17 |
 | `app/javascript/dashboard/components-next/emoji-icon-picker/EmojiIconPicker.vue` | 69.1% | 17 |
 | `app/javascript/dashboard/components-next/textarea/TextArea.story.vue` | 0.0% | 17 |
-| `app/javascript/shared/components/ui/MultiselectDropdownItems.vue` | 38.5% | 16 |
-| `app/javascript/dashboard/components/Modal.vue` | 48.3% | 15 |
 | `app/javascript/dashboard/components-next/checkbox/Checkbox.story.vue` | 0.0% | 15 |
 | `app/javascript/dashboard/components-next/combobox/TagMultiSelectComboxBox.story.vue` | 0.0% | 15 |
-| `app/javascript/dashboard/components-next/dialog/Dialog.vue` | 51.6% | 15 |
-| `app/javascript/dashboard/components/app/UpdateBanner.vue` | 6.3% | 15 |
-| `app/javascript/dashboard/components/ui/DatePicker/components/CalendarDateInput.vue` | 40.0% | 15 |
-| `app/javascript/shared/components/Button.vue` | 11.8% | 15 |
 | `app/javascript/dashboard/components-next/changelog-card/StackedChangelogCard.story.vue` | 0.0% | 14 |
 | `app/javascript/dashboard/components-next/input/Input.story.vue` | 0.0% | 14 |
 | `app/javascript/dashboard/components-next/tabbar/TabBar.story.vue` | 0.0% | 14 |

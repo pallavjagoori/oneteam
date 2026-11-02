@@ -1,10 +1,9 @@
 # WhatsApp: coverage gaps
 
-## Frontend: 93.5% (1746 of 1867 lines)
+## Frontend: 94.3% (1761 of 1867 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/Campaigns/WhatsAppCampaign/AudienceFields.vue` | 65.1% | 15 |
 | `app/javascript/dashboard/components-next/whatsapp/WhatsAppTemplateParser.vue` | 83.3% | 13 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/360DialogWhatsapp.vue` | 31.6% | 13 |
 | `app/javascript/dashboard/components-next/Campaigns/WhatsAppCampaign/TemplateFields.vue` | 70.0% | 12 |
