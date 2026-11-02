@@ -1,10 +1,8 @@
 # Telegram: coverage gaps
 
-## Frontend: 35.3% (6 of 17 lines)
+## Frontend: 100.0% (17 of 17 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Telegram.vue` | 35.3% | 11 |
+Every file is fully covered.
 
 ## Backend: 99.5% (438 of 440 lines)
 

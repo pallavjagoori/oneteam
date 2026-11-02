@@ -1,10 +1,9 @@
 # Reports and analytics: coverage gaps
 
-## Frontend: 93.5% (1160 of 1241 lines)
+## Frontend: 94.4% (1172 of 1241 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/ReportContainer.vue` | 86.5% | 12 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/components/overview/AgentTable.vue` | 60.0% | 10 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/SLAReports.vue` | 59.1% | 9 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/components/heatmaps/BaseHeatmap.vue` | 65.4% | 9 |
