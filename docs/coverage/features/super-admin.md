@@ -1,10 +1,9 @@
 # Super admin console: coverage gaps
 
-## Frontend: 96.5% (385 of 399 lines)
+## Frontend: 99.7% (398 of 399 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/superadmin_pages/views/dashboard/Index.vue` | 72.9% | 13 |
 | `app/javascript/dashboard/components/app/ImpersonationBanner.vue` | 83.3% | 1 |
 
 ## Backend: 97.0% (833 of 859 lines)
