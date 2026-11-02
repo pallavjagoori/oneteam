@@ -1,10 +1,8 @@
 # LINE: coverage gaps
 
-## Frontend: 36.4% (8 of 22 lines)
+## Frontend: 100.0% (22 of 22 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Line.vue` | 36.4% | 14 |
+Every file is fully covered.
 
 ## Backend: 95.5% (128 of 134 lines)
 
