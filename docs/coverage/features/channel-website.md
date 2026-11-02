@@ -1,18 +1,15 @@
 # Website live chat widget: coverage gaps
 
-## Frontend: 93.6% (6021 of 6436 lines)
+## Frontend: 94.1% (6056 of 6436 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/javascript/widget/components/Availability/AvailabilityText.story.vue` | 0.0% | 38 |
 | `app/javascript/dashboard/components/widgets/conversation/ConversationCard.vue` | 68.9% | 14 |
-| `app/javascript/widget/components/HeaderActions.vue` | 40.0% | 12 |
-| `app/javascript/widget/components/ReplyToChip.vue` | 29.4% | 12 |
 | `app/javascript/dashboard/components/widgets/WootWriter/FullEditor.vue` | 95.2% | 11 |
 | `app/javascript/dashboard/components/widgets/conversation/conversationCardComponents/CardLabels.vue` | 66.7% | 11 |
 | `app/javascript/dashboard/modules/widget-preview/components/Widget.vue` | 71.1% | 11 |
 | `app/javascript/widget/components/AgentMessageBubble.vue` | 57.7% | 11 |
-| `app/javascript/widget/components/ConversationWrap.vue` | 60.7% | 11 |
 | `app/javascript/dashboard/components/widgets/AttachmentsPreview.vue` | 63.0% | 10 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/PreChatForm/Settings.vue` | 76.2% | 10 |
 | `app/javascript/dashboard/components/widgets/ChatTypeTabs.vue` | 50.0% | 9 |

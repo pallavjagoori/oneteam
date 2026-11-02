@@ -1,14 +1,11 @@
 # Conversations: coverage gaps
 
-## Frontend: 95.5% (3325 of 3482 lines)
+## Frontend: 96.4% (3357 of 3482 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/javascript/dashboard/components-next/NewConversation/components/story/ComposeNewConversationForm.story.vue` | 0.0% | 22 |
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/ConversationCard.story.vue` | 0.0% | 16 |
-| `app/javascript/dashboard/components/CustomSnoozeModal.vue` | 21.4% | 11 |
-| `app/javascript/dashboard/routes/dashboard/conversation/SharedFiles.vue` | 52.2% | 11 |
-| `app/javascript/dashboard/components/ChatListHeader.vue` | 66.7% | 10 |
 | `app/javascript/dashboard/components-next/Conversation/ReferralBubble.story.vue` | 0.0% | 10 |
 | `app/javascript/dashboard/components-next/year-in-review/slides/ConversationsSlide.vue` | 67.7% | 10 |
 | `app/javascript/dashboard/routes/dashboard/conversation/ConversationInfo.vue` | 67.9% | 9 |

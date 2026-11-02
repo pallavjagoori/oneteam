@@ -1,10 +1,9 @@
 # Inboxes: coverage gaps
 
-## Frontend: 95.5% (2200 of 2304 lines)
+## Frontend: 96.1% (2214 of 2304 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/components/AccountHealth.vue` | 88.4% | 14 |
 | `app/javascript/dashboard/components-next/icon/ChannelIcon.story.vue` | 0.0% | 10 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/emailChannels/OAuthChannel.vue` | 28.6% | 10 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Website.vue` | 59.1% | 9 |

@@ -1,11 +1,9 @@
 # Integrations: coverage gaps
 
-## Frontend: 88.4% (906 of 1025 lines)
+## Frontend: 90.7% (930 of 1025 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/integrations/Integration.vue` | 61.3% | 12 |
-| `app/javascript/dashboard/routes/dashboard/settings/integrations/Slack/SelectChannelWarning.vue` | 64.7% | 12 |
 | `app/javascript/dashboard/routes/dashboard/settings/billing/ShopifyBilling.vue` | 89.2% | 10 |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Notion.vue` | 54.5% | 10 |
 | `app/javascript/dashboard/components-next/message/bubbles/Dyte.vue` | 52.6% | 9 |
