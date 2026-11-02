@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 86.1% (6907 of 8018 lines)
+## Frontend: 86.2% (6908 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -130,7 +130,6 @@
 | `app/javascript/shared/components/ChatCard.vue` | 77.8% | 2 |
 | `app/javascript/shared/components/TextArea.vue` | 60.0% | 2 |
 | `app/javascript/shared/helpers/documentHelper.js` | 93.1% | 2 |
-| `app/javascript/dashboard/components-next/CardLayout.vue` | 80.0% | 1 |
 | `app/javascript/dashboard/components-next/EmptyStateLayout.vue` | 83.3% | 1 |
 | `app/javascript/dashboard/components-next/Settings/SettingsAccordion.vue` | 80.0% | 1 |
 | `app/javascript/dashboard/components-next/dropdown-menu/base/DropdownBody.vue` | 83.3% | 1 |
