@@ -51,6 +51,8 @@ const DropdownMenu = {
   template: '<div class="menu" />',
 };
 
+let wrapperRef;
+
 const mountSelector = (modelValue = null) =>
   mount(SearchInboxSelector, {
     props: {
@@ -61,8 +63,6 @@ const mountSelector = (modelValue = null) =>
     },
     global: { stubs: { Button, DropdownMenu } },
   });
-let wrapperRef;
-
 const items = wrapper =>
   wrapper.findComponent(DropdownMenu).props('menuSections')[0].items;
 
