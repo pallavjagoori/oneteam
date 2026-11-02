@@ -101,6 +101,13 @@ describe('Year in Review ShareModal behaviour', () => {
     wrapper = mountModal({ slideElement: slide, ...props });
     await wrapper.vm.handleOpen();
     await flushPromises();
+    // Vue skips a listener attached in the same millisecond as the event
+    // (its "attached" timestamp check). Clicking straight after the card
+    // renders could then skip the card's @click.stop, so the click reached
+    // the backdrop and closed the modal. Let the clock move on first.
+    await new Promise(resolve => {
+      setTimeout(resolve, 5);
+    });
     return slide;
   };
 
