@@ -1,12 +1,9 @@
 # Captain AI assistant and copilot: coverage gaps
 
-## Frontend: 88.8% (5038 of 5672 lines)
+## Frontend: 89.6% (5082 of 5672 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/captain/pageComponents/assistant/settings/audience/AudienceGroup.vue` | 60.5% | 15 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/overview/AssistantDrilldownDrawer.vue` | 54.5% | 15 |
-| `app/javascript/dashboard/components/widgets/WootWriter/CopilotEditor.vue` | 79.5% | 15 |
 | `app/javascript/dashboard/components-next/captain/assistant/BulkSelectBar.vue` | 57.6% | 14 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/response/CreateResponseDialog.vue` | 51.7% | 14 |
 | `app/javascript/dashboard/components-next/captain/assistant/AddNewScenariosDialog.vue` | 56.7% | 13 |
@@ -103,6 +100,7 @@
 | `app/javascript/dashboard/components-next/captain/pageComponents/customTool/HeadersConfig.vue` | 97.1% | 1 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/customTool/ToolsetCatalogCard.vue` | 90.0% | 1 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/KnowledgeCard.vue` | 94.1% | 1 |
+| `app/javascript/dashboard/components/widgets/WootWriter/CopilotEditor.vue` | 98.6% | 1 |
 | `app/javascript/dashboard/components/widgets/WootWriter/CopilotMenuBar.vue` | 98.2% | 1 |
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/guardrails/Index.vue` | 98.9% | 1 |
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/playground/Index.vue` | 80.0% | 1 |

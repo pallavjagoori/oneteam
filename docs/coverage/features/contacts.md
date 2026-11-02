@@ -1,13 +1,11 @@
 # Contacts: coverage gaps
 
-## Frontend: 87.5% (2417 of 2763 lines)
+## Frontend: 88.6% (2447 of 2763 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/javascript/dashboard/components-next/Contacts/ContactsHeader/story/ContactHeader.story.vue` | 0.0% | 28 |
 | `app/javascript/dashboard/components-next/avatar/Avatar.story.vue` | 0.0% | 16 |
-| `app/javascript/dashboard/components-next/Contacts/ContactsForm/ContactImportDialog.vue` | 58.3% | 15 |
-| `app/javascript/dashboard/routes/dashboard/conversation/contact/ContactInfoRow.vue` | 21.1% | 15 |
 | `app/javascript/dashboard/components-next/Contacts/ContactsCard/story/ContactsCard.story.vue` | 0.0% | 14 |
 | `app/javascript/dashboard/components-next/Contacts/ContactsForm/story/ContactMergeForm.story.vue` | 0.0% | 14 |
 | `app/javascript/dashboard/modules/search/components/SearchResultContactItem.vue` | 51.7% | 14 |

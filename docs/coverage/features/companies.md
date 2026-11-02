@@ -1,11 +1,9 @@
 # Companies: coverage gaps
 
-## Frontend: 92.0% (912 of 991 lines)
+## Frontend: 95.1% (942 of 991 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/Companies/CompanyCreateDialog.vue` | 53.1% | 15 |
-| `app/javascript/dashboard/components-next/Companies/CompanyDetail/CompanyPeopleList.vue` | 67.4% | 15 |
 | `app/javascript/dashboard/components-next/Companies/CompanyDetail/CompanyConversationList.vue` | 50.0% | 13 |
 | `app/javascript/dashboard/components-next/Companies/CompaniesHeader/components/CompanySortMenu.vue` | 65.4% | 9 |
 | `app/javascript/dashboard/components-next/Companies/CompanyDetail/CompanyFacts.vue` | 71.4% | 8 |
