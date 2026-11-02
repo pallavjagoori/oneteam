@@ -1,10 +1,9 @@
 # Search: coverage gaps
 
-## Frontend: 90.6% (587 of 648 lines)
+## Frontend: 92.7% (601 of 648 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/modules/search/components/SearchResultMessageItem.vue` | 57.6% | 14 |
 | `app/javascript/dashboard/modules/search/components/SearchResultConversationItem.vue` | 67.7% | 10 |
 | `app/javascript/dashboard/modules/search/components/SearchHeader.vue` | 47.1% | 9 |
 | `app/javascript/dashboard/modules/search/components/MessageContent.vue` | 77.1% | 8 |
