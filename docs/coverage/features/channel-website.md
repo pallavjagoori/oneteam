@@ -1,13 +1,10 @@
 # Website live chat widget: coverage gaps
 
-## Frontend: 89.5% (5758 of 6436 lines)
+## Frontend: 90.2% (5806 of 6436 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/javascript/widget/components/Availability/AvailabilityText.story.vue` | 0.0% | 38 |
-| `app/javascript/dashboard/components/widgets/conversation/ContentTemplates/ContentTemplatesPicker.vue` | 65.2% | 16 |
-| `app/javascript/dashboard/components/widgets/conversation/conversationBulkActions/BulkMacroActions.vue` | 60.0% | 16 |
-| `app/javascript/dashboard/components/widgets/conversation/linear/IssuesList.vue` | 61.9% | 16 |
 | `app/javascript/dashboard/components/widgets/conversation/conversationBulkActions/BulkUpdateActions.vue` | 37.5% | 15 |
 | `app/javascript/widget/components/DragWrapper.vue` | 21.1% | 15 |
 | `app/javascript/widget/components/UserMessage.vue` | 48.3% | 15 |

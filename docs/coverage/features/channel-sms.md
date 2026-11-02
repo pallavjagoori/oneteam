@@ -1,10 +1,9 @@
 # SMS and Twilio: coverage gaps
 
-## Frontend: 79.8% (182 of 228 lines)
+## Frontend: 86.8% (198 of 228 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/BandwidthSms.vue` | 38.5% | 16 |
 | `app/javascript/dashboard/components-next/Campaigns/Pages/CampaignPage/SMSCampaign/SMSCampaignForm.vue` | 78.0% | 9 |
 | `app/javascript/dashboard/routes/dashboard/campaigns/pages/SMSCampaignsPage.vue` | 57.9% | 8 |
 | `app/javascript/dashboard/components-next/Campaigns/Pages/CampaignPage/SMSCampaign/SMSCampaignDialog.vue` | 56.3% | 7 |

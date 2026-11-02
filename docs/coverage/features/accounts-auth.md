@@ -1,11 +1,9 @@
 # Accounts, users and sign-in: coverage gaps
 
-## Frontend: 94.1% (1447 of 1538 lines)
+## Frontend: 96.2% (1479 of 1538 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/sidebar/SidebarAccountSwitcher.vue` | 42.9% | 16 |
-| `app/javascript/dashboard/components/app/AddAccountModal.vue` | 30.4% | 16 |
 | `app/javascript/dashboard/components-next/sidebar/SidebarProfileMenu.vue` | 51.7% | 14 |
 | `app/javascript/dashboard/routes/dashboard/settings/profile/UserBasicDetails.vue` | 7.7% | 12 |
 | `app/javascript/v3/views/auth/confirmation/Index.vue` | 33.3% | 6 |
