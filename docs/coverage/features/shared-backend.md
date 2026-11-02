@@ -4,15 +4,10 @@
 
 No tracked files.
 
-## Backend: 91.9% (1174 of 1277 lines)
+## Backend: 97.4% (1244 of 1277 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `lib/opentelemetry_config.rb` | 33.3% | 34 |
-| `app/services/geocoder/setup_service.rb` | 50.0% | 14 |
-| `enterprise/app/models/concerns/safe_endpoint_validatable.rb` | 80.4% | 9 |
-| `app/policies/application_policy.rb` | 76.5% | 8 |
-| `lib/config_loader.rb` | 86.0% | 6 |
 | `lib/chatwoot_app.rb` | 87.1% | 4 |
 | `app/controllers/concerns/request_exception_handler.rb` | 93.2% | 3 |
 | `app/controllers/oauth_callback_controller.rb` | 94.9% | 3 |
@@ -28,4 +23,5 @@ No tracked files.
 | `app/models/concerns/reauthorizable.rb` | 98.0% | 1 |
 | `app/models/concerns/sort_handler.rb` | 95.0% | 1 |
 | `app/services/action_service.rb` | 98.4% | 1 |
+| `enterprise/app/models/concerns/safe_endpoint_validatable.rb` | 97.8% | 1 |
 | `lib/custom_exceptions/pdf.rb` | 90.0% | 1 |

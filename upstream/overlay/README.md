@@ -60,14 +60,14 @@ release.
 | `app/javascript/dashboard/composables` | Done: 100% of functions, 99.95% of lines, 99.5% of branches. The rest is listed in UNREACHABLE.md |
 
 With the overlay (api, helper, store, stores and composables done, plus the render smoke tests), the full
-Vitest run has 10,633 passing tests, none todo, and 88.73% line coverage (37.3% without the overlay; 41.9% before
+Vitest run has 10,738 passing tests, none todo, and 89.51% line coverage (37.3% without the overlay; 41.9% before
 the smoke tests). What is left is the behaviour of Vue components: event handlers, watchers and the branches
 that only run with real data, mostly in `components-next`, `routes` and `components`.
 
 ### Backend
 
 Chatwoot's RSpec suite reaches 86.9% of lines once its broken specs are patched (see
-[patches/README.md](../patches/README.md)). Two things hid how much was untested:
+[patches/README.md](../patches/README.md)). With OneTeam's added specs it is now at 97.69% (46,494 of 47,593 lines). Two things hid how much was untested:
 
 - About 130 MFA and encrypted-credential specs skip themselves unless Active Record encryption keys are set.
   Chatwoot runs them in a separate CI job; `docker-compose.yml` now sets the same test keys for every run.

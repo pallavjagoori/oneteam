@@ -26,12 +26,13 @@ The upstream release we are converting is recorded in [`CHATWOOT_VERSION`](../CH
 2. **Run Chatwoot locally.** Commit a Docker Compose setup and script so anyone can bring up the pinned release with
    Postgres, Redis and OpenSearch. *Done: see [upstream-tests.md](upstream-tests.md).*
 3. **Measure coverage.** Run Chatwoot's RSpec suite (SimpleCov) and Vitest suite (v8 coverage), and record the
-   coverage per feature from the inventory. *Done for v4.19.1: 37.3% of frontend lines and 86.9% of backend lines
-   are covered, per feature in [coverage](coverage/README.md).*
+   coverage per feature from the inventory. *Done for v4.19.1: the baseline was 37.3% of frontend lines and 86.9% of
+   backend lines; current figures per feature are in [coverage](coverage/README.md).*
 4. **Reach 100% coverage.** Fill the gaps, Vue first (those tests carry over to OneTeam unchanged), then Ruby (those
    tests are discarded later, but writing them surfaces behaviour we would otherwise miss). The new tests live in
-   [`upstream/overlay`](../upstream/overlay/README.md), which lists progress folder by folder. *In progress: the
-   frontend API clients (`dashboard/api`) are at 100%.*
+   [`upstream/overlay`](../upstream/overlay/README.md), which lists progress folder by folder. *In progress
+   (2 November 2026): frontend 89.51% of lines (10,738 Vitest tests), backend 97.69% of lines. The frontend API
+   clients, helpers, stores and composables are done; the rest is per-screen component behaviour.*
 5. **Contract tests.** Write language-neutral tests that drive Chatwoot from the outside (HTTP API, real-time events,
    outgoing webhooks, emails and the database) and record every response. The same tests later run against
    OneTeam to prove it behaves the same.

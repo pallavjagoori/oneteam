@@ -1,14 +1,8 @@
 # Agents and availability: coverage gaps
 
-## Frontend: 35.1% (127 of 362 lines)
+## Frontend: 100.0% (362 of 362 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/agents/Index.vue` | 9.7% | 93 |
-| `app/javascript/dashboard/routes/dashboard/settings/agents/EditAgent.vue` | 13.8% | 50 |
-| `app/javascript/dashboard/routes/dashboard/settings/agents/AddAgent.vue` | 13.3% | 39 |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/components/WeeklyAvailability.vue` | 28.3% | 33 |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/AddAgents.vue` | 20.0% | 20 |
+Every file is fully covered.
 
 ## Backend: 97.0% (259 of 267 lines)
 

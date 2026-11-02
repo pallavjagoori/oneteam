@@ -13,6 +13,28 @@ backend.
 - [Coding standards](docs/coding-standards.md): PSR-12, required PHPDoc on all OneTeam PHP, and `composer lint`.
 - [`CHATWOOT_VERSION`](CHATWOOT_VERSION): the Chatwoot release being converted.
 
+## Status
+
+*Last updated 2 November 2026.*
+
+OneTeam is in step 1 of the [plan](docs/plan.md): recording how Chatwoot v4.19.1 behaves by bringing its own tests
+to 100% coverage before any Laravel code is written.
+
+| | Line coverage | Tests | Baseline |
+| --- | ---: | ---: | ---: |
+| Chatwoot frontend (Vitest) | 89.51% (48,487 of 54,172 lines) | 10,738 passing | 37.3% |
+| Chatwoot backend (RSpec) | 97.69% (46,494 of 47,593 lines) | | 86.9% |
+
+- **Done:** feature inventory, a Docker setup that runs Chatwoot's test suites, and coverage per feature
+  ([docs/coverage](docs/coverage/README.md)). On the frontend, the API clients, helpers, stores and composables are
+  covered, and behaviour specs now cover most screens.
+- **Now:** the frontend long tail, screen by screen. The new tests live in
+  [`upstream/overlay`](upstream/overlay/README.md).
+- **Next:** the backend long tail, then contract tests (HTTP API, real-time events, webhooks, emails), then the
+  Laravel project and the feature-by-feature port.
+- **Not ready yet:** there is no OneTeam app to install. The Docker setup today runs Chatwoot's tests only. Install
+  docs and a Docker install for OneTeam will come with the Laravel project in step 2.
+
 ## Coverage badges
 
 The badges above show the line coverage of Chatwoot's own frontend (Vitest) and backend (RSpec) tests, with

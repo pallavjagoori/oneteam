@@ -4,11 +4,10 @@
 
 No tracked files.
 
-## Backend: 91.1% (113 of 124 lines)
+## Backend: 96.0% (119 of 124 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/controllers/public/api/v1/inboxes/contacts_controller.rb` | 76.0% | 6 |
 | `app/controllers/public/api/v1/inboxes/conversations_controller.rb` | 94.1% | 2 |
 | `app/controllers/public/api/v1/inboxes/messages_controller.rb` | 96.8% | 1 |
 | `app/controllers/public/api/v1/inboxes_controller.rb` | 94.4% | 1 |
