@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 87.0% (6972 of 8018 lines)
+## Frontend: 87.3% (6997 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -25,13 +25,11 @@
 | `app/javascript/dashboard/components-next/input/Input.story.vue` | 0.0% | 14 |
 | `app/javascript/dashboard/components-next/tabbar/TabBar.story.vue` | 0.0% | 14 |
 | `app/javascript/dashboard/components-next/phonenumberinput/PhoneNumberInput.story.vue` | 0.0% | 13 |
-| `app/javascript/dashboard/components-next/sidebar/SidebarCollapsedPopover.vue` | 79.4% | 13 |
 | `app/javascript/dashboard/components-next/flag/story/Flag.story.vue` | 0.0% | 12 |
 | `app/javascript/dashboard/components-next/inline-input/InlineInput.story.vue` | 0.0% | 12 |
 | `app/javascript/dashboard/components-next/radioCard/RadioCard.story.vue` | 0.0% | 12 |
 | `app/javascript/dashboard/components-next/selectmenu/SelectMenu.story.vue` | 0.0% | 12 |
 | `app/javascript/dashboard/components-next/year-in-review/slides/PersonalitySlide.vue` | 70.0% | 12 |
-| `app/javascript/dashboard/components/app/LowBackupCodesBanner.vue` | 70.0% | 12 |
 | `app/javascript/dashboard/routes/dashboard/Dashboard.vue` | 66.7% | 12 |
 | `app/javascript/shared/components/IframeLoader.vue` | 52.2% | 11 |
 | `app/javascript/dashboard/components-next/changelog-card/GroupedStackedChangelogCard.vue` | 50.0% | 10 |
