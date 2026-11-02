@@ -1,10 +1,8 @@
 # Canned responses: coverage gaps
 
-## Frontend: 91.8% (178 of 194 lines)
+## Frontend: 100.0% (194 of 194 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/canned/AddCanned.vue` | 38.5% | 16 |
+Every file is fully covered.
 
 ## Backend: 100.0% (38 of 38 lines)
 
