@@ -1,10 +1,9 @@
 # Inboxes: coverage gaps
 
-## Frontend: 97.4% (2245 of 2304 lines)
+## Frontend: 97.9% (2256 of 2304 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/icon/ChannelIcon.story.vue` | 0.0% | 10 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Website.vue` | 59.1% | 9 |
 | `app/javascript/dashboard/routes/dashboard/inbox/components/InboxContextMenu.vue` | 45.5% | 6 |
 | `app/javascript/dashboard/routes/dashboard/inbox/components/InboxOptionMenu.vue` | 37.5% | 5 |
@@ -18,7 +17,6 @@
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/settingsPage/CallBusinessHoursSettings.vue` | 95.0% | 2 |
 | `app/javascript/shared/mixins/inboxMixin.js` | 95.5% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/emailChannels/EmailInboxFinish.vue` | 90.9% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/emailChannels/Google.vue` | 0.0% | 1 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/settingsPage/CollaboratorsPage.vue` | 99.6% | 1 |
 
 ## Backend: 97.3% (828 of 851 lines)

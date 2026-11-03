@@ -1,13 +1,9 @@
 # Messages and attachments: coverage gaps
 
-## Frontend: 92.4% (1829 of 1980 lines)
+## Frontend: 97.7% (1934 of 1980 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/message/stories/MediaBubbles.story.vue` | 0.0% | 48 |
-| `app/javascript/dashboard/components-next/message/stories/MessageBubbles.story.vue` | 0.0% | 28 |
-| `app/javascript/dashboard/components-next/message/stories/TextMessages.story.vue` | 0.0% | 18 |
-| `app/javascript/dashboard/components-next/message/stories/EmailMessages.story.vue` | 0.0% | 11 |
 | `app/javascript/dashboard/components-next/message/bubbles/Unsupported.vue` | 46.7% | 8 |
 | `app/javascript/dashboard/components-next/message/forward/ForwardEmailPanel.vue` | 91.6% | 7 |
 | `app/javascript/dashboard/components-next/message/bubbles/BaseAttachment.vue` | 61.5% | 5 |

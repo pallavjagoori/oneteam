@@ -1,19 +1,16 @@
 # Conversations: coverage gaps
 
-## Frontend: 96.9% (3375 of 3482 lines)
+## Frontend: 98.2% (3419 of 3482 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/NewConversation/components/story/ComposeNewConversationForm.story.vue` | 0.0% | 22 |
-| `app/javascript/dashboard/components-next/Conversation/ConversationCard/ConversationCard.story.vue` | 0.0% | 16 |
-| `app/javascript/dashboard/components-next/Conversation/ReferralBubble.story.vue` | 0.0% | 10 |
 | `app/javascript/dashboard/components-next/year-in-review/slides/ConversationsSlide.vue` | 67.7% | 10 |
 | `app/javascript/dashboard/routes/dashboard/conversation/ConversationInfo.vue` | 67.9% | 9 |
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/ConversationCardExpanded.vue` | 71.4% | 8 |
+| `app/javascript/dashboard/components-next/NewConversation/components/story/ComposeNewConversationForm.story.vue` | 63.6% | 8 |
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/ConversationCard.vue` | 86.1% | 5 |
 | `app/javascript/dashboard/components/ConversationList.vue` | 80.0% | 4 |
 | `app/javascript/dashboard/components-next/NewConversation/components/ComposeNewConversationForm.vue` | 96.9% | 4 |
-| `app/javascript/dashboard/components-next/NewConversation/components/story/fixtures.js` | 0.0% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/conversationWorkflow/index.vue` | 66.7% | 4 |
 | `app/javascript/dashboard/components-next/NewConversation/components/ContentTemplateForm.vue` | 70.0% | 3 |
 | `app/javascript/dashboard/components-next/Conversation/ReferralBubble.vue` | 93.9% | 2 |
