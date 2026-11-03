@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 90.3% (7237 of 8018 lines)
+## Frontend: 90.4% (7246 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -88,25 +88,16 @@
 | `app/javascript/dashboard/components-next/dropdown-menu/base/DropdownBody.vue` | 83.3% | 1 |
 | `app/javascript/dashboard/components-next/dropdown-menu/base/DropdownFloating.vue` | 75.0% | 1 |
 | `app/javascript/dashboard/components-next/dropdown-menu/base/provider.js` | 88.9% | 1 |
-| `app/javascript/dashboard/components-next/emoji-icon-picker/ColorPalette.vue` | 83.3% | 1 |
-| `app/javascript/dashboard/components-next/emoji-icon-picker/EmojiIcon.vue` | 85.7% | 1 |
-| `app/javascript/dashboard/components-next/emoji-icon-picker/constants.js` | 90.0% | 1 |
-| `app/javascript/dashboard/components-next/icon/Icon.vue` | 85.7% | 1 |
 | `app/javascript/dashboard/components-next/side-panel/SidePanel.vue` | 97.7% | 1 |
 | `app/javascript/dashboard/components-next/taginput/helper/tagInputHelper.js` | 97.7% | 1 |
-| `app/javascript/dashboard/components/Accordion/AccordionItem.vue` | 87.5% | 1 |
-| `app/javascript/dashboard/components/base/Hotkey.vue` | 50.0% | 1 |
-| `app/javascript/dashboard/components/table/BaseCell.vue` | 66.7% | 1 |
 | `app/javascript/dashboard/components/table/Table.vue` | 92.3% | 1 |
 | `app/javascript/dashboard/components/ui/ContextMenu.vue` | 97.3% | 1 |
 | `app/javascript/dashboard/components/ui/DateRangePicker.vue` | 75.0% | 1 |
-| `app/javascript/dashboard/components/ui/PreviewCard.vue` | 80.0% | 1 |
 | `app/javascript/dashboard/components/ui/DatePicker/helpers/DatePickerHelper.js` | 98.8% | 1 |
 | `app/javascript/dashboard/composables/usePolicy.js` | 98.2% | 1 |
 | `app/javascript/dashboard/helper/emailQuoteExtractor.js` | 97.8% | 1 |
 | `app/javascript/dashboard/helper/slaHelper.js` | 98.6% | 1 |
 | `app/javascript/dashboard/routes/dashboard/settings/SettingsLayout.vue` | 50.0% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/Wrapper.vue` | 83.3% | 1 |
 | `app/javascript/shared/components/ui/dropdown/DropdownDivider.vue` | 50.0% | 1 |
 | `app/javascript/shared/components/ui/dropdown/DropdownHeader.vue` | 66.7% | 1 |
 | `app/javascript/shared/composables/useLocale.js` | 92.3% | 1 |
