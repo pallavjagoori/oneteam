@@ -1,6 +1,6 @@
 # Website live chat widget: coverage gaps
 
-## Frontend: 95.3% (6134 of 6436 lines)
+## Frontend: 95.4% (6141 of 6436 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -14,7 +14,6 @@
 | `app/javascript/dashboard/components/widgets/conversation/FilterItem.vue` | 20.0% | 8 |
 | `app/javascript/dashboard/components/widgets/conversation/ShopifyOrdersList.vue` | 61.9% | 8 |
 | `app/javascript/widget/components/Banner.vue` | 11.1% | 8 |
-| `app/javascript/dashboard/components/widgets/ThumbnailGroup.vue` | 36.4% | 7 |
 | `app/javascript/dashboard/components/widgets/WootWriter/keyboardEmojiSelector.vue` | 69.6% | 7 |
 | `app/javascript/dashboard/components/widgets/conversation/MacroList.vue` | 69.6% | 7 |
 | `app/javascript/dashboard/components/widgets/conversation/ContentTemplates/ContentTemplatesModal.vue` | 69.6% | 7 |

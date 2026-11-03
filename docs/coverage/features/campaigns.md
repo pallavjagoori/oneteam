@@ -1,10 +1,9 @@
 # Campaigns: coverage gaps
 
-## Frontend: 95.9% (450 of 469 lines)
+## Frontend: 97.4% (457 of 469 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/Campaigns/Pages/CampaignPage/ConfirmDeleteCampaignDialog.vue` | 58.8% | 7 |
 | `app/javascript/dashboard/components-next/Campaigns/Pages/CampaignPage/CampaignList.vue` | 75.0% | 3 |
 | `app/javascript/dashboard/components-next/Campaigns/CampaignLayout.vue` | 83.3% | 2 |
 | `app/javascript/dashboard/components-next/Campaigns/EmptyState/LiveChatCampaignEmptyState.vue` | 50.0% | 2 |

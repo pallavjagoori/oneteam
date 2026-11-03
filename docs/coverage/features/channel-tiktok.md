@@ -1,10 +1,8 @@
 # TikTok: coverage gaps
 
-## Frontend: 84.4% (38 of 45 lines)
+## Frontend: 100.0% (45 of 45 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/tiktok/Reauthorize.vue` | 30.0% | 7 |
+Every file is fully covered.
 
 ## Backend: 97.4% (496 of 509 lines)
 
