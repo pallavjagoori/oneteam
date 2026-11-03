@@ -1,10 +1,8 @@
 # Billing and plans: coverage gaps
 
-## Frontend: 99.4% (322 of 324 lines)
+## Frontend: 100.0% (324 of 324 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/billing/components/BillingMeter.vue` | 85.7% | 2 |
+Every file is fully covered.
 
 ## Backend: 99.0% (726 of 733 lines)
 
