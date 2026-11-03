@@ -1,13 +1,12 @@
 # Integrations: coverage gaps
 
-## Frontend: 94.0% (964 of 1025 lines)
+## Frontend: 94.8% (972 of 1025 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Stripe.vue` | 89.0% | 9 |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Webhooks/NewWebHook.vue` | 60.9% | 9 |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Index.vue` | 57.9% | 8 |
-| `app/javascript/dashboard/routes/dashboard/settings/integrations/Webhooks/WebhookRow.vue` | 55.6% | 8 |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Linear.vue` | 62.5% | 6 |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/DashboardApps/DashboardAppsRow.vue` | 33.3% | 6 |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Webhooks/EditWebHook.vue` | 25.0% | 6 |
