@@ -1,13 +1,12 @@
 # Inboxes: coverage gaps
 
-## Frontend: 96.8% (2231 of 2304 lines)
+## Frontend: 97.1% (2237 of 2304 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/javascript/dashboard/components-next/icon/ChannelIcon.story.vue` | 0.0% | 10 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Website.vue` | 59.1% | 9 |
 | `app/javascript/dashboard/routes/dashboard/inbox/components/InboxContextMenu.vue` | 45.5% | 6 |
-| `app/javascript/dashboard/routes/dashboard/inbox/components/PaginationButton.vue` | 45.5% | 6 |
 | `app/javascript/dashboard/routes/dashboard/inbox/components/InboxOptionMenu.vue` | 37.5% | 5 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/components/SingleSelectDropdown.vue` | 37.5% | 5 |
 | `app/javascript/dashboard/routes/dashboard/inbox/InboxEmptyState.vue` | 42.9% | 4 |
