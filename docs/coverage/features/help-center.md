@@ -1,12 +1,11 @@
 # Help center: coverage gaps
 
-## Frontend: 95.8% (3318 of 3462 lines)
+## Frontend: 96.0% (3325 of 3462 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/javascript/dashboard/components-next/HelpCenter/Pages/PortalSettingsPage/AddCustomDomainDialog.vue` | 60.0% | 8 |
 | `app/javascript/portal/components/PublicSearchInput.vue` | 65.2% | 8 |
-| `app/javascript/dashboard/components-next/HelpCenter/LocaleCard/LocaleCard.vue` | 69.6% | 7 |
 | `app/javascript/dashboard/routes/dashboard/helpcenter/components/ArticleSearch/ArticleSearchResultItem.vue` | 61.1% | 7 |
 | `app/javascript/dashboard/components-next/HelpCenter/HelpCenterLayout.vue` | 77.8% | 6 |
 | `app/javascript/dashboard/components-next/HelpCenter/ArticleCard/ArticleCard.story.vue` | 0.0% | 6 |

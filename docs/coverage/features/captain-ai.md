@@ -1,6 +1,6 @@
 # Captain AI assistant and copilot: coverage gaps
 
-## Frontend: 94.1% (5336 of 5672 lines)
+## Frontend: 94.4% (5357 of 5672 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -17,11 +17,8 @@
 | `app/javascript/dashboard/components-next/copilot/ToggleCopilotAssistant.vue` | 52.9% | 8 |
 | `app/javascript/dashboard/components/widgets/conversation/CopilotEditorSection.vue` | 63.6% | 8 |
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/settings/Index.vue` | 63.6% | 8 |
-| `app/javascript/dashboard/components-next/captain/assistant/FaqSuggestionCard.vue` | 74.1% | 7 |
 | `app/javascript/dashboard/components-next/captain/assistant/SuggestedRules.story.vue` | 0.0% | 7 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/customTool/AssistantToolsBanner.vue` | 65.0% | 7 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/inbox/ConnectInboxForm.vue` | 75.0% | 7 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/overview/RangeSelector.vue` | 83.7% | 7 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/v2/OverviewDrilldownDrawer.vue` | 75.0% | 7 |
 | `app/javascript/dashboard/routes/dashboard/captain/tools/Install.vue` | 73.1% | 7 |
 | `app/javascript/dashboard/components-next/captain/assistant/ToolsDropdown.story.vue` | 0.0% | 6 |
