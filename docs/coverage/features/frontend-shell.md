@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 87.8% (7037 of 8018 lines)
+## Frontend: 88.3% (7076 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -29,12 +29,8 @@
 | `app/javascript/dashboard/components-next/radioCard/RadioCard.story.vue` | 0.0% | 12 |
 | `app/javascript/dashboard/components-next/selectmenu/SelectMenu.story.vue` | 0.0% | 12 |
 | `app/javascript/dashboard/components-next/year-in-review/slides/PersonalitySlide.vue` | 70.0% | 12 |
-| `app/javascript/dashboard/components-next/changelog-card/GroupedStackedChangelogCard.vue` | 50.0% | 10 |
 | `app/javascript/dashboard/components-next/combobox/ComboBox.story.vue` | 0.0% | 10 |
-| `app/javascript/dashboard/components/ui/Dropdown/DropdownList.vue` | 63.0% | 10 |
-| `app/javascript/dashboard/components/ui/Tabs/Tabs.vue` | 61.5% | 10 |
 | `app/javascript/dashboard/components-next/button/ConfirmButton.story.vue` | 0.0% | 9 |
-| `app/javascript/dashboard/components-next/button/ConfirmButton.vue` | 55.0% | 9 |
 | `app/javascript/dashboard/components/app/StatusBanner.vue` | 57.1% | 9 |
 | `app/javascript/dashboard/components/ui/Banner.vue` | 30.8% | 9 |
 | `app/javascript/dashboard/components/index.js` | 0.0% | 8 |

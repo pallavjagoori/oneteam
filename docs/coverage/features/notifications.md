@@ -1,10 +1,9 @@
 # Notifications: coverage gaps
 
-## Frontend: 97.3% (505 of 519 lines)
+## Frontend: 99.2% (515 of 519 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/profile/AudioNotifications.vue` | 73.0% | 10 |
 | `app/javascript/dashboard/routes/dashboard/settings/profile/NotificationCheckBox.vue` | 75.0% | 3 |
 | `app/javascript/dashboard/routes/dashboard/settings/profile/NotificationPreferences.vue` | 98.7% | 1 |
 
