@@ -1,10 +1,9 @@
 # Auto-assignment and capacity: coverage gaps
 
-## Frontend: 96.8% (1043 of 1077 lines)
+## Frontend: 97.7% (1052 of 1077 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/assignmentPolicy/pages/components/InboxLinkDialog.vue` | 71.0% | 9 |
 | `app/javascript/dashboard/components-next/AssignmentPolicy/components/CardPopover.vue` | 66.7% | 6 |
 | `app/javascript/dashboard/components-next/AssignmentPolicy/components/DataTable.vue` | 64.3% | 5 |
 | `app/javascript/dashboard/components-next/AssignmentPolicy/components/FairDistribution.vue` | 80.8% | 5 |
