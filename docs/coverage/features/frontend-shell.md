@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 89.3% (7161 of 8018 lines)
+## Frontend: 89.6% (7186 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -46,15 +46,10 @@
 | `app/javascript/dashboard/components-next/selectmenu/SelectMenu.vue` | 57.1% | 6 |
 | `app/javascript/dashboard/components-next/sidebar/SidebarSubGroup.vue` | 88.0% | 6 |
 | `app/javascript/dashboard/components-next/year-in-review/slides/BusiestDaySlide.vue` | 75.0% | 6 |
-| `app/javascript/dashboard/components-next/banner/Banner.vue` | 68.8% | 5 |
 | `app/javascript/dashboard/components-next/dropdown-menu/base/DropdownContainer.vue` | 64.3% | 5 |
 | `app/javascript/dashboard/components-next/feature-announcement/FeatureAnnouncement.vue` | 94.4% | 5 |
-| `app/javascript/dashboard/components-next/feature-spotlight/FeatureSpotlight.vue` | 64.3% | 5 |
 | `app/javascript/dashboard/components-next/icon/FileIcon.story.vue` | 0.0% | 5 |
-| `app/javascript/dashboard/components-next/sidebar/SidebarGroupHeader.vue` | 68.8% | 5 |
 | `app/javascript/dashboard/components/ui/DatePicker/components/CalendarMonth.vue` | 77.3% | 5 |
-| `app/javascript/dashboard/components/ui/DatePicker/components/DatePickerButton.vue` | 75.0% | 5 |
-| `app/javascript/dashboard/routes/dashboard/settings/templates/TemplateCard.vue` | 73.7% | 5 |
 | `app/javascript/dashboard/components-next/DetailsPageLayout.vue` | 73.3% | 4 |
 | `app/javascript/dashboard/components-next/SidebarActionsHeader.story.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/components-next/flag/Flag.vue` | 42.9% | 4 |
