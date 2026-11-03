@@ -1,10 +1,9 @@
 # SLA policies: coverage gaps
 
-## Frontend: 95.5% (339 of 355 lines)
+## Frontend: 96.6% (343 of 355 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/Conversation/Sla/SLACardLabel.vue` | 73.3% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/SLAViewDetails.vue` | 50.0% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/SLAReportItem.vue` | 84.6% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/components/SLA/SLATable.vue` | 80.0% | 2 |

@@ -1,6 +1,6 @@
 # Captain AI assistant and copilot: coverage gaps
 
-## Frontend: 94.7% (5369 of 5672 lines)
+## Frontend: 95.1% (5393 of 5672 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -34,14 +34,8 @@
 | `app/javascript/dashboard/components-next/captain/assistant/InboxCard.story.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/components-next/captain/assistant/ResponseCard.story.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/ConversationUsageDrawer.vue` | 87.5% | 4 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/document/LimitBanner.vue` | 66.7% | 4 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/emptyStates/AssistantPageEmptyState.vue` | 55.6% | 4 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/emptyStates/DocumentPageEmptyState.vue` | 60.0% | 4 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/emptyStates/InboxPageEmptyState.vue` | 50.0% | 4 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/emptyStates/ResponsePageEmptyState.vue` | 63.6% | 4 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/QuickLinks.vue` | 73.3% | 4 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/v2/KnowledgeCoverageCard.vue` | 76.5% | 4 |
-| `app/javascript/dashboard/components-next/copilot/CopilotLauncher.vue` | 71.4% | 4 |
 | `app/javascript/dashboard/components-next/copilot/CopilotThinkingGroup.vue` | 69.2% | 4 |
 | `app/javascript/dashboard/components-next/captain/assistant/SuggestedRules.vue` | 76.9% | 3 |
 | `app/javascript/dashboard/components-next/captain/assistant/ToolsDropdown.vue` | 81.3% | 3 |
