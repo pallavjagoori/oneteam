@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 95.5% (7660 of 8018 lines)
+## Frontend: 95.7% (7672 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -40,7 +40,6 @@
 | `app/javascript/dashboard/components-next/dropdown-menu/DropdownMenu.story.vue` | 88.2% | 2 |
 | `app/javascript/dashboard/components-next/dropdown-menu/DropdownMenu.vue` | 96.4% | 2 |
 | `app/javascript/dashboard/components-next/radioCard/RadioCard.story.vue` | 83.3% | 2 |
-| `app/javascript/dashboard/components-next/radioCard/RadioCard.vue` | 85.7% | 2 |
 | `app/javascript/dashboard/components-next/sidebar/Sidebar.vue` | 98.7% | 2 |
 | `app/javascript/dashboard/components-next/sidebar/SidebarGroupSeparator.vue` | 81.8% | 2 |
 | `app/javascript/dashboard/components-next/sidebar/SidebarSortMenu.vue` | 97.0% | 2 |
@@ -67,16 +66,6 @@
 | `app/javascript/dashboard/components/ui/DateRangePicker.vue` | 75.0% | 1 |
 | `app/javascript/dashboard/composables/usePolicy.js` | 98.2% | 1 |
 | `app/javascript/dashboard/helper/slaHelper.js` | 98.6% | 1 |
-| `app/javascript/shared/components/ui/dropdown/DropdownDivider.vue` | 50.0% | 1 |
-| `app/javascript/shared/components/ui/dropdown/DropdownHeader.vue` | 66.7% | 1 |
-| `app/javascript/shared/composables/useLocale.js` | 92.3% | 1 |
-| `app/javascript/shared/constants/contentType.js` | 0.0% | 1 |
-| `app/javascript/shared/helpers/DateHelper.js` | 95.0% | 1 |
-| `app/javascript/shared/helpers/Validators.js` | 97.0% | 1 |
-| `app/javascript/shared/store/globalConfig.js` | 90.9% | 1 |
-| `app/javascript/v3/components/Form/CheckBox.vue` | 85.7% | 1 |
-| `app/javascript/v3/components/GoogleOauth/Button.vue` | 93.8% | 1 |
-| `app/javascript/v3/helpers/CommonHelper.js` | 83.3% | 1 |
 
 ## Backend: 100.0% (66 of 66 lines)
 
