@@ -1,27 +1,17 @@
 # Help center: coverage gaps
 
-## Frontend: 96.7% (3349 of 3462 lines)
+## Frontend: 98.2% (3398 of 3462 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/javascript/dashboard/components-next/HelpCenter/Pages/PortalSettingsPage/AddCustomDomainDialog.vue` | 60.0% | 8 |
 | `app/javascript/portal/components/PublicSearchInput.vue` | 65.2% | 8 |
 | `app/javascript/dashboard/components-next/HelpCenter/HelpCenterLayout.vue` | 77.8% | 6 |
-| `app/javascript/dashboard/components-next/HelpCenter/ArticleCard/ArticleCard.story.vue` | 0.0% | 6 |
 | `app/javascript/dashboard/components-next/HelpCenter/EmptyState/Portal/PortalEmptyState.vue` | 57.1% | 6 |
-| `app/javascript/dashboard/components-next/HelpCenter/LocaleCard/LocaleCard.story.vue` | 0.0% | 6 |
 | `app/javascript/dashboard/routes/dashboard/helpcenter/pages/PortalsCategoriesIndexPage.vue` | 73.9% | 6 |
-| `app/javascript/dashboard/components-next/HelpCenter/CategoryCard/CategoryCard.story.vue` | 0.0% | 5 |
-| `app/javascript/dashboard/components-next/HelpCenter/Pages/ArticlePage/ArticlesPage.story.vue` | 0.0% | 5 |
-| `app/javascript/dashboard/components-next/HelpCenter/Pages/CategoryPage/CategoriesPage.story.vue` | 0.0% | 5 |
-| `app/javascript/dashboard/components-next/HelpCenter/Pages/LocalePage/LocalesPage.story.vue` | 0.0% | 5 |
-| `app/javascript/dashboard/components-next/HelpCenter/PortalSwitcher/PortalSwitcher.story.vue` | 0.0% | 5 |
 | `app/javascript/dashboard/routes/dashboard/helpcenter/components/ArticleSearch/Header.vue` | 75.0% | 5 |
-| `app/javascript/dashboard/components-next/HelpCenter/EmptyState/Article/ArticleEmptyState.story.vue` | 0.0% | 4 |
-| `app/javascript/dashboard/components-next/HelpCenter/EmptyState/Portal/PortalEmptyState.story.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/components-next/HelpCenter/Pages/ArticleEditorPage/ArticleEditorProperties.vue` | 84.6% | 4 |
 | `app/javascript/dashboard/components-next/HelpCenter/Pages/PortalSettingsPage/PortalGeneralSettings.vue` | 76.5% | 4 |
-| `app/javascript/dashboard/components-next/HelpCenter/Pages/PortalSettingsPage/PortalSettings.story.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/routes/dashboard/helpcenter/components/ArticleSearch/SearchResults.vue` | 66.7% | 3 |
 | `app/javascript/dashboard/routes/dashboard/helpcenter/pages/PortalsLocalesIndexPage.vue` | 70.0% | 3 |
 | `app/javascript/portal/portalThemeHelper.js` | 95.7% | 3 |

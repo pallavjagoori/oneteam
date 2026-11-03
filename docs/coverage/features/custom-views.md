@@ -1,19 +1,16 @@
 # Custom filters and saved views: coverage gaps
 
-## Frontend: 94.2% (1194 of 1268 lines)
+## Frontend: 98.5% (1249 of 1268 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/filter/ConditionRow.story.vue` | 0.0% | 17 |
-| `app/javascript/dashboard/components-next/filter/inputs/MultiSelect.story.vue` | 0.0% | 12 |
-| `app/javascript/dashboard/components-next/filter/ActiveFilterPreview.story.vue` | 0.0% | 11 |
-| `app/javascript/dashboard/components-next/filter/inputs/FilterSelect.story.vue` | 0.0% | 11 |
-| `app/javascript/dashboard/components-next/filter/inputs/SingleSelect.story.vue` | 0.0% | 9 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/components/OverviewReportFilters.vue` | 74.3% | 9 |
-| `app/javascript/dashboard/components-next/filter/fixtures/filterTypes.js` | 0.0% | 2 |
+| `app/javascript/dashboard/components-next/filter/ConditionRow.story.vue` | 70.6% | 5 |
+| `app/javascript/dashboard/components-next/filter/inputs/FilterSelect.story.vue` | 90.9% | 1 |
+| `app/javascript/dashboard/components-next/filter/inputs/MultiSelect.story.vue` | 91.7% | 1 |
+| `app/javascript/dashboard/components-next/filter/inputs/SingleSelect.story.vue` | 88.9% | 1 |
 | `app/javascript/dashboard/modules/search/components/SearchFilters.vue` | 94.4% | 1 |
 | `app/javascript/dashboard/routes/dashboard/settings/auditlogs/components/AuditLogFilters.vue` | 98.2% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/components/Filters/v3/ActiveFilterChip.vue` | 87.5% | 1 |
 
 ## Backend: 97.8% (931 of 952 lines)
 

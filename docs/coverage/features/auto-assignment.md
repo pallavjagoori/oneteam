@@ -1,23 +1,20 @@
 # Auto-assignment and capacity: coverage gaps
 
-## Frontend: 87.7% (944 of 1077 lines)
+## Frontend: 96.8% (1043 of 1077 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/InboxCapacityLimits.story.vue` | 0.0% | 18 |
-| `app/javascript/dashboard/components-next/AssignmentPolicy/AgentCapacityPolicyCard/AgentCapacityPolicyCard.story.vue` | 0.0% | 14 |
-| `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/DataTable.story.vue` | 0.0% | 14 |
-| `app/javascript/dashboard/components-next/AssignmentPolicy/AssignmentPolicyCard/AssignmentPolicyCard.story.vue` | 0.0% | 13 |
-| `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/AddDataDropdown.story.vue` | 0.0% | 10 |
-| `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/CardPopover.story.vue` | 0.0% | 10 |
 | `app/javascript/dashboard/routes/dashboard/settings/assignmentPolicy/pages/components/InboxLinkDialog.vue` | 71.0% | 9 |
-| `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/ExclusionRules.story.vue` | 0.0% | 8 |
-| `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/FairDistribution.story.vue` | 0.0% | 8 |
-| `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/BaseInfo.story.vue` | 0.0% | 7 |
-| `app/javascript/dashboard/components-next/AssignmentPolicy/AssignmentCard/AssignmentCard.story.vue` | 0.0% | 6 |
 | `app/javascript/dashboard/components-next/AssignmentPolicy/components/CardPopover.vue` | 66.7% | 6 |
 | `app/javascript/dashboard/components-next/AssignmentPolicy/components/DataTable.vue` | 64.3% | 5 |
 | `app/javascript/dashboard/components-next/AssignmentPolicy/components/FairDistribution.vue` | 80.8% | 5 |
+| `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/CardPopover.story.vue` | 80.0% | 2 |
+| `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/InboxCapacityLimits.story.vue` | 88.9% | 2 |
+| `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/AddDataDropdown.story.vue` | 90.0% | 1 |
+| `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/BaseInfo.story.vue` | 85.7% | 1 |
+| `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/DataTable.story.vue` | 92.9% | 1 |
+| `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/ExclusionRules.story.vue` | 87.5% | 1 |
+| `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/FairDistribution.story.vue` | 87.5% | 1 |
 
 ## Backend: 98.3% (653 of 664 lines)
 

@@ -1,12 +1,9 @@
 # Captain AI assistant and copilot: coverage gaps
 
-## Frontend: 95.8% (5435 of 5672 lines)
+## Frontend: 97.3% (5518 of 5672 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/copilot/Copilot.story.vue` | 0.0% | 12 |
-| `app/javascript/dashboard/components-next/captain/assistant/RuleCard.story.vue` | 0.0% | 11 |
-| `app/javascript/dashboard/components-next/captain/AnimatingImg/AnimatingImg.story.vue` | 0.0% | 10 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/customTool/ParamRow.vue` | 65.4% | 9 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/document/DocumentDetails.vue` | 92.0% | 9 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/v2/UsageCard.vue` | 59.1% | 9 |
@@ -17,23 +14,14 @@
 | `app/javascript/dashboard/components-next/copilot/ToggleCopilotAssistant.vue` | 52.9% | 8 |
 | `app/javascript/dashboard/components/widgets/conversation/CopilotEditorSection.vue` | 63.6% | 8 |
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/settings/Index.vue` | 63.6% | 8 |
-| `app/javascript/dashboard/components-next/captain/assistant/SuggestedRules.story.vue` | 0.0% | 7 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/inbox/ConnectInboxForm.vue` | 75.0% | 7 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/v2/OverviewDrilldownDrawer.vue` | 75.0% | 7 |
-| `app/javascript/dashboard/components-next/captain/assistant/ToolsDropdown.story.vue` | 0.0% | 6 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/assistant/settings/AssistantBasicSettingsForm.vue` | 82.4% | 6 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/customTool/InstallManifestDialog.vue` | 94.4% | 6 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/settings/SettingsHeader.story.vue` | 0.0% | 6 |
-| `app/javascript/dashboard/components-next/captain/assistant/ScenariosCard.story.vue` | 0.0% | 5 |
+| `app/javascript/dashboard/components-next/copilot/Copilot.story.vue` | 50.0% | 6 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/customTool/VerifiedParamRow.vue` | 73.7% | 5 |
-| `app/javascript/dashboard/components-next/copilot/CopilotThinkingGroup.story.vue` | 0.0% | 5 |
-| `app/javascript/dashboard/components-next/captain/assistant/AddNewRulesDialog.story.vue` | 0.0% | 4 |
-| `app/javascript/dashboard/components-next/captain/assistant/AddNewRulesInput.story.vue` | 0.0% | 4 |
-| `app/javascript/dashboard/components-next/captain/assistant/AssistantCard.story.vue` | 0.0% | 4 |
-| `app/javascript/dashboard/components-next/captain/assistant/DocumentCard.story.vue` | 0.0% | 4 |
-| `app/javascript/dashboard/components-next/captain/assistant/InboxCard.story.vue` | 0.0% | 4 |
-| `app/javascript/dashboard/components-next/captain/assistant/ResponseCard.story.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/ConversationUsageDrawer.vue` | 87.5% | 4 |
+| `app/javascript/dashboard/components-next/captain/assistant/RuleCard.story.vue` | 72.7% | 3 |
 | `app/javascript/dashboard/components-next/copilot/CopilotInput.vue` | 89.3% | 3 |
 | `app/javascript/dashboard/components-next/captain/classifier/SuggestionChip.vue` | 71.4% | 2 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/assistant/settings/AssistantScheduleForm.vue` | 88.2% | 2 |
@@ -41,19 +29,14 @@
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/InboxBanner.vue` | 90.0% | 2 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/MetricHint.vue` | 66.7% | 2 |
 | `app/javascript/dashboard/components-next/copilot/CopilotAssistantMessage.vue` | 92.0% | 2 |
-| `app/javascript/dashboard/components-next/copilot/CopilotLoader.story.vue` | 0.0% | 2 |
 | `app/javascript/dashboard/components/widgets/WootWriter/CopilotReplyBottomPanel.vue` | 80.0% | 2 |
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/scenarios/Index.vue` | 98.1% | 2 |
 | `app/javascript/dashboard/routes/dashboard/captain/pages/CaptainPageRouteView.vue` | 75.0% | 2 |
+| `app/javascript/dashboard/components-next/captain/assistant/SuggestedRules.story.vue` | 85.7% | 1 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/customTool/HeadersConfig.vue` | 97.1% | 1 |
 | `app/javascript/dashboard/components/widgets/WootWriter/CopilotEditor.vue` | 98.6% | 1 |
 | `app/javascript/dashboard/components/widgets/WootWriter/CopilotMenuBar.vue` | 98.2% | 1 |
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/guardrails/Index.vue` | 98.9% | 1 |
-| `app/javascript/dashboard/routes/dashboard/captain/assistants/playground/Index.vue` | 80.0% | 1 |
-| `app/javascript/dashboard/routes/dashboard/captain/assistants/settings/Audience.vue` | 75.0% | 1 |
-| `app/javascript/dashboard/routes/dashboard/captain/assistants/settings/Schedule.vue` | 75.0% | 1 |
-| `app/javascript/dashboard/routes/dashboard/captain/assistants/settings/System.vue` | 75.0% | 1 |
-| `app/javascript/dashboard/routes/dashboard/settings/captain/components/ModelSelector.vue` | 85.7% | 1 |
 
 ## Backend: 97.4% (8879 of 9118 lines)
 
