@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 88.5% (7097 of 8018 lines)
+## Frontend: 89.3% (7161 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -40,22 +40,12 @@
 | `app/javascript/dashboard/components/ui/Wizard.vue` | 50.0% | 8 |
 | `app/javascript/dashboard/components/ui/DatePicker/components/CalendarWeek.vue` | 76.5% | 8 |
 | `app/javascript/dashboard/routes/dashboard/settings/templates/TemplatePreviewDrawer.vue` | 81.1% | 7 |
-| `app/javascript/shared/components/CardButton.vue` | 22.2% | 7 |
-| `app/javascript/shared/components/EmojiOrIcon.vue` | 12.5% | 7 |
-| `app/javascript/shared/components/StarRating.vue` | 65.0% | 7 |
-| `app/javascript/shared/components/FluentIcon/Icon.vue` | 22.2% | 7 |
 | `app/javascript/shared/components/emoji/EmojiPicker.vue` | 73.1% | 7 |
 | `app/javascript/dashboard/components-next/colorpicker/ColorPicker.vue` | 60.0% | 6 |
-| `app/javascript/dashboard/components-next/dropdown-menu/base/DropdownItem.vue` | 64.7% | 6 |
 | `app/javascript/dashboard/components-next/feature-spotlight/FeatureSpotlight.story.vue` | 0.0% | 6 |
-| `app/javascript/dashboard/components-next/pagination/PaginationFooter.vue` | 81.3% | 6 |
 | `app/javascript/dashboard/components-next/selectmenu/SelectMenu.vue` | 57.1% | 6 |
 | `app/javascript/dashboard/components-next/sidebar/SidebarSubGroup.vue` | 88.0% | 6 |
 | `app/javascript/dashboard/components-next/year-in-review/slides/BusiestDaySlide.vue` | 75.0% | 6 |
-| `app/javascript/dashboard/components/app/PendingEmailVerificationBanner.vue` | 14.3% | 6 |
-| `app/javascript/shared/components/ChatOptions.vue` | 45.5% | 6 |
-| `app/javascript/v3/components/Form/Input.vue` | 57.1% | 6 |
-| `app/javascript/v3/components/Form/Select.vue` | 33.3% | 6 |
 | `app/javascript/dashboard/components-next/banner/Banner.vue` | 68.8% | 5 |
 | `app/javascript/dashboard/components-next/dropdown-menu/base/DropdownContainer.vue` | 64.3% | 5 |
 | `app/javascript/dashboard/components-next/feature-announcement/FeatureAnnouncement.vue` | 94.4% | 5 |
