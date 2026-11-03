@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 89.8% (7198 of 8018 lines)
+## Frontend: 90.0% (7219 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -55,18 +55,11 @@
 | `app/javascript/dashboard/routes/dashboard/settings/SettingsHeader.vue` | 50.0% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/components/BaseSettingsHeader.vue` | 63.6% | 4 |
 | `app/javascript/v3/views/routes.js` | 42.9% | 4 |
-| `app/javascript/dashboard/components/Snackbar.vue` | 57.1% | 3 |
-| `app/javascript/dashboard/components-next/SidebarActionsHeader.vue` | 72.7% | 3 |
-| `app/javascript/dashboard/components-next/breadcrumb/Breadcrumb.vue` | 75.0% | 3 |
 | `app/javascript/dashboard/components-next/changelog-card/StackedChangelogCard.vue` | 70.0% | 3 |
-| `app/javascript/dashboard/components-next/input/Input.vue` | 92.5% | 3 |
 | `app/javascript/dashboard/components-next/popover/Popover.vue` | 94.0% | 3 |
 | `app/javascript/dashboard/components-next/sidebar/SidebarChangelogButton.vue` | 75.0% | 3 |
 | `app/javascript/dashboard/components-next/spinner/Spinner.story.vue` | 0.0% | 3 |
-| `app/javascript/dashboard/components-next/vertical-tabs/VerticalTabs.vue` | 62.5% | 3 |
 | `app/javascript/dashboard/components/ui/DateTimePicker.vue` | 40.0% | 3 |
-| `app/javascript/dashboard/components/ui/Tabs/TabsItem.vue` | 72.7% | 3 |
-| `app/javascript/dashboard/modules/widget-preview/components/WidgetFooter.vue` | 76.9% | 3 |
 | `app/javascript/dashboard/routes/dashboard/settings/components/BasePaywallModal.vue` | 78.6% | 3 |
 | `app/javascript/shared/components/ChatOption.vue` | 25.0% | 3 |
 | `app/javascript/shared/components/Spinner.vue` | 66.7% | 3 |
