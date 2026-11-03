@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 90.4% (7246 of 8018 lines)
+## Frontend: 90.5% (7255 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -83,19 +83,10 @@
 | `app/javascript/shared/components/ChatCard.vue` | 77.8% | 2 |
 | `app/javascript/shared/components/TextArea.vue` | 60.0% | 2 |
 | `app/javascript/shared/helpers/documentHelper.js` | 93.1% | 2 |
-| `app/javascript/dashboard/components-next/EmptyStateLayout.vue` | 83.3% | 1 |
-| `app/javascript/dashboard/components-next/Settings/SettingsAccordion.vue` | 80.0% | 1 |
-| `app/javascript/dashboard/components-next/dropdown-menu/base/DropdownBody.vue` | 83.3% | 1 |
-| `app/javascript/dashboard/components-next/dropdown-menu/base/DropdownFloating.vue` | 75.0% | 1 |
-| `app/javascript/dashboard/components-next/dropdown-menu/base/provider.js` | 88.9% | 1 |
 | `app/javascript/dashboard/components-next/side-panel/SidePanel.vue` | 97.7% | 1 |
-| `app/javascript/dashboard/components-next/taginput/helper/tagInputHelper.js` | 97.7% | 1 |
-| `app/javascript/dashboard/components/table/Table.vue` | 92.3% | 1 |
 | `app/javascript/dashboard/components/ui/ContextMenu.vue` | 97.3% | 1 |
 | `app/javascript/dashboard/components/ui/DateRangePicker.vue` | 75.0% | 1 |
-| `app/javascript/dashboard/components/ui/DatePicker/helpers/DatePickerHelper.js` | 98.8% | 1 |
 | `app/javascript/dashboard/composables/usePolicy.js` | 98.2% | 1 |
-| `app/javascript/dashboard/helper/emailQuoteExtractor.js` | 97.8% | 1 |
 | `app/javascript/dashboard/helper/slaHelper.js` | 98.6% | 1 |
 | `app/javascript/dashboard/routes/dashboard/settings/SettingsLayout.vue` | 50.0% | 1 |
 | `app/javascript/shared/components/ui/dropdown/DropdownDivider.vue` | 50.0% | 1 |

@@ -1,6 +1,6 @@
 # Conversations: coverage gaps
 
-## Frontend: 96.9% (3374 of 3482 lines)
+## Frontend: 96.9% (3375 of 3482 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -18,7 +18,6 @@
 | `app/javascript/dashboard/components-next/NewConversation/components/ContentTemplateForm.vue` | 70.0% | 3 |
 | `app/javascript/dashboard/components-next/Conversation/ReferralBubble.vue` | 93.9% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/components/LockToSingleConversationPreview.vue` | 50.0% | 2 |
-| `app/javascript/dashboard/components-next/ConversationWorkflow/ConversationRequiredAttributeItem.vue` | 93.8% | 1 |
 | `app/javascript/dashboard/components-next/ConversationWorkflow/ConversationResolveAttributesModal.vue` | 98.7% | 1 |
 | `app/javascript/dashboard/components-next/NewConversation/components/EmailOptions.vue` | 96.4% | 1 |
 | `app/javascript/dashboard/components-next/NewConversation/helpers/composeConversationHelper.js` | 98.7% | 1 |

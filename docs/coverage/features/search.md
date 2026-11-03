@@ -1,6 +1,6 @@
 # Search: coverage gaps
 
-## Frontend: 95.7% (620 of 648 lines)
+## Frontend: 95.8% (621 of 648 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -10,7 +10,6 @@
 | `app/javascript/dashboard/modules/search/components/SearchResultConversationsList.vue` | 57.1% | 3 |
 | `app/javascript/dashboard/modules/search/components/TranscribedText.vue` | 60.0% | 2 |
 | `app/javascript/dashboard/routes/dashboard/conversation/search/SwitchLayout.vue` | 33.3% | 2 |
-| `app/javascript/dashboard/components/ui/Dropdown/DropdownSearch.vue` | 83.3% | 1 |
 
 ## Backend: 91.9% (181 of 197 lines)
 
