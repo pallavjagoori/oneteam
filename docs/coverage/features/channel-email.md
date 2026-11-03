@@ -1,10 +1,9 @@
 # Email: coverage gaps
 
-## Frontend: 80.3% (126 of 157 lines)
+## Frontend: 86.6% (136 of 157 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/google/Reauthorize.vue` | 33.3% | 10 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/microsoft/Reauthorize.vue` | 36.4% | 7 |
 | `app/javascript/dashboard/components-next/message/bubbles/Email/EmailMeta.vue` | 76.0% | 6 |
 | `app/javascript/dashboard/components-next/message/bubbles/Email/Index.vue` | 90.2% | 4 |

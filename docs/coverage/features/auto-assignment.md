@@ -1,6 +1,6 @@
 # Auto-assignment and capacity: coverage gaps
 
-## Frontend: 83.2% (896 of 1077 lines)
+## Frontend: 85.9% (925 of 1077 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -10,9 +10,6 @@
 | `app/javascript/dashboard/components-next/AssignmentPolicy/AssignmentPolicyCard/AssignmentPolicyCard.story.vue` | 0.0% | 13 |
 | `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/AddDataDropdown.story.vue` | 0.0% | 10 |
 | `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/CardPopover.story.vue` | 0.0% | 10 |
-| `app/javascript/dashboard/routes/dashboard/settings/assignmentPolicy/pages/AgentCapacityCreatePage.vue` | 54.5% | 10 |
-| `app/javascript/dashboard/routes/dashboard/settings/assignmentPolicy/pages/components/AgentCapacityPolicyForm.vue` | 70.6% | 10 |
-| `app/javascript/dashboard/components-next/AssignmentPolicy/AssignmentPolicyCard/AssignmentPolicyCard.vue` | 67.9% | 9 |
 | `app/javascript/dashboard/routes/dashboard/settings/assignmentPolicy/pages/components/InboxLinkDialog.vue` | 71.0% | 9 |
 | `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/ExclusionRules.story.vue` | 0.0% | 8 |
 | `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/FairDistribution.story.vue` | 0.0% | 8 |

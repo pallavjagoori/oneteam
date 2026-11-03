@@ -1,17 +1,12 @@
 # Captain AI assistant and copilot: coverage gaps
 
-## Frontend: 92.4% (5243 of 5672 lines)
+## Frontend: 93.6% (5309 of 5672 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/javascript/dashboard/components-next/copilot/Copilot.story.vue` | 0.0% | 12 |
 | `app/javascript/dashboard/components-next/captain/assistant/RuleCard.story.vue` | 0.0% | 11 |
 | `app/javascript/dashboard/components-next/captain/AnimatingImg/AnimatingImg.story.vue` | 0.0% | 10 |
-| `app/javascript/dashboard/components-next/captain/assistant/AssistantCard.vue` | 63.0% | 10 |
-| `app/javascript/dashboard/components-next/captain/assistant/MessageList.vue` | 56.5% | 10 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/inbox/ConnectInboxDialog.vue` | 52.4% | 10 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/overview/WelcomeCard.vue` | 65.5% | 10 |
-| `app/javascript/dashboard/routes/dashboard/captain/assistants/Index.vue` | 52.4% | 10 |
 | `app/javascript/dashboard/components-next/captain/assistant/DocumentCard.vue` | 85.0% | 9 |
 | `app/javascript/dashboard/components-next/captain/assistant/DocumentSyncStatus.vue` | 85.0% | 9 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/assistant/AssistantForm.vue` | 76.3% | 9 |
@@ -20,8 +15,6 @@
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/v2/UsageCard.vue` | 59.1% | 9 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/response/ResponseForm.vue` | 70.0% | 9 |
 | `app/javascript/dashboard/components-next/captain/assistant/AddNewRulesDialog.vue` | 50.0% | 8 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/BulkDeleteDialog.vue` | 60.0% | 8 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/DeleteDialog.vue` | 57.9% | 8 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/assistant/settings/SettingsPageLayout.vue` | 52.9% | 8 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/customTool/CustomToolCard.vue` | 78.4% | 8 |
 | `app/javascript/dashboard/components-next/copilot/ToggleCopilotAssistant.vue` | 52.9% | 8 |
