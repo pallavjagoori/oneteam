@@ -1,10 +1,8 @@
 # Facebook Messenger: coverage gaps
 
-## Frontend: 97.6% (161 of 165 lines)
+## Frontend: 100.0% (165 of 165 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/InboxFacebookForm.vue` | 91.1% | 4 |
+Every file is fully covered.
 
 ## Backend: 98.2% (372 of 379 lines)
 
