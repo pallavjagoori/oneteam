@@ -1,6 +1,6 @@
 # Contacts: coverage gaps
 
-## Frontend: 94.4% (2607 of 2763 lines)
+## Frontend: 94.4% (2609 of 2763 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -25,8 +25,6 @@
 | `app/javascript/dashboard/routes/dashboard/settings/data/components/ImportDetailHeader.vue` | 91.3% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/data/components/ImportProgress.vue` | 92.6% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/data/components/ImportSummaryTiles.vue` | 90.5% | 2 |
-| `app/javascript/dashboard/components-next/Contacts/ContactsLoadMore.vue` | 75.0% | 1 |
-| `app/javascript/dashboard/components-next/Contacts/ContactsForm/DeleteSegmentDialog.vue` | 90.0% | 1 |
 | `app/javascript/dashboard/components-next/Contacts/ContactsSidebar/ContactHistory.vue` | 92.3% | 1 |
 | `app/javascript/dashboard/modules/contact/components/MergeContactSummary.vue` | 75.0% | 1 |
 | `app/javascript/dashboard/routes/dashboard/contacts/pages/ContactsIndex.vue` | 99.6% | 1 |
