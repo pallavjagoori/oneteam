@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 95.9% (7689 of 8018 lines)
+## Frontend: 96.3% (7723 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -10,14 +10,10 @@
 | `app/javascript/dashboard/components-next/changelog-card/GroupedStackedChangelogCard.story.vue` | 50.0% | 12 |
 | `app/javascript/dashboard/components-next/dropdown-menu/DropdownPrimitives.story.vue` | 36.8% | 12 |
 | `app/javascript/dashboard/components-next/year-in-review/slides/PersonalitySlide.vue` | 70.0% | 12 |
-| `app/javascript/dashboard/components/app/StatusBanner.vue` | 57.1% | 9 |
-| `app/javascript/dashboard/components/ui/Banner.vue` | 30.8% | 9 |
 | `app/javascript/dashboard/components/index.js` | 0.0% | 8 |
 | `app/javascript/dashboard/components-next/combobox/ComboBoxDropdown.vue` | 60.0% | 8 |
 | `app/javascript/dashboard/components-next/dialog/Dialog.story.vue` | 66.7% | 8 |
 | `app/javascript/dashboard/components-next/feature-spotlight/FeatureSpotlightPopover.vue` | 52.9% | 8 |
-| `app/javascript/dashboard/components/ui/Wizard.vue` | 50.0% | 8 |
-| `app/javascript/dashboard/components/ui/DatePicker/components/CalendarWeek.vue` | 76.5% | 8 |
 | `app/javascript/dashboard/routes/dashboard/settings/templates/TemplatePreviewDrawer.vue` | 81.1% | 7 |
 | `app/javascript/shared/components/emoji/EmojiPicker.vue` | 73.1% | 7 |
 | `app/javascript/dashboard/components-next/changelog-card/StackedChangelogCard.story.vue` | 57.1% | 6 |

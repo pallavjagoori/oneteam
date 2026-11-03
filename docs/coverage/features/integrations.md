@@ -1,10 +1,9 @@
 # Integrations: coverage gaps
 
-## Frontend: 93.2% (955 of 1025 lines)
+## Frontend: 94.0% (964 of 1025 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/message/bubbles/Dyte.vue` | 52.6% | 9 |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Stripe.vue` | 89.0% | 9 |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Webhooks/NewWebHook.vue` | 60.9% | 9 |
 | `app/javascript/dashboard/routes/dashboard/settings/integrations/Index.vue` | 57.9% | 8 |

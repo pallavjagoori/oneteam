@@ -1,17 +1,15 @@
 # Captain AI assistant and copilot: coverage gaps
 
-## Frontend: 97.5% (5528 of 5672 lines)
+## Frontend: 97.8% (5545 of 5672 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/captain/pageComponents/customTool/ParamRow.vue` | 65.4% | 9 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/document/DocumentDetails.vue` | 92.0% | 9 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/v2/UsageCard.vue` | 59.1% | 9 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/response/ResponseForm.vue` | 70.0% | 9 |
 | `app/javascript/dashboard/components-next/captain/assistant/AddNewRulesDialog.vue` | 50.0% | 8 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/assistant/settings/SettingsPageLayout.vue` | 52.9% | 8 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/customTool/CustomToolCard.vue` | 78.4% | 8 |
-| `app/javascript/dashboard/components-next/copilot/ToggleCopilotAssistant.vue` | 52.9% | 8 |
 | `app/javascript/dashboard/components/widgets/conversation/CopilotEditorSection.vue` | 63.6% | 8 |
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/settings/Index.vue` | 63.6% | 8 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/inbox/ConnectInboxForm.vue` | 75.0% | 7 |
