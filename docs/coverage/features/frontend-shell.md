@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 87.6% (7020 of 8018 lines)
+## Frontend: 87.8% (7037 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -17,7 +17,6 @@
 | `app/javascript/dashboard/components-next/dropdown-menu/DropdownPrimitives.story.vue` | 0.0% | 19 |
 | `app/javascript/dashboard/components-next/breadcrumb/Breadcrumb.story.vue` | 0.0% | 17 |
 | `app/javascript/dashboard/components-next/dropdown-menu/DropdownMenu.story.vue` | 0.0% | 17 |
-| `app/javascript/dashboard/components-next/emoji-icon-picker/EmojiIconPicker.vue` | 69.1% | 17 |
 | `app/javascript/dashboard/components-next/textarea/TextArea.story.vue` | 0.0% | 17 |
 | `app/javascript/dashboard/components-next/checkbox/Checkbox.story.vue` | 0.0% | 15 |
 | `app/javascript/dashboard/components-next/combobox/TagMultiSelectComboxBox.story.vue` | 0.0% | 15 |

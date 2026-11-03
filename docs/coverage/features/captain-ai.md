@@ -1,19 +1,14 @@
 # Captain AI assistant and copilot: coverage gaps
 
-## Frontend: 91.4% (5187 of 5672 lines)
+## Frontend: 92.4% (5243 of 5672 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/captain/assistant/usePlaygroundSession.js` | 93.5% | 12 |
 | `app/javascript/dashboard/components-next/copilot/Copilot.story.vue` | 0.0% | 12 |
-| `app/javascript/dashboard/components-next/captain/PageLayout.vue` | 72.5% | 11 |
-| `app/javascript/dashboard/components-next/captain/assistant/AssistantPlayground.vue` | 90.2% | 11 |
 | `app/javascript/dashboard/components-next/captain/assistant/RuleCard.story.vue` | 0.0% | 11 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/document/CreateDocumentDialog.vue` | 47.6% | 11 |
 | `app/javascript/dashboard/components-next/captain/AnimatingImg/AnimatingImg.story.vue` | 0.0% | 10 |
 | `app/javascript/dashboard/components-next/captain/assistant/AssistantCard.vue` | 63.0% | 10 |
 | `app/javascript/dashboard/components-next/captain/assistant/MessageList.vue` | 56.5% | 10 |
-| `app/javascript/dashboard/components-next/captain/assistant/PlaygroundTestSetup.vue` | 89.0% | 10 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/inbox/ConnectInboxDialog.vue` | 52.4% | 10 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/WelcomeCard.vue` | 65.5% | 10 |
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/Index.vue` | 52.4% | 10 |
@@ -85,7 +80,6 @@
 | `app/javascript/dashboard/components-next/captain/AnimatingImg/ResponseGuidelines.vue` | 80.0% | 1 |
 | `app/javascript/dashboard/components-next/captain/AnimatingImg/Scenarios.vue` | 80.0% | 1 |
 | `app/javascript/dashboard/components-next/captain/AnimatingImg/Settings.vue` | 0.0% | 1 |
-| `app/javascript/dashboard/components-next/captain/assistant/PlaygroundRunDetails.vue` | 95.0% | 1 |
 | `app/javascript/dashboard/components-next/captain/classifier/SuggestButton.vue` | 66.7% | 1 |
 | `app/javascript/dashboard/components-next/captain/classifier/SuggestionSkeleton.vue` | 50.0% | 1 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/Paywall.vue` | 90.9% | 1 |
