@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 89.6% (7186 of 8018 lines)
+## Frontend: 89.8% (7198 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -50,11 +50,8 @@
 | `app/javascript/dashboard/components-next/feature-announcement/FeatureAnnouncement.vue` | 94.4% | 5 |
 | `app/javascript/dashboard/components-next/icon/FileIcon.story.vue` | 0.0% | 5 |
 | `app/javascript/dashboard/components/ui/DatePicker/components/CalendarMonth.vue` | 77.3% | 5 |
-| `app/javascript/dashboard/components-next/DetailsPageLayout.vue` | 73.3% | 4 |
 | `app/javascript/dashboard/components-next/SidebarActionsHeader.story.vue` | 0.0% | 4 |
-| `app/javascript/dashboard/components-next/flag/Flag.vue` | 42.9% | 4 |
 | `app/javascript/dashboard/components-next/year-in-review/YearInReviewBanner.vue` | 84.6% | 4 |
-| `app/javascript/dashboard/components/ui/DatePicker/components/CalendarYear.vue` | 84.0% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/SettingsHeader.vue` | 50.0% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/components/BaseSettingsHeader.vue` | 63.6% | 4 |
 | `app/javascript/v3/views/routes.js` | 42.9% | 4 |
