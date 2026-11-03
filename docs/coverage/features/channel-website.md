@@ -1,15 +1,11 @@
 # Website live chat widget: coverage gaps
 
-## Frontend: 94.1% (6056 of 6436 lines)
+## Frontend: 94.8% (6102 of 6436 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/javascript/widget/components/Availability/AvailabilityText.story.vue` | 0.0% | 38 |
-| `app/javascript/dashboard/components/widgets/conversation/ConversationCard.vue` | 68.9% | 14 |
 | `app/javascript/dashboard/components/widgets/WootWriter/FullEditor.vue` | 95.2% | 11 |
-| `app/javascript/dashboard/components/widgets/conversation/conversationCardComponents/CardLabels.vue` | 66.7% | 11 |
-| `app/javascript/dashboard/modules/widget-preview/components/Widget.vue` | 71.1% | 11 |
-| `app/javascript/widget/components/AgentMessageBubble.vue` | 57.7% | 11 |
 | `app/javascript/dashboard/components/widgets/AttachmentsPreview.vue` | 63.0% | 10 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/PreChatForm/Settings.vue` | 76.2% | 10 |
 | `app/javascript/dashboard/components/widgets/ChatTypeTabs.vue` | 50.0% | 9 |
@@ -47,13 +43,13 @@
 | `app/javascript/widget/components/template/Article.vue` | 60.0% | 4 |
 | `app/javascript/widget/views/Campaigns.vue` | 50.0% | 4 |
 | `app/javascript/dashboard/components/widgets/BackButton.vue` | 57.1% | 3 |
+| `app/javascript/dashboard/components/widgets/conversation/OnboardingView.vue` | 82.4% | 3 |
 | `app/javascript/widget/components/ImageBubble.vue` | 57.1% | 3 |
 | `app/javascript/widget/components/pageComponents/Home/Article/ArticleBlock.vue` | 72.7% | 3 |
 | `app/javascript/dashboard/components/widgets/FeatureToggle.vue` | 50.0% | 2 |
 | `app/javascript/dashboard/components/widgets/TableFooter.vue` | 80.0% | 2 |
 | `app/javascript/dashboard/components/widgets/WootWriter/EditorModeToggle.vue` | 89.5% | 2 |
 | `app/javascript/dashboard/components/widgets/WootWriter/SlashCommandMenu.vue` | 96.8% | 2 |
-| `app/javascript/dashboard/components/widgets/conversation/OnboardingView.vue` | 88.2% | 2 |
 | `app/javascript/dashboard/components/widgets/conversation/ReplyBox.vue` | 99.6% | 2 |
 | `app/javascript/dashboard/components/widgets/conversation/ShopifyOrderItem.vue` | 93.8% | 2 |
 | `app/javascript/dashboard/components/widgets/conversation/components/SLAEventItem.vue` | 66.7% | 2 |
