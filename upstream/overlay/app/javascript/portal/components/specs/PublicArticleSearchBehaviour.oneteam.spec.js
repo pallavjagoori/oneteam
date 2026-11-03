@@ -3,8 +3,9 @@
  *
  * Covers debounced searching (results, failures, blank and whitespace
  * terms), showing and hiding suggestions (focus, hover, click-away), the
- * ⌘K / Ctrl K shortcut and Escape, submitting to the search page with
- * theme and plain-layout params, and the input and blur events.
+ * ⌘K / Ctrl K shortcut (from the platform or user agent) and Escape, the
+ * page-change watcher, submitting to the search page with theme and
+ * plain-layout params, and the input and blur events.
  */
 import { mount, flushPromises } from '@vue/test-utils';
 import ArticlesAPI from '../../api/article';
@@ -182,6 +183,19 @@ describe('PublicArticleSearch behaviour', () => {
     platform.mockReturnValue('Win32');
     wrapper = mountSearch({ showKbd: true });
     expect(input(wrapper).props('kbd')).toBe('Ctrl K');
+    wrapper.unmount();
+
+    platform.mockReturnValue('');
+    vi.spyOn(navigator, 'userAgent', 'get').mockReturnValue('iPhone');
+    wrapper = mountSearch({ showKbd: true });
+    expect(input(wrapper).props('kbd')).toBe('⌘ K');
+  });
+
+  it('clears the search term when the page watcher fires', async () => {
+    wrapper = mountSearch();
+    await type(wrapper, 'billing');
+    wrapper.vm.$options.watch.currentPage.call(wrapper.vm);
+    expect(wrapper.vm.searchTerm).toBe('');
   });
 
   it('submits to the search page with layout params', async () => {
