@@ -1,6 +1,6 @@
 # Captain AI assistant and copilot: coverage gaps
 
-## Frontend: 97.3% (5518 of 5672 lines)
+## Frontend: 97.4% (5522 of 5672 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -23,11 +23,9 @@
 | `app/javascript/dashboard/components-next/captain/pageComponents/ConversationUsageDrawer.vue` | 87.5% | 4 |
 | `app/javascript/dashboard/components-next/captain/assistant/RuleCard.story.vue` | 72.7% | 3 |
 | `app/javascript/dashboard/components-next/copilot/CopilotInput.vue` | 89.3% | 3 |
-| `app/javascript/dashboard/components-next/captain/classifier/SuggestionChip.vue` | 71.4% | 2 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/assistant/settings/AssistantScheduleForm.vue` | 88.2% | 2 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/customTool/AuthConfig.vue` | 75.0% | 2 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/overview/InboxBanner.vue` | 90.0% | 2 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/overview/MetricHint.vue` | 66.7% | 2 |
 | `app/javascript/dashboard/components-next/copilot/CopilotAssistantMessage.vue` | 92.0% | 2 |
 | `app/javascript/dashboard/components/widgets/WootWriter/CopilotReplyBottomPanel.vue` | 80.0% | 2 |
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/scenarios/Index.vue` | 98.1% | 2 |

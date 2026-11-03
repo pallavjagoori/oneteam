@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 95.3% (7640 of 8018 lines)
+## Frontend: 95.5% (7660 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -36,27 +36,17 @@
 | `app/javascript/shared/components/ChatOption.vue` | 25.0% | 3 |
 | `app/javascript/shared/components/Spinner.vue` | 66.7% | 3 |
 | `app/javascript/v3/components/SnackBar/Item.vue` | 50.0% | 3 |
-| `app/javascript/dashboard/components/IntersectionObserver.vue` | 66.7% | 2 |
-| `app/javascript/dashboard/components/SettingsSection.vue` | 77.8% | 2 |
-| `app/javascript/dashboard/components-next/checkbox/Checkbox.vue` | 71.4% | 2 |
 | `app/javascript/dashboard/components-next/combobox/ReorderableMultiSelect.vue` | 96.9% | 2 |
 | `app/javascript/dashboard/components-next/dropdown-menu/DropdownMenu.story.vue` | 88.2% | 2 |
 | `app/javascript/dashboard/components-next/dropdown-menu/DropdownMenu.vue` | 96.4% | 2 |
-| `app/javascript/dashboard/components-next/input/ChoiceToggle.vue` | 83.3% | 2 |
 | `app/javascript/dashboard/components-next/radioCard/RadioCard.story.vue` | 83.3% | 2 |
 | `app/javascript/dashboard/components-next/radioCard/RadioCard.vue` | 85.7% | 2 |
-| `app/javascript/dashboard/components-next/select/Select.vue` | 71.4% | 2 |
-| `app/javascript/dashboard/components-next/sidebar/MobileSidebarLauncher.vue` | 77.8% | 2 |
 | `app/javascript/dashboard/components-next/sidebar/Sidebar.vue` | 98.7% | 2 |
 | `app/javascript/dashboard/components-next/sidebar/SidebarGroupSeparator.vue` | 81.8% | 2 |
 | `app/javascript/dashboard/components-next/sidebar/SidebarSortMenu.vue` | 97.0% | 2 |
 | `app/javascript/dashboard/components-next/switch/Switch.story.vue` | 90.5% | 2 |
-| `app/javascript/dashboard/components-next/switch/Switch.vue` | 77.8% | 2 |
-| `app/javascript/dashboard/components-next/tabbar/TabBar.vue` | 92.3% | 2 |
 | `app/javascript/dashboard/components-next/table/BaseTable.vue` | 80.0% | 2 |
 | `app/javascript/dashboard/components-next/taginput/TagInput.vue` | 97.5% | 2 |
-| `app/javascript/dashboard/components/ui/DatePicker/components/CalendarDateRange.vue` | 75.0% | 2 |
-| `app/javascript/dashboard/components/ui/DatePicker/components/CalendarFooter.vue` | 66.7% | 2 |
 | `app/javascript/dashboard/helper/quotedEmailHelper.js` | 98.9% | 2 |
 | `app/javascript/dashboard/routes/dashboard/commands/commandbar.vue` | 97.9% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/SettingsWrapper.vue` | 71.4% | 2 |
