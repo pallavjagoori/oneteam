@@ -1,6 +1,6 @@
 # Messages and attachments: coverage gaps
 
-## Frontend: 90.3% (1788 of 1980 lines)
+## Frontend: 91.7% (1816 of 1980 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -9,11 +9,7 @@
 | `app/javascript/dashboard/components-next/message/stories/TextMessages.story.vue` | 0.0% | 18 |
 | `app/javascript/dashboard/components-next/message/stories/EmailMessages.story.vue` | 0.0% | 11 |
 | `app/javascript/dashboard/components-next/message/bubbles/Unsupported.vue` | 46.7% | 8 |
-| `app/javascript/dashboard/components-next/message/bubbles/Video.vue` | 56.3% | 7 |
 | `app/javascript/dashboard/components-next/message/forward/ForwardEmailPanel.vue` | 91.6% | 7 |
-| `app/javascript/dashboard/routes/dashboard/settings/account/components/AudioTranscription.vue` | 58.8% | 7 |
-| `app/javascript/dashboard/routes/dashboard/settings/profile/AudioAlertTone.vue` | 56.3% | 7 |
-| `app/javascript/dashboard/routes/dashboard/settings/profile/MessageSignature.vue` | 53.3% | 7 |
 | `app/javascript/dashboard/components-next/message/bubbles/BaseAttachment.vue` | 61.5% | 5 |
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/MessagePreview.vue` | 85.2% | 4 |
 | `app/javascript/dashboard/components-next/message/provider.js` | 63.6% | 4 |

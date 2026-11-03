@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 88.4% (7090 of 8018 lines)
+## Frontend: 88.5% (7097 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -39,7 +39,6 @@
 | `app/javascript/dashboard/components-next/feature-spotlight/FeatureSpotlightPopover.vue` | 52.9% | 8 |
 | `app/javascript/dashboard/components/ui/Wizard.vue` | 50.0% | 8 |
 | `app/javascript/dashboard/components/ui/DatePicker/components/CalendarWeek.vue` | 76.5% | 8 |
-| `app/javascript/dashboard/components/ui/DatePicker/components/CalendarAction.vue` | 50.0% | 7 |
 | `app/javascript/dashboard/routes/dashboard/settings/templates/TemplatePreviewDrawer.vue` | 81.1% | 7 |
 | `app/javascript/shared/components/CardButton.vue` | 22.2% | 7 |
 | `app/javascript/shared/components/EmojiOrIcon.vue` | 12.5% | 7 |
