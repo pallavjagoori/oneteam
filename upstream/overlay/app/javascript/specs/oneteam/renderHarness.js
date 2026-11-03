@@ -182,8 +182,15 @@ const sidePanelStub = defineComponent({
  * Mounts component and returns { wrapper, errors }. Errors thrown while
  * rendering or in lifecycle hooks are collected instead of failing the
  * mount, so the caller decides what counts as a failure.
+ *
+ * components: extra global components (registered and used unstubbed),
+ *   such as stand-ins for the Histoire Story and Variant wrappers.
  */
-export async function smokeMount(component, store, { setup, props = {} } = {}) {
+export async function smokeMount(
+  component,
+  store,
+  { setup, props = {}, components = {} } = {}
+) {
   const errors = [];
   const router = buildRouter();
   await router.start('/app/accounts/1/dashboard');
@@ -202,6 +209,7 @@ export async function smokeMount(component, store, { setup, props = {} } = {}) {
       shallow: true,
       global: {
         plugins: [store, createPinia(), router],
+        components,
         config: {
           errorHandler: error => errors.push(error),
           warnHandler: () => {},
@@ -213,6 +221,7 @@ export async function smokeMount(component, store, { setup, props = {} } = {}) {
           SidePanel: sidePanelStub,
           // eslint-disable-next-line no-underscore-dangle
           [component.__name || component.name]: false,
+          ...components,
         },
         mocks: { $t: key => key, $tm: () => ({}), t: key => key },
       },
@@ -236,6 +245,7 @@ export async function smokeMount(component, store, { setup, props = {} } = {}) {
  *   realistic props (a valid enum value, a record with the fields they read).
  * before(): optional setup that runs once before the suite, such as the
  *   window globals an app's server-rendered page would define.
+ * components: extra global components passed to smokeMount.
  * needsDedicatedSpec: { 'path/fragment.vue': 'why' } for components that
  *   cannot render without real data; they are listed as todo tests so the
  *   gap stays visible, and should get their own spec.
@@ -247,6 +257,7 @@ export function defineSmokeSuite({
   setupFor = () => undefined,
   propsFor = {},
   before = () => {},
+  components = {},
   needsDedicatedSpec = {},
 }) {
   describe(title, () => {
@@ -276,6 +287,7 @@ export function defineSmokeSuite({
         const { errors } = await smokeMount(component, store, {
           setup: setupFor(name),
           props: typeof props === 'function' ? props() : props,
+          components,
         });
         if (errors.length) {
           const where = errors[0].stack
