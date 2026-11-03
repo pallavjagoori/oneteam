@@ -2,7 +2,8 @@
  * OneTeam behaviour spec for the search filter bar.
  *
  * Covers the clear button appearing for any active filter, clearing all
- * filters, and forwarding date range, contact/agent and inbox changes.
+ * filters, writing selector v-model updates, and forwarding date range,
+ * contact/agent and inbox changes.
  */
 import { mount } from '@vue/test-utils';
 import SearchFilters from '../SearchFilters.vue';
@@ -50,6 +51,29 @@ const mountFilters = modelValue =>
   });
 
 describe('SearchFilters behaviour', () => {
+  it('writes selector v-model updates into the filters', async () => {
+    const filters = { from: null, in: null, dateRange: { ...emptyRange } };
+    const wrapper = mountFilters(filters);
+    const range = { type: 'custom', from: 1, to: 2 };
+    wrapper
+      .getComponent(SearchDateRangeSelector)
+      .vm.$emit('update:modelValue', range);
+    wrapper
+      .getComponent(SearchContactAgentSelector)
+      .vm.$emit('update:modelValue', 5);
+    wrapper.getComponent(SearchInboxSelector).vm.$emit('update:modelValue', 6);
+    await wrapper.vm.$nextTick();
+    expect(
+      wrapper.getComponent(SearchDateRangeSelector).props('modelValue')
+    ).toEqual(range);
+    expect(
+      wrapper.getComponent(SearchContactAgentSelector).props('modelValue')
+    ).toBe(5);
+    expect(wrapper.getComponent(SearchInboxSelector).props('modelValue')).toBe(
+      6
+    );
+  });
+
   it('hides the clear button without filters and forwards changes', () => {
     const filters = { from: null, in: null, dateRange: { ...emptyRange } };
     const wrapper = mountFilters(filters);
