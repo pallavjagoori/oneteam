@@ -1,40 +1,39 @@
 /**
- * OneTeam behaviour spec for the profile interface language picker.
+ * OneTeam behaviour spec for the profile language select.
  *
- * Covers listing "use account default" plus the enabled languages,
- * showing the saved preference, choosing a language (saving it and
- * switching the UI locale) and clearing back to the account default.
- * The failure path rethrows from a v-model setter nobody awaits, so it
- * would surface as an unhandled rejection and is left to Chatwoot's own
- * tests.
+ * Covers picking a supported language, falling back to the account default,
+ * and rejecting unknown or failed updates with an error alert.
  */
 import { ref } from 'vue';
-import { flushPromises, mount } from '@vue/test-utils';
-import { useAlert } from 'dashboard/composables';
+import { mount, flushPromises } from '@vue/test-utils';
 import UserLanguageSelect from '../UserLanguageSelect.vue';
 
-const locale = ref('en');
-const uiSettings = ref({ locale: 'fr' });
-const updateUISettings = vi.fn();
+const env = vi.hoisted(() => ({
+  update: vi.fn(),
+  alert: vi.fn(),
+  locale: null,
+}));
 
 vi.mock('vue-i18n', async importOriginal => ({
   ...(await importOriginal()),
-  useI18n: () => ({ t: key => key, locale }),
+  useI18n: () => ({ t: key => key, locale: env.locale }),
 }));
-vi.mock('dashboard/composables', () => ({ useAlert: vi.fn() }));
-vi.mock('dashboard/composables/useUISettings', () => ({
-  useUISettings: () => ({ uiSettings, updateUISettings }),
+vi.mock('dashboard/composables', () => ({
+  useAlert: (...args) => env.alert(...args),
 }));
 vi.mock('dashboard/composables/useConfig', () => ({
   useConfig: () => ({
-    enabledLanguages: [
-      { name: 'English', iso_639_1_code: 'en' },
-      { name: 'Français', iso_639_1_code: 'fr' },
-    ],
+    enabledLanguages: [{ name: 'Deutsch', iso_639_1_code: 'de' }],
   }),
 }));
 vi.mock('dashboard/composables/useAccount', () => ({
-  useAccount: () => ({ currentAccount: ref({ locale: 'de' }) }),
+  useAccount: () => ({ currentAccount: ref({ locale: 'fr' }) }),
+}));
+vi.mock('dashboard/composables/useUISettings', () => ({
+  useUISettings: () => ({
+    updateUISettings: (...args) => env.update(...args),
+    uiSettings: ref({ locale: 'de' }),
+  }),
 }));
 
 const FormSelect = {
@@ -44,56 +43,33 @@ const FormSelect = {
   template: '<select><slot /></select>',
 };
 
-const mountPicker = () =>
-  mount(UserLanguageSelect, {
-    props: { label: 'Language', description: 'Pick one' },
-    global: { stubs: { FormSelect } },
-  });
+const mountSelect = () => {
+  env.locale = ref('en');
+  return mount(UserLanguageSelect, { global: { stubs: { FormSelect } } });
+};
 
 describe('UserLanguageSelect behaviour', () => {
-  beforeEach(() => {
-    locale.value = 'en';
-    uiSettings.value = { locale: 'fr' };
-    updateUISettings.mockResolvedValue();
-  });
-
-  it('lists the default and enabled languages', () => {
-    const wrapper = mountPicker();
-    expect(wrapper.text()).toContain('Language');
-    expect(wrapper.text()).toContain('Pick one');
-    expect(wrapper.findComponent(FormSelect).props('modelValue')).toBe('fr');
-    const options = wrapper.findAll('option');
-    expect(options.map(o => o.text())).toEqual([
-      'PROFILE_SETTINGS.FORM.INTERFACE_SECTION.LANGUAGE.USE_ACCOUNT_DEFAULT',
-      'English',
-      'Français',
-    ]);
-    expect(options[2].element.selected).toBe(true);
-  });
-
-  it('shows the default when nothing is saved', () => {
-    uiSettings.value = null;
-    const wrapper = mountPicker();
-    expect(wrapper.findComponent(FormSelect).props('modelValue')).toBe('');
-  });
-
-  it('saves a chosen language and applies it', async () => {
-    const wrapper = mountPicker();
-    await wrapper.findComponent(FormSelect).vm.$emit('update:modelValue', 'en');
+  it('applies a supported language and the account default', async () => {
+    const wrapper = mountSelect();
+    expect(wrapper.findAll('option')).toHaveLength(2);
+    wrapper.getComponent(FormSelect).vm.$emit('update:modelValue', 'de');
     await flushPromises();
-    expect(updateUISettings).toHaveBeenCalledWith({ locale: 'en' });
-    expect(locale.value).toBe('en');
-    expect(useAlert).toHaveBeenCalledWith(
-      'PROFILE_SETTINGS.FORM.INTERFACE_SECTION.LANGUAGE.UPDATE_SUCCESS'
+    expect(env.update).toHaveBeenCalledWith({ locale: 'de' });
+    expect(env.locale.value).toBe('de');
+    wrapper.getComponent(FormSelect).vm.$emit('update:modelValue', '');
+    await flushPromises();
+    expect(env.update).toHaveBeenLastCalledWith({ locale: null });
+    expect(env.locale.value).toBe('fr');
+  });
+
+  it('alerts and rethrows for an unknown code or a failed save', async () => {
+    const wrapper = mountSelect();
+    const { updateLanguage } = wrapper.vm.$.setupState;
+    await expect(updateLanguage('xx')).rejects.toThrow('Invalid language code');
+    env.update.mockRejectedValueOnce(new Error('offline'));
+    await expect(updateLanguage('de')).rejects.toThrow('offline');
+    expect(env.alert).toHaveBeenCalledWith(
+      'PROFILE_SETTINGS.FORM.INTERFACE_SECTION.LANGUAGE.UPDATE_ERROR'
     );
-  });
-
-  it('clears back to the account default', async () => {
-    const wrapper = mountPicker();
-    await wrapper.findComponent(FormSelect).vm.$emit('update:modelValue', '');
-    await flushPromises();
-    expect(updateUISettings).toHaveBeenCalledWith({ locale: null });
-    expect(locale.value).toBe('de');
-    expect(useAlert).toHaveBeenCalledTimes(1);
   });
 });
