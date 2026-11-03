@@ -1,11 +1,10 @@
 # Custom attributes: coverage gaps
 
-## Frontend: 92.7% (573 of 618 lines)
+## Frontend: 94.0% (581 of 618 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/javascript/dashboard/components-next/CustomAttributes/story/CustomAttributes.story.vue` | 0.0% | 23 |
-| `app/javascript/dashboard/components-next/Companies/CompanyDetail/CompanyCustomAttributeItem.vue` | 57.9% | 8 |
 | `app/javascript/dashboard/components-next/Contacts/ContactsSidebar/ContactCustomAttributeItem.vue` | 60.0% | 8 |
 | `app/javascript/dashboard/components-next/CustomAttributes/CheckboxAttribute.vue` | 62.5% | 3 |
 | `app/javascript/dashboard/components-next/CustomAttributes/AttributeBadge.vue` | 85.7% | 1 |
