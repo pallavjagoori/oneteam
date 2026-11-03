@@ -1,6 +1,6 @@
 # Website live chat widget: coverage gaps
 
-## Frontend: 95.3% (6133 of 6436 lines)
+## Frontend: 95.3% (6134 of 6436 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -40,13 +40,13 @@
 | `app/javascript/widget/components/template/Article.vue` | 60.0% | 4 |
 | `app/javascript/widget/views/Campaigns.vue` | 50.0% | 4 |
 | `app/javascript/dashboard/components/widgets/BackButton.vue` | 57.1% | 3 |
-| `app/javascript/dashboard/components/widgets/conversation/OnboardingView.vue` | 82.4% | 3 |
 | `app/javascript/widget/components/ImageBubble.vue` | 57.1% | 3 |
 | `app/javascript/widget/components/pageComponents/Home/Article/ArticleBlock.vue` | 72.7% | 3 |
 | `app/javascript/dashboard/components/widgets/FeatureToggle.vue` | 50.0% | 2 |
 | `app/javascript/dashboard/components/widgets/TableFooter.vue` | 80.0% | 2 |
 | `app/javascript/dashboard/components/widgets/WootWriter/EditorModeToggle.vue` | 89.5% | 2 |
 | `app/javascript/dashboard/components/widgets/WootWriter/SlashCommandMenu.vue` | 96.8% | 2 |
+| `app/javascript/dashboard/components/widgets/conversation/OnboardingView.vue` | 88.2% | 2 |
 | `app/javascript/dashboard/components/widgets/conversation/ReplyBox.vue` | 99.6% | 2 |
 | `app/javascript/dashboard/components/widgets/conversation/ShopifyOrderItem.vue` | 93.8% | 2 |
 | `app/javascript/dashboard/components/widgets/conversation/components/SLAEventItem.vue` | 66.7% | 2 |
