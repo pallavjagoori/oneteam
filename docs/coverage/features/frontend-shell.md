@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 95.8% (7680 of 8018 lines)
+## Frontend: 95.9% (7689 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -33,9 +33,6 @@
 | `app/javascript/dashboard/components-next/popover/Popover.vue` | 94.0% | 3 |
 | `app/javascript/dashboard/components/ui/DateTimePicker.vue` | 40.0% | 3 |
 | `app/javascript/dashboard/routes/dashboard/settings/components/BasePaywallModal.vue` | 78.6% | 3 |
-| `app/javascript/shared/components/ChatOption.vue` | 25.0% | 3 |
-| `app/javascript/shared/components/Spinner.vue` | 66.7% | 3 |
-| `app/javascript/v3/components/SnackBar/Item.vue` | 50.0% | 3 |
 | `app/javascript/dashboard/components-next/combobox/ReorderableMultiSelect.vue` | 96.9% | 2 |
 | `app/javascript/dashboard/components-next/dropdown-menu/DropdownMenu.story.vue` | 88.2% | 2 |
 | `app/javascript/dashboard/components-next/dropdown-menu/DropdownMenu.vue` | 96.4% | 2 |

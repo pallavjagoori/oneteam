@@ -1,11 +1,10 @@
 # SAML single sign-on: coverage gaps
 
-## Frontend: 96.4% (185 of 192 lines)
+## Frontend: 97.9% (188 of 192 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/javascript/v3/views/login/Saml.vue` | 85.7% | 4 |
-| `app/javascript/dashboard/routes/dashboard/settings/security/components/SamlInfoSection.vue` | 87.0% | 3 |
 
 ## Backend: 97.4% (597 of 613 lines)
 
