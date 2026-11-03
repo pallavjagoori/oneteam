@@ -1,6 +1,6 @@
 # Reports and analytics: coverage gaps
 
-## Frontend: 95.2% (1182 of 1241 lines)
+## Frontend: 95.6% (1187 of 1241 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -9,7 +9,6 @@
 | `app/javascript/dashboard/routes/dashboard/settings/reports/components/overview/TeamTable.vue` | 62.5% | 9 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/components/ReportDrilldownDrawer.vue` | 90.6% | 6 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/composables/useReportDrilldown.js` | 91.4% | 6 |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/components/BotMetrics.vue` | 73.7% | 5 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/components/ChartElements/ChartStats.vue` | 72.7% | 3 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/AgentReportsIndex.vue` | 60.0% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/InboxReportsIndex.vue` | 60.0% | 2 |
