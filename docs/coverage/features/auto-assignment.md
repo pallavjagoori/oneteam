@@ -1,6 +1,6 @@
 # Auto-assignment and capacity: coverage gaps
 
-## Frontend: 86.3% (929 of 1077 lines)
+## Frontend: 86.5% (932 of 1077 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -21,7 +21,6 @@
 | `app/javascript/dashboard/components-next/AssignmentPolicy/AgentCapacityPolicyCard/AgentCapacityPolicyCard.vue` | 81.0% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/assignmentPolicy/pages/components/ConfirmDeletePolicyDialog.vue` | 69.2% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/assignmentPolicy/pages/components/ConfirmInboxDialog.vue` | 69.2% | 4 |
-| `app/javascript/dashboard/components-next/AssignmentPolicy/AssignmentCard/AssignmentCard.vue` | 72.7% | 3 |
 
 ## Backend: 98.3% (653 of 664 lines)
 

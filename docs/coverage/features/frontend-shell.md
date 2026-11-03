@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 90.0% (7219 of 8018 lines)
+## Frontend: 90.2% (7233 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -52,12 +52,8 @@
 | `app/javascript/dashboard/components/ui/DatePicker/components/CalendarMonth.vue` | 77.3% | 5 |
 | `app/javascript/dashboard/components-next/SidebarActionsHeader.story.vue` | 0.0% | 4 |
 | `app/javascript/dashboard/components-next/year-in-review/YearInReviewBanner.vue` | 84.6% | 4 |
-| `app/javascript/dashboard/routes/dashboard/settings/SettingsHeader.vue` | 50.0% | 4 |
-| `app/javascript/dashboard/routes/dashboard/settings/components/BaseSettingsHeader.vue` | 63.6% | 4 |
 | `app/javascript/v3/views/routes.js` | 42.9% | 4 |
-| `app/javascript/dashboard/components-next/changelog-card/StackedChangelogCard.vue` | 70.0% | 3 |
 | `app/javascript/dashboard/components-next/popover/Popover.vue` | 94.0% | 3 |
-| `app/javascript/dashboard/components-next/sidebar/SidebarChangelogButton.vue` | 75.0% | 3 |
 | `app/javascript/dashboard/components-next/spinner/Spinner.story.vue` | 0.0% | 3 |
 | `app/javascript/dashboard/components/ui/DateTimePicker.vue` | 40.0% | 3 |
 | `app/javascript/dashboard/routes/dashboard/settings/components/BasePaywallModal.vue` | 78.6% | 3 |
