@@ -1,6 +1,6 @@
 # Accounts, users and sign-in: coverage gaps
 
-## Frontend: 98.4% (1514 of 1538 lines)
+## Frontend: 98.5% (1515 of 1538 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -12,7 +12,6 @@
 | `app/javascript/dashboard/routes/dashboard/settings/account/components/SectionLayout.vue` | 66.7% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/profile/UserProfilePicture.vue` | 71.4% | 2 |
 | `app/javascript/v3/views/auth/signup/components/Testimonials/Index.vue` | 83.3% | 2 |
-| `app/javascript/dashboard/routes/dashboard/settings/profile/Wrapper.vue` | 66.7% | 1 |
 | `app/javascript/v3/views/auth/signup/Index.vue` | 96.2% | 1 |
 
 ## Backend: 97.7% (1666 of 1706 lines)

@@ -1,6 +1,6 @@
 # Labels: coverage gaps
 
-## Frontend: 95.6% (540 of 565 lines)
+## Frontend: 95.8% (541 of 565 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -10,7 +10,6 @@
 | `app/javascript/dashboard/components-next/label/LabelItem.vue` | 75.0% | 2 |
 | `app/javascript/dashboard/components-next/label/story/fixtures.js` | 0.0% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/reports/LabelReportsIndex.vue` | 60.0% | 2 |
-| `app/javascript/dashboard/components-next/Conversation/ConversationCard/SLACardLabel.vue` | 93.8% | 1 |
 | `app/javascript/shared/components/ui/dropdown/AddLabel.vue` | 75.0% | 1 |
 | `app/javascript/shared/components/ui/label/LabelDropdown.vue` | 97.1% | 1 |
 | `app/javascript/v3/components/Form/WithLabel.vue` | 83.3% | 1 |

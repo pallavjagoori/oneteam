@@ -1,10 +1,8 @@
 # Super admin console: coverage gaps
 
-## Frontend: 99.7% (398 of 399 lines)
+## Frontend: 100.0% (399 of 399 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/javascript/dashboard/components/app/ImpersonationBanner.vue` | 83.3% | 1 |
+Every file is fully covered.
 
 ## Backend: 97.0% (833 of 859 lines)
 
