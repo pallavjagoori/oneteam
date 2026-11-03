@@ -1,6 +1,6 @@
 # Macros: coverage gaps
 
-## Frontend: 92.8% (399 of 430 lines)
+## Frontend: 93.5% (402 of 430 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -8,7 +8,6 @@
 | `app/javascript/dashboard/routes/dashboard/settings/macros/MacroNodes.vue` | 52.6% | 9 |
 | `app/javascript/dashboard/routes/dashboard/settings/macros/MacroNode.vue` | 78.9% | 4 |
 | `app/javascript/dashboard/routes/dashboard/settings/macros/MacroProperties.vue` | 86.7% | 4 |
-| `app/javascript/dashboard/routes/dashboard/conversation/Macros/MacroItem.vue` | 70.0% | 3 |
 | `app/javascript/dashboard/routes/dashboard/conversation/Macros/MacroPreview.vue` | 88.9% | 1 |
 | `app/javascript/dashboard/routes/dashboard/settings/macros/MacrosTableRow.vue` | 96.6% | 1 |
 

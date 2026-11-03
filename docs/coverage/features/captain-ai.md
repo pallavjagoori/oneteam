@@ -1,6 +1,6 @@
 # Captain AI assistant and copilot: coverage gaps
 
-## Frontend: 95.1% (5393 of 5672 lines)
+## Frontend: 95.2% (5402 of 5672 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -40,9 +40,6 @@
 | `app/javascript/dashboard/components-next/captain/assistant/SuggestedRules.vue` | 76.9% | 3 |
 | `app/javascript/dashboard/components-next/captain/assistant/ToolsDropdown.vue` | 81.3% | 3 |
 | `app/javascript/dashboard/components-next/captain/pageComponents/assistant/settings/AssistantControlItems.vue` | 70.0% | 3 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/emptyStates/CustomToolsPageEmptyState.vue` | 57.1% | 3 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/overview/CoverageBanner.vue` | 87.0% | 3 |
-| `app/javascript/dashboard/components-next/captain/pageComponents/overview/MetricCard.vue` | 80.0% | 3 |
 | `app/javascript/dashboard/components-next/copilot/CopilotEmptyState.vue` | 90.0% | 3 |
 | `app/javascript/dashboard/components-next/copilot/CopilotInput.vue` | 89.3% | 3 |
 | `app/javascript/dashboard/components-next/captain/classifier/SuggestionChip.vue` | 71.4% | 2 |
