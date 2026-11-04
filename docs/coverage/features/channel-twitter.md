@@ -1,10 +1,8 @@
 # Twitter / X: coverage gaps
 
-## Frontend: 35.7% (5 of 14 lines)
+## Frontend: 100.0% (14 of 14 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Twitter.vue` | 25.0% | 9 |
+Every file is fully covered.
 
 ## Backend: 95.5% (279 of 292 lines)
 

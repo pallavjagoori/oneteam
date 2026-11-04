@@ -1,10 +1,9 @@
 # SMS and Twilio: coverage gaps
 
-## Frontend: 98.2% (224 of 228 lines)
+## Frontend: 99.1% (226 of 228 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Sms.vue` | 71.4% | 2 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/Twilio.vue` | 97.2% | 1 |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/components/TwilioHealth.vue` | 98.6% | 1 |
 
