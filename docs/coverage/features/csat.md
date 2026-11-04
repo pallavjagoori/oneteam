@@ -1,10 +1,8 @@
 # CSAT surveys: coverage gaps
 
-## Frontend: 99.2% (482 of 486 lines)
+## Frontend: 100.0% (486 of 486 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/components/CsatRatingDistribution.vue` | 73.3% | 4 |
+Every file is fully covered.
 
 ## Backend: 99.0% (489 of 494 lines)
 

@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 96.7% (7756 of 8018 lines)
+## Frontend: 96.8% (7758 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -34,7 +34,6 @@
 | `app/javascript/dashboard/components-next/taginput/TagInput.vue` | 97.5% | 2 |
 | `app/javascript/dashboard/helper/quotedEmailHelper.js` | 98.9% | 2 |
 | `app/javascript/dashboard/routes/dashboard/commands/commandbar.vue` | 97.9% | 2 |
-| `app/javascript/shared/components/TextArea.vue` | 60.0% | 2 |
 | `app/javascript/dashboard/components-next/button/ConfirmButton.story.vue` | 88.9% | 1 |
 | `app/javascript/dashboard/components-next/checkbox/Checkbox.story.vue` | 93.3% | 1 |
 | `app/javascript/dashboard/components-next/combobox/ComboBox.story.vue` | 90.0% | 1 |
