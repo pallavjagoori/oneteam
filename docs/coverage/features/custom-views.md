@@ -1,10 +1,9 @@
 # Custom filters and saved views: coverage gaps
 
-## Frontend: 98.7% (1251 of 1268 lines)
+## Frontend: 99.4% (1260 of 1268 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/components/OverviewReportFilters.vue` | 74.3% | 9 |
 | `app/javascript/dashboard/components-next/filter/ConditionRow.story.vue` | 70.6% | 5 |
 | `app/javascript/dashboard/components-next/filter/inputs/FilterSelect.story.vue` | 90.9% | 1 |
 | `app/javascript/dashboard/components-next/filter/inputs/MultiSelect.story.vue` | 91.7% | 1 |
