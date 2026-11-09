@@ -178,4 +178,25 @@ describe('SearchDateRangeSelector behaviour', () => {
     await wrapper.vm.$nextTick();
     expect(menu(wrapper).exists()).toBe(false);
   });
+
+  it('computes month and year based presets', async () => {
+    const wrapper = mountSelector();
+    await toggle(wrapper);
+    menu(wrapper).vm.$emit('action', { value: 'last_3_months', months: 3 });
+    await toggle(wrapper);
+    menu(wrapper).vm.$emit('action', {
+      value: 'last_year',
+      years: 1,
+    });
+    const [months, years] = wrapper
+      .emitted('update:modelValue')
+      .map(([range]) => range);
+    const day = 24 * 60 * 60;
+    expect(months.type).toBe('last_3_months');
+    expect((months.to - months.from) / day).toBeGreaterThan(88);
+    expect((months.to - months.from) / day).toBeLessThan(93);
+    expect(years.type).toBe('last_year');
+    expect((years.to - years.from) / day).toBeGreaterThan(364);
+    expect((years.to - years.from) / day).toBeLessThan(367);
+  });
 });
