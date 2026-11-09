@@ -167,3 +167,4 @@ need porting: the Laravel/Vue version can leave them out.
 | `app/builders/v2/reports/drilldown_record_serializer.rb` | 148 (`[]` in `inferred_message_candidates`) | Only called while iterating `inference_events`, so the events are never blank there. |
 | `app/controllers/api/v1/accounts/integrations/hooks_controller.rb` | 21, 25 (`nil` and message answers in `process_event`) | `Integrations::Hook#process_event` always returns `{ error: 'No processor found' }` since the OpenAI processor moved to Captain. |
 | `app/controllers/api/v2/accounts_controller.rb` | 55, 56 (`fetch_account`) | The v2 accounts route only exposes `create`, which skips this before_action. |
+| `enterprise/app/controllers/api/v1/accounts/captain/bulk_actions_controller.rb` | 88 (`permitted_params`) | A private method that nothing calls; the actions read `params[:ids]` and `params[:fields]` directly. |
