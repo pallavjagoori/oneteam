@@ -1,0 +1,33 @@
+diff --git a/spec/enterprise/services/conversation_monitors/evaluator_spec.rb b/spec/enterprise/services/conversation_monitors/evaluator_spec.rb
+index 5b4bb6a..dc9029a 100644
+--- a/spec/enterprise/services/conversation_monitors/evaluator_spec.rb
++++ b/spec/enterprise/services/conversation_monitors/evaluator_spec.rb
+@@ -13,6 +13,10 @@ RSpec.describe ConversationMonitors::Evaluator do
+   let(:response_body) { { model: 'typesafe/jev-1.13-20260917', answers: answers, usage: { input_tokens: 100 } } }
+   let(:endpoint) { ConversationMonitors::Configuration.endpoint }
+ 
++  # Two examples travel to 2026-10-31. Once the real date is later, the records made below would
++  # sit in their future, so those examples build them the day before.
++  before { |example| travel_to(Time.utc(2026, 10, 30, 12)) if example.metadata[:month_end] }
++
+   before do
+     InstallationConfig.find_or_initialize_by(name: 'CAPTAIN_OPENROUTER_API_KEY').update!(value: 'test-key')
+     account.enable_features!('reports', 'conversation_monitors')
+@@ -155,7 +159,7 @@ RSpec.describe ConversationMonitors::Evaluator do
+     end
+   end
+ 
+-  it 'holds exhausted accounts until next month and preserves full history across new input' do
++  it 'holds exhausted accounts until next month and preserves full history across new input', :month_end do
+     travel_to(Time.utc(2026, 10, 31, 12))
+     now = Time.current.utc
+     reset = now.beginning_of_month.next_month
+@@ -183,7 +187,7 @@ RSpec.describe ConversationMonitors::Evaluator do
+     end
+   end
+ 
+-  it 'preserves the monthly hold through an earlier batch provider cooldown after the reset' do
++  it 'preserves the monthly hold through an earlier batch provider cooldown after the reset', :month_end do
+     travel_to(Time.utc(2026, 10, 31, 23, 55))
+     now = Time.current.utc
+     reset = now.beginning_of_month.next_month

@@ -77,6 +77,10 @@ need porting: the Laravel/Vue version can leave them out.
 | `app/models/concerns/inbox_agent_availability.rb` | 15 (`member_ids_with_assignment_capacity`) | `Inbox` defines its own method of the same name (and the enterprise module replaces that one), so the concern's version is always shadowed. |
 | `app/helpers/filters/filter_helper.rb` | 78 (`date_filter`) | `FilterService` includes `Filters::DateFilterHelper` after this module, and that module's `date_filter` replaces this one. |
 | `app/services/auto_assignment/agent_assignment_service.rb` | 79 (`round_robin_key`) | A private method that nothing calls; the round-robin queue key is read by `InboxRoundRobinService`. |
+| `app/services/crm/leadsquared/mappers/contact_mapper.rb` | 51 (`brand_name_without_spaces`) | A method that nothing calls. |
+| `app/services/instagram/read_status_service.rb` | 11 (`instagram_id`) | A method that nothing calls; the service reads the message id from `params` directly. |
+| `app/services/messages/markdown_renderer_service.rb` | 40 (`commonmarker_doc`) | A method that nothing calls; each renderer builds its own document. |
+| `app/services/reports/report_metric_registry.rb` | 34 (`Metric#summary?`) | Nothing calls it; callers read `summary_key` directly. |
 | `app/services/tiktok/message_service.rb` | 22 (`contact`), 111 (`sticker_message?`) | Private helpers that nothing calls: stickers are stored as unsupported messages through `supported_message?`, and the contact is read through `contact_inbox`. |
 | `app/models/message.rb` | 425–428 (`mark_pending_conversation_as_open_for_human_response`) | In the community edition `captain_pending_conversation?` always returns false, so the method returns on its first line. The enterprise edition replaces both methods. |
 | `app/javascript/dashboard/components-next/**/story/fixtures.js`, `components-next/filter/fixtures/filterTypes.js` | All | Sample data for the Histoire component stories. Only `*.story.vue` files import it, and those are not part of any app. The port needs no copy of it. |
