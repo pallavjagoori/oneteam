@@ -9,6 +9,7 @@
 
   <!-- OneTeam's own PHP. Add the Laravel app's directories here as they appear. -->
   <file>tools</file>
+  <file>contract</file>
 
   <exclude-pattern>*/vendor/*</exclude-pattern>
   <exclude-pattern>upstream/*</exclude-pattern>

@@ -36,7 +36,8 @@ The upstream release we are converting is recorded in [`CHATWOOT_VERSION`](../CH
    [UNREACHABLE.md](../upstream/overlay/UNREACHABLE.md).*
 5. **Contract tests.** Write language-neutral tests that drive Chatwoot from the outside (HTTP API, real-time events,
    outgoing webhooks, emails and the database) and record every response. The same tests later run against
-   OneTeam to prove it behaves the same.
+   OneTeam to prove it behaves the same. *In progress (9 November 2026): the harness and the sign-in suite are in
+   [`contract/`](../contract/README.md).*
 
 ### 2. Set up the Laravel project
 

@@ -1,0 +1,45 @@
+{
+    "status": 200,
+    "body": {
+        "access_token": "<string>",
+        "account_id": "<int>",
+        "accounts": [
+            {
+                "active_at": null,
+                "api_and_webhooks": true,
+                "auto_offline": true,
+                "availability": "online",
+                "availability_status": "offline",
+                "billing_provider": "stripe",
+                "custom_role": null,
+                "custom_role_id": null,
+                "id": "<int>",
+                "name": "Contract Co",
+                "onboarding_step": null,
+                "permissions": [
+                    "administrator"
+                ],
+                "role": "administrator",
+                "shopify_connected": false,
+                "shopify_integration": false,
+                "status": "active",
+                "subscription_status": null
+            }
+        ],
+        "available_name": "Ada Admin",
+        "avatar_url": "",
+        "confirmed": true,
+        "display_name": null,
+        "email": "admin@contract.test",
+        "id": "<int>",
+        "inviter_id": null,
+        "message_signature": null,
+        "name": "Ada Admin",
+        "provider": "email",
+        "pubsub_token": "<string>",
+        "role": "administrator",
+        "type": null,
+        "ui_settings": [],
+        "uid": "<string>"
+    }
+}

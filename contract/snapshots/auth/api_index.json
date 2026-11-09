@@ -1,0 +1,9 @@
+{
+    "status": 200,
+    "body": {
+        "data_services": "ok",
+        "queue_services": "ok",
+        "timestamp": "<string>",
+        "version": "4.19.1"
+    }
+}

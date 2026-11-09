@@ -1,0 +1,8 @@
+{
+    "status": 401,
+    "body": {
+        "errors": [
+            "You need to sign in or sign up before continuing."
+        ]
+    }
+}
