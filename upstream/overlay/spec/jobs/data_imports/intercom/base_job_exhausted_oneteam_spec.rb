@@ -1,0 +1,25 @@
+require 'rails_helper'
+
+# OneTeam coverage for Intercom import jobs that run out of retries on client
+# or rate limit errors: the import is failed (here there is none to fail).
+RSpec.describe DataImports::Intercom::BaseJob do
+  include ActiveJob::TestHelper
+
+  def probe_job(error)
+    stub_const('OneteamIntercomProbeJob', Class.new(described_class) do
+      define_method(:perform) { raise error }
+    end)
+  end
+
+  it 'gives up after repeated client errors' do
+    probe_job(DataImports::Intercom::Client::Error.new('down', status: 500))
+
+    expect { perform_enqueued_jobs { OneteamIntercomProbeJob.perform_later } }.not_to raise_error
+  end
+
+  it 'gives up after repeated rate limits' do
+    probe_job(DataImports::Intercom::Client::RateLimitError.new('slow down', retry_after: 0))
+
+    expect { perform_enqueued_jobs { OneteamIntercomProbeJob.perform_later } }.not_to raise_error
+  end
+end
