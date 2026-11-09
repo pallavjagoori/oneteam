@@ -294,6 +294,17 @@ describe('WhatsApp campaign form behaviour', () => {
     expect(env.push).not.toHaveBeenCalled();
   });
 
+  it('discards unsaved basic settings back to the saved values', async () => {
+    const wrapper = await mountPage();
+    await find(wrapper, 'BasicSettingsFields').vm.$emit(
+      'update:title',
+      'Draft'
+    );
+    expect(sections(wrapper)[0].props('isDirty')).toBe(true);
+    await sections(wrapper)[0].vm.$emit('discard');
+    expect(sections(wrapper)[0].props('isDirty')).toBe(false);
+  });
+
   it('confirms and discards sections locally for a new campaign', async () => {
     const wrapper = await mountPage();
     await fillNewCampaign(wrapper);
@@ -305,8 +316,6 @@ describe('WhatsApp campaign form behaviour', () => {
     await find(wrapper, 'AudienceFields').vm.$emit('update:modelValue', [5]);
     await sections(wrapper)[1].vm.$emit('discard');
     expect(find(wrapper, 'AudienceFields').props('modelValue')).toEqual([2, 3]);
-    await sections(wrapper)[0].vm.$emit('discard');
-    expect(sections(wrapper)[0].props('isDirty')).toBe(false);
     await basic.vm.$emit('save');
     await templateSection.vm.$emit('save');
     await flushPromises();
