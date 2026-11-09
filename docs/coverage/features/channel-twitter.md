@@ -4,8 +4,6 @@
 
 Every file is fully covered.
 
-## Backend: 98.3% (287 of 292 lines)
+## Backend: 100.0% (292 of 292 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/controllers/concerns/twitter_concern.rb` | 66.7% | 5 |
+Every file is fully covered.

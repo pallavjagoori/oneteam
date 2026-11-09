@@ -7,10 +7,8 @@
 | `app/javascript/dashboard/components/widgets/conversation/ReplyBox.vue` | 99.6% | 2 |
 | `app/javascript/dashboard/components/widgets/WootWriter/Editor.vue` | 99.7% | 1 |
 
-## Backend: 98.5% (455 of 462 lines)
+## Backend: 99.8% (461 of 462 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/controllers/api/v1/widget/contacts_controller.rb` | 92.9% | 3 |
-| `app/controllers/api/v1/widget/messages_controller.rb` | 93.0% | 3 |
 | `app/controllers/api/v1/widget/conversations_controller.rb` | 98.1% | 1 |

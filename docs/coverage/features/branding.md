@@ -4,10 +4,6 @@
 
 Every file is fully covered.
 
-## Backend: 97.5% (397 of 407 lines)
+## Backend: 100.0% (407 of 407 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `lib/action_view/template/handlers/liquid.rb` | 87.9% | 4 |
-| `app/drops/inbox_drop.rb` | 70.0% | 3 |
-| `app/services/email_templates/db_resolver_service.rb` | 95.0% | 3 |
+Every file is fully covered.
