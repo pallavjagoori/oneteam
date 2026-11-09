@@ -12,12 +12,11 @@
 | `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/ExclusionRules.story.vue` | 87.5% | 1 |
 | `app/javascript/dashboard/components-next/AssignmentPolicy/components/story/FairDistribution.story.vue` | 87.5% | 1 |
 
-## Backend: 98.3% (653 of 664 lines)
+## Backend: 98.5% (654 of 664 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/jobs/auto_assignment/assignment_job.rb` | 85.7% | 4 |
 | `enterprise/app/services/enterprise/auto_assignment/assignment_service.rb` | 90.9% | 4 |
 | `app/controllers/api/v1/accounts/assignment_policies/inboxes_controller.rb` | 90.0% | 1 |
-| `app/controllers/api/v1/accounts/conversations/assignments_controller.rb` | 96.0% | 1 |
 | `app/services/auto_assignment/agent_assignment_service.rb` | 97.1% | 1 |

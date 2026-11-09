@@ -4,7 +4,7 @@
 
 No tracked files.
 
-## Backend: 97.4% (1244 of 1277 lines)
+## Backend: 97.6% (1246 of 1277 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -21,7 +21,5 @@ No tracked files.
 | `lib/chatwoot_exception_tracker.rb` | 87.5% | 2 |
 | `app/controllers/swagger_controller.rb` | 92.9% | 1 |
 | `app/models/concerns/reauthorizable.rb` | 98.0% | 1 |
-| `app/models/concerns/sort_handler.rb` | 95.0% | 1 |
-| `app/services/action_service.rb` | 98.4% | 1 |
 | `enterprise/app/models/concerns/safe_endpoint_validatable.rb` | 97.8% | 1 |
 | `lib/custom_exceptions/pdf.rb` | 90.0% | 1 |

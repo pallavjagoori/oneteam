@@ -7,12 +7,11 @@
 | `app/javascript/dashboard/routes/dashboard/settings/automation/AddAutomationRule.vue` | 96.2% | 1 |
 | `app/javascript/dashboard/routes/dashboard/settings/automation/EditAutomationRule.vue` | 95.0% | 1 |
 
-## Backend: 98.9% (699 of 707 lines)
+## Backend: 99.0% (700 of 707 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/services/automation_rules/conditions_filter_service.rb` | 97.4% | 3 |
 | `app/controllers/api/v1/accounts/automation_rules_controller.rb` | 96.2% | 2 |
-| `app/models/automation_rule_pending_execution.rb` | 98.5% | 1 |
 | `enterprise/app/jobs/conversation_monitors/process_automation_delivery_job.rb` | 98.4% | 1 |
 | `enterprise/app/models/conversation_monitors/automation_delivery.rb` | 95.0% | 1 |

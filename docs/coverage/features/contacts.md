@@ -11,7 +11,7 @@
 | `app/javascript/dashboard/components-next/Contacts/ContactsSidebar/components/story/ContactNoteItem.story.vue` | 87.5% | 1 |
 | `app/javascript/dashboard/components-next/Contacts/EmptyState/ContactEmptyState.vue` | 91.7% | 1 |
 
-## Backend: 96.7% (1266 of 1309 lines)
+## Backend: 97.1% (1271 of 1309 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -26,10 +26,5 @@
 | `enterprise/app/services/enterprise/contacts/contactable_inboxes_service.rb` | 75.0% | 2 |
 | `app/actions/contact_identify_action.rb` | 98.5% | 1 |
 | `app/builders/contact_inbox_with_contact_builder.rb` | 98.0% | 1 |
-| `app/controllers/api/v1/accounts/companies/contacts_controller.rb` | 97.1% | 1 |
-| `app/drops/contact_drop.rb` | 92.9% | 1 |
-| `app/models/concerns/contact_company_association.rb` | 95.5% | 1 |
-| `app/models/contact_inbox.rb` | 96.8% | 1 |
 | `app/services/contact_inbox_source_id_resolver.rb` | 95.8% | 1 |
 | `app/services/crm/leadsquared/mappers/contact_mapper.rb` | 95.8% | 1 |
-| `app/services/shopify/shop_identity.rb` | 96.2% | 1 |
