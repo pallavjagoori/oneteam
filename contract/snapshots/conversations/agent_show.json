@@ -1,0 +1,142 @@
+{
+    "status": 200,
+    "body": {
+        "account_id": "<int>",
+        "additional_attributes": [],
+        "agent_last_seen_at": "<int>",
+        "anonymous_caller": false,
+        "assignee_last_seen_at": "<int>",
+        "can_reply": true,
+        "contact_last_seen_at": "<int>",
+        "created_at": "<int>",
+        "custom_attributes": [],
+        "first_reply_created_at": "<int>",
+        "id": "<int>",
+        "inbox_id": "<int>",
+        "labels": [],
+        "last_activity_at": "<int>",
+        "last_non_activity_message": {
+            "account_id": "<int>",
+            "additional_attributes": [],
+            "content": "Where is my order?",
+            "content_attributes": [],
+            "content_type": "text",
+            "conversation": {
+                "assignee_id": null,
+                "contact_inbox": {
+                    "source_id": "<string>"
+                },
+                "last_activity_at": "<int>",
+                "unread_count": 1
+            },
+            "conversation_id": "<int>",
+            "created_at": "<int>",
+            "external_source_ids": [],
+            "id": "<int>",
+            "inbox_id": "<int>",
+            "message_type": 0,
+            "private": false,
+            "processed_message_content": "Where is my order?",
+            "sender": {
+                "additional_attributes": {
+                    "company_name": "Contract"
+                },
+                "blocked": false,
+                "company_id": "<int>",
+                "contact_type": "lead",
+                "custom_attributes": [],
+                "email": "casey+<unique>@contract.test",
+                "id": "<int>",
+                "identifier": null,
+                "name": "Casey Customer",
+                "phone_number": null,
+                "thumbnail": "",
+                "type": "contact"
+            },
+            "sender_id": "<int>",
+            "sender_type": "Contact",
+            "sentiment": [],
+            "source_id": null,
+            "status": "sent",
+            "updated_at": "<string>"
+        },
+        "messages": [
+            {
+                "account_id": "<int>",
+                "additional_attributes": [],
+                "content": "Where is my order?",
+                "content_attributes": [],
+                "content_type": "text",
+                "conversation": {
+                    "assignee_id": null,
+                    "contact_inbox": {
+                        "source_id": "<string>"
+                    },
+                    "last_activity_at": "<int>",
+                    "unread_count": 1
+                },
+                "conversation_id": "<int>",
+                "created_at": "<int>",
+                "external_source_ids": [],
+                "id": "<int>",
+                "inbox_id": "<int>",
+                "message_type": 0,
+                "private": false,
+                "processed_message_content": "Where is my order?",
+                "sender": {
+                    "additional_attributes": {
+                        "company_name": "Contract"
+                    },
+                    "blocked": false,
+                    "company_id": "<int>",
+                    "contact_type": "lead",
+                    "custom_attributes": [],
+                    "email": "casey+<unique>@contract.test",
+                    "id": "<int>",
+                    "identifier": null,
+                    "name": "Casey Customer",
+                    "phone_number": null,
+                    "thumbnail": "",
+                    "type": "contact"
+                },
+                "sender_id": "<int>",
+                "sender_type": "Contact",
+                "sentiment": [],
+                "source_id": null,
+                "status": "sent",
+                "updated_at": "<string>"
+            }
+        ],
+        "meta": {
+            "channel": "Channel::Api",
+            "hmac_verified": false,
+            "sender": {
+                "additional_attributes": {
+                    "company_name": "Contract"
+                },
+                "availability_status": "offline",
+                "blocked": false,
+                "company_id": "<int>",
+                "created_at": "<int>",
+                "custom_attributes": [],
+                "email": "casey+<unique>@contract.test",
+                "id": "<int>",
+                "identifier": null,
+                "last_activity_at": "<int>",
+                "name": "Casey Customer",
+                "phone_number": null,
+                "thumbnail": ""
+            }
+        },
+        "muted": false,
+        "priority": null,
+        "sla_policy_id": null,
+        "snoozed_until": null,
+        "status": "open",
+        "timestamp": "<int>",
+        "unread_count": 1,
+        "updated_at": "<float>",
+        "uuid": "<string>",
+        "waiting_since": "<int>"
+    }
+}

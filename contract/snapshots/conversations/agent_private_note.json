@@ -1,0 +1,25 @@
+{
+    "status": 200,
+    "body": {
+        "content": "Internal: check warehouse",
+        "content_attributes": [],
+        "content_type": "text",
+        "conversation_id": "<int>",
+        "created_at": "<int>",
+        "id": "<int>",
+        "inbox_id": "<int>",
+        "message_type": 1,
+        "private": true,
+        "sender": {
+            "availability_status": "offline",
+            "available_name": "Alan Agent",
+            "avatar_url": "",
+            "id": "<int>",
+            "name": "Alan Agent",
+            "thumbnail": "",
+            "type": "user"
+        },
+        "source_id": null,
+        "status": "sent"
+    }
+}

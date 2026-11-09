@@ -1,0 +1,11 @@
+{
+    "status": 200,
+    "body": {
+        "payload": {
+            "conversation_id": "<int>",
+            "current_status": "resolved",
+            "snoozed_until": null,
+            "success": true
+        }
+    }
+}

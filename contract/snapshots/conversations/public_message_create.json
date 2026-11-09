@@ -1,0 +1,28 @@
+{
+    "status": 200,
+    "body": {
+        "content": "Hello, I need help",
+        "content_attributes": [],
+        "content_type": "text",
+        "conversation_id": "<int>",
+        "created_at": "<int>",
+        "id": "<int>",
+        "message_type": 0,
+        "sender": {
+            "additional_attributes": {
+                "company_name": "Contract"
+            },
+            "blocked": false,
+            "company_id": "<int>",
+            "contact_type": "lead",
+            "custom_attributes": [],
+            "email": "casey+<unique>@contract.test",
+            "id": "<int>",
+            "identifier": null,
+            "name": "Casey Customer",
+            "phone_number": null,
+            "thumbnail": "",
+            "type": "contact"
+        }
+    }
+}

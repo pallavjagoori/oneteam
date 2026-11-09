@@ -1,0 +1,58 @@
+{
+    "status": 200,
+    "body": {
+        "meta": {
+            "additional_attributes": [],
+            "agent_last_seen_at": null,
+            "assignee_last_seen_at": null,
+            "contact": {
+                "additional_attributes": {
+                    "company_name": "Contract"
+                },
+                "blocked": false,
+                "company_id": "<int>",
+                "contact_type": "lead",
+                "custom_attributes": [],
+                "email": "casey+<unique>@contract.test",
+                "id": "<int>",
+                "identifier": null,
+                "name": "Casey Customer",
+                "phone_number": null,
+                "thumbnail": "",
+                "type": "contact"
+            },
+            "labels": []
+        },
+        "payload": [
+            {
+                "content": "Where is my order?",
+                "content_attributes": [],
+                "content_type": "text",
+                "conversation_id": "<int>",
+                "created_at": "<int>",
+                "id": "<int>",
+                "inbox_id": "<int>",
+                "message_type": 0,
+                "private": false,
+                "sender": {
+                    "additional_attributes": {
+                        "company_name": "Contract"
+                    },
+                    "blocked": false,
+                    "company_id": "<int>",
+                    "contact_type": "lead",
+                    "custom_attributes": [],
+                    "email": "casey+<unique>@contract.test",
+                    "id": "<int>",
+                    "identifier": null,
+                    "name": "Casey Customer",
+                    "phone_number": null,
+                    "thumbnail": "",
+                    "type": "contact"
+                },
+                "source_id": null,
+                "status": "sent"
+            }
+        ]
+    }
+}
