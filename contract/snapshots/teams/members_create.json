@@ -1,0 +1,19 @@
+{
+    "status": 200,
+    "body": [
+        {
+            "account_id": "<int>",
+            "auto_offline": true,
+            "availability_status": "offline",
+            "available_name": "Alan Agent",
+            "confirmed": true,
+            "custom_role_id": null,
+            "email": "agent@contract.test",
+            "id": "<int>",
+            "name": "Alan Agent",
+            "provider": "email",
+            "role": "agent",
+            "thumbnail": ""
+        }
+    ]
+}

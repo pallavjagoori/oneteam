@@ -36,10 +36,12 @@ it('hides volatile values behind type placeholders', function () {
         'link' => 'http://localhost:3000/app',
         'flags' => [true, null],
         'count' => 4,
+        'cache_keys' => ['label' => '1794252213', 'inbox' => '0000000000'],
     ]);
 
     expect($normalized)->toBe([
         'account_id' => '<int>',
+        'cache_keys' => ['inbox' => '<string>', 'label' => '<string>'],
         'count' => 4,
         'created_at' => '<int>',
         'email' => 'founder+<unique>@contract.test',

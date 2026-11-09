@@ -1,0 +1,9 @@
+{
+    "status": 422,
+    "body": {
+        "attributes": [
+            "title"
+        ],
+        "message": "Title is invalid"
+    }
+}

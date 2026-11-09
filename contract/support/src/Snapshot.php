@@ -30,7 +30,16 @@ final class Snapshot
         '/_since$/',
         '/^(access_token|pubsub_token|hmac_token|token|timestamp|expiry|uuid|identifier_hash|uid|client)$/',
         '/^(inbox_identifier|secret|website_token|source_id)$/',
+        '/^cache_keys$/',
     ];
+
+    /**
+     * Keys whose children are all volatile, whatever the children are called.
+     * Account "cache_keys" hold one timestamp per record type (label, inbox...).
+     *
+     * @var list<string>
+     */
+    private const VOLATILE_CONTAINERS = ['cache_keys'];
 
     /**
      * Placeholder for ISO 8601 date-time strings found under any key.
@@ -104,8 +113,10 @@ final class Snapshot
     {
         if (is_array($value)) {
             $normalized = [];
+            $inherit = in_array($key, self::VOLATILE_CONTAINERS, true);
             foreach ($value as $childKey => $child) {
-                $normalized[$childKey] = self::normalize($child, is_string($childKey) ? $childKey : $key);
+                $childContext = is_string($childKey) && !$inherit ? $childKey : $key;
+                $normalized[$childKey] = self::normalize($child, $childContext);
             }
             if (!array_is_list($normalized)) {
                 ksort($normalized);

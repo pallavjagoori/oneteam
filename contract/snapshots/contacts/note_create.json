@@ -1,0 +1,25 @@
+{
+    "status": 200,
+    "body": {
+        "account_id": null,
+        "contact_id": null,
+        "content": "Prefers email over phone.",
+        "created_at": "<int>",
+        "id": "<int>",
+        "updated_at": "<int>",
+        "user": {
+            "account_id": "<int>",
+            "auto_offline": true,
+            "availability_status": "offline",
+            "available_name": "Ada Admin",
+            "confirmed": true,
+            "custom_role_id": null,
+            "email": "admin@contract.test",
+            "id": "<int>",
+            "name": "Ada Admin",
+            "provider": "email",
+            "role": "administrator",
+            "thumbnail": ""
+        }
+    }
+}

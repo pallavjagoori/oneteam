@@ -29,7 +29,7 @@ contract/
   seeder that creates the same data. [`Fixtures.php`](support/src/Fixtures.php) holds the same values for the tests.
 - **Snapshots.** [`Snapshot`](support/src/Snapshot.php) stores each response's status and JSON body.
   - Values that change from run to run are replaced by placeholders such as `<int>`, `<string>` and `<timestamp>`.
-    That covers ids, `*_id`, `*_at`, `*_since`, tokens, inbox identifiers and secrets, contact source ids and ISO timestamps.
+    That covers ids, `*_id`, `*_at`, `*_since`, account `cache_keys`, tokens, inbox identifiers and secrets, contact source ids and ISO timestamps.
   - The app's base URL becomes `<base-url>`, and the random part of `uniqueEmail()` addresses becomes `<unique>`.
   - Everything else must match exactly, so OneTeam has to return the same keys, the same types and the same stable
     values.
@@ -73,6 +73,10 @@ way `run.sh` does, setting `CONTRACT_BASE_URL` and `CONTRACT_SINK_URL`.
 | Feature | Tests | What they check |
 | --- | ---: | --- |
 | Accounts and sign-in | 12 | API index, sign in (success, wrong password, unknown email), token validation, sign out, profile (admin, agent, anonymous, update) and password reset email |
+| Contacts | 4 | Create, show, update, search and delete; duplicate and invalid email; notes (create, list, edit, delete) and labels; agents can read but not delete |
+| Labels | 3 | Create, show, list, update and delete; duplicate and invalid title; agents can list but not create |
+| Canned responses | 3 | Create, search, update and delete; missing short code; agents can manage them too (Chatwoot has no policy here) |
+| Teams | 3 | Create, show, update and delete; members add, list and remove; agents cannot create teams |
 | Conversations and messages | 4 | Public API contact, conversation, message and resolve; unknown inbox; agent list, show, messages, reply, private note (hidden from the customer), self-assignment, labels, resolve and counts; no access outside the agent's inboxes |
 | Inboxes | 4 | API inbox create, show, list, update and delete; inbox members add, list and remove; agents cannot see other inboxes or create inboxes |
 | Accounts and agents | 11 | Account show (admin, agent, unknown), rename and agent refusal, public signup with confirmation email, signup validation, agent list, invite with email, role change, removal, invalid invite and agent refusal |
