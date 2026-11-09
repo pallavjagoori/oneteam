@@ -290,6 +290,14 @@ describe('Sidebar behaviour', () => {
     ).toBe(true);
     expect(wrapper.find('.SidebarChangelogButton').exists()).toBe(true);
     expect(env.context.isCollapsed.value).toBe(true);
+    wrapper
+      .findComponent({ name: 'SidebarAccountSwitcher' })
+      .vm.$emit('showCreateAccountModal');
+    expect(wrapper.emitted('showCreateAccountModal')).toHaveLength(1);
+    env.context.setExpandedItem('Inbox');
+    expect(env.context.expandedItem.value).toBe('Inbox');
+    env.context.setExpandedItem('Inbox');
+    expect(env.context.expandedItem.value).toBeNull();
     env.width.value = 500;
     await nextTick();
     expect(env.context.isCollapsed.value).toBe(false);

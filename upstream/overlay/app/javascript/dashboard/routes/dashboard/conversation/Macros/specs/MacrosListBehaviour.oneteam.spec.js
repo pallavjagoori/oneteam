@@ -64,7 +64,7 @@ const mountList = () =>
         Draggable: {
           name: 'Draggable',
           props: ['modelValue'],
-          emits: ['start', 'end'],
+          emits: ['start', 'end', 'update:modelValue'],
           template:
             '<div><template v-for="el in modelValue" :key="el.id"><slot name="item" :element="el" /></template></div>',
         },
@@ -120,5 +120,8 @@ describe('Conversation macro list behaviour', () => {
     draggable.vm.$emit('start');
     draggable.vm.$emit('end');
     expect(wrapper.vm.$.setupState.dragging).toBe(false);
+    const reordered = [...env.macros].reverse();
+    draggable.vm.$emit('update:modelValue', reordered);
+    expect(wrapper.vm.$.setupState.orderedMacros).toEqual(reordered);
   });
 });
