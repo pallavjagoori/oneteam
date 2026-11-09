@@ -73,6 +73,8 @@ need porting: the Laravel/Vue version can leave them out.
 | `app/controllers/api/v1/accounts/assignment_policies/inboxes_controller.rb` | 18 (`permitted_params`) | A private method that nothing calls; the action reads `params[:assignment_policy_id]` directly. |
 | `app/jobs/migration/remove_message_notifications.rb` | 6 (`perform`) | A one-off cleanup job that nothing enqueues any more; its migration has been removed. |
 | `app/models/article.rb` | 146 (`draft!`) | A method that nothing calls; status changes go through `update` with a status. |
+| `app/models/concerns/push_data_helper.rb` | 9 (`lock_event_data`) | Nothing calls it, and `Conversations::EventDataPresenter` has no `lock_data` method, so it would raise if called. |
+| `app/models/concerns/inbox_agent_availability.rb` | 15 (`member_ids_with_assignment_capacity`) | `Inbox` defines its own method of the same name (and the enterprise module replaces that one), so the concern's version is always shadowed. |
 | `app/services/tiktok/message_service.rb` | 22 (`contact`), 111 (`sticker_message?`) | Private helpers that nothing calls: stickers are stored as unsupported messages through `supported_message?`, and the contact is read through `contact_inbox`. |
 | `app/models/message.rb` | 425–428 (`mark_pending_conversation_as_open_for_human_response`) | In the community edition `captain_pending_conversation?` always returns false, so the method returns on its first line. The enterprise edition replaces both methods. |
 | `app/javascript/dashboard/components-next/**/story/fixtures.js`, `components-next/filter/fixtures/filterTypes.js` | All | Sample data for the Histoire component stories. Only `*.story.vue` files import it, and those are not part of any app. The port needs no copy of it. |
