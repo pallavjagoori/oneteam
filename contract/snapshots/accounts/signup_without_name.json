@@ -1,0 +1,9 @@
+{
+    "status": 422,
+    "body": {
+        "attributes": [
+            "name"
+        ],
+        "message": "Name can't be blank"
+    }
+}

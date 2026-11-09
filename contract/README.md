@@ -24,13 +24,13 @@ contract/
   [`upstream/run-tests.sh`](../upstream/run-tests.sh) builds. The Chatwoot source is mounted from `upstream/chatwoot`.
   It boots like a production install: it loads the schema and the installation config, then adds the fixtures.
   It does not load Chatwoot's development demo data.
-- **Fixtures.** Every run starts from the same data: the account "Contract Co" with `admin@contract.test`
+- **Fixtures.** Every run starts from the same data, with public signup switched on: the account "Contract Co" with `admin@contract.test`
   (administrator) and `agent@contract.test` (agent). Both use the password `Contract-Pass-1!`. OneTeam will ship a
   seeder that creates the same data. [`Fixtures.php`](support/src/Fixtures.php) holds the same values for the tests.
 - **Snapshots.** [`Snapshot`](support/src/Snapshot.php) stores each response's status and JSON body.
   - Values that change from run to run are replaced by placeholders such as `<int>`, `<string>` and `<timestamp>`.
     That covers ids, `*_id`, `*_at`, tokens and ISO timestamps.
-  - The app's base URL becomes `<base-url>`.
+  - The app's base URL becomes `<base-url>`, and the random part of `uniqueEmail()` addresses becomes `<unique>`.
   - Everything else must match exactly, so OneTeam has to return the same keys, the same types and the same stable
     values.
   - A missing snapshot is recorded on the first run. `CONTRACT_RECORD=1` re-records all of them, which is the step to
@@ -73,3 +73,4 @@ way `run.sh` does, setting `CONTRACT_BASE_URL` and `CONTRACT_SINK_URL`.
 | Feature | Tests | What they check |
 | --- | ---: | --- |
 | Accounts and sign-in | 12 | API index, sign in (success, wrong password, unknown email), token validation, sign out, profile (admin, agent, anonymous, update) and password reset email |
+| Accounts and agents | 11 | Account show (admin, agent, unknown), rename and agent refusal, public signup with confirmation email, signup validation, agent list, invite with email, role change, removal, invalid invite and agent refusal |

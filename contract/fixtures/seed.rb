@@ -11,6 +11,11 @@ PASSWORD = 'Contract-Pass-1!'.freeze
 GlobalConfig.clear_cache
 ConfigLoader.new.process
 
+# Contract settings that differ from a default install: public signup is on so
+# the signup flow can be tested.
+InstallationConfig.find_by!(name: 'ENABLE_ACCOUNT_SIGNUP').update!(value: true)
+GlobalConfig.clear_cache
+
 account = Account.find_or_create_by!(name: 'Contract Co')
 
 [

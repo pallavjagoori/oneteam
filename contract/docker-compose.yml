@@ -27,7 +27,6 @@ x-chatwoot: &chatwoot
     SMTP_PORT: '1025'
     SMTP_ENABLE_STARTTLS_AUTO: 'false'
     MAILER_SENDER_EMAIL: OneTeam Contract <contract@example.com>
-    ENABLE_ACCOUNT_SIGNUP: 'true'
     TZ: UTC
   volumes:
     - ../upstream/chatwoot/app:/chatwoot/app

@@ -1,0 +1,17 @@
+{
+    "status": 200,
+    "body": {
+        "account_id": "<int>",
+        "auto_offline": true,
+        "availability_status": "offline",
+        "available_name": "Ivy Invitee",
+        "confirmed": false,
+        "custom_role_id": null,
+        "email": "invitee+<unique>@contract.test",
+        "id": "<int>",
+        "name": "Ivy Invitee",
+        "provider": "email",
+        "role": "administrator",
+        "thumbnail": ""
+    }
+}
