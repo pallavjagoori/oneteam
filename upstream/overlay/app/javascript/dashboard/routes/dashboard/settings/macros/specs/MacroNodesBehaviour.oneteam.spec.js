@@ -10,7 +10,7 @@ import MacroNodes from '../MacroNodes.vue';
 const MacroNodeStub = {
   name: 'MacroNode',
   props: ['fileName', 'singleNode', 'errorKey', 'index'],
-  emits: ['resetAction', 'deleteNode'],
+  emits: ['resetAction', 'deleteNode', 'update:modelValue'],
   template: '<div class="node" />',
 };
 
@@ -77,5 +77,15 @@ describe('Macro nodes behaviour', () => {
     ).toBe(true);
     wrapper.vm.actionData = actions;
     expect(wrapper.emitted('update:modelValue')).toEqual([[actions]]);
+  });
+
+  it('writes a node edit back into its action slot', () => {
+    const model = [{ ...actions[1] }];
+    const wrapper = mountNodes(model);
+    const edited = { action_name: 'mute_conversation', action_params: [] };
+    wrapper
+      .findComponent({ name: 'MacroNode' })
+      .vm.$emit('update:modelValue', edited);
+    expect(model[0]).toEqual(edited);
   });
 });
