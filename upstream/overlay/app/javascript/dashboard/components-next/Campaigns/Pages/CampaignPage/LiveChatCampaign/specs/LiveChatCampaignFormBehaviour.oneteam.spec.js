@@ -122,6 +122,9 @@ describe('LiveChatCampaignForm behaviour', () => {
       'CAMPAIGN.LIVE_CHAT.CREATE.FORM.API.ERROR_MESSAGE'
     );
     expect(combos(wrapper)[1].props('options')).toHaveLength(1);
+
+    await wrapper.vm.$.setupState.handleInboxChange(null);
+    expect(wrapper.vm.$.setupState.senderList).toEqual([]);
   });
 
   it('shows validation errors and blocks submit', async () => {

@@ -139,6 +139,8 @@ describe('Widget pre-chat form behaviour', () => {
     const wrapper = mountForm({ enabled: false });
     expect(inputs(wrapper).map(c => c.props('name'))).toEqual(['message']);
     expect(wrapper.find('.mb-4').exists()).toBe(false);
+    expect(wrapper.vm.headerMessage).toBe('');
+    expect(wrapper.vm.getOptions({ type: 'text' })).toEqual({});
   });
 
   it('renders only the message box without options while disabled', () => {
