@@ -6,7 +6,7 @@
 | --- | ---: | ---: |
 | `app/javascript/dashboard/components-next/message/stories/InstagramMessages.story.vue` | 94.4% | 1 |
 
-## Backend: 96.7% (699 of 723 lines)
+## Backend: 97.0% (701 of 723 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -16,7 +16,5 @@
 | `app/builders/messages/instagram/base_message_builder.rb` | 96.9% | 3 |
 | `app/controllers/webhooks/instagram_controller.rb` | 91.4% | 3 |
 | `app/services/messages/markdown_renderers/instagram_renderer.rb` | 93.3% | 2 |
-| `app/controllers/api/v1/accounts/instagram/authorizations_controller.rb` | 87.5% | 1 |
-| `app/helpers/instagram/integration_helper.rb` | 95.8% | 1 |
 | `app/jobs/webhooks/instagram_events_job.rb` | 98.6% | 1 |
 | `app/services/instagram/read_status_service.rb` | 90.0% | 1 |

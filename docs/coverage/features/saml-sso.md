@@ -4,11 +4,10 @@
 
 Every file is fully covered.
 
-## Backend: 97.4% (597 of 613 lines)
+## Backend: 98.2% (602 of 613 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/services/crm/leadsquared/processor_service.rb` | 93.9% | 5 |
 | `lib/integrations/bot_processor_service.rb` | 90.9% | 3 |
 | `enterprise/app/controllers/api/v1/accounts/saml_settings_controller.rb` | 94.3% | 2 |
 | `enterprise/config/initializers/omniauth_saml.rb` | 92.0% | 2 |

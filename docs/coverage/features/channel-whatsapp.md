@@ -6,12 +6,10 @@
 | --- | ---: | ---: |
 | `app/javascript/dashboard/routes/dashboard/settings/inbox/channels/whatsapp/Reauthorize.vue` | 99.2% | 1 |
 
-## Backend: 98.8% (2906 of 2942 lines)
+## Backend: 99.3% (2921 of 2942 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/services/whatsapp/populate_template_parameters_service.rb` | 92.8% | 5 |
-| `app/services/whatsapp/providers/whatsapp_cloud_service.rb` | 95.0% | 5 |
 | `app/services/whatsapp/contact_info_response_service.rb` | 94.2% | 4 |
 | `app/models/channel/whatsapp.rb` | 96.3% | 3 |
 | `app/services/whatsapp/user_id_rotation_service.rb` | 97.0% | 3 |
@@ -20,9 +18,4 @@
 | `app/services/whatsapp/phone_normalizers/base_phone_normalizer.rb` | 83.3% | 2 |
 | `app/services/whatsapp/webhook_setup_service.rb` | 97.1% | 2 |
 | `enterprise/app/services/enterprise/whatsapp/oneoff_campaign_service.rb` | 97.2% | 2 |
-| `app/services/whatsapp/embedded_signup_service.rb` | 97.9% | 1 |
-| `app/services/whatsapp/incoming_message_base_service.rb` | 99.0% | 1 |
-| `app/services/whatsapp/incoming_message_service_helpers.rb` | 98.1% | 1 |
-| `app/services/whatsapp/media_upload_service.rb` | 97.5% | 1 |
-| `app/services/whatsapp/reauthorization_service.rb` | 95.7% | 1 |
 | `enterprise/app/controllers/api/v1/accounts/whatsapp_calls_controller.rb` | 99.0% | 1 |

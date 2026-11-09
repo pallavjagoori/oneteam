@@ -4,7 +4,7 @@
 
 Every file is fully covered.
 
-## Backend: 97.7% (1666 of 1706 lines)
+## Backend: 97.8% (1669 of 1706 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -24,6 +24,3 @@ Every file is fully covered.
 | `lib/custom_exceptions/account.rb` | 93.5% | 2 |
 | `app/controllers/api/v1/accounts/oauth_authorization_controller.rb` | 92.9% | 1 |
 | `app/controllers/concerns/ensure_current_account_helper.rb` | 95.5% | 1 |
-| `app/controllers/devise_overrides/sessions_controller.rb` | 99.1% | 1 |
-| `app/models/concerns/user_attribute_helpers.rb` | 96.2% | 1 |
-| `app/services/base_refresh_oauth_token_service.rb` | 96.3% | 1 |

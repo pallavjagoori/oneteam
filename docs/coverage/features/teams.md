@@ -4,8 +4,6 @@
 
 Every file is fully covered.
 
-## Backend: 99.2% (131 of 132 lines)
+## Backend: 100.0% (132 of 132 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/models/team.rb` | 97.1% | 1 |
+Every file is fully covered.

@@ -4,7 +4,7 @@
 
 Every file is fully covered.
 
-## Backend: 98.3% (2790 of 2837 lines)
+## Backend: 98.7% (2801 of 2837 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -20,19 +20,8 @@ Every file is fully covered.
 | `enterprise/app/services/enterprise/billing/shopify_subscription_sync_service.rb` | 97.6% | 2 |
 | `lib/integrations/linear/access_token_service.rb` | 96.2% | 2 |
 | `lib/integrations/slack/update_slack_message_service.rb` | 97.5% | 2 |
-| `app/controllers/api/v1/accounts/integrations/linear_controller.rb` | 98.6% | 1 |
-| `app/controllers/api/v1/accounts/integrations/slack_controller.rb` | 95.8% | 1 |
-| `app/controllers/api/v1/accounts/notion/authorizations_controller.rb` | 85.7% | 1 |
 | `app/controllers/concerns/notion_concern.rb` | 88.9% | 1 |
-| `app/controllers/linear/callbacks_controller.rb` | 97.7% | 1 |
-| `app/controllers/notion/callbacks_controller.rb` | 92.3% | 1 |
 | `app/controllers/slack_uploads_controller.rb` | 94.1% | 1 |
-| `app/jobs/hook_job.rb` | 97.7% | 1 |
-| `app/services/crm/leadsquared/api/activity_client.rb` | 93.8% | 1 |
-| `app/services/crm/leadsquared/api/lead_client.rb` | 96.9% | 1 |
-| `app/services/integrations/stripe/oauth.rb` | 97.6% | 1 |
-| `app/services/shopify/partner_client.rb` | 97.2% | 1 |
-| `app/services/shopify/partner_configuration.rb` | 97.1% | 1 |
 | `enterprise/app/services/enterprise/billing/shopify_app_pricing_url.rb` | 96.2% | 1 |
 | `enterprise/app/services/enterprise/billing/shopify_plan_configuration.rb` | 97.6% | 1 |
 | `lib/integrations/slack/hook_builder.rb` | 94.4% | 1 |

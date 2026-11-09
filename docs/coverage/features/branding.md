@@ -4,7 +4,7 @@
 
 Every file is fully covered.
 
-## Backend: 96.6% (393 of 407 lines)
+## Backend: 97.1% (395 of 407 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -12,5 +12,3 @@ Every file is fully covered.
 | `app/drops/inbox_drop.rb` | 70.0% | 3 |
 | `app/services/email_templates/db_resolver_service.rb` | 95.0% | 3 |
 | `app/drops/base_drop.rb` | 71.4% | 2 |
-| `app/drops/conversation_drop.rb` | 94.7% | 1 |
-| `app/models/email_template.rb` | 98.3% | 1 |

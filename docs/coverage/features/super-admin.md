@@ -4,7 +4,7 @@
 
 Every file is fully covered.
 
-## Backend: 97.0% (833 of 859 lines)
+## Backend: 97.2% (835 of 859 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -16,6 +16,4 @@ Every file is fully covered.
 | `app/dashboards/access_token_dashboard.rb` | 77.8% | 2 |
 | `app/helpers/super_admin/user_diagnostics_helper.rb` | 95.7% | 2 |
 | `app/controllers/super_admin/user_diagnostics_controller.rb` | 98.1% | 1 |
-| `app/dashboards/account_user_dashboard.rb` | 88.9% | 1 |
-| `app/helpers/super_admin/features_helper.rb` | 88.9% | 1 |
 | `enterprise/app/fields/account_features_field.rb` | 75.0% | 1 |
