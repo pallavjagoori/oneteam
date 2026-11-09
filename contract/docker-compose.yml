@@ -1,0 +1,81 @@
+# Runs the pinned Chatwoot release as a real server so the contract tests can
+# drive it from the outside: the web app, a Sidekiq worker, Postgres, Redis and
+# a small sink that catches outgoing email and webhooks.
+#
+# Use contract/run.sh rather than calling this file directly. The same tests
+# later run against OneTeam, which will ship its own compose file exposing the
+# same ports.
+x-chatwoot: &chatwoot
+  image: oneteam-chatwoot-tests:${CHATWOOT_VERSION:-latest}
+  depends_on:
+    postgres:
+      condition: service_healthy
+    redis:
+      condition: service_started
+  environment:
+    RAILS_ENV: development
+    RAILS_LOG_TO_STDOUT: 'true'
+    LOG_LEVEL: warn
+    SECRET_KEY_BASE: contract-tests-only-secret-key-base-not-for-production-use-0123456789
+    FRONTEND_URL: http://localhost:3000
+    POSTGRES_HOST: postgres
+    POSTGRES_USERNAME: postgres
+    POSTGRES_PASSWORD: postgres
+    POSTGRES_DATABASE: chatwoot_contract
+    REDIS_URL: redis://redis:6379
+    SMTP_ADDRESS: sink
+    SMTP_PORT: '1025'
+    SMTP_ENABLE_STARTTLS_AUTO: 'false'
+    MAILER_SENDER_EMAIL: OneTeam Contract <contract@example.com>
+    ENABLE_ACCOUNT_SIGNUP: 'true'
+    TZ: UTC
+  volumes:
+    - ../upstream/chatwoot/app:/chatwoot/app
+    - ../upstream/chatwoot/enterprise:/chatwoot/enterprise
+    - ../upstream/chatwoot/lib:/chatwoot/lib
+    - ../upstream/chatwoot/config:/chatwoot/config
+    - ./fixtures:/contract-fixtures:ro
+
+services:
+  web:
+    <<: *chatwoot
+    # Loads the schema only (no Chatwoot demo seeds), adds the contract fixtures, then serves.
+    command: >-
+      sh -c 'bundle exec rails db:create db:schema:load >/dev/null &&
+      bundle exec rails runner /contract-fixtures/seed.rb &&
+      exec bundle exec rails server -b 0.0.0.0 -p 3000'
+    ports:
+      - '127.0.0.1:3000:3000'
+    healthcheck:
+      test: ['CMD', 'curl', '-fs', 'http://localhost:3000/api']
+      interval: 5s
+      retries: 60
+
+  worker:
+    <<: *chatwoot
+    command: bundle exec sidekiq -C config/sidekiq.yml
+    depends_on:
+      web:
+        condition: service_healthy
+
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    healthcheck:
+      test: ['CMD', 'pg_isready', '-U', 'postgres']
+      interval: 2s
+      retries: 30
+
+  redis:
+    image: redis:7-alpine
+
+  # Catches outgoing email (SMTP 1025) and webhooks (HTTP 8025); see support/sink.rb.
+  sink:
+    image: ruby:3.4.4-bookworm
+    command: ruby /sink/sink.rb
+    volumes:
+      - ./support/sink.rb:/sink/sink.rb:ro
+    ports:
+      - '127.0.0.1:8025:8025'

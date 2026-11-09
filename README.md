@@ -32,7 +32,8 @@ to 100% coverage before any Laravel code is written.
   The lines that are left cannot be reached by any test and are listed with the reason in
   [`UNREACHABLE.md`](upstream/overlay/UNREACHABLE.md). The new tests live in
   [`upstream/overlay`](upstream/overlay/README.md).
-- **Now:** contract tests (HTTP API, real-time events, webhooks, emails).
+- **Now:** contract tests (HTTP API, real-time events, webhooks, emails) in [`contract/`](contract/README.md). The
+  harness and the sign-in suite are done; the other features follow.
 - **Next:** the Laravel project and the feature-by-feature port.
 - **Not ready yet:** there is no OneTeam app to install. The Docker setup today runs Chatwoot's tests only. Install
   docs and a Docker install for OneTeam will come with the Laravel project in step 2.
