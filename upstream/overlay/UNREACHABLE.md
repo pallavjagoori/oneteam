@@ -168,3 +168,5 @@ need porting: the Laravel/Vue version can leave them out.
 | `app/controllers/api/v1/accounts/integrations/hooks_controller.rb` | 21, 25 (`nil` and message answers in `process_event`) | `Integrations::Hook#process_event` always returns `{ error: 'No processor found' }` since the OpenAI processor moved to Captain. |
 | `app/controllers/api/v2/accounts_controller.rb` | 55, 56 (`fetch_account`) | The v2 accounts route only exposes `create`, which skips this before_action. |
 | `enterprise/app/controllers/api/v1/accounts/captain/bulk_actions_controller.rb` | 88 (`permitted_params`) | A private method that nothing calls; the actions read `params[:ids]` and `params[:fields]` directly. |
+| `app/builders/account_builder.rb` | 60 (`raise UserErrors`) | `create_user` calls `save!`, which returns true or raises, so the `else` branch never runs. |
+| `app/builders/v2/report_builder.rb` | 51–55 (`short_summary`) | Nothing calls it; the reports controller uses `summary`, `bot_summary` and `conversation_metrics`. |
