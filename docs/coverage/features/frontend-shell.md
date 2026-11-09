@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 97.3% (7804 of 8018 lines)
+## Frontend: 97.7% (7831 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -9,13 +9,9 @@
 | `app/javascript/dashboard/components-next/table/BaseTable.story.vue` | 63.4% | 15 |
 | `app/javascript/dashboard/components-next/changelog-card/GroupedStackedChangelogCard.story.vue` | 50.0% | 12 |
 | `app/javascript/dashboard/components-next/dropdown-menu/DropdownPrimitives.story.vue` | 36.8% | 12 |
-| `app/javascript/dashboard/components-next/year-in-review/slides/PersonalitySlide.vue` | 70.0% | 12 |
 | `app/javascript/dashboard/components-next/dialog/Dialog.story.vue` | 66.7% | 8 |
 | `app/javascript/dashboard/components-next/changelog-card/StackedChangelogCard.story.vue` | 57.1% | 6 |
-| `app/javascript/dashboard/components-next/year-in-review/slides/BusiestDaySlide.vue` | 75.0% | 6 |
 | `app/javascript/dashboard/components-next/flag/story/Flag.story.vue` | 66.7% | 4 |
-| `app/javascript/v3/views/routes.js` | 42.9% | 4 |
-| `app/javascript/dashboard/components/ui/DateTimePicker.vue` | 40.0% | 3 |
 | `app/javascript/dashboard/components-next/combobox/ReorderableMultiSelect.vue` | 96.9% | 2 |
 | `app/javascript/dashboard/components-next/dropdown-menu/DropdownMenu.story.vue` | 88.2% | 2 |
 | `app/javascript/dashboard/components-next/dropdown-menu/DropdownMenu.vue` | 96.4% | 2 |
@@ -24,7 +20,6 @@
 | `app/javascript/dashboard/components-next/sidebar/SidebarGroupSeparator.vue` | 81.8% | 2 |
 | `app/javascript/dashboard/components-next/sidebar/SidebarSortMenu.vue` | 97.0% | 2 |
 | `app/javascript/dashboard/components-next/switch/Switch.story.vue` | 90.5% | 2 |
-| `app/javascript/dashboard/helper/quotedEmailHelper.js` | 98.9% | 2 |
 | `app/javascript/dashboard/routes/dashboard/commands/commandbar.vue` | 97.9% | 2 |
 | `app/javascript/dashboard/components-next/button/ConfirmButton.story.vue` | 88.9% | 1 |
 | `app/javascript/dashboard/components-next/checkbox/Checkbox.story.vue` | 93.3% | 1 |
