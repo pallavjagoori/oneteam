@@ -4,10 +4,9 @@
 
 Every file is fully covered.
 
-## Backend: 99.3% (1285 of 1294 lines)
+## Backend: 99.4% (1286 of 1294 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `lib/microsoft_graph_auth.rb` | 66.7% | 6 |
 | `app/builders/email/from_builder.rb` | 92.3% | 2 |
-| `app/controllers/platform/api/v1/email_channel_migrations_controller.rb` | 97.8% | 1 |

@@ -30,9 +30,10 @@ The upstream release we are converting is recorded in [`CHATWOOT_VERSION`](../CH
    backend lines; current figures per feature are in [coverage](coverage/README.md).*
 4. **Reach 100% coverage.** Fill the gaps, Vue first (those tests carry over to OneTeam unchanged), then Ruby (those
    tests are discarded later, but writing them surfaces behaviour we would otherwise miss). The new tests live in
-   [`upstream/overlay`](../upstream/overlay/README.md), which lists progress folder by folder. *In progress
-   (9 November 2026): frontend 99.45% of lines (12,846 Vitest tests), backend 99.13% of lines (12,677 RSpec
-   examples). The frontend is done apart from unreachable lines; the backend long tail is under way.*
+   [`upstream/overlay`](../upstream/overlay/README.md), which lists progress folder by folder. *Done
+   (9 November 2026): frontend 99.45% of lines (12,846 Vitest tests), backend 99.28% of lines (12,737 RSpec
+   examples). Every line a test can reach is covered on both sides; the rest is listed with reasons in
+   [UNREACHABLE.md](../upstream/overlay/UNREACHABLE.md).*
 5. **Contract tests.** Write language-neutral tests that drive Chatwoot from the outside (HTTP API, real-time events,
    outgoing webhooks, emails and the database) and record every response. The same tests later run against
    OneTeam to prove it behaves the same.

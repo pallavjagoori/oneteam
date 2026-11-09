@@ -13,7 +13,7 @@
 | `app/javascript/dashboard/components/widgets/WootWriter/CopilotMenuBar.vue` | 98.2% | 1 |
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/guardrails/Index.vue` | 98.9% | 1 |
 
-## Backend: 98.3% (8952 of 9108 lines)
+## Backend: 98.3% (8957 of 9108 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -24,12 +24,7 @@
 | `enterprise/app/services/captain/tools/base_service.rb` | 58.3% | 10 |
 | `enterprise/app/builders/captain/assistant_drilldown_builder.rb` | 98.1% | 1 |
 | `enterprise/app/controllers/api/v1/accounts/captain/bulk_actions_controller.rb` | 97.9% | 1 |
-| `enterprise/app/controllers/api/v1/accounts/captain/tools_manifests_controller.rb` | 97.8% | 1 |
-| `enterprise/app/models/captain/faq_observation.rb` | 93.8% | 1 |
-| `enterprise/app/services/captain/assistant/response_rewriter.rb` | 97.9% | 1 |
-| `enterprise/app/services/captain/playground/configuration.rb` | 99.2% | 1 |
 | `enterprise/lib/captain/tools/add_contact_note_tool.rb` | 93.3% | 1 |
 | `enterprise/lib/captain/tools/add_private_note_tool.rb` | 93.3% | 1 |
 | `enterprise/lib/captain/tools/resolve_conversation_tool.rb` | 94.4% | 1 |
 | `enterprise/lib/captain/tools/update_priority_tool.rb` | 96.6% | 1 |
-| `enterprise/lib/enterprise/captain/automation_condition_service.rb` | 75.0% | 1 |

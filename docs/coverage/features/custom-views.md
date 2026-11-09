@@ -9,9 +9,8 @@
 | `app/javascript/dashboard/components-next/filter/inputs/MultiSelect.story.vue` | 91.7% | 1 |
 | `app/javascript/dashboard/components-next/filter/inputs/SingleSelect.story.vue` | 88.9% | 1 |
 
-## Backend: 99.6% (948 of 952 lines)
+## Backend: 99.9% (951 of 952 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/services/conversations/unread_counts/filter_query_counter.rb` | 96.3% | 3 |
 | `app/helpers/filters/filter_helper.rb` | 98.3% | 1 |
