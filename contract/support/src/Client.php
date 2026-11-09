@@ -129,15 +129,16 @@ final class Client
     }
 
     /**
-     * Sends a DELETE request.
+     * Sends a DELETE request, with a JSON body when one is given.
      *
-     * @param string $path Path relative to the base URL.
+     * @param string               $path Path relative to the base URL.
+     * @param array<string, mixed> $body Optional JSON body (some Chatwoot endpoints read one).
      *
      * @return ResponseInterface
      */
-    public function delete(string $path): ResponseInterface
+    public function delete(string $path, array $body = []): ResponseInterface
     {
-        return $this->request('DELETE', $path);
+        return $this->request('DELETE', $path, $body === [] ? [] : [RequestOptions::JSON => (object) $body]);
     }
 
     /**

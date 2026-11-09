@@ -1,0 +1,108 @@
+{
+    "status": 200,
+    "body": {
+        "additional_attributes": [],
+        "allow_messages_after_resolved": true,
+        "allowed_domains": null,
+        "auto_assignment_config": [],
+        "avatar_url": "",
+        "business_name": null,
+        "callback_webhook_url": null,
+        "channel_id": "<int>",
+        "channel_type": "Channel::Api",
+        "csat_config": [],
+        "csat_survey_enabled": false,
+        "enable_auto_assignment": true,
+        "enable_email_collect": true,
+        "greeting_enabled": false,
+        "greeting_message": null,
+        "hmac_mandatory": false,
+        "hmac_token": "<string>",
+        "id": "<int>",
+        "inbox_identifier": "<string>",
+        "lock_to_single_conversation": false,
+        "messaging_service_sid": null,
+        "name": "Contract API Inbox",
+        "out_of_office_message": null,
+        "phone_number": null,
+        "provider": null,
+        "reply_time": null,
+        "secret": "<string>",
+        "selected_feature_flags": null,
+        "sender_name_type": "friendly",
+        "timezone": "UTC",
+        "web_widget_script": null,
+        "webhook_url": "",
+        "website_token": null,
+        "website_url": null,
+        "welcome_tagline": null,
+        "welcome_title": null,
+        "widget_color": null,
+        "working_hours": [
+            {
+                "close_hour": null,
+                "close_minutes": null,
+                "closed_all_day": true,
+                "day_of_week": 0,
+                "open_all_day": false,
+                "open_hour": null,
+                "open_minutes": null
+            },
+            {
+                "close_hour": 17,
+                "close_minutes": 0,
+                "closed_all_day": false,
+                "day_of_week": 1,
+                "open_all_day": false,
+                "open_hour": 9,
+                "open_minutes": 0
+            },
+            {
+                "close_hour": 17,
+                "close_minutes": 0,
+                "closed_all_day": false,
+                "day_of_week": 2,
+                "open_all_day": false,
+                "open_hour": 9,
+                "open_minutes": 0
+            },
+            {
+                "close_hour": 17,
+                "close_minutes": 0,
+                "closed_all_day": false,
+                "day_of_week": 3,
+                "open_all_day": false,
+                "open_hour": 9,
+                "open_minutes": 0
+            },
+            {
+                "close_hour": 17,
+                "close_minutes": 0,
+                "closed_all_day": false,
+                "day_of_week": 4,
+                "open_all_day": false,
+                "open_hour": 9,
+                "open_minutes": 0
+            },
+            {
+                "close_hour": 17,
+                "close_minutes": 0,
+                "closed_all_day": false,
+                "day_of_week": 5,
+                "open_all_day": false,
+                "open_hour": 9,
+                "open_minutes": 0
+            },
+            {
+                "close_hour": null,
+                "close_minutes": null,
+                "closed_all_day": true,
+                "day_of_week": 6,
+                "open_all_day": false,
+                "open_hour": null,
+                "open_minutes": null
+            }
+        ],
+        "working_hours_enabled": false
+    }
+}

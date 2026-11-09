@@ -28,6 +28,7 @@ final class Snapshot
         '/_id$/',
         '/_at$/',
         '/^(access_token|pubsub_token|hmac_token|token|timestamp|expiry|uuid|identifier_hash|uid|client)$/',
+        '/^(inbox_identifier|secret|website_token|source_id)$/',
     ];
 
     /**
