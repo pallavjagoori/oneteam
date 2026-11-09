@@ -4,7 +4,7 @@
 
 Every file is fully covered.
 
-## Backend: 97.3% (836 of 859 lines)
+## Backend: 97.8% (840 of 859 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -13,6 +13,4 @@ Every file is fully covered.
 | `app/fields/suspension_history_field.rb` | 63.6% | 4 |
 | `app/controllers/super_admin/devise/sessions_controller.rb` | 85.0% | 3 |
 | `app/dashboards/account_dashboard.rb` | 92.3% | 3 |
-| `app/dashboards/access_token_dashboard.rb` | 77.8% | 2 |
-| `app/helpers/super_admin/user_diagnostics_helper.rb` | 95.7% | 2 |
 | `app/controllers/super_admin/user_diagnostics_controller.rb` | 98.1% | 1 |

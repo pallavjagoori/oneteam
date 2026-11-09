@@ -10,15 +10,11 @@
 | `app/javascript/dashboard/components-next/NewConversation/components/ComposeNewConversationForm.vue` | 99.2% | 1 |
 | `app/javascript/dashboard/helper/snoozeDateParser/parser.js` | 99.7% | 1 |
 
-## Backend: 99.0% (1509 of 1524 lines)
+## Backend: 99.5% (1516 of 1524 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/jobs/conversations/user_mention_job.rb` | 37.5% | 5 |
-| `app/finders/conversation_finder.rb` | 97.9% | 2 |
-| `app/services/conversations/unread_counts/builder.rb` | 94.6% | 2 |
-| `app/services/conversations/unread_counts/counter.rb` | 98.2% | 2 |
 | `app/services/conversations/unread_counts/refresher.rb` | 98.9% | 1 |
 | `enterprise/app/controllers/enterprise/api/v1/accounts/conversations_controller.rb` | 93.3% | 1 |
-| `enterprise/app/finders/enterprise/conversation_finder.rb` | 75.0% | 1 |
 | `enterprise/app/models/enterprise/concerns/conversation.rb` | 97.1% | 1 |
