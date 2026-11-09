@@ -420,4 +420,33 @@ describe('ComposeNewConversationForm behaviour', () => {
     const wrapper = mountForm();
     expect(child(wrapper, 'ActionButtons').exists()).toBe(true);
   });
+
+  it('clears the form after a successful send and builds its own state', () => {
+    const wrapper = mountForm();
+    Object.assign(env.state, {
+      message: 'Hi',
+      subject: 'S',
+      ccEmails: 'a@b.c',
+      attachedFiles: [{ id: 1 }],
+    });
+    wrapper.vm.$.setupState.clearForm();
+    expect(env.copilot.reset).toHaveBeenCalledWith(false);
+    expect(env.state).toEqual({
+      message: '',
+      subject: '',
+      ccEmails: '',
+      bccEmails: '',
+      attachedFiles: [],
+    });
+
+    const own = mount(ComposeForm, {
+      props: {
+        contactConversationsUiFlags: { isCreating: true },
+        contactsUiFlags: { isFetchingInboxes: false },
+        currentUser: { id: 1 },
+      },
+      global: { stubs: Object.fromEntries(names.map(n => [n, loose(n)])) },
+    });
+    expect(own.vm.$.setupState.state.message).toBe('');
+  });
 });
