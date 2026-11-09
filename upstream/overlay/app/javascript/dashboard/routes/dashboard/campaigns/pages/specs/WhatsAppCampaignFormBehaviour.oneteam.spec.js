@@ -21,43 +21,97 @@ const stubs = vi.hoisted(() => {
       name,
       props,
       emits,
-      template: slot ? `<div class="${name}"><slot /></div>` : `<div class="${name}" />`,
+      template: slot
+        ? `<div class="${name}"><slot /></div>`
+        : `<div class="${name}" />`,
     },
   });
   return {
     Breadcrumb: make('Breadcrumb', ['items'], ['click']),
-    SectionCard: make('SectionCard', ['title', 'isDirty', 'isSaving', 'isSaveDisabled'], ['discard', 'save'], true),
-    BasicSettingsFields: make('BasicSettingsFields', ['title', 'inboxId', 'inboxes', 'isInboxDisabled'], ['update:title', 'update:inboxId']),
-    AudienceFields: make('AudienceFields', ['modelValue', 'labels', 'messagingTier'], ['update:modelValue']),
-    TemplateFields: make('TemplateFields', ['templateId', 'processedParams', 'templates', 'hasInbox'], ['update:templateId', 'update:processedParams']),
+    SectionCard: make(
+      'SectionCard',
+      ['title', 'isDirty', 'isSaving', 'isSaveDisabled'],
+      ['discard', 'save'],
+      true
+    ),
+    BasicSettingsFields: make(
+      'BasicSettingsFields',
+      ['title', 'inboxId', 'inboxes', 'isInboxDisabled'],
+      ['update:title', 'update:inboxId']
+    ),
+    AudienceFields: make(
+      'AudienceFields',
+      ['modelValue', 'labels', 'messagingTier'],
+      ['update:modelValue']
+    ),
+    TemplateFields: make(
+      'TemplateFields',
+      ['templateId', 'processedParams', 'templates', 'hasInbox'],
+      ['update:templateId', 'update:processedParams']
+    ),
     AccountInformationCard: make('AccountInformationCard', ['healthData']),
-    MessagePreviewCard: make('MessagePreviewCard', ['template', 'processedParams']),
-    SchedulePopover: make('SchedulePopover', ['modelValue', 'buttonLabel', 'isDisabled', 'showActions', 'isLoading'], ['update:modelValue', 'confirm']),
+    MessagePreviewCard: make('MessagePreviewCard', [
+      'template',
+      'processedParams',
+    ]),
+    SchedulePopover: make(
+      'SchedulePopover',
+      ['modelValue', 'buttonLabel', 'isDisabled', 'showActions', 'isLoading'],
+      ['update:modelValue', 'confirm']
+    ),
     Button: {
       default: {
         name: 'Button',
         props: { label: String, disabled: Boolean, isLoading: Boolean },
         emits: ['click'],
-        template: '<button :disabled="disabled" @click="$emit(\'click\')">{{ label }}</button>',
+        template:
+          '<button :disabled="disabled" @click="$emit(\'click\')">{{ label }}</button>',
       },
     },
   };
 });
 
-vi.mock('dashboard/components-next/breadcrumb/Breadcrumb.vue', () => stubs.Breadcrumb);
+vi.mock(
+  'dashboard/components-next/breadcrumb/Breadcrumb.vue',
+  () => stubs.Breadcrumb
+);
 vi.mock('dashboard/components-next/button/Button.vue', () => stubs.Button);
-vi.mock('dashboard/components-next/Campaigns/WhatsAppCampaign/SectionCard.vue', () => stubs.SectionCard);
-vi.mock('dashboard/components-next/Campaigns/WhatsAppCampaign/BasicSettingsFields.vue', () => stubs.BasicSettingsFields);
-vi.mock('dashboard/components-next/Campaigns/WhatsAppCampaign/AudienceFields.vue', () => stubs.AudienceFields);
-vi.mock('dashboard/components-next/Campaigns/WhatsAppCampaign/TemplateFields.vue', () => stubs.TemplateFields);
-vi.mock('dashboard/components-next/Campaigns/WhatsAppCampaign/AccountInformationCard.vue', () => stubs.AccountInformationCard);
-vi.mock('dashboard/components-next/Campaigns/WhatsAppCampaign/MessagePreviewCard.vue', () => stubs.MessagePreviewCard);
-vi.mock('dashboard/components-next/Campaigns/WhatsAppCampaign/SchedulePopover.vue', () => stubs.SchedulePopover);
+vi.mock(
+  'dashboard/components-next/Campaigns/WhatsAppCampaign/SectionCard.vue',
+  () => stubs.SectionCard
+);
+vi.mock(
+  'dashboard/components-next/Campaigns/WhatsAppCampaign/BasicSettingsFields.vue',
+  () => stubs.BasicSettingsFields
+);
+vi.mock(
+  'dashboard/components-next/Campaigns/WhatsAppCampaign/AudienceFields.vue',
+  () => stubs.AudienceFields
+);
+vi.mock(
+  'dashboard/components-next/Campaigns/WhatsAppCampaign/TemplateFields.vue',
+  () => stubs.TemplateFields
+);
+vi.mock(
+  'dashboard/components-next/Campaigns/WhatsAppCampaign/AccountInformationCard.vue',
+  () => stubs.AccountInformationCard
+);
+vi.mock(
+  'dashboard/components-next/Campaigns/WhatsAppCampaign/MessagePreviewCard.vue',
+  () => stubs.MessagePreviewCard
+);
+vi.mock(
+  'dashboard/components-next/Campaigns/WhatsAppCampaign/SchedulePopover.vue',
+  () => stubs.SchedulePopover
+);
 vi.mock('dashboard/composables/store', () => ({
   useStore: () => ({ dispatch: (...args) => env.dispatch(...args) }),
   useMapGetter: key => env.getters[key],
 }));
-vi.mock('dashboard/composables', () => ({ useAlert: vi.fn(), useTrack: vi.fn() }));
+vi.mock('dashboard/composables', () => ({
+  useAlert: vi.fn(),
+  useTrack: vi.fn(),
+}));
 vi.mock('dashboard/api/inboxHealth', () => ({
   default: { getHealthStatus: (...args) => env.health(...args) },
 }));
@@ -91,7 +145,10 @@ const existing = (overrides = {}) => ({
   inbox: { id: 1 },
   campaign_status: 'active',
   scheduled_at: 2000000000,
-  audience: [{ type: 'Label', id: 2 }, { type: 'Contact', id: 9 }],
+  audience: [
+    { type: 'Label', id: 2 },
+    { type: 'Contact', id: 9 },
+  ],
   template_params: {
     name: 'greeting',
     language: 'en',
@@ -103,7 +160,9 @@ const existing = (overrides = {}) => ({
 const Host = {
   props: ['visible'],
   render() {
-    return h(KeepAlive, null, [this.visible ? h(WhatsAppCampaignFormPage) : h('div')]);
+    return h(KeepAlive, null, [
+      this.visible ? h(WhatsAppCampaignFormPage) : h('div'),
+    ]);
   },
 };
 
@@ -136,7 +195,9 @@ describe('WhatsApp campaign form behaviour', () => {
     env.dispatch = vi.fn();
     env.push = vi.fn();
     env.replace = vi.fn();
-    env.health = vi.fn().mockResolvedValue({ data: { messaging_limit_tier: 'TIER_1K' } });
+    env.health = vi
+      .fn()
+      .mockResolvedValue({ data: { messaging_limit_tier: 'TIER_1K' } });
     env.route = reactive({ name: 'campaigns_whatsapp_new', params: {} });
     env.campaigns = ref([existing()]);
     env.templates = [template, bareTemplate];
@@ -145,7 +206,11 @@ describe('WhatsApp campaign form behaviour', () => {
       'labels/getLabels': ref([{ id: 2 }]),
       'inboxes/getWhatsAppInboxes': ref([{ id: 1 }]),
       'inboxes/getFilteredWhatsAppTemplates': ref(() => env.templates),
-      'campaigns/getUIFlags': ref({ hasFetched: true, isFetching: false, isUpdating: false }),
+      'campaigns/getUIFlags': ref({
+        hasFetched: true,
+        isFetching: false,
+        isUpdating: false,
+      }),
     };
   });
 
@@ -163,7 +228,9 @@ describe('WhatsApp campaign form behaviour', () => {
     expect(find(wrapper, 'AudienceFields').props('messagingTier')).toBe(
       'INBOX_MGMT.ACCOUNT_HEALTH.VALUES.TIERS.TIER_1K'
     );
-    expect(find(wrapper, 'MessagePreviewCard').props('template')).toEqual(template);
+    expect(find(wrapper, 'MessagePreviewCard').props('template')).toEqual(
+      template
+    );
     const popover = find(wrapper, 'SchedulePopover');
     expect(popover.props('isDisabled')).toBe(false);
     await popover.vm.$emit('update:modelValue', '2035-01-01T10:00');
@@ -187,7 +254,9 @@ describe('WhatsApp campaign form behaviour', () => {
       },
     });
     expect(useTrack).toHaveBeenCalled();
-    expect(useAlert).toHaveBeenCalledWith('CAMPAIGN.WHATSAPP.FORM.API.CREATE_SUCCESS');
+    expect(useAlert).toHaveBeenCalledWith(
+      'CAMPAIGN.WHATSAPP.FORM.API.CREATE_SUCCESS'
+    );
     expect(env.push).toHaveBeenCalledWith({ name: 'campaigns_whatsapp_index' });
     expect(find(wrapper, 'BasicSettingsFields').props('title')).toBe('');
   });
@@ -196,16 +265,32 @@ describe('WhatsApp campaign form behaviour', () => {
     env.dispatch.mockRejectedValueOnce(new Error('x'));
     const wrapper = await mountPage();
     await fillNewCampaign(wrapper);
-    await find(wrapper, 'TemplateFields').vm.$emit('update:templateId', 'bare:undefined');
-    await find(wrapper, 'TemplateFields').vm.$emit('update:processedParams', {});
-    await find(wrapper, 'SchedulePopover').vm.$emit('update:modelValue', '2035-01-01T10:00');
+    await find(wrapper, 'TemplateFields').vm.$emit(
+      'update:templateId',
+      'bare:undefined'
+    );
+    await find(wrapper, 'TemplateFields').vm.$emit(
+      'update:processedParams',
+      {}
+    );
+    await find(wrapper, 'SchedulePopover').vm.$emit(
+      'update:modelValue',
+      '2035-01-01T10:00'
+    );
     await find(wrapper, 'SchedulePopover').vm.$emit('confirm');
     await flushPromises();
     expect(env.dispatch.mock.calls[0][1]).toMatchObject({
       message: '',
-      template_params: { name: 'bare', namespace: '', category: 'UTILITY', language: 'en' },
+      template_params: {
+        name: 'bare',
+        namespace: '',
+        category: 'UTILITY',
+        language: 'en',
+      },
     });
-    expect(useAlert).toHaveBeenCalledWith('CAMPAIGN.WHATSAPP.FORM.API.CREATE_ERROR');
+    expect(useAlert).toHaveBeenCalledWith(
+      'CAMPAIGN.WHATSAPP.FORM.API.CREATE_ERROR'
+    );
     expect(env.push).not.toHaveBeenCalled();
   });
 
@@ -220,11 +305,17 @@ describe('WhatsApp campaign form behaviour', () => {
     await find(wrapper, 'AudienceFields').vm.$emit('update:modelValue', [5]);
     await sections(wrapper)[1].vm.$emit('discard');
     expect(find(wrapper, 'AudienceFields').props('modelValue')).toEqual([2, 3]);
+    await sections(wrapper)[0].vm.$emit('discard');
+    expect(sections(wrapper)[0].props('isDirty')).toBe(false);
     await basic.vm.$emit('save');
     await templateSection.vm.$emit('save');
     await flushPromises();
     expect(env.dispatch).not.toHaveBeenCalled();
-    expect(sections(wrapper).map(s => s.props('isDirty'))).toEqual([false, false, false]);
+    expect(sections(wrapper).map(s => s.props('isDirty'))).toEqual([
+      false,
+      false,
+      false,
+    ]);
   });
 
   it('clears the health card when the health check fails or the inbox is cleared', async () => {
@@ -232,25 +323,39 @@ describe('WhatsApp campaign form behaviour', () => {
     env.health.mockRejectedValueOnce(new Error('down'));
     await find(wrapper, 'BasicSettingsFields').vm.$emit('update:inboxId', 1);
     await flushPromises();
-    expect(find(wrapper, 'AccountInformationCard').props('healthData')).toBe(null);
+    expect(find(wrapper, 'AccountInformationCard').props('healthData')).toBe(
+      null
+    );
     await find(wrapper, 'BasicSettingsFields').vm.$emit('update:inboxId', 2);
     await flushPromises();
-    env.health.mockResolvedValueOnce({ data: { messaging_limit_tier: 'UNKNOWN' } });
+    env.health.mockResolvedValueOnce({
+      data: { messaging_limit_tier: 'UNKNOWN' },
+    });
     await find(wrapper, 'BasicSettingsFields').vm.$emit('update:inboxId', 3);
     await flushPromises();
     expect(find(wrapper, 'AudienceFields').props('messagingTier')).toBe('');
   });
 
   it('edits each section of an existing campaign', async () => {
-    env.route = reactive({ name: 'campaigns_whatsapp_edit', params: { campaignId: '1' } });
+    env.route = reactive({
+      name: 'campaigns_whatsapp_edit',
+      params: { campaignId: '1' },
+    });
     const wrapper = await mountPage();
-    expect(find(wrapper, 'Breadcrumb').props('items')[1].label).toBe('Spring sale');
+    expect(find(wrapper, 'Breadcrumb').props('items')[1].label).toBe(
+      'Spring sale'
+    );
     expect(find(wrapper, 'AudienceFields').props('modelValue')).toEqual([2]);
-    expect(find(wrapper, 'BasicSettingsFields').props('isInboxDisabled')).toBe(true);
+    expect(find(wrapper, 'BasicSettingsFields').props('isInboxDisabled')).toBe(
+      true
+    );
     expect(find(wrapper, 'SchedulePopover').props('buttonLabel')).toContain(
       'CAMPAIGN.WHATSAPP.FORM.SCHEDULED_FOR'
     );
-    await find(wrapper, 'BasicSettingsFields').vm.$emit('update:title', 'Renamed');
+    await find(wrapper, 'BasicSettingsFields').vm.$emit(
+      'update:title',
+      'Renamed'
+    );
     await sections(wrapper)[0].vm.$emit('save');
     await flushPromises();
     expect(env.dispatch).toHaveBeenLastCalledWith('campaigns/update', {
@@ -258,7 +363,9 @@ describe('WhatsApp campaign form behaviour', () => {
       title: 'Renamed',
       inbox_id: 1,
     });
-    expect(useAlert).toHaveBeenLastCalledWith('CAMPAIGN.WHATSAPP.FORM.API.UPDATE_SUCCESS');
+    expect(useAlert).toHaveBeenLastCalledWith(
+      'CAMPAIGN.WHATSAPP.FORM.API.UPDATE_SUCCESS'
+    );
     await find(wrapper, 'AudienceFields').vm.$emit('update:modelValue', [2, 4]);
     await sections(wrapper)[1].vm.$emit('save');
     await flushPromises();
@@ -269,21 +376,31 @@ describe('WhatsApp campaign form behaviour', () => {
         { id: 4, type: 'Label' },
       ],
     });
-    await find(wrapper, 'TemplateFields').vm.$emit('update:processedParams', { body: { 1: 'Al' } });
+    await find(wrapper, 'TemplateFields').vm.$emit('update:processedParams', {
+      body: { 1: 'Al' },
+    });
     env.dispatch.mockRejectedValueOnce(new Error('x'));
     await sections(wrapper)[2].vm.$emit('save');
     await flushPromises();
-    expect(useAlert).toHaveBeenLastCalledWith('CAMPAIGN.WHATSAPP.FORM.API.UPDATE_ERROR');
+    expect(useAlert).toHaveBeenLastCalledWith(
+      'CAMPAIGN.WHATSAPP.FORM.API.UPDATE_ERROR'
+    );
     expect(sections(wrapper)[2].props('isDirty')).toBe(true);
     await sections(wrapper)[2].vm.$emit('discard');
     expect(sections(wrapper)[2].props('isDirty')).toBe(false);
   });
 
   it('reschedules or cancels a schedule change', async () => {
-    env.route = reactive({ name: 'campaigns_whatsapp_edit', params: { campaignId: '1' } });
+    env.route = reactive({
+      name: 'campaigns_whatsapp_edit',
+      params: { campaignId: '1' },
+    });
     const wrapper = await mountPage();
     expect(buttons(wrapper)[1].props('disabled')).toBe(true);
-    await find(wrapper, 'SchedulePopover').vm.$emit('update:modelValue', '2036-03-04T05:06');
+    await find(wrapper, 'SchedulePopover').vm.$emit(
+      'update:modelValue',
+      '2036-03-04T05:06'
+    );
     expect(buttons(wrapper)[2].props('disabled')).toBe(false);
     await buttons(wrapper)[2].trigger('click');
     await flushPromises();
@@ -292,28 +409,43 @@ describe('WhatsApp campaign form behaviour', () => {
       scheduled_at: new Date('2036-03-04T05:06').toISOString(),
     });
     expect(buttons(wrapper)[1].props('disabled')).toBe(true);
-    await find(wrapper, 'SchedulePopover').vm.$emit('update:modelValue', '2037-01-01T00:00');
+    await find(wrapper, 'SchedulePopover').vm.$emit(
+      'update:modelValue',
+      '2037-01-01T00:00'
+    );
     env.dispatch.mockRejectedValueOnce(new Error('x'));
     await buttons(wrapper)[2].trigger('click');
     await flushPromises();
     expect(buttons(wrapper)[1].props('disabled')).toBe(false);
     await buttons(wrapper)[1].trigger('click');
-    expect(find(wrapper, 'SchedulePopover').props('modelValue')).toBe('2036-03-04T05:06');
-    await find(wrapper, 'SchedulePopover').vm.$emit('update:modelValue', '2001-01-01T00:00');
+    expect(find(wrapper, 'SchedulePopover').props('modelValue')).toBe(
+      '2036-03-04T05:06'
+    );
+    await find(wrapper, 'SchedulePopover').vm.$emit(
+      'update:modelValue',
+      '2001-01-01T00:00'
+    );
     expect(buttons(wrapper)[2].props('disabled')).toBe(true);
   });
 
   it('navigates from the breadcrumb', async () => {
     const wrapper = await mountPage();
-    await find(wrapper, 'Breadcrumb').vm.$emit('click', { routeName: 'campaigns_whatsapp_index' });
+    await find(wrapper, 'Breadcrumb').vm.$emit('click', {
+      routeName: 'campaigns_whatsapp_index',
+    });
     expect(env.push).toHaveBeenCalledWith({ name: 'campaigns_whatsapp_index' });
   });
 
   it('leaves running campaigns and resets when the campaign disappears', async () => {
     env.campaigns.value = [existing({ campaign_status: 'processing' })];
-    env.route = reactive({ name: 'campaigns_whatsapp_edit', params: { campaignId: '1' } });
+    env.route = reactive({
+      name: 'campaigns_whatsapp_edit',
+      params: { campaignId: '1' },
+    });
     await mountPage();
-    expect(env.replace).toHaveBeenCalledWith({ name: 'campaigns_whatsapp_index' });
+    expect(env.replace).toHaveBeenCalledWith({
+      name: 'campaigns_whatsapp_index',
+    });
     env.replace.mockClear();
     env.campaigns.value = [existing({ template_params: null, audience: null })];
     const wrapper = await mountPage();
@@ -322,12 +454,17 @@ describe('WhatsApp campaign form behaviour', () => {
     env.campaigns.value = [];
     await flushPromises();
     expect(find(wrapper, 'BasicSettingsFields').props('title')).toBe('');
-    expect(env.replace).toHaveBeenCalledWith({ name: 'campaigns_whatsapp_index' });
+    expect(env.replace).toHaveBeenCalledWith({
+      name: 'campaigns_whatsapp_index',
+    });
   });
 
   it('resets a new form when the cached page is shown again', async () => {
     const wrapper = await mountPage();
-    await find(wrapper, 'BasicSettingsFields').vm.$emit('update:title', 'Draft');
+    await find(wrapper, 'BasicSettingsFields').vm.$emit(
+      'update:title',
+      'Draft'
+    );
     await wrapper.setProps({ visible: false });
     await wrapper.setProps({ visible: true });
     await flushPromises();

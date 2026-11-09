@@ -69,7 +69,9 @@ describe('Heatmap date range selector behaviour', () => {
 
   it('applies the last 7 days on mount and lists both sections', async () => {
     const wrapper = mountPicker();
-    expect(wrapper.find('button').text()).toBe('REPORT.DATE_RANGE_OPTIONS.LAST_7_DAYS');
+    expect(wrapper.find('button').text()).toBe(
+      'REPORT.DATE_RANGE_OPTIONS.LAST_7_DAYS'
+    );
     expect(last(wrapper, 'update:daysNum')).toEqual([6]);
     expect(last(wrapper, 'rangeTypeChange')).toEqual(['day']);
     expect(last(wrapper, 'monthOffsetChange')).toEqual([0]);
@@ -78,8 +80,16 @@ describe('Heatmap date range selector behaviour', () => {
     await wrapper.find('button').trigger('click');
     const menu = wrapper.findComponent(DropdownMenu);
     const [days, months] = menu.props('menuSections');
-    expect(days.items.map(i => i.value)).toEqual(['last_7_days', 'last_14_days', 'last_30_days']);
-    expect(months.items.map(i => i.value)).toEqual(['this_month', 'month_-1', 'month_-2']);
+    expect(days.items.map(i => i.value)).toEqual([
+      'last_7_days',
+      'last_14_days',
+      'last_30_days',
+    ]);
+    expect(months.items.map(i => i.value)).toEqual([
+      'this_month',
+      'month_-1',
+      'month_-2',
+    ]);
     expect(months.items[1].label).toBe('April 2026');
     expect(days.items[0].isSelected).toBe(true);
   });
@@ -99,7 +109,9 @@ describe('Heatmap date range selector behaviour', () => {
 
     await pick(wrapper, 'month_-1');
     expect(last(wrapper, 'monthOffsetChange')).toEqual([-1]);
-    expect(day(last(wrapper, 'update:to')[0])).toBe(day(new Date(2026, 3, 30, 12)));
+    expect(day(last(wrapper, 'update:to')[0])).toBe(
+      day(new Date(2026, 3, 30, 12))
+    );
     expect(last(wrapper, 'update:daysNum')).toEqual([29]);
 
     await pick(wrapper, 'last_14_days');
@@ -112,6 +124,7 @@ describe('Heatmap date range selector behaviour', () => {
     const count = wrapper.emitted('update:daysNum').length;
     await pick(wrapper, 'something', 'other');
     expect(wrapper.emitted('update:daysNum')).toHaveLength(count);
+    expect(wrapper.vm.$.setupState.computeRange(null)).toBeNull();
     await wrapper.find('button').trigger('click');
     env.outside();
     await wrapper.vm.$nextTick();
