@@ -1,10 +1,9 @@
 # Messages and attachments: coverage gaps
 
-## Frontend: 98.8% (1957 of 1980 lines)
+## Frontend: 99.2% (1964 of 1980 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `app/javascript/dashboard/components-next/message/forward/ForwardEmailPanel.vue` | 91.6% | 7 |
 | `app/javascript/dashboard/components-next/Conversation/ConversationCard/MessagePreview.vue` | 85.2% | 4 |
 | `app/javascript/dashboard/components-next/message/provider.js` | 63.6% | 4 |
 | `app/javascript/dashboard/components-next/NewConversation/components/MessageEditor.vue` | 72.7% | 3 |
