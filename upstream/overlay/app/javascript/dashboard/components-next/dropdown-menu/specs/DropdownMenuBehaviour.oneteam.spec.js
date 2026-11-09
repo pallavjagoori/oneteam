@@ -214,4 +214,14 @@ describe('DropdownMenu behaviour', () => {
       expect(wrapper.find('.foot').text()).toBe('More');
     });
   });
+
+  it('flattens section items and has no sections for flat menus', () => {
+    const item = { label: 'One', value: 1 };
+    const sectioned = mountMenu({
+      menuSections: [{ title: 'A', items: [item] }],
+    });
+    expect(sectioned.vm.$.setupState.filteredMenuItems).toEqual([item]);
+    const flat = mountMenu({ menuItems: [{ label: 'One', value: 1 }] });
+    expect(flat.vm.$.setupState.filteredMenuSections).toEqual([]);
+  });
 });
