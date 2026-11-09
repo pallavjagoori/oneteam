@@ -22,7 +22,7 @@ to 100% coverage before any Laravel code is written.
 
 | | Line coverage | Tests | Baseline |
 | --- | ---: | ---: | ---: |
-| Chatwoot frontend (Vitest) | 98.99% (53,624 of 54,172 lines) | 12,662 passing | 37.3% |
+| Chatwoot frontend (Vitest) | 99.09% (53,681 of 54,172 lines) | 12,694 passing | 37.3% |
 | Chatwoot backend (RSpec) | 97.69% (46,494 of 47,593 lines) | | 86.9% |
 
 - **Done:** feature inventory, a Docker setup that runs Chatwoot's test suites, and coverage per feature
