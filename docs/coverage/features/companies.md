@@ -1,10 +1,8 @@
 # Companies: coverage gaps
 
-## Frontend: 99.8% (989 of 991 lines)
+## Frontend: 100.0% (991 of 991 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/onboarding/account-details/useAccountEnrichment.js` | 96.4% | 2 |
+Every file is fully covered.
 
 ## Backend: 97.7% (338 of 346 lines)
 

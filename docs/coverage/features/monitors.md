@@ -1,10 +1,8 @@
 # Conversation monitors: coverage gaps
 
-## Frontend: 99.7% (582 of 584 lines)
+## Frontend: 100.0% (584 of 584 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/monitors/MonitorForm.vue` | 98.3% | 2 |
+Every file is fully covered.
 
 ## Backend: 98.4% (988 of 1004 lines)
 

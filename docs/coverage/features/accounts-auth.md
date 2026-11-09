@@ -1,10 +1,8 @@
 # Accounts, users and sign-in: coverage gaps
 
-## Frontend: 99.9% (1537 of 1538 lines)
+## Frontend: 100.0% (1538 of 1538 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/javascript/v3/views/auth/signup/Index.vue` | 96.2% | 1 |
+Every file is fully covered.
 
 ## Backend: 97.7% (1666 of 1706 lines)
 

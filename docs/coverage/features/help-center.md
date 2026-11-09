@@ -1,10 +1,8 @@
 # Help center: coverage gaps
 
-## Frontend: 100.0% (3461 of 3462 lines)
+## Frontend: 100.0% (3462 of 3462 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/onboarding/inbox-setup/HelpCenterCreationStatus.vue` | 97.5% | 1 |
+Every file is fully covered.
 
 ## Backend: 98.7% (1321 of 1338 lines)
 
