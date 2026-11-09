@@ -4,8 +4,6 @@
 
 Every file is fully covered.
 
-## Backend: 98.8% (165 of 167 lines)
+## Backend: 100.0% (167 of 167 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/controllers/api/v1/accounts/macros_controller.rb` | 95.3% | 2 |
+Every file is fully covered.

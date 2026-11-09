@@ -13,7 +13,7 @@
 | `app/javascript/dashboard/components/widgets/WootWriter/CopilotMenuBar.vue` | 98.2% | 1 |
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/guardrails/Index.vue` | 98.9% | 1 |
 
-## Backend: 97.6% (8900 of 9118 lines)
+## Backend: 97.8% (8919 of 9118 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -32,17 +32,8 @@
 | `enterprise/app/services/captain/playground/run_details.rb` | 93.2% | 3 |
 | `enterprise/lib/captain/tools/base_public_tool.rb` | 92.1% | 3 |
 | `lib/captain/csat_utility_analysis_service.rb` | 90.3% | 3 |
-| `enterprise/app/controllers/api/v1/accounts/captain/bulk_actions_controller.rb` | 95.7% | 2 |
-| `enterprise/app/controllers/api/v1/accounts/captain/faq_suggestions_controller.rb` | 95.3% | 2 |
-| `enterprise/app/helpers/captain/chat_response_helper.rb` | 91.3% | 2 |
-| `enterprise/app/jobs/captain/conversation/response_builder_job.rb` | 97.9% | 2 |
-| `enterprise/app/jobs/captain/playground/response_job.rb` | 92.3% | 2 |
-| `enterprise/app/models/concerns/captain_tools_helpers.rb` | 91.7% | 2 |
-| `enterprise/app/services/captain/assistant_migration/draft_applier.rb` | 98.0% | 2 |
-| `enterprise/app/services/captain/llm/system_prompts_service.rb` | 87.5% | 2 |
-| `enterprise/lib/captain/tools/add_label_to_conversation_tool.rb` | 90.0% | 2 |
-| `lib/captain/follow_up_service.rb` | 94.7% | 2 |
 | `enterprise/app/builders/captain/assistant_drilldown_builder.rb` | 98.1% | 1 |
+| `enterprise/app/controllers/api/v1/accounts/captain/bulk_actions_controller.rb` | 97.9% | 1 |
 | `enterprise/app/controllers/api/v1/accounts/captain/tools_manifests_controller.rb` | 97.8% | 1 |
 | `enterprise/app/models/captain/faq_observation.rb` | 93.8% | 1 |
 | `enterprise/app/services/captain/assistant/response_rewriter.rb` | 97.9% | 1 |
