@@ -1,0 +1,9 @@
+{
+    "status": 422,
+    "body": {
+        "attributes": [
+            "short_code"
+        ],
+        "message": "Short code can't be blank"
+    }
+}

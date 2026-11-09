@@ -1,0 +1,26 @@
+{
+    "status": 200,
+    "body": {
+        "payload": {
+            "additional_attributes": {
+                "city": "Pune",
+                "company_name": "Contract",
+                "description": "Met at a trade show"
+            },
+            "availability_status": "offline",
+            "blocked": false,
+            "company_id": "<int>",
+            "contact_inboxes": [],
+            "created_at": "<int>",
+            "custom_attributes": {
+                "tier": "gold"
+            },
+            "email": "dana+<unique>@contract.test",
+            "id": "<int>",
+            "identifier": null,
+            "name": "Dana Renamed",
+            "phone_number": "+15550001111",
+            "thumbnail": ""
+        }
+    }
+}

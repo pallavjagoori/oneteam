@@ -1,0 +1,9 @@
+{
+    "status": 422,
+    "body": {
+        "attributes": [
+            "email"
+        ],
+        "message": "Email Invalid email"
+    }
+}

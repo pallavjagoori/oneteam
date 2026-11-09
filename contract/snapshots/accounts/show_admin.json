@@ -3,10 +3,10 @@
     "body": {
         "billing_provider": "stripe",
         "cache_keys": {
-            "canned_response": "0000000000",
-            "inbox": "0000000000",
-            "label": "0000000000",
-            "team": "0000000000"
+            "canned_response": "<string>",
+            "inbox": "<string>",
+            "label": "<string>",
+            "team": "<string>"
         },
         "created_at": "<string>",
         "domain": null,
