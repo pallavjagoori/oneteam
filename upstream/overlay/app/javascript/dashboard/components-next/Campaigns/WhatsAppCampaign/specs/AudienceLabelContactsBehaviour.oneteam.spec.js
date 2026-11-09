@@ -41,7 +41,7 @@ const Input = {
   props: ['modelValue'],
   emits: ['update:modelValue', 'input'],
   template:
-    '<input :value="modelValue" @input="$emit(\'update:modelValue\', $event.target.value); $emit(\'input\', $event)" />',
+    '<div><slot name="prefix" /><input :value="modelValue" @input="$emit(\'update:modelValue\', $event.target.value); $emit(\'input\', $event)" /></div>',
 };
 const Button = {
   name: 'Button',

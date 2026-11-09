@@ -138,6 +138,8 @@ describe('SLA settings behaviour', () => {
       isSuperAdmin: true,
       isOnChatwootCloud: true,
     });
+    wrapper.vm.openAddPopup();
+    expect(wrapper.vm.showAddPopup).toBe(false);
     await wrapper.findComponent(Paywall).vm.$emit('upgrade');
     expect(router.push).toHaveBeenCalledWith({
       name: 'billing_settings_index',

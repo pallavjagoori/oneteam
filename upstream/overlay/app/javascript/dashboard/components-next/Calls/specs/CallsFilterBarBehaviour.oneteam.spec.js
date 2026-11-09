@@ -125,6 +125,11 @@ describe('CallsFilterBar behaviour', () => {
     await wrapper.vm.$nextTick();
     expect(menu(wrapper).exists()).toBe(false);
     await byIcon(wrapper, 'i-lucide-list-filter').trigger('click');
+    expect(menu(wrapper).exists()).toBe(true);
+    outsides[2].vm.$emit('trigger');
+    await wrapper.vm.$nextTick();
+    expect(menu(wrapper).exists()).toBe(false);
+    await byIcon(wrapper, 'i-lucide-list-filter').trigger('click');
     await byIcon(wrapper, 'i-lucide-list-filter').trigger('click');
     expect(menu(wrapper).exists()).toBe(false);
   });

@@ -53,7 +53,7 @@ const mountDropdown = props =>
         WootModal: Modal,
         AddLabel,
         AddLabelModal: AddLabel,
-        Hotkey: true,
+        Hotkey: { template: '<kbd><slot /></kbd>' },
         WootDropdownMenu: { template: '<ul><slot /></ul>' },
       },
       mocks: { $t: key => key },

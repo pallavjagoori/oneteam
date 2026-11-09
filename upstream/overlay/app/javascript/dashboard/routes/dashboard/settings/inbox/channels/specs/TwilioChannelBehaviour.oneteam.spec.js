@@ -61,8 +61,11 @@ describe('Twilio channel form behaviour', () => {
     await field(wrapper, 'PHONE_NUMBER').setValue('+1 (555) 000-1111');
     await field(wrapper, 'ACCOUNT_SID').setValue('AC1');
     await field(wrapper, 'AUTH_TOKEN').setValue('secret');
+    await field(wrapper, 'AUTH_TOKEN').trigger('blur');
     await field(wrapper, 'PHONE_NUMBER').trigger('blur');
-    expect(wrapper.text()).toContain('INBOX_MGMT.ADD.TWILIO.PHONE_NUMBER.ERROR');
+    expect(wrapper.text()).toContain(
+      'INBOX_MGMT.ADD.TWILIO.PHONE_NUMBER.ERROR'
+    );
     await field(wrapper, 'PHONE_NUMBER').setValue('+15550001111');
     await submit(wrapper);
     expect(env.dispatch).toHaveBeenCalledWith('inboxes/createTwilioChannel', {
@@ -118,7 +121,9 @@ describe('Twilio channel form behaviour', () => {
     expect(useAlert).toHaveBeenLastCalledWith('Invalid credentials');
     env.dispatch.mockRejectedValueOnce({});
     await submit(wrapper);
-    expect(useAlert).toHaveBeenLastCalledWith('INBOX_MGMT.ADD.TWILIO.API.ERROR_MESSAGE');
+    expect(useAlert).toHaveBeenLastCalledWith(
+      'INBOX_MGMT.ADD.TWILIO.API.ERROR_MESSAGE'
+    );
     expect(env.replace).not.toHaveBeenCalled();
   });
 });
