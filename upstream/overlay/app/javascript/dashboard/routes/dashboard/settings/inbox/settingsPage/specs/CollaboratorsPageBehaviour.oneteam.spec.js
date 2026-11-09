@@ -573,6 +573,18 @@ describe('Collaborators advanced assignment policies', () => {
     expect(useAlert).toHaveBeenCalledWith('INBOX_MGMT.ASSIGNMENT.LINK_ERROR');
   });
 
+  it('reloads the policy list when opening it while the list is empty', async () => {
+    env.api.getInboxPolicy = new Error('404');
+    env.api.get = { data: [] };
+    const wrapper = await mountReady();
+    await flushPromises();
+    const before = policiesAPI.get.mock.calls.length;
+    wrapper.vm.$.setupState.togglePolicyDropdown();
+    await flushPromises();
+    expect(policiesAPI.get.mock.calls.length).toBe(before + 1);
+    expect(wrapper.vm.$.setupState.showPolicyDropdown).toBe(true);
+  });
+
   it('opens all policies, ignores unknown actions and closes on outside click', async () => {
     env.api.getInboxPolicy = new Error('404');
     env.api.get = { data: [policy] };
