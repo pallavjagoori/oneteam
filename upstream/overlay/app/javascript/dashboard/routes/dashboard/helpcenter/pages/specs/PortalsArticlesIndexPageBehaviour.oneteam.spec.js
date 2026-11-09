@@ -76,6 +76,7 @@ describe('PortalsArticlesIndexPage behaviour', () => {
     portal.value = null;
     const wrapper = mountPage();
     expect(wrapper.findComponent(ArticlesPage).exists()).toBe(false);
+    expect(wrapper.vm.$.setupState.allowedLocales).toEqual([]);
   });
 
   it('fetches articles for the route and lists locales', async () => {

@@ -474,6 +474,13 @@ describe('ContactsIndex behaviour', () => {
     const bar = wrapper =>
       wrapper.findComponent({ name: 'ContactsBulkActionBar' });
 
+    it('does nothing when deleting with no contacts selected', async () => {
+      const { wrapper } = mountPage();
+      await flushPromises();
+      await wrapper.vm.$.setupState.deleteContacts();
+      expect(BulkActionsAPI.create).not.toHaveBeenCalled();
+    });
+
     it('toggles single contacts and all visible contacts', async () => {
       const { wrapper } = mountPage();
       await flushPromises();
