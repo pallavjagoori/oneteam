@@ -89,3 +89,19 @@ function accountId(Client $client): int
 {
     return (int) json($client->get('/api/v1/profile'))['account_id'];
 }
+
+/**
+ * Creates an API inbox and returns its response.
+ *
+ * @param Client $client A signed in administrator.
+ * @param string $name   Inbox name.
+ *
+ * @return ResponseInterface
+ */
+function createApiInbox(Client $client, string $name): ResponseInterface
+{
+    return $client->post('/api/v1/accounts/' . accountId($client) . '/inboxes', [
+        'name' => $name,
+        'channel' => ['type' => 'api', 'webhook_url' => ''],
+    ]);
+}
