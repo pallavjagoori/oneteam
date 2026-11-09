@@ -170,3 +170,4 @@ need porting: the Laravel/Vue version can leave them out.
 | `enterprise/app/controllers/api/v1/accounts/captain/bulk_actions_controller.rb` | 88 (`permitted_params`) | A private method that nothing calls; the actions read `params[:ids]` and `params[:fields]` directly. |
 | `app/builders/account_builder.rb` | 60 (`raise UserErrors`) | `create_user` calls `save!`, which returns true or raises, so the `else` branch never runs. |
 | `app/builders/v2/report_builder.rb` | 51–55 (`short_summary`) | Nothing calls it; the reports controller uses `summary`, `bot_summary` and `conversation_metrics`. |
+| `app/services/messages/markdown_renderers/plain_text_renderer.rb` | 56 (`thematic_break`) | CommonMarker names horizontal rules `hrule`, so the renderer never calls `thematic_break`. |
