@@ -67,7 +67,7 @@ that only run with real data, mostly in `components-next`, `routes` and `compone
 ### Backend
 
 Chatwoot's RSpec suite reaches 86.9% of lines once its broken specs are patched (see
-[patches/README.md](../patches/README.md)). With OneTeam's added specs it is now at 97.96% (46,620 of 47,593 lines). Two things hid how much was untested:
+[patches/README.md](../patches/README.md)). With OneTeam's added specs it is now at 98.20% (46,735 of 47,593 lines). Two things hid how much was untested:
 
 - About 130 MFA and encrypted-credential specs skip themselves unless Active Record encryption keys are set.
   Chatwoot runs them in a separate CI job; `docker-compose.yml` now sets the same test keys for every run.

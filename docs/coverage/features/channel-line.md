@@ -4,9 +4,8 @@
 
 Every file is fully covered.
 
-## Backend: 95.5% (128 of 134 lines)
+## Backend: 97.0% (130 of 134 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/models/channel/line.rb` | 77.8% | 4 |
-| `app/services/line/incoming_message_service.rb` | 97.2% | 2 |

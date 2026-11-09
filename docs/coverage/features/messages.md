@@ -6,7 +6,7 @@
 | --- | ---: | ---: |
 | `app/javascript/dashboard/helper/editorHelper.js` | 99.4% | 1 |
 
-## Backend: 98.0% (1698 of 1732 lines)
+## Backend: 98.6% (1707 of 1732 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -15,12 +15,7 @@
 | `app/services/messages/markdown_renderers/plain_text_renderer.rb` | 88.9% | 4 |
 | `lib/safe_fetch/private_network_request.rb` | 92.9% | 4 |
 | `app/models/message.rb` | 98.4% | 3 |
-| `app/services/message_templates/template/email_collect.rb` | 88.9% | 2 |
-| `app/services/message_templates/template/greeting.rb` | 84.6% | 2 |
-| `app/services/message_templates/template/out_of_office.rb` | 88.9% | 2 |
-| `app/services/messages/markdown_renderers/whats_app_renderer.rb` | 93.3% | 2 |
 | `enterprise/app/jobs/messages/audio_transcription_job.rb` | 80.0% | 2 |
 | `enterprise/app/models/enterprise/message.rb` | 95.7% | 2 |
 | `app/services/messages/markdown_renderer_service.rb` | 98.4% | 1 |
 | `enterprise/app/controllers/enterprise/api/v1/accounts/conversations/messages_controller.rb` | 96.6% | 1 |
-| `lib/custom_markdown_renderer.rb` | 99.1% | 1 |

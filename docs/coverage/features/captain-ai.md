@@ -13,7 +13,7 @@
 | `app/javascript/dashboard/components/widgets/WootWriter/CopilotMenuBar.vue` | 98.2% | 1 |
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/guardrails/Index.vue` | 98.9% | 1 |
 
-## Backend: 97.4% (8879 of 9118 lines)
+## Backend: 97.6% (8900 of 9118 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -38,37 +38,17 @@
 | `enterprise/app/jobs/captain/conversation/response_builder_job.rb` | 97.9% | 2 |
 | `enterprise/app/jobs/captain/playground/response_job.rb` | 92.3% | 2 |
 | `enterprise/app/models/concerns/captain_tools_helpers.rb` | 91.7% | 2 |
-| `enterprise/app/policies/captain/assistant_policy.rb` | 93.1% | 2 |
 | `enterprise/app/services/captain/assistant_migration/draft_applier.rb` | 98.0% | 2 |
 | `enterprise/app/services/captain/llm/system_prompts_service.rb` | 87.5% | 2 |
 | `enterprise/lib/captain/tools/add_label_to_conversation_tool.rb` | 90.0% | 2 |
 | `lib/captain/follow_up_service.rb` | 94.7% | 2 |
 | `enterprise/app/builders/captain/assistant_drilldown_builder.rb` | 98.1% | 1 |
-| `enterprise/app/builders/captain/conversation_usage_builder.rb` | 98.7% | 1 |
 | `enterprise/app/controllers/api/v1/accounts/captain/tools_manifests_controller.rb` | 97.8% | 1 |
-| `enterprise/app/helpers/captain/chat_generation_recorder.rb` | 97.0% | 1 |
-| `enterprise/app/jobs/captain/conversation/contact_message_translation_job.rb` | 75.0% | 1 |
-| `enterprise/app/jobs/captain/documents/response_builder_job.rb` | 96.9% | 1 |
-| `enterprise/app/jobs/captain/documents/schedule_syncs_job.rb` | 98.6% | 1 |
-| `enterprise/app/models/captain/agent_session.rb` | 97.1% | 1 |
-| `enterprise/app/models/captain/assistant.rb` | 99.1% | 1 |
-| `enterprise/app/models/captain/custom_tool.rb` | 98.9% | 1 |
 | `enterprise/app/models/captain/faq_observation.rb` | 93.8% | 1 |
-| `enterprise/app/models/captain/scenario.rb` | 98.5% | 1 |
 | `enterprise/app/services/captain/assistant/response_rewriter.rb` | 97.9% | 1 |
-| `enterprise/app/services/captain/assistant/trace_payload_helper.rb` | 94.1% | 1 |
-| `enterprise/app/services/captain/llm/article_translation_service.rb` | 95.7% | 1 |
-| `enterprise/app/services/captain/llm/translate_query_service.rb` | 96.2% | 1 |
 | `enterprise/app/services/captain/playground/configuration.rb` | 99.2% | 1 |
-| `enterprise/app/services/captain/tool_registry_service.rb` | 95.2% | 1 |
-| `enterprise/app/services/captain/tools_manifest/github_source.rb` | 97.9% | 1 |
-| `enterprise/app/services/llm/legacy_base_open_ai_service.rb` | 94.1% | 1 |
 | `enterprise/lib/captain/tools/add_contact_note_tool.rb` | 93.3% | 1 |
 | `enterprise/lib/captain/tools/add_private_note_tool.rb` | 93.3% | 1 |
-| `enterprise/lib/captain/tools/faq_lookup_tool.rb` | 97.4% | 1 |
-| `enterprise/lib/captain/tools/http_tool.rb` | 97.7% | 1 |
 | `enterprise/lib/captain/tools/resolve_conversation_tool.rb` | 94.4% | 1 |
 | `enterprise/lib/captain/tools/update_priority_tool.rb` | 96.6% | 1 |
 | `enterprise/lib/enterprise/captain/automation_condition_service.rb` | 75.0% | 1 |
-| `enterprise/lib/enterprise/captain/conversation_completion_service.rb` | 75.0% | 1 |
-| `lib/llm/config.rb` | 96.7% | 1 |

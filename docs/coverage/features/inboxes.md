@@ -4,7 +4,7 @@
 
 Every file is fully covered.
 
-## Backend: 97.4% (829 of 851 lines)
+## Backend: 97.9% (833 of 851 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -12,6 +12,4 @@ Every file is fully covered.
 | `app/controllers/api/v1/accounts/inboxes_controller.rb` | 95.5% | 5 |
 | `app/models/inbox.rb` | 96.9% | 4 |
 | `app/controllers/api/v1/accounts/concerns/inbox_secret_management.rb` | 77.8% | 2 |
-| `app/policies/inbox_policy.rb` | 96.2% | 2 |
-| `app/services/base/send_on_channel_service.rb` | 91.3% | 2 |
 | `app/services/social_channels/provider_name_backfill_service.rb` | 98.3% | 2 |
