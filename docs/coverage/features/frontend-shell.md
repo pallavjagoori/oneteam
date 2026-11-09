@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 97.7% (7836 of 8018 lines)
+## Frontend: 97.8% (7840 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -12,11 +12,9 @@
 | `app/javascript/dashboard/components-next/dialog/Dialog.story.vue` | 66.7% | 8 |
 | `app/javascript/dashboard/components-next/changelog-card/StackedChangelogCard.story.vue` | 57.1% | 6 |
 | `app/javascript/dashboard/components-next/flag/story/Flag.story.vue` | 66.7% | 4 |
-| `app/javascript/dashboard/components-next/combobox/ReorderableMultiSelect.vue` | 96.9% | 2 |
 | `app/javascript/dashboard/components-next/dropdown-menu/DropdownMenu.story.vue` | 88.2% | 2 |
 | `app/javascript/dashboard/components-next/radioCard/RadioCard.story.vue` | 83.3% | 2 |
 | `app/javascript/dashboard/components-next/sidebar/Sidebar.vue` | 98.7% | 2 |
-| `app/javascript/dashboard/components-next/sidebar/SidebarGroupSeparator.vue` | 81.8% | 2 |
 | `app/javascript/dashboard/components-next/sidebar/SidebarSortMenu.vue` | 97.0% | 2 |
 | `app/javascript/dashboard/components-next/switch/Switch.story.vue` | 90.5% | 2 |
 | `app/javascript/dashboard/routes/dashboard/commands/commandbar.vue` | 97.9% | 2 |
