@@ -4,7 +4,7 @@
 
 Every file is fully covered.
 
-## Backend: 93.6% (1884 of 2012 lines)
+## Backend: 93.7% (1885 of 2012 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -13,6 +13,5 @@ Every file is fully covered.
 | `app/builders/v2/report_builder.rb` | 98.2% | 1 |
 | `app/builders/v2/reports/drilldown_record_serializer.rb` | 98.7% | 1 |
 | `app/helpers/api/v2/accounts/reports_helper.rb` | 97.0% | 1 |
-| `app/services/reports/drilldown_timestamp_validator.rb` | 96.4% | 1 |
 | `app/services/reports/report_metric_registry.rb` | 95.8% | 1 |
 | `lib/tasks/reporting_events_rollup_timezone_setup.rake` | 99.2% | 1 |
