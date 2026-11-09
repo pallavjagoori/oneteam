@@ -13,7 +13,7 @@
 | `app/javascript/dashboard/components/widgets/WootWriter/CopilotMenuBar.vue` | 98.2% | 1 |
 | `app/javascript/dashboard/routes/dashboard/captain/assistants/guardrails/Index.vue` | 98.9% | 1 |
 
-## Backend: 97.8% (8919 of 9118 lines)
+## Backend: 98.3% (8952 of 9108 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -21,17 +21,7 @@
 | `lib/integrations/llm_base_service.rb` | 58.3% | 35 |
 | `lib/integrations/llm_instrumentation_spans.rb` | 60.9% | 27 |
 | `enterprise/lib/captain/assistant_action_schema.rb` | 0.0% | 19 |
-| `enterprise/lib/captain/assistant_false_promise_schema.rb` | 0.0% | 15 |
 | `enterprise/app/services/captain/tools/base_service.rb` | 58.3% | 10 |
-| `enterprise/app/services/llm/base_ai_service.rb` | 91.7% | 4 |
-| `enterprise/app/controllers/api/v1/accounts/captain/custom_tools_controller.rb` | 95.8% | 3 |
-| `enterprise/app/helpers/captain/chat_helper.rb` | 95.7% | 3 |
-| `enterprise/app/jobs/captain/llm/update_embedding_job.rb` | 50.0% | 3 |
-| `enterprise/app/services/captain/assistant/runner_instrumentation_helper.rb` | 94.3% | 3 |
-| `enterprise/app/services/captain/conversation/response_lifecycle_logging.rb` | 70.0% | 3 |
-| `enterprise/app/services/captain/playground/run_details.rb` | 93.2% | 3 |
-| `enterprise/lib/captain/tools/base_public_tool.rb` | 92.1% | 3 |
-| `lib/captain/csat_utility_analysis_service.rb` | 90.3% | 3 |
 | `enterprise/app/builders/captain/assistant_drilldown_builder.rb` | 98.1% | 1 |
 | `enterprise/app/controllers/api/v1/accounts/captain/bulk_actions_controller.rb` | 97.9% | 1 |
 | `enterprise/app/controllers/api/v1/accounts/captain/tools_manifests_controller.rb` | 97.8% | 1 |

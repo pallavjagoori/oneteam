@@ -4,8 +4,6 @@
 
 Every file is fully covered.
 
-## Backend: 92.4% (182 of 197 lines)
+## Backend: 100.0% (188 of 188 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/jobs/migration/add_search_indexes_job.rb` | 0.0% | 15 |
+Every file is fully covered.

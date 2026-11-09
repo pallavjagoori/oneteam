@@ -4,9 +4,8 @@
 
 Every file is fully covered.
 
-## Backend: 99.3% (609 of 613 lines)
+## Backend: 99.8% (612 of 613 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
-| `lib/integrations/bot_processor_service.rb` | 90.9% | 3 |
 | `lib/integrations/dyte/processor_service.rb` | 98.6% | 1 |
