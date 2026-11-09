@@ -77,3 +77,15 @@ function uniqueEmail(string $prefix): string
 {
     return $prefix . '+' . bin2hex(random_bytes(4)) . '@contract.test';
 }
+
+/**
+ * Returns the id of the fixture account, read from the signed in user's profile.
+ *
+ * @param Client $client A signed in client.
+ *
+ * @return int
+ */
+function accountId(Client $client): int
+{
+    return (int) json($client->get('/api/v1/profile'))['account_id'];
+}

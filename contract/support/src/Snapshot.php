@@ -36,6 +36,11 @@ final class Snapshot
     private const TIMESTAMP_PATTERN = '/^\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}:\d{2}/';
 
     /**
+     * The random part that uniqueEmail() adds to test email addresses.
+     */
+    private const UNIQUE_EMAIL_PATTERN = '/\+[0-9a-f]{8}@/';
+
+    /**
      * Folder that holds the snapshot files.
      *
      * @return string
@@ -116,7 +121,9 @@ final class Snapshot
             return '<timestamp>';
         }
         if (is_string($value)) {
-            return str_replace(rtrim(Env::baseUrl(), '/'), '<base-url>', $value);
+            $value = preg_replace(self::UNIQUE_EMAIL_PATTERN, '+<unique>@', $value);
+
+            return str_replace(rtrim(Env::baseUrl(), '/'), '<base-url>', (string) $value);
         }
 
         return $value;

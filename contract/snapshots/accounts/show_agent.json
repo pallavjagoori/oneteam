@@ -1,0 +1,53 @@
+{
+    "status": 200,
+    "body": {
+        "billing_provider": "stripe",
+        "cache_keys": {
+            "canned_response": "0000000000",
+            "inbox": "0000000000",
+            "label": "0000000000",
+            "team": "0000000000"
+        },
+        "created_at": "<string>",
+        "domain": null,
+        "features": {
+            "agent_bots": true,
+            "agent_management": true,
+            "api_and_webhooks": true,
+            "assignment_v2": true,
+            "auto_resolve_conversations": true,
+            "automations": true,
+            "campaigns": true,
+            "canned_responses": true,
+            "captain_tasks": true,
+            "channel_email": true,
+            "channel_facebook": true,
+            "channel_instagram": true,
+            "channel_tiktok": true,
+            "channel_website": true,
+            "chatwoot_v4": true,
+            "companies": true,
+            "contact_chatwoot_support_team": true,
+            "crm": true,
+            "custom_attributes": true,
+            "help_center": true,
+            "inbound_emails": true,
+            "inbox_management": true,
+            "integrations": true,
+            "labels": true,
+            "macros": true,
+            "mobile_voice_push": true,
+            "reports": true,
+            "team_management": true,
+            "voice_recorder": true
+        },
+        "id": "<int>",
+        "latest_chatwoot_version": null,
+        "locale": "en",
+        "name": "Contract Co",
+        "settings": [],
+        "status": "active",
+        "subscribed_features": [],
+        "support_email": "OneTeam Contract <contract@example.com>"
+    }
+}
