@@ -171,3 +171,4 @@ need porting: the Laravel/Vue version can leave them out.
 | `app/builders/account_builder.rb` | 60 (`raise UserErrors`) | `create_user` calls `save!`, which returns true or raises, so the `else` branch never runs. |
 | `app/builders/v2/report_builder.rb` | 51–55 (`short_summary`) | Nothing calls it; the reports controller uses `summary`, `bot_summary` and `conversation_metrics`. |
 | `app/services/messages/markdown_renderers/plain_text_renderer.rb` | 56 (`thematic_break`) | CommonMarker names horizontal rules `hrule`, so the renderer never calls `thematic_break`. |
+| `app/controllers/instagram/callbacks_controller.rb` | 68 (`JSON::ParseError` fallback) | The rescue names `JSON::ParseError`, which does not exist (the class is `JSON::ParserError`), so a non-JSON OAuth error raises `NameError` instead of reaching the fallback. |
