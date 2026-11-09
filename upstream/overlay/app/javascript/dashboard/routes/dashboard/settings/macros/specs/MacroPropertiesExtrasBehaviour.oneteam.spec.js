@@ -67,4 +67,11 @@ describe('MacroProperties extras', () => {
     expect(wrapper.emitted('update:name')).toBeUndefined();
     expect(wrapper.emitted('update:visibility')).toBeUndefined();
   });
+
+  it('switches to personal visibility', async () => {
+    const wrapper = mountPanel({ macroVisibility: 'global' });
+    const buttons = wrapper.findAll('button[type="button"]');
+    await buttons[1].trigger('click');
+    expect(wrapper.emitted('update:visibility')).toEqual([['personal']]);
+  });
 });
