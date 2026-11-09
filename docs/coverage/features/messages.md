@@ -1,11 +1,10 @@
 # Messages and attachments: coverage gaps
 
-## Frontend: 99.9% (1978 of 1980 lines)
+## Frontend: 99.9% (1979 of 1980 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
 | `app/javascript/dashboard/helper/editorHelper.js` | 99.4% | 1 |
-| `app/javascript/shared/components/GreetingsEditor.vue` | 85.7% | 1 |
 
 ## Backend: 97.3% (1685 of 1732 lines)
 

@@ -1,6 +1,6 @@
 # Frontend shell and shared UI: coverage gaps
 
-## Frontend: 97.7% (7831 of 8018 lines)
+## Frontend: 97.7% (7836 of 8018 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -14,7 +14,6 @@
 | `app/javascript/dashboard/components-next/flag/story/Flag.story.vue` | 66.7% | 4 |
 | `app/javascript/dashboard/components-next/combobox/ReorderableMultiSelect.vue` | 96.9% | 2 |
 | `app/javascript/dashboard/components-next/dropdown-menu/DropdownMenu.story.vue` | 88.2% | 2 |
-| `app/javascript/dashboard/components-next/dropdown-menu/DropdownMenu.vue` | 96.4% | 2 |
 | `app/javascript/dashboard/components-next/radioCard/RadioCard.story.vue` | 83.3% | 2 |
 | `app/javascript/dashboard/components-next/sidebar/Sidebar.vue` | 98.7% | 2 |
 | `app/javascript/dashboard/components-next/sidebar/SidebarGroupSeparator.vue` | 81.8% | 2 |
@@ -28,11 +27,8 @@
 | `app/javascript/dashboard/components-next/pagination/PaginationFooter.story.vue` | 95.5% | 1 |
 | `app/javascript/dashboard/components-next/phonenumberinput/PhoneNumberInput.story.vue` | 92.3% | 1 |
 | `app/javascript/dashboard/components-next/selectmenu/SelectMenu.story.vue` | 91.7% | 1 |
-| `app/javascript/dashboard/components-next/side-panel/SidePanel.vue` | 97.7% | 1 |
 | `app/javascript/dashboard/components-next/tabbar/TabBar.story.vue` | 92.9% | 1 |
 | `app/javascript/dashboard/components-next/textarea/TextArea.story.vue` | 94.1% | 1 |
-| `app/javascript/dashboard/components/ui/ContextMenu.vue` | 97.3% | 1 |
-| `app/javascript/dashboard/components/ui/DateRangePicker.vue` | 75.0% | 1 |
 | `app/javascript/dashboard/composables/usePolicy.js` | 98.2% | 1 |
 | `app/javascript/dashboard/helper/slaHelper.js` | 98.6% | 1 |
 
