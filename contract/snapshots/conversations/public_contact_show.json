@@ -1,0 +1,11 @@
+{
+    "status": 200,
+    "body": {
+        "email": "casey+<unique>@contract.test",
+        "id": "<int>",
+        "name": "Casey Customer",
+        "phone_number": null,
+        "pubsub_token": "<string>",
+        "source_id": "<string>"
+    }
+}

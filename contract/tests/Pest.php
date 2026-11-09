@@ -105,3 +105,32 @@ function createApiInbox(Client $client, string $name): ResponseInterface
         'channel' => ['type' => 'api', 'webhook_url' => ''],
     ]);
 }
+
+/**
+ * Creates an API inbox with the fixture agent as a member, plus a contact who
+ * reaches it through the public API, for tests that need a conversation.
+ *
+ * @param Client $admin A signed in administrator.
+ * @param string $name  Inbox name.
+ *
+ * @return array{account: int, inbox: int, identifier: string, contact: string} Ids for the test,
+ *         where "contact" is the contact's source id in the inbox.
+ */
+function apiInboxWithContact(Client $admin, string $name): array
+{
+    $account = accountId($admin);
+    $inbox = json(createApiInbox($admin, $name));
+    $agentId = json(signedIn(Fixtures::AGENT_EMAIL)->get('/api/v1/profile'))['id'];
+    $admin->post("/api/v1/accounts/{$account}/inbox_members", ['inbox_id' => $inbox['id'], 'user_ids' => [$agentId]]);
+    $contact = json(client()->post("/public/api/v1/inboxes/{$inbox['inbox_identifier']}/contacts", [
+        'name' => 'Casey Customer',
+        'email' => uniqueEmail('casey'),
+    ]));
+
+    return [
+        'account' => $account,
+        'inbox' => $inbox['id'],
+        'identifier' => $inbox['inbox_identifier'],
+        'contact' => $contact['source_id'],
+    ];
+}

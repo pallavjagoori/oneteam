@@ -1,0 +1,35 @@
+{
+    "status": 200,
+    "body": {
+        "agent_last_seen_at": "<int>",
+        "contact": {
+            "account_id": "<int>",
+            "additional_attributes": {
+                "company_name": "Contract"
+            },
+            "blocked": false,
+            "company_id": "<int>",
+            "contact_type": "lead",
+            "country_code": null,
+            "created_at": "<string>",
+            "custom_attributes": [],
+            "email": "casey+<unique>@contract.test",
+            "id": "<int>",
+            "identifier": null,
+            "label_list": [],
+            "last_activity_at": null,
+            "last_name": "",
+            "location": null,
+            "middle_name": "",
+            "name": "Casey Customer",
+            "phone_number": null,
+            "updated_at": "<string>"
+        },
+        "contact_last_seen_at": "<int>",
+        "id": "<int>",
+        "inbox_id": "<int>",
+        "messages": [],
+        "status": "open",
+        "uuid": "<string>"
+    }
+}
