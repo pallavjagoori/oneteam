@@ -4,7 +4,7 @@
 
 Every file is fully covered.
 
-## Backend: 97.7% (916 of 938 lines)
+## Backend: 98.1% (920 of 938 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -14,5 +14,3 @@ Every file is fully covered.
 | `app/services/twilio/delivery_status_service.rb` | 91.7% | 3 |
 | `app/controllers/api/v1/accounts/channels/twilio_channels_controller.rb` | 93.5% | 2 |
 | `app/models/channel/sms.rb` | 94.4% | 2 |
-| `app/services/sms/incoming_message_service.rb` | 96.6% | 2 |
-| `app/services/twilio/incoming_message_service.rb` | 97.8% | 2 |

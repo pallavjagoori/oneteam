@@ -4,7 +4,7 @@
 
 Every file is fully covered.
 
-## Backend: 98.7% (2801 of 2837 lines)
+## Backend: 99.1% (2812 of 2837 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -15,14 +15,7 @@ Every file is fully covered.
 | `app/controllers/api/v1/accounts/integrations/hooks_controller.rb` | 93.8% | 2 |
 | `app/controllers/stripe/callbacks_controller.rb` | 95.2% | 2 |
 | `app/jobs/slack_unfurl_job.rb` | 92.3% | 2 |
-| `app/models/integrations/app.rb` | 97.1% | 2 |
-| `app/models/integrations/hook.rb` | 98.1% | 2 |
 | `enterprise/app/services/enterprise/billing/shopify_subscription_sync_service.rb` | 97.6% | 2 |
-| `lib/integrations/linear/access_token_service.rb` | 96.2% | 2 |
-| `lib/integrations/slack/update_slack_message_service.rb` | 97.5% | 2 |
 | `app/controllers/concerns/notion_concern.rb` | 88.9% | 1 |
 | `app/controllers/slack_uploads_controller.rb` | 94.1% | 1 |
-| `enterprise/app/services/enterprise/billing/shopify_app_pricing_url.rb` | 96.2% | 1 |
-| `enterprise/app/services/enterprise/billing/shopify_plan_configuration.rb` | 97.6% | 1 |
 | `lib/integrations/slack/hook_builder.rb` | 94.4% | 1 |
-| `lib/integrations/slack/incoming_message_builder.rb` | 98.0% | 1 |

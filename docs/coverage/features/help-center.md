@@ -4,7 +4,7 @@
 
 Every file is fully covered.
 
-## Backend: 99.0% (1324 of 1338 lines)
+## Backend: 99.0% (1325 of 1338 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -14,4 +14,3 @@ Every file is fully covered.
 | `lib/integrations/cloudflare/realtime_kit_credentials_validator.rb` | 96.9% | 2 |
 | `app/controllers/public/api/v1/portals/articles_controller.rb` | 98.4% | 1 |
 | `app/models/article.rb` | 99.0% | 1 |
-| `enterprise/app/services/onboarding/help_center_curator.rb` | 97.1% | 1 |
