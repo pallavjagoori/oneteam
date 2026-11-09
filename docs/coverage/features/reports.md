@@ -1,10 +1,8 @@
 # Reports and analytics: coverage gaps
 
-## Frontend: 99.9% (1240 of 1241 lines)
+## Frontend: 100.0% (1241 of 1241 lines)
 
-| File | Coverage | Uncovered lines |
-| --- | ---: | ---: |
-| `app/javascript/dashboard/routes/dashboard/settings/reports/components/heatmaps/HeatmapDateRangeSelector.vue` | 98.7% | 1 |
+Every file is fully covered.
 
 ## Backend: 93.0% (1872 of 2012 lines)
 

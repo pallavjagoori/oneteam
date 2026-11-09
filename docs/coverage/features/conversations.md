@@ -1,6 +1,6 @@
 # Conversations: coverage gaps
 
-## Frontend: 99.4% (3462 of 3482 lines)
+## Frontend: 99.5% (3463 of 3482 lines)
 
 | File | Coverage | Uncovered lines |
 | --- | ---: | ---: |
@@ -8,7 +8,6 @@
 | `app/javascript/dashboard/components-next/NewConversation/components/story/ComposeNewConversationForm.story.vue` | 63.6% | 8 |
 | `app/javascript/dashboard/components-next/ConversationWorkflow/ConversationResolveAttributesModal.vue` | 98.7% | 1 |
 | `app/javascript/dashboard/components-next/NewConversation/components/ComposeNewConversationForm.vue` | 99.2% | 1 |
-| `app/javascript/dashboard/components-next/NewConversation/helpers/composeConversationHelper.js` | 98.7% | 1 |
 | `app/javascript/dashboard/helper/snoozeDateParser/parser.js` | 99.7% | 1 |
 
 ## Backend: 98.9% (1507 of 1524 lines)
